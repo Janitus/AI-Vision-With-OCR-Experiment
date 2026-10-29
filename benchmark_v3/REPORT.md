@@ -14,13 +14,41 @@ Automated text checks: 0 clipped labels, 0 overlapping text regions; minimum tex
 
 Other rates are errors divided by expected items; lower is better. `—` means the approach does not produce that output. OCR text scores use location-matched visible text regions, including rotated edge labels. Graph scores use coordinate-matched nodes (155 px tolerance). Missing edges count as errors in each edge error rate.
 
-| Approach | Total error | Scored unit | Title text error | Node text error | Edge text error | Node P/R | Edge P/R | Arrow error | Shape error | Full edge error | False positives |
-|---|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| legacy_rapid_v3 | 61/206 (29.6%) | OCR text regions only | 70.0% | 20.5% | 32.7% | —/— | —/— | — | — | — | 0 text |
-| paddle_v5_fi | 59/246 (24.0%) | OCR text regions only | 0.0% | 0.0% | 16.8% | —/— | —/— | — | — | — | 40 text |
-| rapid_v6_medium_fi | 18/221 (8.1%) | OCR text regions only | 0.0% | 1.2% | 1.8% | —/— | —/— | — | — | — | 15 text |
-| blind_vision | 26/210 (12.4%) | graph titles, nodes, and complete edges | 0.0% | 0.0% | 8.8% | 100.0%/100.0% | 96.3%/92.9% | 8.8% | 12.0% | 10.6% | 0 nodes, 4 edges |
-| blind_fusion | 34/211 (16.1%) | graph titles, nodes, and complete edges | 0.0% | 0.0% | 7.1% | 100.0%/100.0% | 95.5%/94.7% | 14.2% | 12.0% | 16.8% | 0 nodes, 5 edges |
+| Approach | Scored unit | Total error |
+|---|---|---:|
+| legacy_rapid_v3 | OCR text | 61/206 (29.6%) |
+| paddle_v5_fi | OCR text | 59/246 (24.0%) |
+| rapid_v6_medium_fi | OCR text | 18/221 (8.1%) |
+| blind_vision | Graph | 26/210 (12.4%) |
+| blind_fusion | Graph | 34/211 (16.1%) |
+
+### OCR text errors
+
+| Approach | Title | Node labels | Edge labels | Unmatched OCR snippets |
+|---|---:|---:|---:|---:|
+| legacy_rapid_v3 | 70.0% | 20.5% | 32.7% | 0 |
+| paddle_v5_fi | 0.0% | 0.0% | 16.8% | 40 |
+| rapid_v6_medium_fi | 0.0% | 1.2% | 1.8% | 15 |
+
+### Graph detection
+
+| Approach | Node P/R | Connection P/R | Extra nodes | Extra edges |
+|---|---:|---:|---:|---:|
+| blind_vision | 100.0%/100.0% | 96.3%/92.9% | 0 | 4 |
+| blind_fusion | 100.0%/100.0% | 95.5%/94.7% | 0 | 5 |
+
+### Graph error types
+
+| Error type | Vision only | Vision + OCR |
+|---|---:|---:|
+| Title text | 0.0% | 0.0% |
+| Node label | 0.0% | 0.0% |
+| Edge label | 8.8% | 7.1% |
+| Arrow direction | 8.8% | 14.2% |
+| Dashed/solid stroke | 7.1% | 7.1% |
+| Node shape | 12.0% | 12.0% |
+| Fully correct edge | 10.6% | 16.8% |
+| Unknown directions (count) | 0 | 10 |
 
 Other per-type rates and counts, including relationship, dashed stroke, unknown directions and relationships, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.
 
@@ -38,4 +66,4 @@ The two fresh Codex tasks received anonymous case images. Blind fusion also rece
 
 The source PNGs were drawn by the Python renderer from the same structured graphs exported as Mermaid; the Mermaid text is a reproducible graph definition, not the exact pixel renderer. OCR-only rows measure text recognition and do not claim graph reconstruction. Vision rows measure one session each, so differences between them cannot establish a general causal gain from OCR. The figures are clean synthetic diagrams; performance on scanned academic pages or production diagrams may be lower. Edge text accuracy is literal exact match, and connection matching uses endpoint proximity, not semantic equivalence.
 
-Open [results_viewer.html](results_viewer.html) for source, vision-only, and fusion figures side by side.
+Open [matrix_viewer.html](matrix_viewer.html) for a readable matrix, or [results_viewer.html](results_viewer.html) for source, vision-only, and fusion figures side by side.
