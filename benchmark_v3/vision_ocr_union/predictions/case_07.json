@@ -1,0 +1,661 @@
+{
+  "title": "Tutkimusjulkaisun työnkulku",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Tutkimuskysymys",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        185
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Aineiston keruu",
+      "type": "rounded_rectangle",
+      "center": [
+        320,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Eettinen arvio",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Mittaus",
+      "type": "rounded_rectangle",
+      "center": [
+        1480,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Tallennus",
+      "type": "rounded_rectangle",
+      "center": [
+        320,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Analyysi",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Vertaisarvio",
+      "type": "rounded_rectangle",
+      "center": [
+        1480,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Julkaisu",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        955
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "c",
+      "relationship": "edellyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "tuottaa",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "arkistoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "mahdollistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "lähettää",
+      "direction": "both",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "avoin aineisto",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "suosittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu have no visible arrowheads.",
+    "The text palauttaa korjattavaksi appears near the Vertaisarvio–Julkaisu diagonal; no distinct edge is visible."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "node",
+      "target_key": "b",
+      "ocr_index": 4,
+      "text": "Aineiston keruu",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          244.0,
+          378.0
+        ],
+        [
+          397.0,
+          378.0
+        ],
+        [
+          397.0,
+          402.0
+        ],
+        [
+          244.0,
+          402.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "c",
+      "ocr_index": 6,
+      "text": "Eettinen arvio",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          832.0,
+          378.0
+        ],
+        [
+          967.0,
+          378.0
+        ],
+        [
+          967.0,
+          402.0
+        ],
+        [
+          832.0,
+          402.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "d",
+      "ocr_index": 8,
+      "text": "Mittaus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1440.0,
+          376.0
+        ],
+        [
+          1519.0,
+          376.0
+        ],
+        [
+          1519.0,
+          404.0
+        ],
+        [
+          1440.0,
+          404.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "e",
+      "ocr_index": 10,
+      "text": "Tallennus",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          270.0,
+          707.0
+        ],
+        [
+          370.0,
+          707.0
+        ],
+        [
+          370.0,
+          734.0
+        ],
+        [
+          270.0,
+          734.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 13,
+      "text": "lähettää",
+      "confidence": 0.95035,
+      "polygon": [
+        [
+          1153.0,
+          708.0
+        ],
+        [
+          1226.0,
+          708.0
+        ],
+        [
+          1226.0,
+          732.0
+        ],
+        [
+          1153.0,
+          732.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 17,
+      "text": "suosittaa",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1150.0,
+          826.0
+        ],
+        [
+          1230.0,
+          826.0
+        ],
+        [
+          1230.0,
+          850.0
+        ],
+        [
+          1150.0,
+          850.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "h",
+      "ocr_index": 18,
+      "text": "Julkaisu",
+      "confidence": 0.9855,
+      "polygon": [
+        [
+          858.0,
+          941.0
+        ],
+        [
+          941.0,
+          941.0
+        ],
+        [
+          941.0,
+          970.0
+        ],
+        [
+          858.0,
+          970.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 7,
+      "text": "hyväksyy",
+      "confidence": 0.99938,
+      "polygon": [
+        [
+          1142.0,
+          374.0
+        ],
+        [
+          1238.0,
+          376.0
+        ],
+        [
+          1237.0,
+          405.0
+        ],
+        [
+          1141.0,
+          402.0
+        ]
+      ],
+      "center_distance": 0.9
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 9,
+      "text": "arkistoi",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          865.0,
+          544.0
+        ],
+        [
+          935.0,
+          544.0
+        ],
+        [
+          935.0,
+          568.0
+        ],
+        [
+          865.0,
+          568.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 16,
+      "text": "avoin aineisto",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          548.0,
+          827.0
+        ],
+        [
+          672.0,
+          827.0
+        ],
+        [
+          672.0,
+          850.0
+        ],
+        [
+          548.0,
+          850.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "a",
+      "ocr_index": 1,
+      "text": "Tutkimuskysymys",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          809.0,
+          171.0
+        ],
+        [
+          991.0,
+          174.0
+        ],
+        [
+          990.0,
+          201.0
+        ],
+        [
+          808.0,
+          198.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 3,
+      "text": "edellyttää",
+      "confidence": 0.99866,
+      "polygon": [
+        [
+          856.0,
+          273.0
+        ],
+        [
+          945.0,
+          273.0
+        ],
+        [
+          945.0,
+          300.0
+        ],
+        [
+          856.0,
+          300.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 11,
+      "text": "mahdollistaa",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          550.0,
+          709.0
+        ],
+        [
+          668.0,
+          709.0
+        ],
+        [
+          668.0,
+          732.0
+        ],
+        [
+          550.0,
+          732.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 2,
+      "text": "ohjaa",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          581.0,
+          272.0
+        ],
+        [
+          638.0,
+          270.0
+        ],
+        [
+          639.0,
+          300.0
+        ],
+        [
+          583.0,
+          303.0
+        ]
+      ],
+      "center_distance": 1.3
+    },
+    {
+      "target_kind": "node",
+      "target_key": "g",
+      "ocr_index": 14,
+      "text": "Vertaisarvio",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1419.0,
+          709.0
+        ],
+        [
+          1539.0,
+          709.0
+        ],
+        [
+          1539.0,
+          733.0
+        ],
+        [
+          1419.0,
+          733.0
+        ]
+      ],
+      "center_distance": 1.4
+    },
+    {
+      "target_kind": "node",
+      "target_key": "f",
+      "ocr_index": 12,
+      "text": "Analyysi",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          854.0,
+          706.0
+        ],
+        [
+          947.0,
+          706.0
+        ],
+        [
+          947.0,
+          737.0
+        ],
+        [
+          854.0,
+          737.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 5,
+      "text": "tuottaa",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          600.0,
+          380.0
+        ],
+        [
+          665.0,
+          380.0
+        ],
+        [
+          665.0,
+          401.0
+        ],
+        [
+          600.0,
+          401.0
+        ]
+      ],
+      "center_distance": 22.5
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Tutkimusjulkaisun työnkulku",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          33.0,
+          31.0
+        ],
+        [
+          509.0,
+          31.0
+        ],
+        [
+          509.0,
+          72.0
+        ],
+        [
+          33.0,
+          72.0
+        ]
+      ],
+      "center_distance": 29.2
+    }
+  ],
+  "ocr_unassigned": [
+    {
+      "ocr_index": 15,
+      "text": "palauttaa korjattavaksi",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          1091.0,
+          766.0
+        ],
+        [
+          1289.0,
+          766.0
+        ],
+        [
+          1289.0,
+          793.0
+        ],
+        [
+          1091.0,
+          793.0
+        ]
+      ]
+    }
+  ],
+  "ocr_disagreements": []
+}

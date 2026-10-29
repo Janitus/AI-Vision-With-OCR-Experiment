@@ -1,0 +1,772 @@
+{
+  "title": "Ministeriöiden hankekierto",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Aloite",
+      "type": "rectangle",
+      "center": [
+        270,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Valmisteluryhmä",
+      "type": "rectangle",
+      "center": [
+        900,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Oikeudellinen arvio",
+      "type": "rectangle",
+      "center": [
+        1530,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Lausuntopyyntö",
+      "type": "rectangle",
+      "center": [
+        270,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Ministeriö",
+      "type": "rectangle",
+      "center": [
+        900,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Budjettitarkistus",
+      "type": "rectangle",
+      "center": [
+        1530,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Valtioneuvosto",
+      "type": "rectangle",
+      "center": [
+        270,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Eduskunta",
+      "type": "rectangle",
+      "center": [
+        900,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "i",
+      "label": "Toimeenpano",
+      "type": "rectangle",
+      "center": [
+        1530,
+        880
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "selvittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "palautuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "sovittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "antaa esityksen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "d",
+      "relationship": "laatii",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "arvioi kulut",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "esittelee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "i",
+      "target": "e",
+      "relationship": "seuranta",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "kuule",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.55
+    }
+  ],
+  "uncertainties": [
+    "The long diagonal labelled kuule is partly obscured by other lines; its source is uncertain."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "node",
+      "target_key": "g",
+      "ocr_index": 17,
+      "text": "Valtioneuvosto",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          193.0,
+          864.0
+        ],
+        [
+          347.0,
+          868.0
+        ],
+        [
+          346.0,
+          895.0
+        ],
+        [
+          193.0,
+          892.0
+        ]
+      ],
+      "center_distance": 0.4
+    },
+    {
+      "target_kind": "node",
+      "target_key": "a",
+      "ocr_index": 1,
+      "text": "Aloite",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          237.0,
+          206.0
+        ],
+        [
+          303.0,
+          206.0
+        ],
+        [
+          303.0,
+          235.0
+        ],
+        [
+          237.0,
+          235.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 4,
+      "text": "selvittää",
+      "confidence": 0.99614,
+      "polygon": [
+        [
+          1172.0,
+          208.0
+        ],
+        [
+          1258.0,
+          208.0
+        ],
+        [
+          1258.0,
+          233.0
+        ],
+        [
+          1172.0,
+          233.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "c",
+      "ocr_index": 5,
+      "text": "Oikeudellinen arvio",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1432.0,
+          207.0
+        ],
+        [
+          1628.0,
+          207.0
+        ],
+        [
+          1628.0,
+          234.0
+        ],
+        [
+          1432.0,
+          234.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 10,
+      "text": "palautuu",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          538.0,
+          537.0
+        ],
+        [
+          632.0,
+          537.0
+        ],
+        [
+          632.0,
+          564.0
+        ],
+        [
+          538.0,
+          564.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 15,
+      "text": "raportoi",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1172.0,
+          701.0
+        ],
+        [
+          1258.0,
+          701.0
+        ],
+        [
+          1258.0,
+          728.0
+        ],
+        [
+          1172.0,
+          728.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "h",
+      "ocr_index": 19,
+      "text": "Eduskunta",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          843.0,
+          866.0
+        ],
+        [
+          956.0,
+          866.0
+        ],
+        [
+          956.0,
+          894.0
+        ],
+        [
+          843.0,
+          894.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 7,
+      "text": "arvioi kulut",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1475.0,
+          372.0
+        ],
+        [
+          1586.0,
+          372.0
+        ],
+        [
+          1586.0,
+          399.0
+        ],
+        [
+          1475.0,
+          399.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "f",
+      "ocr_index": 13,
+      "text": "Budjettitarkistus",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1444.0,
+          536.0
+        ],
+        [
+          1615.0,
+          538.0
+        ],
+        [
+          1615.0,
+          565.0
+        ],
+        [
+          1443.0,
+          563.0
+        ]
+      ],
+      "center_distance": 0.9
+    },
+    {
+      "target_kind": "node",
+      "target_key": "b",
+      "ocr_index": 3,
+      "text": "Valmisteluryhmä",
+      "confidence": 0.99889,
+      "polygon": [
+        [
+          813.0,
+          207.0
+        ],
+        [
+          987.0,
+          207.0
+        ],
+        [
+          987.0,
+          235.0
+        ],
+        [
+          813.0,
+          235.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 6,
+      "text": "laatii",
+      "confidence": 0.9853,
+      "polygon": [
+        [
+          556.0,
+          372.0
+        ],
+        [
+          612.0,
+          372.0
+        ],
+        [
+          612.0,
+          398.0
+        ],
+        [
+          556.0,
+          398.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "e",
+      "ocr_index": 11,
+      "text": "Ministeriö",
+      "confidence": 0.99964,
+      "polygon": [
+        [
+          846.0,
+          537.0
+        ],
+        [
+          952.0,
+          539.0
+        ],
+        [
+          952.0,
+          564.0
+        ],
+        [
+          846.0,
+          562.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 12,
+      "text": "sovittaa",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1175.0,
+          541.0
+        ],
+        [
+          1255.0,
+          541.0
+        ],
+        [
+          1255.0,
+          562.0
+        ],
+        [
+          1175.0,
+          562.0
+        ]
+      ],
+      "center_distance": 1.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 20,
+      "text": "hyväksyy",
+      "confidence": 0.99944,
+      "polygon": [
+        [
+          1165.0,
+          862.0
+        ],
+        [
+          1269.0,
+          867.0
+        ],
+        [
+          1268.0,
+          898.0
+        ],
+        [
+          1164.0,
+          893.0
+        ]
+      ],
+      "center_distance": 1.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 14,
+      "text": "esittelee",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          543.0,
+          703.0
+        ],
+        [
+          626.0,
+          703.0
+        ],
+        [
+          626.0,
+          730.0
+        ],
+        [
+          543.0,
+          730.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 18,
+      "text": "antaa esityksen",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          512.0,
+          867.0
+        ],
+        [
+          661.0,
+          867.0
+        ],
+        [
+          661.0,
+          892.0
+        ],
+        [
+          512.0,
+          892.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "node",
+      "target_key": "i",
+      "ocr_index": 21,
+      "text": "Toimeenpano",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1458.0,
+          866.0
+        ],
+        [
+          1600.0,
+          869.0
+        ],
+        [
+          1600.0,
+          896.0
+        ],
+        [
+          1457.0,
+          894.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 2,
+      "text": "käynnistää",
+      "confidence": 0.99537,
+      "polygon": [
+        [
+          528.0,
+          206.0
+        ],
+        [
+          639.0,
+          208.0
+        ],
+        [
+          639.0,
+          233.0
+        ],
+        [
+          527.0,
+          230.0
+        ]
+      ],
+      "center_distance": 1.9
+    },
+    {
+      "target_kind": "node",
+      "target_key": "d",
+      "ocr_index": 9,
+      "text": "Lausuntopyyntö",
+      "confidence": 0.99826,
+      "polygon": [
+        [
+          186.0,
+          539.0
+        ],
+        [
+          353.0,
+          539.0
+        ],
+        [
+          353.0,
+          566.0
+        ],
+        [
+          186.0,
+          566.0
+        ]
+      ],
+      "center_distance": 2.5
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Ministeriöiden hankekierto",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          36.0,
+          34.0
+        ],
+        [
+          468.0,
+          34.0
+        ],
+        [
+          468.0,
+          68.0
+        ],
+        [
+          36.0,
+          68.0
+        ]
+      ],
+      "center_distance": 48.2
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 10,
+      "ocr_index": 16,
+      "text": "seuranta",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1304.0,
+          775.0
+        ],
+        [
+          1390.0,
+          775.0
+        ],
+        [
+          1390.0,
+          796.0
+        ],
+        [
+          1304.0,
+          796.0
+        ]
+      ],
+      "center_distance": 149.6
+    }
+  ],
+  "ocr_unassigned": [
+    {
+      "ocr_index": 8,
+      "text": "kuulee",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          570.0,
+          476.0
+        ],
+        [
+          638.0,
+          476.0
+        ],
+        [
+          638.0,
+          501.0
+        ],
+        [
+          570.0,
+          501.0
+        ]
+      ]
+    }
+  ],
+  "ocr_disagreements": []
+}

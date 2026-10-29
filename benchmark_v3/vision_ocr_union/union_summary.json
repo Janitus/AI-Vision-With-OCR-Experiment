@@ -1,0 +1,9 @@
+{
+  "cases": 10,
+  "ocr_boxes": 223,
+  "exact_matches": 200,
+  "unmatched_boxes": 23,
+  "cases_with_unmatched_boxes": 10,
+  "graph_nodes_added": 0,
+  "graph_edges_added": 0
+}

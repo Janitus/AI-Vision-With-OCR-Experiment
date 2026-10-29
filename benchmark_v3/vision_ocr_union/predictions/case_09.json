@@ -1,0 +1,799 @@
+{
+  "title": "Tulvatilanteen viestintä",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Sadehavainto",
+      "type": "rectangle",
+      "center": [
+        270,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Hätäkeskus",
+      "type": "rectangle",
+      "center": [
+        900,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Pelastuslaitos",
+      "type": "rectangle",
+      "center": [
+        1530,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Kuntalainen",
+      "type": "rectangle",
+      "center": [
+        270,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Tilannekeskus",
+      "type": "rectangle",
+      "center": [
+        900,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Vesilaitos",
+      "type": "rectangle",
+      "center": [
+        1530,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Evakuointi",
+      "type": "rectangle",
+      "center": [
+        270,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Sairaala",
+      "type": "rectangle",
+      "center": [
+        900,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "i",
+      "label": "Tiedote",
+      "type": "rectangle",
+      "center": [
+        1530,
+        880
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "d",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "yhteys",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.75
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "pyytää arviota",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "määrää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "ohjaa potilaita",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "e",
+      "relationship": "lähettää yksiköt",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "turvaa veden",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "i",
+      "target": "d",
+      "relationship": "julkaisee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "The word päivittää is on the Pelastuslaitos–Tilannekeskus diagonal alongside lähettää yksiköt, with no clear second line.",
+    "Hätäkeskus–Tilannekeskus has no visible arrowhead."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 7,
+      "text": "yhteys",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          865.0,
+          371.0
+        ],
+        [
+          935.0,
+          371.0
+        ],
+        [
+          935.0,
+          399.0
+        ],
+        [
+          865.0,
+          399.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "e",
+      "ocr_index": 12,
+      "text": "Tilannekeskus",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          828.0,
+          538.0
+        ],
+        [
+          972.0,
+          538.0
+        ],
+        [
+          972.0,
+          562.0
+        ],
+        [
+          828.0,
+          562.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 15,
+      "text": "määrää",
+      "confidence": 0.99314,
+      "polygon": [
+        [
+          545.0,
+          703.0
+        ],
+        [
+          625.0,
+          703.0
+        ],
+        [
+          625.0,
+          727.0
+        ],
+        [
+          545.0,
+          727.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "h",
+      "ocr_index": 20,
+      "text": "Sairaala",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          856.0,
+          866.0
+        ],
+        [
+          944.0,
+          866.0
+        ],
+        [
+          944.0,
+          894.0
+        ],
+        [
+          856.0,
+          894.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "a",
+      "ocr_index": 1,
+      "text": "Sadehavainto",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          201.0,
+          208.0
+        ],
+        [
+          339.0,
+          208.0
+        ],
+        [
+          339.0,
+          233.0
+        ],
+        [
+          201.0,
+          233.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 11,
+      "text": "ilmoittaa",
+      "confidence": 0.99865,
+      "polygon": [
+        [
+          542.0,
+          539.0
+        ],
+        [
+          628.0,
+          539.0
+        ],
+        [
+          628.0,
+          560.0
+        ],
+        [
+          542.0,
+          560.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "b",
+      "ocr_index": 3,
+      "text": "Hätäkeskus",
+      "confidence": 0.99991,
+      "polygon": [
+        [
+          840.0,
+          208.0
+        ],
+        [
+          959.0,
+          208.0
+        ],
+        [
+          959.0,
+          233.0
+        ],
+        [
+          840.0,
+          233.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 4,
+      "text": "välittää",
+      "confidence": 0.99912,
+      "polygon": [
+        [
+          1176.0,
+          208.0
+        ],
+        [
+          1253.0,
+          208.0
+        ],
+        [
+          1253.0,
+          233.0
+        ],
+        [
+          1176.0,
+          233.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "f",
+      "ocr_index": 14,
+      "text": "Vesilaitos",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1479.0,
+          537.0
+        ],
+        [
+          1580.0,
+          537.0
+        ],
+        [
+          1580.0,
+          564.0
+        ],
+        [
+          1479.0,
+          564.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 6,
+      "text": "varoitus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          229.0,
+          374.0
+        ],
+        [
+          311.0,
+          374.0
+        ],
+        [
+          311.0,
+          398.0
+        ],
+        [
+          229.0,
+          398.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "i",
+      "ocr_index": 22,
+      "text": "Tiedote",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1489.0,
+          866.0
+        ],
+        [
+          1569.0,
+          866.0
+        ],
+        [
+          1569.0,
+          894.0
+        ],
+        [
+          1489.0,
+          894.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "c",
+      "ocr_index": 5,
+      "text": "Pelastuslaitos",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1459.0,
+          208.0
+        ],
+        [
+          1599.0,
+          208.0
+        ],
+        [
+          1599.0,
+          233.0
+        ],
+        [
+          1459.0,
+          233.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 10,
+      "ocr_index": 17,
+      "text": "turvaa veden",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          1150.0,
+          704.0
+        ],
+        [
+          1281.0,
+          704.0
+        ],
+        [
+          1281.0,
+          728.0
+        ],
+        [
+          1150.0,
+          728.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "g",
+      "ocr_index": 18,
+      "text": "Evakuointi",
+      "confidence": 0.99972,
+      "polygon": [
+        [
+          216.0,
+          867.0
+        ],
+        [
+          322.0,
+          867.0
+        ],
+        [
+          322.0,
+          892.0
+        ],
+        [
+          216.0,
+          892.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "d",
+      "ocr_index": 10,
+      "text": "Kuntalainen",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          208.0,
+          537.0
+        ],
+        [
+          330.0,
+          539.0
+        ],
+        [
+          329.0,
+          563.0
+        ],
+        [
+          208.0,
+          561.0
+        ]
+      ],
+      "center_distance": 1.2
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 11,
+      "ocr_index": 16,
+      "text": "julkaisee",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          852.0,
+          698.0
+        ],
+        [
+          947.0,
+          701.0
+        ],
+        [
+          947.0,
+          729.0
+        ],
+        [
+          852.0,
+          727.0
+        ]
+      ],
+      "center_distance": 1.3
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 21,
+      "text": "raportoi",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1173.0,
+          864.0
+        ],
+        [
+          1256.0,
+          864.0
+        ],
+        [
+          1256.0,
+          893.0
+        ],
+        [
+          1173.0,
+          893.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 13,
+      "text": "pyytää arviota",
+      "confidence": 0.99912,
+      "polygon": [
+        [
+          1143.0,
+          538.0
+        ],
+        [
+          1284.0,
+          536.0
+        ],
+        [
+          1285.0,
+          560.0
+        ],
+        [
+          1143.0,
+          562.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 2,
+      "text": "hälyttää",
+      "confidence": 0.99968,
+      "polygon": [
+        [
+          542.0,
+          206.0
+        ],
+        [
+          626.0,
+          206.0
+        ],
+        [
+          626.0,
+          231.0
+        ],
+        [
+          542.0,
+          231.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 19,
+      "text": "ohjaa potilaita",
+      "confidence": 0.99991,
+      "polygon": [
+        [
+          514.0,
+          866.0
+        ],
+        [
+          653.0,
+          866.0
+        ],
+        [
+          653.0,
+          891.0
+        ],
+        [
+          514.0,
+          891.0
+        ]
+      ],
+      "center_distance": 2.1
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Tulvatilanteen viestintä",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          33.0,
+          32.0
+        ],
+        [
+          415.0,
+          32.0
+        ],
+        [
+          415.0,
+          69.0
+        ],
+        [
+          33.0,
+          69.0
+        ]
+      ],
+      "center_distance": 76.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 9,
+      "text": "lähettää yksiköt",
+      "confidence": 0.97983,
+      "polygon": [
+        [
+          982.0,
+          452.0
+        ],
+        [
+          1138.0,
+          452.0
+        ],
+        [
+          1138.0,
+          476.0
+        ],
+        [
+          982.0,
+          476.0
+        ]
+      ],
+      "center_distance": 174.0
+    }
+  ],
+  "ocr_unassigned": [
+    {
+      "ocr_index": 8,
+      "text": "päivittää",
+      "confidence": 0.99964,
+      "polygon": [
+        [
+          1170.0,
+          371.0
+        ],
+        [
+          1259.0,
+          369.0
+        ],
+        [
+          1260.0,
+          396.0
+        ],
+        [
+          1171.0,
+          399.0
+        ]
+      ]
+    }
+  ],
+  "ocr_disagreements": []
+}

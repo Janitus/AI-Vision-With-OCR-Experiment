@@ -14,5 +14,14 @@
     "recorded_accesses": "Ten view_image calls for the allowed images, reads of the ten allowed OCR JSON files, and writes and validation in the prediction directory.",
     "source_or_truth_access_recorded": false
   },
+  "vision_ocr_union": {
+    "kind": "deterministic_local_script",
+    "script": "benchmark_v3/build_union.py",
+    "inputs": "Saved blind_vision predictions, raw RapidOCR observations, and anonymous case-to-OCR filename mapping",
+    "source_or_truth_read_by_script": false,
+    "graph_nodes_or_edges_added": 0,
+    "ocr_observations_assigned_at_most_once": true,
+    "predictions_scored_after_union_saved": true
+  },
   "limits": "Based on thread tool logs, not filesystem enforced isolation. The two tasks had ordinary project filesystem permissions but were prompted to restrict reads."
 }

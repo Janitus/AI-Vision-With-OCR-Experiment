@@ -1,0 +1,692 @@
+{
+  "title": "Verotuksen oikaisuprosessi",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Verovelvollinen",
+      "type": "text",
+      "center": [
+        250,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Ilmoitus",
+      "type": "rectangle",
+      "center": [
+        680,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Tarkastus",
+      "type": "diamond",
+      "center": [
+        1120,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Päätös",
+      "type": "diamond",
+      "center": [
+        1550,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Lisäselvitys",
+      "type": "text",
+      "center": [
+        250,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Oikaisupyyntö",
+      "type": "rectangle",
+      "center": [
+        680,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Käsittely",
+      "type": "diamond",
+      "center": [
+        1120,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Lopputulos",
+      "type": "rectangle",
+      "center": [
+        1550,
+        830
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "ratkaisee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "liittyy",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "liitetään",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "c",
+      "relationship": "tarkistaa uudelleen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "f",
+      "relationship": "voi johtaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead.",
+    "The text palauttaa tarkastukseen lies near the Käsittely–Tarkastus vertical and Päätös–Oikaisupyyntö diagonal, but no distinct third edge is visible."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 14,
+      "text": "liitetään",
+      "confidence": 0.99686,
+      "polygon": [
+        [
+          423.0,
+          817.0
+        ],
+        [
+          507.0,
+          819.0
+        ],
+        [
+          507.0,
+          843.0
+        ],
+        [
+          423.0,
+          841.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "b",
+      "ocr_index": 3,
+      "text": "Ilmoitus",
+      "confidence": 0.99992,
+      "polygon": [
+        [
+          636.0,
+          245.0
+        ],
+        [
+          723.0,
+          248.0
+        ],
+        [
+          723.0,
+          275.0
+        ],
+        [
+          636.0,
+          273.0
+        ]
+      ],
+      "center_distance": 0.6
+    },
+    {
+      "target_kind": "node",
+      "target_key": "c",
+      "ocr_index": 5,
+      "text": "Tarkastus",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1070.0,
+          246.0
+        ],
+        [
+          1169.0,
+          250.0
+        ],
+        [
+          1169.0,
+          274.0
+        ],
+        [
+          1069.0,
+          271.0
+        ]
+      ],
+      "center_distance": 0.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 4,
+      "text": "siirtää",
+      "confidence": 0.97905,
+      "polygon": [
+        [
+          866.0,
+          249.0
+        ],
+        [
+          934.0,
+          249.0
+        ],
+        [
+          934.0,
+          273.0
+        ],
+        [
+          866.0,
+          273.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 6,
+      "text": "ratkaisee",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1288.0,
+          249.0
+        ],
+        [
+          1382.0,
+          249.0
+        ],
+        [
+          1382.0,
+          273.0
+        ],
+        [
+          1288.0,
+          273.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 9,
+      "text": "täydentää",
+      "confidence": 0.98516,
+      "polygon": [
+        [
+          202.0,
+          530.0
+        ],
+        [
+          298.0,
+          530.0
+        ],
+        [
+          298.0,
+          558.0
+        ],
+        [
+          202.0,
+          558.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 11,
+      "text": "tarkistaa uudelleen",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1029.0,
+          533.0
+        ],
+        [
+          1211.0,
+          533.0
+        ],
+        [
+          1211.0,
+          559.0
+        ],
+        [
+          1029.0,
+          559.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 18,
+      "text": "vahvistaa",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1287.0,
+          819.0
+        ],
+        [
+          1383.0,
+          819.0
+        ],
+        [
+          1383.0,
+          843.0
+        ],
+        [
+          1287.0,
+          843.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "e",
+      "ocr_index": 13,
+      "text": "Lisäselvitys",
+      "confidence": 0.99947,
+      "polygon": [
+        [
+          193.0,
+          816.0
+        ],
+        [
+          307.0,
+          818.0
+        ],
+        [
+          306.0,
+          846.0
+        ],
+        [
+          193.0,
+          844.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "f",
+      "ocr_index": 15,
+      "text": "Oikaisupyyntö",
+      "confidence": 0.99854,
+      "polygon": [
+        [
+          610.0,
+          816.0
+        ],
+        [
+          749.0,
+          818.0
+        ],
+        [
+          749.0,
+          846.0
+        ],
+        [
+          610.0,
+          844.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "a",
+      "ocr_index": 1,
+      "text": "Verovelvollinen",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          175.0,
+          249.0
+        ],
+        [
+          323.0,
+          249.0
+        ],
+        [
+          323.0,
+          273.0
+        ],
+        [
+          175.0,
+          273.0
+        ]
+      ],
+      "center_distance": 1.4
+    },
+    {
+      "target_kind": "node",
+      "target_key": "g",
+      "ocr_index": 17,
+      "text": "Käsittely",
+      "confidence": 0.9999,
+      "polygon": [
+        [
+          1075.0,
+          816.0
+        ],
+        [
+          1163.0,
+          818.0
+        ],
+        [
+          1163.0,
+          846.0
+        ],
+        [
+          1075.0,
+          844.0
+        ]
+      ],
+      "center_distance": 1.4
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 2,
+      "text": "antaa",
+      "confidence": 0.99983,
+      "polygon": [
+        [
+          436.0,
+          251.0
+        ],
+        [
+          496.0,
+          251.0
+        ],
+        [
+          496.0,
+          272.0
+        ],
+        [
+          436.0,
+          272.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 10,
+      "text": "liittyy",
+      "confidence": 0.99978,
+      "polygon": [
+        [
+          435.0,
+          526.0
+        ],
+        [
+          495.0,
+          533.0
+        ],
+        [
+          492.0,
+          562.0
+        ],
+        [
+          432.0,
+          555.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 16,
+      "text": "käynnistää",
+      "confidence": 0.99607,
+      "polygon": [
+        [
+          843.0,
+          815.0
+        ],
+        [
+          953.0,
+          817.0
+        ],
+        [
+          953.0,
+          845.0
+        ],
+        [
+          843.0,
+          843.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "h",
+      "ocr_index": 19,
+      "text": "Lopputulos",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1493.0,
+          817.0
+        ],
+        [
+          1606.0,
+          817.0
+        ],
+        [
+          1606.0,
+          847.0
+        ],
+        [
+          1493.0,
+          847.0
+        ]
+      ],
+      "center_distance": 2.1
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Verotuksen oikaisuprosessi",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          32.0,
+          29.0
+        ],
+        [
+          493.0,
+          29.0
+        ],
+        [
+          493.0,
+          73.0
+        ],
+        [
+          32.0,
+          73.0
+        ]
+      ],
+      "center_distance": 37.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 8,
+      "text": "voi johtaa",
+      "confidence": 0.99414,
+      "polygon": [
+        [
+          1174.0,
+          458.0
+        ],
+        [
+          1272.0,
+          460.0
+        ],
+        [
+          1271.0,
+          489.0
+        ],
+        [
+          1173.0,
+          486.0
+        ]
+      ],
+      "center_distance": 129.2
+    }
+  ],
+  "ocr_unassigned": [
+    {
+      "ocr_index": 7,
+      "text": "Päätos",
+      "confidence": 0.91896,
+      "polygon": [
+        [
+          1515.0,
+          246.0
+        ],
+        [
+          1585.0,
+          249.0
+        ],
+        [
+          1584.0,
+          274.0
+        ],
+        [
+          1514.0,
+          272.0
+        ]
+      ]
+    },
+    {
+      "ocr_index": 12,
+      "text": "palauttaa tarkastukseen",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1005.0,
+          603.0
+        ],
+        [
+          1234.0,
+          603.0
+        ],
+        [
+          1234.0,
+          629.0
+        ],
+        [
+          1005.0,
+          629.0
+        ]
+      ]
+    }
+  ],
+  "ocr_disagreements": []
+}

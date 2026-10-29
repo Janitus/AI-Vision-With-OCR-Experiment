@@ -1,0 +1,728 @@
+{
+  "title": "Päivystyksen hoitoverkko",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Potilaan yhteydenotto",
+      "type": "rounded_rectangle",
+      "center": [
+        250,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Hoitaja",
+      "type": "rounded_rectangle",
+      "center": [
+        680,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Päivystävä lääkäri",
+      "type": "rounded_rectangle",
+      "center": [
+        1120,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Erikoissairaanhoito",
+      "type": "rounded_rectangle",
+      "center": [
+        1550,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Puhelinneuvonta",
+      "type": "rounded_rectangle",
+      "center": [
+        250,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Laboratorio",
+      "type": "rounded_rectangle",
+      "center": [
+        680,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Kuvantaminen",
+      "type": "rounded_rectangle",
+      "center": [
+        1120,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Jatkohoito",
+      "type": "rounded_rectangle",
+      "center": [
+        1550,
+        830
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "kirjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "arvioi hoidon tarpeen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "f",
+      "relationship": "tilaa kokeet",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "pyytää kuvauksen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "h",
+      "relationship": "suunnittelee",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.75
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "varaa ajan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "välittää näytteet",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "toimittaa kuvat",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "c",
+      "relationship": "palauttaa tulokset",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Erikoissairaanhoito–Jatkohoito has no visible arrowhead."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "node",
+      "target_key": "f",
+      "ocr_index": 18,
+      "text": "Laboratorio",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          621.0,
+          816.0
+        ],
+        [
+          739.0,
+          818.0
+        ],
+        [
+          739.0,
+          845.0
+        ],
+        [
+          621.0,
+          843.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "e",
+      "ocr_index": 16,
+      "text": "Puhelinneuvonta",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          167.0,
+          816.0
+        ],
+        [
+          334.0,
+          818.0
+        ],
+        [
+          333.0,
+          845.0
+        ],
+        [
+          167.0,
+          843.0
+        ]
+      ],
+      "center_distance": 0.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 3,
+      "text": "kirjaa",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          436.0,
+          245.0
+        ],
+        [
+          495.0,
+          245.0
+        ],
+        [
+          495.0,
+          274.0
+        ],
+        [
+          436.0,
+          274.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 6,
+      "text": "lähettää",
+      "confidence": 0.99907,
+      "polygon": [
+        [
+          1293.0,
+          247.0
+        ],
+        [
+          1376.0,
+          247.0
+        ],
+        [
+          1376.0,
+          274.0
+        ],
+        [
+          1293.0,
+          274.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "h",
+      "ocr_index": 20,
+      "text": "Jatkohoito",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1496.0,
+          817.0
+        ],
+        [
+          1603.0,
+          817.0
+        ],
+        [
+          1603.0,
+          844.0
+        ],
+        [
+          1496.0,
+          844.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 12,
+      "text": "suunnittelee",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1488.0,
+          532.0
+        ],
+        [
+          1610.0,
+          530.0
+        ],
+        [
+          1610.0,
+          557.0
+        ],
+        [
+          1489.0,
+          559.0
+        ]
+      ],
+      "center_distance": 0.9
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 8,
+      "text": "pyytää kuvauksen",
+      "confidence": 0.99978,
+      "polygon": [
+        [
+          1105.0,
+          460.0
+        ],
+        [
+          1132.0,
+          459.0
+        ],
+        [
+          1137.0,
+          630.0
+        ],
+        [
+          1110.0,
+          631.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 10,
+      "text": "tilaa kokeet",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          624.0,
+          532.0
+        ],
+        [
+          736.0,
+          532.0
+        ],
+        [
+          736.0,
+          556.0
+        ],
+        [
+          624.0,
+          556.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 17,
+      "text": "varaa ajan",
+      "confidence": 0.99954,
+      "polygon": [
+        [
+          412.0,
+          816.0
+        ],
+        [
+          516.0,
+          816.0
+        ],
+        [
+          516.0,
+          844.0
+        ],
+        [
+          412.0,
+          844.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "g",
+      "ocr_index": 19,
+      "text": "Kuvantaminen",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1049.0,
+          819.0
+        ],
+        [
+          1191.0,
+          819.0
+        ],
+        [
+          1191.0,
+          843.0
+        ],
+        [
+          1049.0,
+          843.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "d",
+      "ocr_index": 7,
+      "text": "Erikoissairaanhoito",
+      "confidence": 0.99991,
+      "polygon": [
+        [
+          1457.0,
+          248.0
+        ],
+        [
+          1642.0,
+          248.0
+        ],
+        [
+          1642.0,
+          274.0
+        ],
+        [
+          1457.0,
+          274.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "a",
+      "ocr_index": 2,
+      "text": "Potilaan yhteydenotto",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          142.0,
+          247.0
+        ],
+        [
+          359.0,
+          249.0
+        ],
+        [
+          358.0,
+          276.0
+        ],
+        [
+          142.0,
+          274.0
+        ]
+      ],
+      "center_distance": 1.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "c",
+      "ocr_index": 5,
+      "text": "Päivystävä lääkäri",
+      "confidence": 0.99974,
+      "polygon": [
+        [
+          1035.0,
+          248.0
+        ],
+        [
+          1207.0,
+          248.0
+        ],
+        [
+          1207.0,
+          275.0
+        ],
+        [
+          1035.0,
+          275.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 9,
+      "text": "ohjaa",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          221.0,
+          527.0
+        ],
+        [
+          281.0,
+          527.0
+        ],
+        [
+          281.0,
+          560.0
+        ],
+        [
+          221.0,
+          560.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "node",
+      "target_key": "b",
+      "ocr_index": 4,
+      "text": "Hoitaja",
+      "confidence": 0.99948,
+      "polygon": [
+        [
+          643.0,
+          248.0
+        ],
+        [
+          717.0,
+          248.0
+        ],
+        [
+          717.0,
+          277.0
+        ],
+        [
+          643.0,
+          277.0
+        ]
+      ],
+      "center_distance": 2.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 10,
+      "ocr_index": 11,
+      "text": "palauttaa tulokset",
+      "confidence": 0.9978,
+      "polygon": [
+        [
+          814.0,
+          530.0
+        ],
+        [
+          987.0,
+          528.0
+        ],
+        [
+          988.0,
+          555.0
+        ],
+        [
+          814.0,
+          557.0
+        ]
+      ],
+      "center_distance": 2.6
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Päivystyksen hoitoverkko",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          34.0,
+          31.0
+        ],
+        [
+          459.0,
+          31.0
+        ],
+        [
+          459.0,
+          72.0
+        ],
+        [
+          34.0,
+          72.0
+        ]
+      ],
+      "center_distance": 53.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 14,
+      "text": "toimittaa kuvat",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1263.0,
+          714.0
+        ],
+        [
+          1407.0,
+          714.0
+        ],
+        [
+          1407.0,
+          737.0
+        ],
+        [
+          1263.0,
+          737.0
+        ]
+      ],
+      "center_distance": 104.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 13,
+      "text": "välittää näytteet",
+      "confidence": 0.99971,
+      "polygon": [
+        [
+          821.0,
+          709.0
+        ],
+        [
+          978.0,
+          711.0
+        ],
+        [
+          978.0,
+          738.0
+        ],
+        [
+          821.0,
+          736.0
+        ]
+      ],
+      "center_distance": 106.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 1,
+      "text": "arvioi hoidon tarpeen",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          798.0,
+          137.0
+        ],
+        [
+          1002.0,
+          140.0
+        ],
+        [
+          1001.0,
+          167.0
+        ],
+        [
+          797.0,
+          165.0
+        ]
+      ],
+      "center_distance": 107.8
+    }
+  ],
+  "ocr_unassigned": [
+    {
+      "ocr_index": 15,
+      "text": "1",
+      "confidence": 0.65869,
+      "polygon": [
+        [
+          711.0,
+          777.0
+        ],
+        [
+          726.0,
+          757.0
+        ],
+        [
+          737.0,
+          765.0
+        ],
+        [
+          722.0,
+          785.0
+        ]
+      ]
+    }
+  ],
+  "ocr_disagreements": []
+}

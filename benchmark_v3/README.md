@@ -18,15 +18,16 @@ The v3 OCR runners reuse the locally cached models in `benchmark_v2/models`. Rap
 
 ## Blind vision protocol
 
-`python benchmark_v3/prepare_blind_inputs.py` recreates anonymous copies of source images and RapidOCR observations in ignored input folders. Two fresh Codex tasks inspect either just those images or the images with OCR. They must save all ten predictions under `blind_vision/predictions` or `blind_fusion/predictions` before scoring. This is procedural blinding with audited tool use, not filesystem isolation. The saved results can be rescored with:
+`python benchmark_v3/prepare_blind_inputs.py` recreates anonymous copies of source images and RapidOCR observations in ignored input folders. A fresh Codex task saved image-only graph predictions under `blind_vision/predictions` before scoring. The reproducible union then attaches exact-text RapidOCR detections to those predictions as evidence, assigning each OCR box to at most one graph element and retaining unmatched boxes separately. It does not add nodes or edges from OCR alone. A historical separate Codex joint-reading run remains in `blind_fusion` but is not the union row in the current matrix. This is procedural blinding with audited tool use, not filesystem isolation. The saved results can be rescored with:
 
-The blind fusion task used the raw **RapidOCR 3.10 PP-OCRv6 medium Finnish** observations. Codex compared OCR with the image and wrote the graph; no automated fusion algorithm was run. PaddleOCR PP-OCRv5 Finnish and the old RapidOCR baseline were OCR-only comparison rows.
+The union uses raw **RapidOCR 3.10 PP-OCRv6 medium Finnish** observations. PaddleOCR PP-OCRv5 Finnish and the old RapidOCR baseline are OCR-only comparison rows, scored on the same text criteria.
 
 ```powershell
 python benchmark_v3/evaluate_blind.py blind_vision
-python benchmark_v3/evaluate_blind.py blind_fusion
+python benchmark_v3/build_union.py
+python benchmark_v3/evaluate_blind.py vision_ocr_union
 python benchmark_v3/summarize.py
 python benchmark_v3/export_viewer.py
 ```
 
-The [readable approach matrix](matrix_viewer.html), [full CSV](approach_matrix.csv), [validation report](REPORT.md), [item-level ledger](item_error_ledger.json), and [side-by-side viewer](results_viewer.html) are tracked. In the matrix, `—` means a modality cannot produce that measurement, such as an arrow direction from OCR text alone. Per-type error rates use expected ground-truth elements as denominator and count missing elements as errors. The headline total counts missing, wrong, and extra outputs per 206 fixed source items; extra predictions never increase that denominator. Full-edge correctness requires matching endpoints, literal label, arrow direction, and dashed/solid style.
+The [readable approach matrix](matrix_viewer.html), [full CSV](approach_matrix.csv), [validation report](REPORT.md), [item-level ledger](item_error_ledger.json), and [side-by-side viewer](results_viewer.html) are tracked. OCR engines are compared on text extraction, then vision and the deduplicated union on graph extraction. In the matrix, `—` means a modality cannot produce that measurement, such as an arrow direction from OCR text alone. Per-type error rates use expected ground-truth elements as denominator and count missing elements as errors. The headline total counts missing, wrong, and extra outputs per 206 fixed source items; extra predictions never increase that denominator. An unresolved arrow is recorded separately from a visibly wrong arrow but still prevents a fully correct edge. Full-edge correctness requires matching endpoints, literal label, arrow direction, and dashed/solid style.

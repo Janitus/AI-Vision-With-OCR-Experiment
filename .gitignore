@@ -24,6 +24,7 @@ blind_fusion/ocr/
 benchmark_v3/blind_vision/images/
 benchmark_v3/blind_fusion/images/
 benchmark_v3/blind_fusion/ocr/
+benchmark_v3/vision_ocr_union/rendered/
 
 # Local secrets and editor files
 .env

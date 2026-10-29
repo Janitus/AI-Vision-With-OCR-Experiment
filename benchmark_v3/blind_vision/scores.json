@@ -14,6 +14,8 @@
     "correct_relationships": 103,
     "correct_strokes": 105,
     "fully_correct_edges": 101,
+    "unresolved_arrows": 0,
+    "wrong_arrows": 2,
     "end_to_end_edges": 101,
     "title_exact": 10
   },
@@ -24,6 +26,8 @@
     "node_shape_error_rate": 0.1205,
     "topology_error_rate": 0.0708,
     "arrow_error_rate": 0.0885,
+    "wrong_arrow_rate": 0.0177,
+    "unresolved_arrow_rate": 0.0,
     "relationship_error_rate": 0.0885,
     "stroke_error_rate": 0.0708,
     "full_edge_error_rate": 0.1062,
@@ -45,6 +49,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -80,6 +86,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -133,6 +141,8 @@
         "correct_relationships": 8,
         "correct_strokes": 9,
         "fully_correct_edges": 8,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 8,
         "title_exact": 1
       },
@@ -202,6 +212,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -237,6 +249,8 @@
         "correct_relationships": 12,
         "correct_strokes": 12,
         "fully_correct_edges": 12,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 12,
         "title_exact": 1
       },
@@ -272,6 +286,8 @@
         "correct_relationships": 10,
         "correct_strokes": 10,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -335,6 +351,8 @@
         "correct_relationships": 8,
         "correct_strokes": 8,
         "fully_correct_edges": 7,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 1,
         "end_to_end_edges": 7,
         "title_exact": 1
       },
@@ -460,6 +478,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -496,6 +516,8 @@
         "correct_relationships": 11,
         "correct_strokes": 12,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -548,6 +570,8 @@
         "correct_relationships": 10,
         "correct_strokes": 10,
         "fully_correct_edges": 9,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 1,
         "end_to_end_edges": 9,
         "title_exact": 1
       },
@@ -594,6 +618,7 @@
       ]
     }
   },
+  "perfect_figures": 4,
   "node_precision": 1.0,
   "node_recall": 1.0,
   "edge_precision": 0.9633,

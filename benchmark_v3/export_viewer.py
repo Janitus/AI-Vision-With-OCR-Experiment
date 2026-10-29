@@ -113,19 +113,28 @@ def main():
     entries=[]
     for case,slug in mapping.items():
         item={"case":case,"slug":slug,"title":load(ROOT/f"{slug}.source.json")["title"],"source":f"{slug}.png"}
-        for approach in ("blind_vision","blind_fusion"):
+        for approach in ("blind_vision","vision_ocr_union"):
             graph=load(ROOT/approach/"predictions"/f"{case}.json")
-            out=ROOT/approach/"rendered";out.mkdir(exist_ok=True)
-            render(graph,out/f"{case}.png")
-            (out/f"{case}.mmd").write_text(mermaid(graph),encoding="utf-8")
-            item[approach]=f"{approach}/rendered/{case}.png"
+            if approach=="blind_vision":
+                out=ROOT/approach/"rendered";out.mkdir(exist_ok=True)
+                render(graph,out/f"{case}.png")
+                (out/f"{case}.mmd").write_text(mermaid(graph),encoding="utf-8")
+            # The union intentionally leaves graph nodes and edges unchanged.
+            item[approach]=f"blind_vision/rendered/{case}.png"
             item[approach+"_uncertainties"]=graph.get("uncertainties",[])
+            if approach=="vision_ocr_union":
+                item["ocr_evidence_count"]=len(graph.get("ocr_evidence",[]))
+                item["ocr_unassigned_count"]=len(graph.get("ocr_unassigned",[]))
+                item["ocr_evidence_labels"]=[f"{e['target_kind']} {e['target_key']}: {e['text']}"
+                                              for e in graph.get("ocr_evidence",[])]
+                item["ocr_unassigned_labels"]=[str(e.get("text") or "")
+                                                for e in graph.get("ocr_unassigned",[])]
         entries.append(item)
     data=json.dumps(entries,ensure_ascii=True).replace("</","<\\/")
     page='''<!doctype html><html lang="en"><meta charset="utf-8"><title>Blind graph benchmark v3</title>
 <style>body{font:16px system-ui;background:#f5f7fa;color:#172d3c;margin:20px}main{max-width:1900px;margin:auto}select{font:inherit;padding:8px}section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}figure{margin:0;background:white;border:1px solid #b9c5cd;padding:7px}img{width:100%;height:auto;display:block}figcaption{font-weight:700;padding:5px}pre{white-space:pre-wrap}a{color:#145889}</style>
-<main><h1>Finnish graph extraction: ten blind cases</h1><p>Source image, blind Codex vision, and blind Codex vision with raw RapidOCR. Select a case to inspect literal text and connections. Prediction renderings use a neutral style; orange lines marked [?] mean the prediction gave an unknown direction. Consult the saved JSON for coordinates, confidence, and uncertainties.</p><label>Case <select id="choose"></select></label><section><figure><figcaption>Source</figcaption><img id="source"></figure><figure><figcaption>Vision only</figcaption><img id="vision"></figure><figure><figcaption>Vision + OCR</figcaption><img id="fusion"></figure></section><p id="issues"></p><p><a href="REPORT.md">Validation report</a> · <a href="matrix_viewer.html">Readable approach matrix</a> · <a href="approach_matrix.csv" download>Full CSV</a> · <a href="item_error_ledger.json">Item-level errors</a></p></main>
-<script>const cases=__DATA__,sel=document.querySelector('#choose');cases.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${i+1}. ${e.title}`;sel.append(o)});function show(){let e=cases[+sel.value];document.querySelector('#source').src=e.source;document.querySelector('#vision').src=e.blind_vision;document.querySelector('#fusion').src=e.blind_fusion;document.querySelector('#issues').textContent=`Vision uncertainties: ${e.blind_vision_uncertainties.length}; fusion uncertainties: ${e.blind_fusion_uncertainties.length}.`;}sel.onchange=show;show();</script></html>'''.replace("__DATA__",data)
+<main><h1>Finnish graph extraction: ten blind cases</h1><p>Source image, blind Codex vision, and a deterministic union of the saved vision graph with RapidOCR text evidence. The union graph is deliberately the same as vision-only; OCR evidence and unresolved boxes are listed below. Prediction renderings use a neutral style; orange lines marked [?] mean unknown direction.</p><label>Case <select id="choose"></select></label><section><figure><figcaption>Source</figcaption><img id="source"></figure><figure><figcaption>Vision only</figcaption><img id="vision"></figure><figure><figcaption>Vision + OCR evidence union (same graph)</figcaption><img id="union"></figure></section><p id="issues"></p><details><summary>OCR evidence for this case</summary><h3>Matched text boxes</h3><ul id="ocrmatched"></ul><h3>Unassigned text boxes</h3><ul id="ocrunassigned"></ul></details><p><a href="REPORT.md">Validation report</a> · <a href="matrix_viewer.html">Readable approach matrix</a> · <a href="approach_matrix.csv" download>Full CSV</a> · <a href="item_error_ledger.json">Item-level errors</a></p></main>
+<script>const cases=__DATA__,sel=document.querySelector('#choose');cases.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${i+1}. ${e.title}`;sel.append(o)});function list(id,items){let root=document.getElementById(id);root.replaceChildren();items.forEach(v=>{let li=document.createElement('li');li.textContent=v;root.append(li)})}function show(){let e=cases[+sel.value];document.querySelector('#source').src=e.source;document.querySelector('#vision').src=e.blind_vision;document.querySelector('#union').src=e.vision_ocr_union;document.querySelector('#issues').textContent=`Vision uncertainties: ${e.blind_vision_uncertainties.length}; OCR boxes assigned as evidence: ${e.ocr_evidence_count}; OCR boxes left unassigned: ${e.ocr_unassigned_count}.`;list('ocrmatched',e.ocr_evidence_labels);list('ocrunassigned',e.ocr_unassigned_labels)}sel.onchange=show;show();</script></html>'''.replace("__DATA__",data)
     (ROOT/"results_viewer.html").write_text(page,encoding="utf-8")
     print("Exported",len(entries),"side-by-side cases")
 

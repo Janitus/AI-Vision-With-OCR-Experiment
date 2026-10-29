@@ -58,6 +58,7 @@ def compare(slug,pred):
 
     actual_edges=pred.get("edges",[]);expected_edges=truth["edges"]
     used_edges=set();topology=direction=relation=stroke=full=end_to_end=0
+    unresolved_arrows=wrong_arrows=0
     for pi,p in enumerate(actual_edges):
         a=mapping.get(p.get("source"));b=mapping.get(p.get("target"))
         if a is None or b is None:
@@ -77,7 +78,17 @@ def compare(slug,pred):
         direction+=good_direction;relation+=good_relation;stroke+=good_stroke
         full+=good_direction and good_relation and good_stroke
         end_to_end+=good_direction and good_relation and good_stroke and clean(actual_nodes[next(i for i,n in enumerate(actual_nodes) if n.get("id")==p.get("source"))].get("label"))==clean(expected_nodes[a]["label"]) and clean(actual_nodes[next(i for i,n in enumerate(actual_nodes) if n.get("id")==p.get("target"))].get("label"))==clean(expected_nodes[b]["label"])
-        if not good_direction:errors.append({"kind":"wrong_arrow","edge":ti,"expected":[t["source"],t["target"],t["direction"]],"observed":[a,b,p.get("direction")]})
+        if not good_direction:
+            if p.get("direction")=="unknown":
+                unresolved_arrows+=1
+                errors.append({"kind":"unresolved_arrow","edge":ti,
+                               "expected":[t["source"],t["target"],t["direction"]],
+                               "observed":[a,b,"unknown"]})
+            else:
+                wrong_arrows+=1
+                errors.append({"kind":"wrong_arrow","edge":ti,
+                               "expected":[t["source"],t["target"],t["direction"]],
+                               "observed":[a,b,p.get("direction")]})
         if not good_relation:errors.append({"kind":"wrong_relationship","edge":ti,"expected":t["label"],"observed":p.get("relationship")})
         if not good_stroke:errors.append({"kind":"wrong_stroke","edge":ti,"expected_dashed":t.get("dashed",False),"observed_dashed":p.get("dashed",False)})
     for ti,t in enumerate(expected_edges):
@@ -87,6 +98,7 @@ def compare(slug,pred):
             "fully_correct_nodes":full_node,"truth_edges":len(expected_edges),
             "predicted_edges":len(actual_edges),"matched_topology":topology,"correct_arrows":direction,
             "correct_relationships":relation,"correct_strokes":stroke,"fully_correct_edges":full,
+            "unresolved_arrows":unresolved_arrows,"wrong_arrows":wrong_arrows,
             "end_to_end_edges":end_to_end,"title_exact":int(title_exact)}
     metrics={"node_detection_recall":fraction(len(matches),len(expected_nodes)),
              "node_detection_precision":fraction(len(matches),len(actual_nodes)),
@@ -116,12 +128,15 @@ def evaluate(approach):
         "node_shape_error_rate":fraction(totals["truth_nodes"]-totals["exact_node_shapes"],totals["truth_nodes"]),
         "topology_error_rate":fraction(totals["truth_edges"]-totals["matched_topology"],totals["truth_edges"]),
         "arrow_error_rate":fraction(totals["truth_edges"]-totals["correct_arrows"],totals["truth_edges"]),
+        "wrong_arrow_rate":fraction(totals["wrong_arrows"],totals["truth_edges"]),
+        "unresolved_arrow_rate":fraction(totals["unresolved_arrows"],totals["truth_edges"]),
         "relationship_error_rate":fraction(totals["truth_edges"]-totals["correct_relationships"],totals["truth_edges"]),
         "stroke_error_rate":fraction(totals["truth_edges"]-totals["correct_strokes"],totals["truth_edges"]),
         "full_edge_error_rate":fraction(totals["truth_edges"]-totals["fully_correct_edges"],totals["truth_edges"]),
         "end_to_end_edge_error_rate":fraction(totals["truth_edges"]-totals["end_to_end_edges"],totals["truth_edges"]),
     }
     output={"approach":approach,"counts":totals,"error_rates":rates,"cases":results,
+            "perfect_figures":sum(not result["errors"] for result in results.values()),
             "node_precision":fraction(totals["matched_nodes"],totals["predicted_nodes"]),
             "node_recall":fraction(totals["matched_nodes"],totals["truth_nodes"]),
             "edge_precision":fraction(totals["matched_topology"],totals["predicted_edges"]),

@@ -14,6 +14,8 @@
     "correct_relationships": 105,
     "correct_strokes": 105,
     "fully_correct_edges": 94,
+    "unresolved_arrows": 8,
+    "wrong_arrows": 2,
     "end_to_end_edges": 94,
     "title_exact": 10
   },
@@ -24,6 +26,8 @@
     "node_shape_error_rate": 0.1205,
     "topology_error_rate": 0.0531,
     "arrow_error_rate": 0.1416,
+    "wrong_arrow_rate": 0.0177,
+    "unresolved_arrow_rate": 0.0708,
     "relationship_error_rate": 0.0708,
     "stroke_error_rate": 0.0708,
     "full_edge_error_rate": 0.1681,
@@ -45,6 +49,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -62,7 +68,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 10,
           "expected": [
             3,
@@ -95,6 +101,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -148,6 +156,8 @@
         "correct_relationships": 8,
         "correct_strokes": 9,
         "fully_correct_edges": 7,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 7,
         "title_exact": 1
       },
@@ -165,7 +175,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 10,
           "expected": [
             1,
@@ -231,6 +241,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -248,7 +260,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 10,
           "expected": [
             0,
@@ -281,6 +293,8 @@
         "correct_relationships": 12,
         "correct_strokes": 12,
         "fully_correct_edges": 11,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 11,
         "title_exact": 1
       },
@@ -298,7 +312,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 11,
           "expected": [
             6,
@@ -332,6 +346,8 @@
         "correct_relationships": 10,
         "correct_strokes": 10,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -398,6 +414,8 @@
         "correct_relationships": 9,
         "correct_strokes": 8,
         "fully_correct_edges": 7,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 7,
         "title_exact": 1
       },
@@ -477,7 +495,7 @@
           "observed_dashed": false
         },
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 9,
           "expected": [
             4,
@@ -520,6 +538,8 @@
         "correct_relationships": 11,
         "correct_strokes": 11,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -537,7 +557,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 10,
           "expected": [
             3,
@@ -571,6 +591,8 @@
         "correct_relationships": 11,
         "correct_strokes": 12,
         "fully_correct_edges": 10,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 0,
         "end_to_end_edges": 10,
         "title_exact": 1
       },
@@ -588,7 +610,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 12,
           "expected": [
             1,
@@ -646,6 +668,8 @@
         "correct_relationships": 11,
         "correct_strokes": 10,
         "fully_correct_edges": 8,
+        "unresolved_arrows": 1,
+        "wrong_arrows": 2,
         "end_to_end_edges": 8,
         "title_exact": 1
       },
@@ -663,7 +687,7 @@
       },
       "errors": [
         {
-          "kind": "wrong_arrow",
+          "kind": "unresolved_arrow",
           "edge": 10,
           "expected": [
             1,
@@ -717,6 +741,7 @@
       ]
     }
   },
+  "perfect_figures": 0,
   "node_precision": 1.0,
   "node_recall": 1.0,
   "edge_precision": 0.9554,

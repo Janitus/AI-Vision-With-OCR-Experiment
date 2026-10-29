@@ -84,147 +84,731 @@
     "detail": "The text palauttaa tarkastukseen lies near the Käsittely–Tarkastus vertical and Päätös–Oikaisupyyntö diagonal, but no distinct third edge is visible."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_01",
     "kind": "self_reported_uncertainty",
-    "detail": "Erikoissairaanhoito–Jatkohoito has no visible arrowhead; direction unknown."
+    "detail": "Erikoissairaanhoito–Jatkohoito has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_01",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR reports a spurious '1' near the dashed Laboratorio–Päivystävä lääkäri line; no such label is visible."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 15,
+      "text": "1",
+      "confidence": 0.65869,
+      "polygon": [
+        [
+          711.0,
+          777.0
+        ],
+        [
+          726.0,
+          757.0
+        ],
+        [
+          737.0,
+          765.0
+        ],
+        [
+          722.0,
+          785.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_02",
     "kind": "self_reported_uncertainty",
-    "detail": "The diagonal labels 'laatii' and 'kuulee' sit in gaps along crossing routes; their edge assignment is less certain than the visible endpoints."
+    "detail": "The long diagonal labelled kuule is partly obscured by other lines; its source is uncertain."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
+    "case": "case_02",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 8,
+      "text": "kuulee",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          570.0,
+          476.0
+        ],
+        [
+          638.0,
+          476.0
+        ],
+        [
+          638.0,
+          501.0
+        ],
+        [
+          570.0,
+          501.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
     "case": "case_03",
     "kind": "self_reported_uncertainty",
-    "detail": "The word 'vahvistaa' appears near the Laatutarkistus–Malliajo area without a distinct visible line; no separate edge is inferred."
+    "detail": "A vertical mittaa near the upper diagonals is not clearly attached to the Sademittari edge."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_03",
     "kind": "self_reported_uncertainty",
-    "detail": "Tuulianturi–Raakahavainnot has no visible arrowhead."
+    "detail": "The word vahvistaa appears near the Laatutarkistus–Malliajo edge without a clearly separate line."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
+    "case": "case_03",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 11,
+      "text": "vahvistaa",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          1136.0,
+          646.0
+        ],
+        [
+          1243.0,
+          646.0
+        ],
+        [
+          1243.0,
+          673.0
+        ],
+        [
+          1136.0,
+          673.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
     "case": "case_04",
     "kind": "self_reported_uncertainty",
-    "detail": "Voimala–Kuluttaja horizontal varasyöttö line has no visible arrowhead."
+    "detail": "Voimala–Kuluttaja has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_04",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR produces several nonsensical strings ('wwwwwwww', 'SNARAAL', '1000s', 'MAGANAEX', 'SAPUNAKX') in empty or line regions; none are visible graph labels."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 4,
+      "text": "wwwwwwww",
+      "confidence": 0.8351,
+      "polygon": [
+        [
+          571.0,
+          236.0
+        ],
+        [
+          622.0,
+          224.0
+        ],
+        [
+          625.0,
+          234.0
+        ],
+        [
+          573.0,
+          247.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
+    "case": "case_04",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 5,
+      "text": "SNARAAL",
+      "confidence": 0.32793,
+      "polygon": [
+        [
+          960.0,
+          235.0
+        ],
+        [
+          973.0,
+          257.0
+        ],
+        [
+          963.0,
+          262.0
+        ],
+        [
+          951.0,
+          240.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_04",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 8,
+      "text": "1000s",
+      "confidence": 0.30926,
+      "polygon": [
+        [
+          1003.0,
+          296.0
+        ],
+        [
+          1017.0,
+          319.0
+        ],
+        [
+          1007.0,
+          326.0
+        ],
+        [
+          993.0,
+          303.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_04",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 10,
+      "text": "MAGANAEX",
+      "confidence": 0.37804,
+      "polygon": [
+        [
+          1067.0,
+          390.0
+        ],
+        [
+          1081.0,
+          413.0
+        ],
+        [
+          1072.0,
+          420.0
+        ],
+        [
+          1057.0,
+          397.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_04",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 17,
+      "text": "SAPUNAKX",
+      "confidence": 0.33983,
+      "polygon": [
+        [
+          1218.0,
+          610.0
+        ],
+        [
+          1234.0,
+          632.0
+        ],
+        [
+          1224.0,
+          639.0
+        ],
+        [
+          1208.0,
+          617.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
     "case": "case_05",
     "kind": "self_reported_uncertainty",
-    "detail": "Juna–Häiriöviesti diagonal line has no visible arrowhead."
+    "detail": "Juna–Häiriöviesti diagonal has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_05",
-    "kind": "self_reported_uncertainty",
-    "detail": "The 'vahvistaa vaihdon' text lies above the lower Liikenteenohjaus–Vaihtoasema edge, near the dashed diagonal; edge-label assignment is uncertain."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 8,
+      "text": "z000de",
+      "confidence": 0.41504,
+      "polygon": [
+        [
+          891.0,
+          403.0
+        ],
+        [
+          914.0,
+          389.0
+        ],
+        [
+          920.0,
+          398.0
+        ],
+        [
+          897.0,
+          413.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
-    "case": "case_05",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR reports spurious 'z000de' near an edge; no matching visible text."
-  },
-  {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_06",
-    "kind": "self_reported_uncertainty",
-    "detail": "Seuranta–Rekisteri line has no visible arrowhead."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 6,
+      "text": "一",
+      "confidence": 0.97434,
+      "polygon": [
+        [
+          999.0,
+          317.0
+        ],
+        [
+          1015.0,
+          333.0
+        ],
+        [
+          1007.0,
+          340.0
+        ],
+        [
+          992.0,
+          325.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
-    "case": "case_06",
-    "kind": "self_reported_uncertainty",
-    "detail": "'kutsuu uudelleen' sits near the dashed Muistutus–Asiakas line where several diagonals cross."
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_06",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR reports an isolated '一' near an edge; no such graph label is visible."
-  },
-  {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_07",
     "kind": "self_reported_uncertainty",
-    "detail": "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu lines have no visible arrowhead."
+    "detail": "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu have no visible arrowheads."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_07",
     "kind": "self_reported_uncertainty",
-    "detail": "The horizontal Analyysi–Vertaisarvio line shows arrowheads at both ends; the nearby 'palauttaa korjattavaksi' label is offset below the line, so its assignment to the reverse direction is uncertain."
+    "detail": "The text palauttaa korjattavaksi appears near the Vertaisarvio–Julkaisu diagonal; no distinct edge is visible."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
+    "case": "case_07",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 15,
+      "text": "palauttaa korjattavaksi",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          1091.0,
+          766.0
+        ],
+        [
+          1289.0,
+          766.0
+        ],
+        [
+          1289.0,
+          793.0
+        ],
+        [
+          1091.0,
+          793.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
     "case": "case_08",
     "kind": "self_reported_uncertainty",
-    "detail": "The 'varatieto' diagonal from Keskuskirjasto to Palautus has no visible arrowhead."
+    "detail": "Keskuskirjasto–Palautus diagonal labelled varatieto has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_08",
     "kind": "self_reported_uncertainty",
-    "detail": "The dashed 'noutoilmoitus' line has an arrow at Noutopiste, even though that direction is semantically unusual; the visible arrow is followed."
+    "detail": "The dashed noutoilmoitus appears to run from Lukija toward Noutopiste across other lines."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_08",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR returns multiple nonsensical strings in blank areas or on slanted lines; they are not visible labels."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 6,
+      "text": "unatunun",
+      "confidence": 0.37813,
+      "polygon": [
+        [
+          620.0,
+          313.0
+        ],
+        [
+          645.0,
+          318.0
+        ],
+        [
+          642.0,
+          329.0
+        ],
+        [
+          618.0,
+          324.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 7,
+      "text": "ratmn",
+      "confidence": 0.31691,
+      "polygon": [
+        [
+          839.0,
+          367.0
+        ],
+        [
+          866.0,
+          374.0
+        ],
+        [
+          863.0,
+          384.0
+        ],
+        [
+          837.0,
+          377.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 10,
+      "text": "atstoe",
+      "confidence": 0.53016,
+      "polygon": [
+        [
+          1099.0,
+          431.0
+        ],
+        [
+          1123.0,
+          439.0
+        ],
+        [
+          1120.0,
+          449.0
+        ],
+        [
+          1096.0,
+          441.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 11,
+      "text": "atoose",
+      "confidence": 0.57696,
+      "polygon": [
+        [
+          1135.0,
+          440.0
+        ],
+        [
+          1160.0,
+          448.0
+        ],
+        [
+          1157.0,
+          458.0
+        ],
+        [
+          1132.0,
+          450.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 12,
+      "text": "atmnot",
+      "confidence": 0.44805,
+      "polygon": [
+        [
+          1172.0,
+          449.0
+        ],
+        [
+          1198.0,
+          457.0
+        ],
+        [
+          1194.0,
+          467.0
+        ],
+        [
+          1169.0,
+          459.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 13,
+      "text": "wonn",
+      "confidence": 0.38016,
+      "polygon": [
+        [
+          1247.0,
+          468.0
+        ],
+        [
+          1272.0,
+          474.0
+        ],
+        [
+          1269.0,
+          485.0
+        ],
+        [
+          1245.0,
+          480.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 14,
+      "text": "wputun",
+      "confidence": 0.34723,
+      "polygon": [
+        [
+          1282.0,
+          477.0
+        ],
+        [
+          1309.0,
+          484.0
+        ],
+        [
+          1306.0,
+          494.0
+        ],
+        [
+          1280.0,
+          488.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 15,
+      "text": "wat",
+      "confidence": 0.23259,
+      "polygon": [
+        [
+          1319.0,
+          486.0
+        ],
+        [
+          1346.0,
+          494.0
+        ],
+        [
+          1343.0,
+          504.0
+        ],
+        [
+          1316.0,
+          497.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_08",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 16,
+      "text": "mnman",
+      "confidence": 0.47273,
+      "polygon": [
+        [
+          1356.0,
+          496.0
+        ],
+        [
+          1382.0,
+          502.0
+        ],
+        [
+          1379.0,
+          512.0
+        ],
+        [
+          1353.0,
+          506.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
     "case": "case_09",
     "kind": "self_reported_uncertainty",
-    "detail": "The 'päivittää' and 'lähettää yksiköt' labels occupy one diagonal Pelastuslaitos–Tilannekeskus route; they are recorded as parallel relationships, but a second distinct line is not visible."
+    "detail": "The word päivittää is on the Pelastuslaitos–Tilannekeskus diagonal alongside lähettää yksiköt, with no clear second line."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_09",
     "kind": "self_reported_uncertainty",
-    "detail": "Hätäkeskus–Tilannekeskus vertical connection has no visible arrowhead."
+    "detail": "Hätäkeskus–Tilannekeskus has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_09",
-    "kind": "self_reported_uncertainty",
-    "detail": "The long diagonal from Tiedote toward Kuntalainen crosses other lines; its arrowhead is visible at Kuntalainen."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 8,
+      "text": "päivittää",
+      "confidence": 0.99964,
+      "polygon": [
+        [
+          1170.0,
+          371.0
+        ],
+        [
+          1259.0,
+          369.0
+        ],
+        [
+          1260.0,
+          396.0
+        ],
+        [
+          1171.0,
+          399.0
+        ]
+      ]
+    }
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_10",
     "kind": "self_reported_uncertainty",
     "detail": "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_10",
     "kind": "self_reported_uncertainty",
-    "detail": "The vertical Tarkastus–Käsittely route has arrows at both ends, with two nearby labels; their assignment to opposite directions is inferred from the label positions."
+    "detail": "The text palauttaa tarkastukseen lies near the Käsittely–Tarkastus vertical and Päätös–Oikaisupyyntö diagonal, but no distinct third edge is visible."
   },
   {
-    "approach": "blind_fusion",
+    "approach": "vision_ocr_union",
     "case": "case_10",
-    "kind": "ocr_vision_disagreement",
-    "detail": "OCR reads 'Päätos'; the image visibly says 'Päätös'."
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 7,
+      "text": "Päätos",
+      "confidence": 0.91896,
+      "polygon": [
+        [
+          1515.0,
+          246.0
+        ],
+        [
+          1585.0,
+          249.0
+        ],
+        [
+          1584.0,
+          274.0
+        ],
+        [
+          1514.0,
+          272.0
+        ]
+      ]
+    }
+  },
+  {
+    "approach": "vision_ocr_union",
+    "case": "case_10",
+    "kind": "unassigned_ocr_box",
+    "detail": {
+      "ocr_index": 12,
+      "text": "palauttaa tarkastukseen",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1005.0,
+          603.0
+        ],
+        [
+          1234.0,
+          603.0
+        ],
+        [
+          1234.0,
+          629.0
+        ],
+        [
+          1005.0,
+          629.0
+        ]
+      ]
+    }
   }
 ]
