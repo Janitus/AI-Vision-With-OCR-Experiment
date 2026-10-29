@@ -23,6 +23,7 @@
     "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
+    "total_error_scope": "OCR text regions only",
     "total_error_count": 61,
     "total_items_scored": 206,
     "total_error_rate": 0.2961
@@ -51,6 +52,7 @@
     "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
+    "total_error_scope": "OCR text regions only",
     "total_error_count": 59,
     "total_items_scored": 246,
     "total_error_rate": 0.2398
@@ -79,6 +81,7 @@
     "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
+    "total_error_scope": "OCR text regions only",
     "total_error_count": 18,
     "total_items_scored": 221,
     "total_error_rate": 0.0814
@@ -107,6 +110,7 @@
     "unknown_directions": 0,
     "unknown_relationships": 0,
     "full_edge_error": 0.1062,
+    "total_error_scope": "graph titles, nodes, and complete edges",
     "total_error_count": 26,
     "total_items_scored": 210,
     "total_error_rate": 0.1238
@@ -135,6 +139,7 @@
     "unknown_directions": 10,
     "unknown_relationships": 0,
     "full_edge_error": 0.1681,
+    "total_error_scope": "graph titles, nodes, and complete edges",
     "total_error_count": 34,
     "total_items_scored": 211,
     "total_error_rate": 0.1611
