@@ -1,9 +1,11 @@
 flowchart LR
   a["Verovelvollinen"]
+  style a fill:none,stroke:none
   b["Ilmoitus"]
   c{"Tarkastus"}
   d{"Päätös"}
   e["Lisäselvitys"]
+  style e fill:none,stroke:none
   f["Oikaisupyyntö"]
   g{"Käsittely"}
   h["Lopputulos"]
@@ -11,7 +13,7 @@ flowchart LR
   b -->|siirtää| c
   c -->|ratkaisee| d
   a -->|täydentää| e
-  b ---|liittyy| e
+  b ---|liittyy [direction unknown]| e
   e -->|liitetään| f
   f -->|käynnistää| g
   g -->|vahvistaa| h

@@ -27,7 +27,8 @@ def main():
             "false_positive_text":a["extra_ocr_items"],"node_precision":None,"node_recall":None,
             "false_positive_nodes":None,"edge_precision":None,"edge_recall":None,
             "false_positive_edges":None,"arrow_error":None,"relationship_error":None,
-            "dashed_error":None,"shape_error":None,"unknown_relationships":None,"full_edge_error":None})
+            "dashed_error":None,"shape_error":None,"unknown_directions":None,
+            "unknown_relationships":None,"full_edge_error":None})
         for case,slug in mapping.items():
             path=ROOT/"reports"/f"{run['approach']}_{slug}.json"
             if not path.exists():continue
@@ -51,6 +52,7 @@ def main():
             "false_positive_edges":c["predicted_edges"]-c["matched_topology"],
             "arrow_error":r["arrow_error_rate"],"relationship_error":r["relationship_error_rate"],
             "dashed_error":r["stroke_error_rate"],"shape_error":r["node_shape_error_rate"],
+            "unknown_directions":scores["unknown_directions"],
             "unknown_relationships":scores["unknown_relationships"],"full_edge_error":r["full_edge_error_rate"]})
         for case,result in scores["cases"].items():
             for err in result["errors"]:ledger.append({"approach":approach,"case":case,
@@ -105,9 +107,10 @@ def main():
         fp=(f"{r['false_positive_text']} text" if r["modality"]=="OCR only" else
             f"{r['false_positive_nodes']} nodes, {r['false_positive_edges']} edges")
         lines.append(f"| {r['approach']} | {r['total_error_count']}/{r['total_items_scored']} ({pct(r['total_error_rate'])}) | {pct(r['title_text_error'])} | {pct(r['node_text_error'])} | {pct(r['edge_text_error'])} | {pct(r['node_precision'])}/{pct(r['node_recall'])} | {pct(r['edge_precision'])}/{pct(r['edge_recall'])} | {pct(r['arrow_error'])} | {pct(r['shape_error'])} | {pct(r['full_edge_error'])} | {fp} |")
-    lines += ["","Other per-type rates and counts, including relationship, dashed stroke, unknowns, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.", "",
+    lines += ["","Other per-type rates and counts, including relationship, dashed stroke, unknown directions and relationships, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.", "",
         "## Observed result", "",
-        "RapidOCR PP-OCRv6 was strongest on literal text here: 203/206 exact visible regions, versus PaddleOCR's 187/206 and the old baseline's 145/206. Both Codex sessions found all 83 nodes and read their labels exactly. Vision-only recovered 105/113 connections and 101/113 fully correct edges; fusion recovered 107/113 connections but 94/113 fully correct edges. OCR assistance coincided with two more found connections, while the fully correct edge count fell by seven. These separate sessions cannot isolate OCR as the cause of either difference.", "",
+        "RapidOCR PP-OCRv6 was strongest on literal text here: 203/206 exact visible regions, versus PaddleOCR's 187/206 and the old baseline's 145/206. Both Codex sessions found all 83 nodes and read their labels exactly. Vision-only recovered 105/113 connections and 101/113 fully correct edges; fusion recovered 107/113 connections but 94/113 fully correct edges. Fusion marked ten directions `unknown`, often on links with no visible arrowhead, while vision-only used `undirected` for those links. The sessions also differed on the two opposite edges in case 10. OCR assistance coincided with two more found connections, while the fully correct edge count fell by seven. These separate sessions cannot isolate OCR as the cause of either difference.", "",
+        "A scoring correction maps the fusion output's `plain` node shape to the source's `text` (unboxed) shape. Both vision runs therefore have 73/83 correct node shapes. Earlier fusion shape and total error figures that treated `plain` as a distinct shape were inflated; the current matrix and ledger supersede them.", "",
         "## Blind evaluation protocol", "",
         "The two fresh Codex tasks received anonymous case images. Blind fusion also received the ten raw outputs from **RapidOCR 3.10, PP-OCRv6 medium, configured for Finnish detection and recognition**. Codex visually compared those OCR strings and polygons with each image and wrote its own graph prediction; there was no automated text-merging algorithm. PaddleOCR and the older OCR baseline were scored separately; neither fed blind fusion. Neither prompt provided source Mermaid, truth JSON, prior results, or case mapping. Predictions were written before this scoring step. The task logs were audited for file/tool access; this is a procedural blind test, not filesystem isolation. See `session_audit.json`.", "",
         "## Interpretation and limits", "",

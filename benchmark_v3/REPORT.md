@@ -20,13 +20,15 @@ Other rates are errors divided by expected items; lower is better. `—` means t
 | paddle_v5_fi | 59/246 (24.0%) | 0.0% | 0.0% | 16.8% | —/— | —/— | — | — | — | 40 text |
 | rapid_v6_medium_fi | 18/221 (8.1%) | 0.0% | 1.2% | 1.8% | —/— | —/— | — | — | — | 15 text |
 | blind_vision | 26/210 (12.4%) | 0.0% | 0.0% | 8.8% | 100.0%/100.0% | 96.3%/92.9% | 8.8% | 12.0% | 10.6% | 0 nodes, 4 edges |
-| blind_fusion | 54/211 (25.6%) | 0.0% | 0.0% | 7.1% | 100.0%/100.0% | 95.5%/94.7% | 14.2% | 36.1% | 16.8% | 0 nodes, 5 edges |
+| blind_fusion | 34/211 (16.1%) | 0.0% | 0.0% | 7.1% | 100.0%/100.0% | 95.5%/94.7% | 14.2% | 12.0% | 16.8% | 0 nodes, 5 edges |
 
-Other per-type rates and counts, including relationship, dashed stroke, unknowns, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.
+Other per-type rates and counts, including relationship, dashed stroke, unknown directions and relationships, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.
 
 ## Observed result
 
-RapidOCR PP-OCRv6 was strongest on literal text here: 203/206 exact visible regions, versus PaddleOCR's 187/206 and the old baseline's 145/206. Both Codex sessions found all 83 nodes and read their labels exactly. Vision-only recovered 105/113 connections and 101/113 fully correct edges; fusion recovered 107/113 connections but 94/113 fully correct edges. OCR assistance coincided with two more found connections, while the fully correct edge count fell by seven. These separate sessions cannot isolate OCR as the cause of either difference.
+RapidOCR PP-OCRv6 was strongest on literal text here: 203/206 exact visible regions, versus PaddleOCR's 187/206 and the old baseline's 145/206. Both Codex sessions found all 83 nodes and read their labels exactly. Vision-only recovered 105/113 connections and 101/113 fully correct edges; fusion recovered 107/113 connections but 94/113 fully correct edges. Fusion marked ten directions `unknown`, often on links with no visible arrowhead, while vision-only used `undirected` for those links. The sessions also differed on the two opposite edges in case 10. OCR assistance coincided with two more found connections, while the fully correct edge count fell by seven. These separate sessions cannot isolate OCR as the cause of either difference.
+
+A scoring correction maps the fusion output's `plain` node shape to the source's `text` (unboxed) shape. Both vision runs therefore have 73/83 correct node shapes. Earlier fusion shape and total error figures that treated `plain` as a distinct shape were inflated; the current matrix and ledger supersede them.
 
 ## Blind evaluation protocol
 

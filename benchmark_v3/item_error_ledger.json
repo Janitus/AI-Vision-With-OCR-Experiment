@@ -2280,78 +2280,6 @@
     "approach": "blind_fusion",
     "case": "case_03",
     "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 1
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 2
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 3
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 4
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 5
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 6
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 7
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 0
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_03",
-    "slug": "saatutkimus",
     "kind": "wrong_arrow",
     "edge": 10,
     "expected": [
@@ -2457,27 +2385,9 @@
     "case": "case_06",
     "slug": "rokotusketju",
     "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 1
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_06",
-    "slug": "rokotusketju",
-    "kind": "wrong_node_shape",
     "expected": "pill",
     "observed": "round",
     "node": 4
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_06",
-    "slug": "rokotusketju",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 6
   },
   {
     "approach": "blind_fusion",
@@ -2627,78 +2537,6 @@
     "approach": "blind_fusion",
     "case": "case_08",
     "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 6
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 3
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 1
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 2
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 5
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 7
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 4
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 0
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_08",
-    "slug": "kaukolainaus",
     "kind": "wrong_arrow",
     "edge": 10,
     "expected": [
@@ -2760,24 +2598,6 @@
       6,
       "lähettää yksiköt"
     ]
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_10",
-    "slug": "veron_oikaisu",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 0
-  },
-  {
-    "approach": "blind_fusion",
-    "case": "case_10",
-    "slug": "veron_oikaisu",
-    "kind": "wrong_node_shape",
-    "expected": "text",
-    "observed": "plain",
-    "node": 4
   },
   {
     "approach": "blind_fusion",

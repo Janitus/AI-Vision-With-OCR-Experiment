@@ -20,6 +20,7 @@
     "relationship_error": null,
     "dashed_error": null,
     "shape_error": null,
+    "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
     "total_error_count": 61,
@@ -47,6 +48,7 @@
     "relationship_error": null,
     "dashed_error": null,
     "shape_error": null,
+    "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
     "total_error_count": 59,
@@ -74,6 +76,7 @@
     "relationship_error": null,
     "dashed_error": null,
     "shape_error": null,
+    "unknown_directions": null,
     "unknown_relationships": null,
     "full_edge_error": null,
     "total_error_count": 18,
@@ -101,6 +104,7 @@
     "relationship_error": 0.0885,
     "dashed_error": 0.0708,
     "shape_error": 0.1205,
+    "unknown_directions": 0,
     "unknown_relationships": 0,
     "full_edge_error": 0.1062,
     "total_error_count": 26,
@@ -127,11 +131,12 @@
     "arrow_error": 0.1416,
     "relationship_error": 0.0708,
     "dashed_error": 0.0708,
-    "shape_error": 0.3614,
+    "shape_error": 0.1205,
+    "unknown_directions": 10,
     "unknown_relationships": 0,
     "full_edge_error": 0.1681,
-    "total_error_count": 54,
+    "total_error_count": 34,
     "total_items_scored": 211,
-    "total_error_rate": 0.2559
+    "total_error_rate": 0.1611
   }
 ]

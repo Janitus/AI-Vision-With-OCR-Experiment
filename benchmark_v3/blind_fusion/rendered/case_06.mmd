@@ -1,11 +1,13 @@
 flowchart LR
   a("Varaus")
   b["Asiakas"]
+  style b fill:none,stroke:none
   c["Hoitaja"]
   d{"Annos"}
   e("Rokotuspiste")
   f["Kirjaus"]
   g["Seuranta"]
+  style g fill:none,stroke:none
   h["Rekisteri"]
   i("Muistutus")
   a -->|vahvistaa| b
@@ -16,7 +18,7 @@ flowchart LR
   e -->|merkitsee| f
   f -->|käynnistää| g
   f -->|siirtää tiedon| h
-  g ---|tarvittaessa| h
+  g ---|tarvittaessa [direction unknown]| h
   h -->|lähettää| i
   i -->|kutsuu uudelleen| b
   linkStyle 10 stroke-dasharray: 8 5

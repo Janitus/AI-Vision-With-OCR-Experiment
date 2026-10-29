@@ -1,17 +1,25 @@
 flowchart LR
   a["Sääasema"]
+  style a fill:none,stroke:none
   b["Tuulianturi"]
+  style b fill:none,stroke:none
   c["Sademittari"]
+  style c fill:none,stroke:none
   d["Lämpöanturi"]
+  style d fill:none,stroke:none
   e["Raakahavainnot"]
+  style e fill:none,stroke:none
   f["Laatutarkistus"]
+  style f fill:none,stroke:none
   g["Malliajo"]
+  style g fill:none,stroke:none
   h["Ennuste"]
+  style h fill:none,stroke:none
   b -->|mittaa| a
   c -->|mittaa| a
   d -->|mittaa| a
   a -->|kokoaa| e
-  b ---|varatieto| e
+  b ---|varatieto [direction unknown]| e
   c -->|lähettää| f
   e -->|vertaa| f
   f -->|syöttää| g

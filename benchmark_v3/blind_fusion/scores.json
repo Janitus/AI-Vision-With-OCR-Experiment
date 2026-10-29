@@ -5,8 +5,8 @@
     "predicted_nodes": 83,
     "matched_nodes": 83,
     "exact_node_labels": 83,
-    "exact_node_shapes": 53,
-    "fully_correct_nodes": 53,
+    "exact_node_shapes": 73,
+    "fully_correct_nodes": 73,
     "truth_edges": 113,
     "predicted_edges": 112,
     "matched_topology": 107,
@@ -21,7 +21,7 @@
     "title_error_rate": 0.0,
     "node_detection_error_rate": 0.0,
     "node_label_error_rate": 0.0,
-    "node_shape_error_rate": 0.3614,
+    "node_shape_error_rate": 0.1205,
     "topology_error_rate": 0.0531,
     "arrow_error_rate": 0.1416,
     "relationship_error_rate": 0.0708,
@@ -139,8 +139,8 @@
         "predicted_nodes": 8,
         "matched_nodes": 8,
         "exact_node_labels": 8,
-        "exact_node_shapes": 0,
-        "fully_correct_nodes": 0,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
         "truth_edges": 11,
         "predicted_edges": 10,
         "matched_topology": 9,
@@ -155,7 +155,7 @@
         "node_detection_recall": 1.0,
         "node_detection_precision": 1.0,
         "node_label_error_rate": 0.0,
-        "node_shape_error_rate": 1.0,
+        "node_shape_error_rate": 0.0,
         "topology_error_rate": 0.1818,
         "arrow_error_rate": 0.2727,
         "relationship_error_rate": 0.2727,
@@ -164,54 +164,6 @@
         "end_to_end_edge_error_rate": 0.3636
       },
       "errors": [
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 1
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 2
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 3
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 4
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 5
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 6
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 7
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 0
-        },
         {
           "kind": "wrong_arrow",
           "edge": 10,
@@ -371,8 +323,8 @@
         "predicted_nodes": 9,
         "matched_nodes": 9,
         "exact_node_labels": 9,
-        "exact_node_shapes": 5,
-        "fully_correct_nodes": 5,
+        "exact_node_shapes": 7,
+        "fully_correct_nodes": 7,
         "truth_edges": 11,
         "predicted_edges": 11,
         "matched_topology": 10,
@@ -387,7 +339,7 @@
         "node_detection_recall": 1.0,
         "node_detection_precision": 1.0,
         "node_label_error_rate": 0.0,
-        "node_shape_error_rate": 0.4444,
+        "node_shape_error_rate": 0.2222,
         "topology_error_rate": 0.0909,
         "arrow_error_rate": 0.0909,
         "relationship_error_rate": 0.0909,
@@ -404,21 +356,9 @@
         },
         {
           "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 1
-        },
-        {
-          "kind": "wrong_node_shape",
           "expected": "pill",
           "observed": "round",
           "node": 4
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 6
         },
         {
           "kind": "extra_edge",
@@ -571,8 +511,8 @@
         "predicted_nodes": 8,
         "matched_nodes": 8,
         "exact_node_labels": 8,
-        "exact_node_shapes": 0,
-        "fully_correct_nodes": 0,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
         "truth_edges": 11,
         "predicted_edges": 11,
         "matched_topology": 11,
@@ -587,7 +527,7 @@
         "node_detection_recall": 1.0,
         "node_detection_precision": 1.0,
         "node_label_error_rate": 0.0,
-        "node_shape_error_rate": 1.0,
+        "node_shape_error_rate": 0.0,
         "topology_error_rate": 0.0,
         "arrow_error_rate": 0.0909,
         "relationship_error_rate": 0.0,
@@ -596,54 +536,6 @@
         "end_to_end_edge_error_rate": 0.0909
       },
       "errors": [
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 6
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 3
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 1
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 2
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 5
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 7
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 4
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 0
-        },
         {
           "kind": "wrong_arrow",
           "edge": 10,
@@ -745,8 +637,8 @@
         "predicted_nodes": 8,
         "matched_nodes": 8,
         "exact_node_labels": 8,
-        "exact_node_shapes": 6,
-        "fully_correct_nodes": 6,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
         "truth_edges": 11,
         "predicted_edges": 11,
         "matched_topology": 11,
@@ -761,7 +653,7 @@
         "node_detection_recall": 1.0,
         "node_detection_precision": 1.0,
         "node_label_error_rate": 0.0,
-        "node_shape_error_rate": 0.25,
+        "node_shape_error_rate": 0.0,
         "topology_error_rate": 0.0,
         "arrow_error_rate": 0.2727,
         "relationship_error_rate": 0.0,
@@ -770,18 +662,6 @@
         "end_to_end_edge_error_rate": 0.2727
       },
       "errors": [
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 0
-        },
-        {
-          "kind": "wrong_node_shape",
-          "expected": "text",
-          "observed": "plain",
-          "node": 4
-        },
         {
           "kind": "wrong_arrow",
           "edge": 10,
@@ -841,5 +721,6 @@
   "node_recall": 1.0,
   "edge_precision": 0.9554,
   "edge_recall": 0.9469,
+  "unknown_directions": 10,
   "unknown_relationships": 0
 }

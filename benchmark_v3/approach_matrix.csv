@@ -1,6 +1,6 @@
-﻿approach,modality,cases,total_error_count,total_items_scored,total_error_rate,title_text_error,node_text_error,edge_text_error,all_text_error,text_precision,text_recall,false_positive_text,node_precision,node_recall,false_positive_nodes,edge_precision,edge_recall,false_positive_edges,arrow_error,relationship_error,dashed_error,shape_error,unknown_relationships,full_edge_error
-legacy_rapid_v3,OCR only,10,61,206,0.2961,0.7,0.2048,0.3274,0.2961,0.7039,0.7039,0,,,,,,,,,,,,
-paddle_v5_fi,OCR only,10,59,246,0.2398,0.0,0.0,0.1681,0.0922,0.7633,0.9078,40,,,,,,,,,,,,
-rapid_v6_medium_fi,OCR only,10,18,221,0.0814,0.0,0.012,0.0177,0.0146,0.9186,0.9854,15,,,,,,,,,,,,
-blind_vision,Codex vision,10,26,210,0.1238,0.0,0.0,0.0885,,,,,1.0,1.0,0,0.9633,0.9292,4,0.0885,0.0885,0.0708,0.1205,0,0.1062
-blind_fusion,Codex vision + RapidOCR PP-OCRv6 medium Finnish,10,54,211,0.2559,0.0,0.0,0.0708,,,,,1.0,1.0,0,0.9554,0.9469,5,0.1416,0.0708,0.0708,0.3614,0,0.1681
+﻿approach,modality,cases,total_error_count,total_items_scored,total_error_rate,title_text_error,node_text_error,edge_text_error,all_text_error,text_precision,text_recall,false_positive_text,node_precision,node_recall,false_positive_nodes,edge_precision,edge_recall,false_positive_edges,arrow_error,relationship_error,dashed_error,shape_error,unknown_directions,unknown_relationships,full_edge_error
+legacy_rapid_v3,OCR only,10,61,206,0.2961,0.7,0.2048,0.3274,0.2961,0.7039,0.7039,0,,,,,,,,,,,,,
+paddle_v5_fi,OCR only,10,59,246,0.2398,0.0,0.0,0.1681,0.0922,0.7633,0.9078,40,,,,,,,,,,,,,
+rapid_v6_medium_fi,OCR only,10,18,221,0.0814,0.0,0.012,0.0177,0.0146,0.9186,0.9854,15,,,,,,,,,,,,,
+blind_vision,Codex vision,10,26,210,0.1238,0.0,0.0,0.0885,,,,,1.0,1.0,0,0.9633,0.9292,4,0.0885,0.0885,0.0708,0.1205,0,0,0.1062
+blind_fusion,Codex vision + RapidOCR PP-OCRv6 medium Finnish,10,34,211,0.1611,0.0,0.0,0.0708,,,,,1.0,1.0,0,0.9554,0.9469,5,0.1416,0.0708,0.0708,0.1205,10,0,0.1681

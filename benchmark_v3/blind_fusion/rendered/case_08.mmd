@@ -1,12 +1,20 @@
 flowchart LR
   a["Laina"]
+  style a fill:none,stroke:none
   b["Noutopiste"]
+  style b fill:none,stroke:none
   c["Palautus"]
+  style c fill:none,stroke:none
   d["Kuljetus"]
+  style d fill:none,stroke:none
   e["Lukija"]
+  style e fill:none,stroke:none
   f["Keskuskirjasto"]
+  style f fill:none,stroke:none
   g["Varaus"]
+  style g fill:none,stroke:none
   h["Lähikirjasto"]
+  style h fill:none,stroke:none
   b -->|luovuttaa| a
   a -->|palautetaan| c
   d -->|toimittaa| b
@@ -18,4 +26,4 @@ flowchart LR
   g -->|kohdistaa| h
   h -->|tiedustelee| f
   c -->|vastaanottaa| h
-  f ---|varatieto| c
+  f ---|varatieto [direction unknown]| c

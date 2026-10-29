@@ -18,7 +18,7 @@ def shape(s):
     value=clean(s).lower().replace("-","_").replace(" ","_")
     aliases={"rectangle":"box","rect":"box","square":"box","rounded_rectangle":"round",
              "rounded_box":"round","oval":"circle","ellipse":"circle","text_only":"text",
-             "unboxed":"text","no_box":"text","hexagon":"hex","capsule":"pill"}
+             "unboxed":"text","no_box":"text","plain":"text","hexagon":"hex","capsule":"pill"}
     return aliases.get(value,value)
 
 
@@ -126,6 +126,7 @@ def evaluate(approach):
             "node_recall":fraction(totals["matched_nodes"],totals["truth_nodes"]),
             "edge_precision":fraction(totals["matched_topology"],totals["predicted_edges"]),
             "edge_recall":fraction(totals["matched_topology"],totals["truth_edges"]),
+            "unknown_directions":sum(1 for case in mapping for e in load(ROOT/approach/"predictions"/f"{case}.json").get("edges",[]) if clean(e.get("direction")).lower()=="unknown"),
             "unknown_relationships":sum(1 for case in mapping for e in load(ROOT/approach/"predictions"/f"{case}.json").get("edges",[]) if clean(e.get("relationship")).lower()=="unknown")}
     (ROOT/approach/"scores.json").write_text(json.dumps(output,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps({"counts":totals,"error_rates":rates},ensure_ascii=False,indent=2))

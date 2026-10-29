@@ -598,5 +598,6 @@
   "node_recall": 1.0,
   "edge_precision": 0.9633,
   "edge_recall": 0.9292,
+  "unknown_directions": 0,
   "unknown_relationships": 0
 }

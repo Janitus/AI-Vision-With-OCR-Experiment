@@ -47,7 +47,7 @@ def render(graph,path):
         a=nodes.get(str(e.get("source")));b=nodes.get(str(e.get("target")))
         if not a or not b or a is b:continue
         p,q=point(a,b),point(b,a)
-        color="#47738c"
+        color="#bf681c" if e.get("direction")=="unknown" else "#47738c"
         length=math.dist(p,q)
         if e.get("dashed") and length>0:
             for s in range(0,int(length),24):
@@ -63,7 +63,7 @@ def render(graph,path):
         x,y=n["center"];w,h=dims[key]
         box=(x-w/2,y-h/2,x+w/2,y+h/2)
         kind=str(n.get("type") or "unknown").lower().replace("-","_")
-        if kind in ("text","text_only","unboxed","no_box"):
+        if kind in ("text","text_only","unboxed","no_box","plain"):
             draw.rectangle(box,fill="white")
         elif kind in ("round","rounded_rectangle","rounded_box","pill","capsule"):
             draw.rounded_rectangle(box,radius=h/2 if kind in ("pill","capsule") else 20,fill="#e9f2f8",outline="#294b60",width=2)
@@ -76,6 +76,7 @@ def render(graph,path):
         draw.text((x,y),str(n.get("label") or "unknown"),font=font,fill="#173247",anchor="mm")
     for e,p,q in drawn_edges:
         label=str(e.get("relationship") or "unknown")
+        if e.get("direction")=="unknown":label+=" [?]"
         x=(p[0]+q[0])/2;y=(p[1]+q[1])/2-18
         box=draw.textbbox((x,y),label,font=font,anchor="mm")
         draw.rectangle((box[0]-7,box[1]-4,box[2]+7,box[3]+4),fill="white")
@@ -94,13 +95,14 @@ def mermaid(graph):
                  "pill":f'(["{label}"])',"circle":f'(("{label}"))',
                  "diamond":f'{{"{label}"}}',"hex":f'{{{{"{label}"}}}}'}.get(shape,f'["{label}"]')
         lines.append(f"  {node_id}{bracket}")
-        if shape in ("text","text_only","unboxed"):lines.append(f"  style {node_id} fill:none,stroke:none")
+        if shape in ("text","text_only","unboxed","plain"):lines.append(f"  style {node_id} fill:none,stroke:none")
     for index,e in enumerate(graph.get("edges",[])):
         direction=e.get("direction")
         stroke="---" if direction in ("undirected","unknown") else ("<-->" if direction=="both" else "-->")
         if direction=="target_to_source":a,b=e.get("target"),e.get("source")
         else:a,b=e.get("source"),e.get("target")
         label=str(e.get("relationship") or "unknown").replace("|","&#124;")
+        if direction=="unknown":label+=" [direction unknown]"
         lines.append(f"  {a} {stroke}|{label}| {b}")
         if e.get("dashed"):lines.append(f"  linkStyle {index} stroke-dasharray: 8 5")
     return "\n".join(lines)+"\n"
@@ -122,7 +124,7 @@ def main():
     data=json.dumps(entries,ensure_ascii=True).replace("</","<\\/")
     page='''<!doctype html><html lang="en"><meta charset="utf-8"><title>Blind graph benchmark v3</title>
 <style>body{font:16px system-ui;background:#f5f7fa;color:#172d3c;margin:20px}main{max-width:1900px;margin:auto}select{font:inherit;padding:8px}section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}figure{margin:0;background:white;border:1px solid #b9c5cd;padding:7px}img{width:100%;height:auto;display:block}figcaption{font-weight:700;padding:5px}pre{white-space:pre-wrap}a{color:#145889}</style>
-<main><h1>Finnish graph extraction: ten blind cases</h1><p>Source image, blind Codex vision, and blind Codex vision with raw RapidOCR. Select a case to inspect literal text and connections. Prediction renderings use a neutral style; consult the saved JSON for coordinates, confidence, and uncertainties.</p><label>Case <select id="choose"></select></label><section><figure><figcaption>Source</figcaption><img id="source"></figure><figure><figcaption>Vision only</figcaption><img id="vision"></figure><figure><figcaption>Vision + OCR</figcaption><img id="fusion"></figure></section><p id="issues"></p><p><a href="REPORT.md">Validation report</a> · <a href="approach_matrix.csv">Approach matrix</a> · <a href="item_error_ledger.json">Item-level errors</a></p></main>
+<main><h1>Finnish graph extraction: ten blind cases</h1><p>Source image, blind Codex vision, and blind Codex vision with raw RapidOCR. Select a case to inspect literal text and connections. Prediction renderings use a neutral style; orange lines marked [?] mean the prediction gave an unknown direction. Consult the saved JSON for coordinates, confidence, and uncertainties.</p><label>Case <select id="choose"></select></label><section><figure><figcaption>Source</figcaption><img id="source"></figure><figure><figcaption>Vision only</figcaption><img id="vision"></figure><figure><figcaption>Vision + OCR</figcaption><img id="fusion"></figure></section><p id="issues"></p><p><a href="REPORT.md">Validation report</a> · <a href="approach_matrix.csv">Approach matrix</a> · <a href="item_error_ledger.json">Item-level errors</a></p></main>
 <script>const cases=__DATA__,sel=document.querySelector('#choose');cases.forEach((e,i)=>{let o=document.createElement('option');o.value=i;o.textContent=`${i+1}. ${e.title}`;sel.append(o)});function show(){let e=cases[+sel.value];document.querySelector('#source').src=e.source;document.querySelector('#vision').src=e.blind_vision;document.querySelector('#fusion').src=e.blind_fusion;document.querySelector('#issues').textContent=`Vision uncertainties: ${e.blind_vision_uncertainties.length}; fusion uncertainties: ${e.blind_fusion_uncertainties.length}.`;}sel.onchange=show;show();</script></html>'''.replace("__DATA__",data)
     (ROOT/"results_viewer.html").write_text(page,encoding="utf-8")
     print("Exported",len(entries),"side-by-side cases")
