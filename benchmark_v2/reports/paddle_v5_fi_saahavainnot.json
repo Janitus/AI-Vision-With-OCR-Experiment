@@ -1,0 +1,230 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 5,
+      "total": 5,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0
+    },
+    "all": {
+      "exact": 10,
+      "total": 10,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 11,
+      "extra_ocr_items": 1,
+      "precision": 0.9091
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Säähavainnot",
+      "observed": "Säähavainnot",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        260,
+        63
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Sääasema",
+      "observed": "Sääasema",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        635,
+        401.0,
+        764,
+        420.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Tuuli",
+      "observed": "Tuuli",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        200,
+        170.0,
+        261,
+        190.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Sade",
+      "observed": "Sade",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1138,
+        170.0,
+        1201,
+        190.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Lämpötila",
+      "observed": "Lämpötila",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        168,
+        680.0,
+        291,
+        705.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Paine",
+      "observed": "Paine",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1136,
+        681.0,
+        1204,
+        700.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "mittaa",
+      "observed": "mittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        387,
+        235,
+        483,
+        305
+      ],
+      "rotation": -26.1,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "mittaa",
+      "observed": "mittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        917,
+        235,
+        1013,
+        305
+      ],
+      "rotation": 26.1,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "mittaa",
+      "observed": "mittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        391,
+        556,
+        485,
+        630
+      ],
+      "rotation": 30.7,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "mittaa",
+      "observed": "mittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        915,
+        556,
+        1009,
+        630
+      ],
+      "rotation": -30.7,
+      "ocr_indices": [
+        6
+      ]
+    }
+  ],
+  "unmatched_ocr": [
+    {
+      "index": 7,
+      "text": "aαmbo",
+      "bbox": [
+        1004,
+        588,
+        1112,
+        657
+      ]
+    }
+  ]
+}

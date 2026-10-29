@@ -1,0 +1,10 @@
+﻿error_type,vision_only,ocr_plus_vision,change
+title_error_rate,0.0,0.0,0.0
+node_detection_error_rate,0.0,0.0,0.0
+node_label_error_rate,0.0,0.0,0.0
+node_shape_error_rate,0.0816,0.0816,0.0
+topology_error_rate,0.0,0.0,0.0
+arrow_error_rate,0.0244,0.0,-0.0244
+relationship_error_rate,0.0,0.0,0.0
+stroke_error_rate,0.0,0.0,0.0
+full_edge_error_rate,0.0244,0.0,-0.0244

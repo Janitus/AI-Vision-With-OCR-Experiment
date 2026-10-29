@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Kirjastot
+  n1["Asiakas"]
+  n2["Kirjasto"]
+  n3["Teos"]
+  n4["Varaus"]
+  n5["Laina"]
+  n6["Palautus"]
+  n5 -->|luetteloi| n1
+  n1 -->|palauttaa| n6
+  n2 -->|välittää| n4
+  n2 -->|varaa| n5
+  n2 -->|lainaa| n6
+  n3 -->|luetteloi| n6
+  n6 -->|palauttaa| n5

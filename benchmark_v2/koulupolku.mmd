@@ -1,0 +1,21 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Times New Roman", "primaryColor": "#ffffff", "lineColor": "#222222", "textColor": "#1c1c1c"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Koulutus
+  n1["Oppilas"]
+  style n1 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n2["Kurssi A"]
+  style n2 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n3["Kurssi B"]
+  style n3 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n4["Arviointi A"]
+  style n4 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n5["Arviointi B"]
+  style n5 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n6["Todistus"]
+  style n6 fill:transparent,stroke:transparent,color:#1c1c1c,font-family:Times New Roman
+  n1 -->|valitsee| n2
+  n1 -->|valitsee| n3
+  n2 -->|arvioidaan| n4
+  n3 -->|arvioidaan| n5
+  n4 -->|koostaa| n6
+  n5 -->|koostaa| n6

@@ -1,0 +1,161 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 7,
+    "matched_topology": 5,
+    "truth_text_items": 14,
+    "observed_text_items": 12
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 1.0,
+    "node_label_recall": 1.0,
+    "node_cer": 0.0,
+    "node_type_exact": 1.0,
+    "mean_bbox_iou": 1.0,
+    "visible_text_precision": 0.9167,
+    "visible_text_recall": 0.7857,
+    "topology_precision": 0.7143,
+    "topology_recall": 0.7143,
+    "arrow_accuracy": 0.8,
+    "relationship_exact": 0.4,
+    "full_edge_precision": 0.1429,
+    "full_edge_recall": 0.1429,
+    "end_to_end_edge_precision": 0.1429,
+    "end_to_end_edge_recall": 0.1429
+  },
+  "errors": [
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "TL",
+        "target": "TM",
+        "relationship": "unknown",
+        "direction": "unknown",
+        "points": [
+          [
+            283,
+            135
+          ],
+          [
+            497,
+            135
+          ]
+        ],
+        "confidence": 0.45,
+        "evidence": "vision_only"
+      }
+    },
+    {
+      "kind": "wrong_arrow",
+      "expected": "undirected",
+      "observed": "n6->n4"
+    },
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "BM",
+        "target": "BR",
+        "relationship": "unknown",
+        "direction": "source_to_target",
+        "points": [
+          [
+            703,
+            520
+          ],
+          [
+            917,
+            520
+          ]
+        ],
+        "confidence": 0.45,
+        "evidence": "vision_only"
+      }
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n1",
+      "target": "n6",
+      "expected": "yhdistää",
+      "observed": "ohjaa"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n4",
+      "target": "n3",
+      "expected": "ohjaa",
+      "observed": "yhdistää"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n2",
+      "target": "n5",
+      "expected": "näyttää",
+      "observed": "ohjaa"
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n3",
+        "target": "n2",
+        "relationship": "käyttää",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            283,
+            520
+          ],
+          [
+            917,
+            520
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n5",
+        "target": "n4",
+        "relationship": "vahvistaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            283,
+            135
+          ],
+          [
+            917,
+            135
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "vahvistaa",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "käyttää",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "näyttää",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "ohjaa",
+      "count": 1
+    }
+  ]
+}

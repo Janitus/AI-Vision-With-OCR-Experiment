@@ -1,0 +1,17 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Verdana", "primaryColor": "#fcfdff", "lineColor": "#285a6d", "textColor": "#13242e"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Sää ja ympäristö
+  n1["Sääasema"]
+  style n1 fill:transparent,stroke:transparent,color:#13242e,font-family:Verdana
+  n2["Tuuli"]
+  style n2 fill:transparent,stroke:transparent,color:#13242e,font-family:Verdana
+  n3["Sade"]
+  style n3 fill:transparent,stroke:transparent,color:#13242e,font-family:Verdana
+  n4["Lämpötila"]
+  style n4 fill:transparent,stroke:transparent,color:#13242e,font-family:Verdana
+  n5["Paine"]
+  style n5 fill:transparent,stroke:transparent,color:#13242e,font-family:Verdana
+  n2 -->|mittaa| n1
+  n3 -->|mittaa| n1
+  n4 -->|mittaa| n1
+  n5 -->|mittaa| n1

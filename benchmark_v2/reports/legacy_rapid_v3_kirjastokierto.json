@@ -1,0 +1,183 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 3,
+      "total": 3,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 8,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Kirjastokierto",
+      "observed": "Kirjastokierto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        256,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Teos",
+      "observed": "Teos",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        151,
+        420.0,
+        198,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Varaus",
+      "observed": "Varaus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        490,
+        420.0,
+        560,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Laina",
+      "observed": "Laina",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        848,
+        419.0,
+        902,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Palautus",
+      "observed": "Palautus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1181,
+        419.0,
+        1268,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "varataan",
+      "observed": "varataan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        302,
+        326,
+        398,
+        355
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "nouto",
+      "observed": "nouto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        664,
+        326,
+        737,
+        355
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "palautetaan",
+      "observed": "palautetaan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        988,
+        323,
+        1112,
+        357
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

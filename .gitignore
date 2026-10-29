@@ -1,0 +1,33 @@
+# Local Python environments and downloaded dependencies
+.venv/
+.vendor/
+.vendor_paddle/
+.vendor_rapidocr/
+**/__pycache__/
+*.py[cod]
+*.pyd
+
+# OCR model downloads and temporary outputs
+benchmark_v2/models/
+*.onnx
+*.pdiparams
+*.pdmodel
+*.pdiparams.info
+/output/
+*.log
+
+# Duplicate blind-session inputs; recreate with prepare_blind_inputs.py
+blind_vision/images/
+blind_fusion/images/
+blind_fusion/ocr/
+
+# Local secrets and editor files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

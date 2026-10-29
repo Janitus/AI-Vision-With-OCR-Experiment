@@ -1,0 +1,17 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Segoe UI", "primaryColor": "#ffffff", "lineColor": "#256b95", "textColor": "#18324a"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Terveydenhuolto
+  n1("Potilas")
+  style n1 fill:#d7efff,stroke:#18324a,color:#18324a,font-family:Segoe UI
+  n2("Terveysasema")
+  style n2 fill:#d8f4df,stroke:#18324a,color:#18324a,font-family:Segoe UI
+  n3("Lähete")
+  style n3 fill:#fff0cd,stroke:#18324a,color:#18324a,font-family:Segoe UI
+  n4("Laboratorio")
+  style n4 fill:#eadfff,stroke:#18324a,color:#18324a,font-family:Segoe UI
+  n5("Tulokset")
+  style n5 fill:#ffdce3,stroke:#18324a,color:#18324a,font-family:Segoe UI
+  n1 -->|ottaa vastaan| n2
+  n2 -->|laatii| n3
+  n3 -->|lähettää| n4
+  n4 -->|palauttaa| n5

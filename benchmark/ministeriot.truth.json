@@ -1,0 +1,225 @@
+{
+  "id": "ministeriot",
+  "title": "Ministeriöt",
+  "rendered_title": "Ministeriöt · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Eduskunta",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Valtioneuvosto",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Ministeriö",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Virasto",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Asetus",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Lausunto",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n2",
+      "target": "n1",
+      "relationship": "valmistelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n3",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "lausuu",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "käsittelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          269,
+          479
+        ],
+        [
+          931,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n6",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "valmistelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          645,
+          479
+        ],
+        [
+          975,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n6",
+      "target": "n4",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          520
+        ],
+        [
+          703,
+          520
+        ]
+      ]
+    }
+  ]
+}

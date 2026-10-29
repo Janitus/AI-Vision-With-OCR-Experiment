@@ -1,0 +1,224 @@
+{
+  "source": "codex_visual_review",
+  "image": "koulutus.png",
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Opettaja",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TM",
+      "label": "Oppilas",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TR",
+      "label": "Opetussuunnitelma",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BL",
+      "label": "Arviointi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BM",
+      "label": "Kurssi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BR",
+      "label": "Koulu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "unknown",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.45
+    },
+    {
+      "source": "TR",
+      "target": "TM",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          703,
+          135
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TL",
+      "target": "BL",
+      "relationship": "suorittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          180,
+          176
+        ],
+        [
+          180,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TL",
+      "target": "BM",
+      "relationship": "kuvaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          176
+        ],
+        [
+          555,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TM",
+      "target": "BM",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          600,
+          176
+        ],
+        [
+          600,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TM",
+      "target": "BR",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          645,
+          176
+        ],
+        [
+          975,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TR",
+      "target": "BM",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          975,
+          176
+        ],
+        [
+          645,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "rendered_title": "Koulutus · synteettinen testikaavio",
+  "visible_text": [
+    "Koulutus · synteettinen testikaavio",
+    "Opettaja",
+    "Oppilas",
+    "Opetussuunnitelma",
+    "Arviointi",
+    "Kurssi",
+    "Koulu",
+    "opettaa",
+    "suorittaa",
+    "kuvaa",
+    "ohjaa",
+    "opettaa",
+    "opettaa"
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TM",
+      "target": "TL",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    }
+  ],
+  "note": "Read from the rendered image. The fixture generator was authored in the same session, so this is not a blind independent model evaluation."
+}

@@ -1,0 +1,245 @@
+{
+  "image": "koulupolku.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Opintopolku",
+    "bbox": [
+      34,
+      30,
+      242,
+      73
+    ],
+    "confidence": 0.99998
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Oppilas",
+      "type": "text",
+      "center": [
+        700,
+        130
+      ],
+      "label_bbox": [
+        651,
+        114,
+        747,
+        152
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Kurssi A",
+      "type": "text",
+      "center": [
+        300,
+        375
+      ],
+      "label_bbox": [
+        246,
+        361,
+        353,
+        392
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9982
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Kurssi B",
+      "type": "text",
+      "center": [
+        1100,
+        375
+      ],
+      "label_bbox": [
+        1046,
+        360,
+        1152,
+        393
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.94643
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Arviointi A",
+      "type": "text",
+      "center": [
+        300,
+        645
+      ],
+      "label_bbox": [
+        233,
+        632,
+        367,
+        661
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99731
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Arviointi B",
+      "type": "text",
+      "center": [
+        1100,
+        645
+      ],
+      "label_bbox": [
+        1033,
+        629,
+        1167,
+        662
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99861
+      }
+    },
+    {
+      "id": "n5",
+      "label": "Todistus",
+      "type": "text",
+      "center": [
+        700,
+        760
+      ],
+      "label_bbox": [
+        647,
+        744,
+        753,
+        777
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "valitsee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        441,
+        214,
+        519,
+        276
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n0",
+      "target": "n2",
+      "relationship": "valitsee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        879,
+        213,
+        959,
+        278
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99997
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n3",
+      "relationship": "arvioidaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        482,
+        499,
+        578,
+        522
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "target": "n4",
+      "relationship": "arvioidaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        822,
+        499,
+        918,
+        522
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "target": "n5",
+      "relationship": "koostaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        383,
+        734,
+        455,
+        759
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e5",
+      "source": "n4",
+      "target": "n5",
+      "relationship": "koostaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        944,
+        735,
+        1016,
+        759
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    }
+  ],
+  "uncertainties": []
+}

@@ -1,0 +1,219 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 0,
+      "total": 1,
+      "recall": 0.0,
+      "cer": 0.125
+    },
+    "node": {
+      "exact": 4,
+      "total": 5,
+      "recall": 0.8,
+      "cer": 0.0476
+    },
+    "edge": {
+      "exact": 2,
+      "total": 4,
+      "recall": 0.5,
+      "cer": 0.1724
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 6,
+      "total": 10,
+      "recall": 0.6,
+      "cer": 0.1034,
+      "observed_items": 10,
+      "extra_ocr_items": 0,
+      "precision": 0.6
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Sähköverkon osat",
+      "observed": "Sahkoverkon osat",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        38,
+        38,
+        332,
+        63
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Voimala",
+      "observed": "Voimala",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        126,
+        422.0,
+        204,
+        439.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Sähköverkko",
+      "observed": "Sahkoverkko",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        367,
+        422.0,
+        492,
+        439.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Mittari",
+      "observed": "Mittari",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        663,
+        423.0,
+        726,
+        439.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Kuluttaja",
+      "observed": "Kuluttaja",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        918,
+        422.0,
+        1001,
+        444.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Raportti",
+      "observed": "Raportti",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1186,
+        423.0,
+        1263,
+        444.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "syöttää",
+      "observed": "syottaa",
+      "exact": false,
+      "character_edits": 3,
+      "bbox": [
+        254,
+        320,
+        343,
+        355
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "siirtää",
+      "observed": "siirtaa",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        524,
+        322,
+        601,
+        354
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "mittaa",
+      "observed": "mittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        788,
+        322,
+        869,
+        354
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "ilmoittaa",
+      "observed": "ilmoittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1042,
+        322,
+        1145,
+        354
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

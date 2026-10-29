@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Hälytys"]
+  TM["Johtokeskus"]
+  TR["Hätäkeskus"]
+  BL["Ensihoito"]
+  BM["Pelastuslaitos"]
+  BR["Tilannekuva"]
+  TL ---|unknown [direction unknown]| TR
+  TL -->|päivittää| BL
+  BL -->|päivittää| TM
+  TR -->|hälyttää| BL
+  BM -->|johtaa| BL
+  BM -->|tukee| TR
+  TR -->|välittää| BR

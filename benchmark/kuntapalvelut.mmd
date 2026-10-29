@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Kuntapalvelut
+  n1["Kuntalainen"]
+  n2["Hakemus"]
+  n3["Palvelupiste"]
+  n4["Päätös"]
+  n5["Asiakirja"]
+  n6["Arkisto"]
+  n1 -->|lähettää| n4
+  n1 -->|jättää| n5
+  n4 -->|käsittelee| n2
+  n2 -->|vahvistaa| n6
+  n3 -->|tallentaa| n5
+  n5 -->|lähettää| n4
+  n6 ---|jättää| n5

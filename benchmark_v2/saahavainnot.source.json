@@ -1,0 +1,156 @@
+{
+  "id": "saahavainnot",
+  "title": "Säähavainnot",
+  "context": "Sää ja ympäristö",
+  "layout": "TB",
+  "shape": "text",
+  "font": "verdana",
+  "size": 25,
+  "background": "#fcfdff",
+  "ink": "#13242e",
+  "edge": "#285a6d",
+  "palette": [
+    "#fcfdff",
+    "#fcfdff",
+    "#fcfdff",
+    "#fcfdff",
+    "#fcfdff"
+  ],
+  "nodes": [
+    {
+      "label": "Sääasema",
+      "x": 700,
+      "y": 410,
+      "shape": null,
+      "color": null,
+      "w": 210,
+      "h": 72
+    },
+    {
+      "label": "Tuuli",
+      "x": 230,
+      "y": 180,
+      "shape": null,
+      "color": null,
+      "w": 160,
+      "h": 72
+    },
+    {
+      "label": "Sade",
+      "x": 1170,
+      "y": 180,
+      "shape": null,
+      "color": null,
+      "w": 160,
+      "h": 72
+    },
+    {
+      "label": "Lämpötila",
+      "x": 230,
+      "y": 690,
+      "shape": null,
+      "color": null,
+      "w": 190,
+      "h": 72
+    },
+    {
+      "label": "Paine",
+      "x": 1170,
+      "y": 690,
+      "shape": null,
+      "color": null,
+      "w": 160,
+      "h": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": 1,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        435,
+        270
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          304,
+          216
+        ],
+        [
+          626,
+          374
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        965,
+        270
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1096,
+          216
+        ],
+        [
+          774,
+          374
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        438,
+        593
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          290,
+          654
+        ],
+        [
+          640,
+          446
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        962,
+        593
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1110,
+          654
+        ],
+        [
+          760,
+          446
+        ]
+      ]
+    }
+  ]
+}

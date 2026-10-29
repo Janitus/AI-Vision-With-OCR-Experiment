@@ -1,0 +1,287 @@
+{
+  "image_size": [
+    1200,
+    700
+  ],
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Näyte",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "TM",
+      "label": "Vesistö",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "TR",
+      "label": "Mittausasema",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.792,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BL",
+      "label": "Analyysi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.882,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BM",
+      "label": "Kunta",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.756,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BR",
+      "label": "Raportti",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.77,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "unknown",
+      "direction": "unknown",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.45,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TM",
+      "target": "TR",
+      "relationship": "kerää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BL",
+      "target": "TL",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "points": [
+        [
+          180,
+          479
+        ],
+        [
+          180,
+          176
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TL",
+      "target": "BR",
+      "relationship": "seuraa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ],
+      "confidence": 0.728,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TR",
+      "target": "BR",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          1020,
+          176
+        ],
+        [
+          1020,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BL",
+      "target": "BR",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BR",
+      "target": "BM",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          917,
+          520
+        ],
+        [
+          703,
+          520
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TM",
+      "target": "TL",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    },
+    {
+      "kind": "node_text_disagreement",
+      "node": "TL",
+      "vision_text": "Näyte",
+      "ocr_text": "Nayte",
+      "ocr_bbox": [
+        148,
+        123,
+        212,
+        149
+      ]
+    },
+    {
+      "kind": "node_text_disagreement",
+      "node": "TM",
+      "vision_text": "Vesistö",
+      "ocr_text": "Vesisto",
+      "ocr_bbox": [
+        560,
+        122,
+        640,
+        149
+      ]
+    },
+    {
+      "kind": "direction_unresolved",
+      "edge": 1
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 2,
+      "vision_text": "kerää",
+      "ocr_text": "keraa"
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 5,
+      "vision_text": "mittaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 6,
+      "vision_text": "mittaa",
+      "ocr_text": null
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "rapidocr_full",
+    "vision_source": "codex_visual_review"
+  },
+  "visible_text": [
+    "Ympäristö · synteettinen testikaavio",
+    "Näyte",
+    "Vesistö",
+    "Mittausasema",
+    "Analyysi",
+    "Kunta",
+    "Raportti",
+    "kerää",
+    "raportoi",
+    "seuraa",
+    "mittaa",
+    "mittaa",
+    "mittaa"
+  ]
+}

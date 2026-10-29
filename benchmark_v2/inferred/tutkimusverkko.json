@@ -1,0 +1,219 @@
+{
+  "image": "tutkimusverkko.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Tutkimusaineiston kulku",
+    "bbox": [
+      34,
+      32,
+      438,
+      68
+    ],
+    "confidence": 0.99999
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Aineisto",
+      "type": "box",
+      "center": [
+        700,
+        145
+      ],
+      "label_bbox": [
+        654,
+        132,
+        746,
+        159
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Keruu",
+      "type": "text",
+      "center": [
+        260,
+        370
+      ],
+      "label_bbox": [
+        227,
+        359,
+        294,
+        384
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Tallennus",
+      "type": "box",
+      "center": [
+        1140,
+        370
+      ],
+      "label_bbox": [
+        1084,
+        355,
+        1194,
+        385
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Analyysi",
+      "type": "text",
+      "center": [
+        260,
+        660
+      ],
+      "label_bbox": [
+        212,
+        645,
+        307,
+        676
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Julkaisu",
+      "type": "box",
+      "center": [
+        1140,
+        660
+      ],
+      "label_bbox": [
+        1094,
+        646,
+        1187,
+        674
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": true,
+      "label_bbox": [
+        435,
+        212,
+        504,
+        266
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n0",
+      "target": "n2",
+      "relationship": "tallentaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        883,
+        208,
+        974,
+        274
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n1",
+      "target": "n3",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "dashed": true,
+      "label_bbox": [
+        410,
+        511,
+        480,
+        531
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n2",
+      "target": "n4",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        922,
+        509,
+        987,
+        533
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99328
+      }
+    },
+    {
+      "id": "e4",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "avaa",
+      "direction": "undirected",
+      "dashed": true,
+      "label_bbox": [
+        675,
+        699,
+        726,
+        720
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9954
+      }
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unassigned_ocr_text",
+      "text": "00wad",
+      "bbox": [
+        558,
+        200,
+        586,
+        221
+      ]
+    }
+  ]
+}

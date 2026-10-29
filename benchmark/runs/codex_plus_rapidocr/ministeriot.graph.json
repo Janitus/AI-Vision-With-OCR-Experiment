@@ -1,0 +1,260 @@
+{
+  "image_size": [
+    1200,
+    700
+  ],
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Ministeriö",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "TM",
+      "label": "Eduskunta",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.87,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "TR",
+      "label": "Asetus",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.846,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BL",
+      "label": "Valtioneuvosto",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.885,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BM",
+      "label": "Virasto",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.873,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BR",
+      "label": "Lausunto",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.843,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TM",
+      "target": "TR",
+      "relationship": "lausuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "BL",
+      "target": "TM",
+      "relationship": "valmistelee",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "BL",
+      "target": "TR",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          479
+        ],
+        [
+          931,
+          176
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TL",
+      "target": "BR",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BM",
+      "target": "TR",
+      "relationship": "valmistelee",
+      "direction": "source_to_target",
+      "points": [
+        [
+          645,
+          479
+        ],
+        [
+          975,
+          176
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "BM",
+      "target": "BR",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "node_text_disagreement",
+      "node": "TL",
+      "vision_text": "Ministeriö",
+      "ocr_text": "Ministerio",
+      "ocr_bbox": [
+        131,
+        125,
+        228,
+        147
+      ]
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 4,
+      "vision_text": "ohjaa",
+      "ocr_text": "kiohjaae"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 5,
+      "vision_text": "ohjaa",
+      "ocr_text": "kiohjaae"
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "rapidocr_full",
+    "vision_source": "codex_visual_review"
+  },
+  "visible_text": [
+    "Ministeriöt · synteettinen testikaavio",
+    "Ministeriö",
+    "Eduskunta",
+    "Asetus",
+    "Valtioneuvosto",
+    "Virasto",
+    "Lausunto",
+    "antaa",
+    "lausuu",
+    "valmistelee",
+    "ohjaa",
+    "ohjaa",
+    "valmistelee",
+    "antaa"
+  ]
+}

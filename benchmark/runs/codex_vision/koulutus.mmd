@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Opettaja"]
+  TM["Oppilas"]
+  TR["Opetussuunnitelma"]
+  BL["Arviointi"]
+  BM["Kurssi"]
+  BR["Koulu"]
+  TM -->|unknown| TL
+  TR -->|opettaa| TM
+  TL -->|suorittaa| BL
+  TL -->|kuvaa| BM
+  TM -->|ohjaa| BM
+  TM -->|opettaa| BR
+  TR -->|opettaa| BM

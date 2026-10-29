@@ -1,0 +1,178 @@
+{
+  "id": "tutkimusverkko",
+  "title": "Tutkimusaineiston kulku",
+  "context": "Tutkimus",
+  "layout": "TB",
+  "shape": "mixed",
+  "font": "georgia",
+  "size": 23,
+  "background": "#ffffff",
+  "ink": "#21313e",
+  "edge": "#304b62",
+  "palette": [
+    "#e8f0f7",
+    "#ffffff",
+    "#e8f0f7",
+    "#ffffff",
+    "#e8f0f7"
+  ],
+  "nodes": [
+    {
+      "label": "Aineisto",
+      "x": 700,
+      "y": 145,
+      "shape": "box",
+      "color": null,
+      "w": 240,
+      "h": null
+    },
+    {
+      "label": "Keruu",
+      "x": 260,
+      "y": 370,
+      "shape": "text",
+      "color": null,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "label": "Tallennus",
+      "x": 1140,
+      "y": 370,
+      "shape": "box",
+      "color": null,
+      "w": 240,
+      "h": null
+    },
+    {
+      "label": "Analyysi",
+      "x": 260,
+      "y": 660,
+      "shape": "text",
+      "color": null,
+      "w": 200,
+      "h": 70
+    },
+    {
+      "label": "Julkaisu",
+      "x": 1140,
+      "y": 660,
+      "shape": "box",
+      "color": null,
+      "w": 240,
+      "h": null
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "ohjaa",
+      "label_xy": [
+        470,
+        240
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          614,
+          189
+        ],
+        [
+          328,
+          335
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "label": "tallentaa",
+      "label_xy": [
+        930,
+        240
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          786,
+          189
+        ],
+        [
+          1054,
+          326
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "tuottaa",
+      "label_xy": [
+        445,
+        520
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          260,
+          405
+        ],
+        [
+          260,
+          625
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "label": "siirtää",
+      "label_xy": [
+        955,
+        520
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1140,
+          414
+        ],
+        [
+          1140,
+          616
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "avaa",
+      "label_xy": [
+        700,
+        710
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": true,
+      "points": [
+        [
+          360,
+          660
+        ],
+        [
+          1020,
+          660
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "terveyspolku",
+    "title": "Hoitopolku",
+    "context": "Terveydenhuolto",
+    "style": "round",
+    "font": "segoe",
+    "image": "terveyspolku.png",
+    "mermaid": "terveyspolku.mmd"
+  },
+  {
+    "id": "ministerioprosessi",
+    "title": "Valmisteluketju",
+    "context": "Ministeriöt",
+    "style": "box",
+    "font": "georgia",
+    "image": "ministerioprosessi.png",
+    "mermaid": "ministerioprosessi.mmd"
+  },
+  {
+    "id": "saahavainnot",
+    "title": "Säähavainnot",
+    "context": "Sää ja ympäristö",
+    "style": "text",
+    "font": "verdana",
+    "image": "saahavainnot.png",
+    "mermaid": "saahavainnot.mmd"
+  },
+  {
+    "id": "junamatka",
+    "title": "Junamatkan vaiheet",
+    "context": "Liikenne",
+    "style": "circle",
+    "font": "arial_bold",
+    "image": "junamatka.png",
+    "mermaid": "junamatka.mmd"
+  },
+  {
+    "id": "koulupolku",
+    "title": "Opintopolku",
+    "context": "Koulutus",
+    "style": "text",
+    "font": "times",
+    "image": "koulupolku.png",
+    "mermaid": "koulupolku.mmd"
+  },
+  {
+    "id": "kirjastokierto",
+    "title": "Kirjastokierto",
+    "context": "Kirjastot",
+    "style": "pill",
+    "font": "calibri",
+    "image": "kirjastokierto.png",
+    "mermaid": "kirjastokierto.mmd"
+  },
+  {
+    "id": "veropaatos",
+    "title": "Veropäätöksen käsittely",
+    "context": "Verotus",
+    "style": "diamond",
+    "font": "arial",
+    "image": "veropaatos.png",
+    "mermaid": "veropaatos.mmd"
+  },
+  {
+    "id": "pelastusviesti",
+    "title": "Pelastustoimen viestit",
+    "context": "Pelastustoimi",
+    "style": "box",
+    "font": "courier",
+    "image": "pelastusviesti.png",
+    "mermaid": "pelastusviesti.mmd"
+  },
+  {
+    "id": "sahkoverkko",
+    "title": "Sähköverkon osat",
+    "context": "Energia",
+    "style": "hex",
+    "font": "segoe",
+    "image": "sahkoverkko.png",
+    "mermaid": "sahkoverkko.mmd"
+  },
+  {
+    "id": "tutkimusverkko",
+    "title": "Tutkimusaineiston kulku",
+    "context": "Tutkimus",
+    "style": "mixed",
+    "font": "georgia",
+    "image": "tutkimusverkko.png",
+    "mermaid": "tutkimusverkko.mmd"
+  }
+]

@@ -1,0 +1,126 @@
+<div id="benchmark-graph-viewer">
+  <div class="viz-controls">
+    <label class="form-label" for="benchmark-case">Graph
+      <select class="form-select" id="benchmark-case"></select>
+    </label>
+    <label class="form-label" for="benchmark-approach">Inferred by
+      <select class="form-select" id="benchmark-approach">
+        <option value="codex_vision">Codex vision review</option>
+        <option value="codex_plus_rapidocr">Codex + RapidOCR</option>
+        <option value="rapidocr_full">RapidOCR, full image</option>
+        <option value="rapidocr_crops">RapidOCR, node crops</option>
+      </select>
+    </label>
+  </div>
+  <div class="graph-heading">Source graph image</div>
+  <img id="benchmark-source" alt="Source graph" />
+  <div class="graph-heading">Inferred graph</div>
+  <svg id="benchmark-inferred" viewBox="0 0 1200 700" role="img" aria-label="Inferred graph"></svg>
+  <div class="legend"><span><i class="line directed"></i> Directed</span><span><i class="line uncertain"></i> Direction unresolved</span></div>
+  <div id="benchmark-status" aria-live="polite"></div>
+  <details><summary>Show source and inferred Mermaid</summary>
+    <div class="code-columns"><div><strong>Source</strong><pre><code id="benchmark-source-mermaid"></code></pre></div>
+    <div><strong>Inferred</strong><pre><code id="benchmark-inferred-mermaid"></code></pre></div></div>
+  </details>
+</div>
+<style>
+  #benchmark-graph-viewer { width:100%; color:var(--foreground); }
+  #benchmark-graph-viewer .viz-controls { margin-bottom:8px; }
+  #benchmark-graph-viewer .form-label { min-width:200px; }
+  #benchmark-graph-viewer .graph-heading { font-weight:600; font-size:14px; margin:12px 0 5px; }
+  #benchmark-graph-viewer img, #benchmark-graph-viewer svg { width:100%; height:auto; display:block; background:#fff; }
+  #benchmark-graph-viewer img { aspect-ratio:12/7; object-fit:contain; }
+  #benchmark-graph-viewer svg { aspect-ratio:12/7; }
+  #benchmark-graph-viewer .legend { display:flex; flex-wrap:wrap; gap:15px; font-size:12px; margin-top:7px; }
+  #benchmark-graph-viewer .legend span { display:inline-flex; align-items:center; gap:5px; }
+  #benchmark-graph-viewer .line { width:22px; display:inline-block; border-top:3px solid #1764a7; }
+  #benchmark-graph-viewer .line.uncertain { border-top:3px dashed #a2640a; }
+  #benchmark-graph-viewer #benchmark-status { font-size:13px; margin:8px 0; }
+  #benchmark-graph-viewer details { font-size:13px; margin-top:10px; }
+  #benchmark-graph-viewer .code-columns { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:8px; }
+  #benchmark-graph-viewer pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:12px; }
+  #benchmark-graph-viewer .edge { fill:none; stroke:#1764a7; stroke-width:3.5; }
+  #benchmark-graph-viewer .edge.unknown { stroke:#a2640a; stroke-dasharray:10 7; }
+  #benchmark-graph-viewer .edge-label { fill:#18212b; font:18px system-ui,sans-serif; text-anchor:middle; dominant-baseline:central; }
+  #benchmark-graph-viewer .node { fill:#e2f0fc; stroke:#35516a; stroke-width:2.5; }
+  #benchmark-graph-viewer .node-text { fill:#152432; font:20px system-ui,sans-serif; text-anchor:middle; dominant-baseline:middle; }
+  @media(max-width:600px) { #benchmark-graph-viewer .code-columns { grid-template-columns:1fr; } }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('benchmark-graph-viewer');
+  const data=__DATA_JSON__;
+  const caseSelect=root.querySelector('#benchmark-case');
+  const approachSelect=root.querySelector('#benchmark-approach');
+  const sourceImage=root.querySelector('#benchmark-source');
+  const svg=root.querySelector('#benchmark-inferred');
+  const status=root.querySelector('#benchmark-status');
+  const sourceCode=root.querySelector('#benchmark-source-mermaid');
+  const inferredCode=root.querySelector('#benchmark-inferred-mermaid');
+  const NS='http://www.w3.org/2000/svg';
+  const make=(tag,attrs,parent=svg)=>{
+    const el=document.createElementNS(NS,tag);
+    for(const [k,v] of Object.entries(attrs)) el.setAttribute(k,String(v));
+    parent.appendChild(el); return el;
+  };
+  Object.entries(data.cases).forEach(([key,value])=>{
+    const option=document.createElement('option');option.value=key;option.textContent=value.title;caseSelect.appendChild(option);
+  });
+  const saved=window.openai?.widgetState?.privateContent;
+  if(saved?.case && data.cases[saved.case]) caseSelect.value=saved.case;
+  if(saved?.approach && data.cases[caseSelect.value].approaches[saved.approach]) approachSelect.value=saved.approach;
+  function render(save){
+    const entry=data.cases[caseSelect.value];
+    const approach=approachSelect.value;
+    const graph=entry.approaches[approach].graph;
+    const errors=entry.approaches[approach].errors;
+    sourceImage.src=entry.image;
+    sourceImage.alt=`Source graph: ${entry.title}`;
+    svg.setAttribute('aria-label',`Inferred ${entry.title} graph using ${approachSelect.selectedOptions[0].textContent}`);
+    svg.replaceChildren();
+    const defs=make('defs',{});
+    const marker=make('marker',{id:'benchmark-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:8,markerHeight:8,orient:'auto'},defs);
+    make('path',{d:'M 0 1 L 9 5 L 0 9 z',fill:'#1764a7'},marker);
+    graph.edges.forEach(edge=>{
+      if(!edge.points || edge.points.length<2) return;
+      const d=edge.points.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join(' ');
+      const directed=edge.direction==='source_to_target';
+      make('path',{d,class:directed?'edge':'edge unknown',...(directed?{'marker-end':'url(#benchmark-arrow)'}:{})});
+      const first=edge.points[0],last=edge.points[edge.points.length-1];
+      const mid=[(first[0]+last[0])/2,(first[1]+last[1])/2];
+      const label=edge.relationship||'unknown';
+      const width=Math.max(58,label.length*10.5);
+      make('rect',{x:mid[0]-width/2,y:mid[1]-31,width,height:27,fill:'#fff'});
+      const t=make('text',{x:mid[0],y:mid[1]-17,class:'edge-label'});t.textContent=label;
+    });
+    graph.nodes.forEach(node=>{
+      const [x1,y1,x2,y2]=node.bbox;
+      make('rect',{x:x1,y:y1,width:x2-x1,height:y2-y1,rx:7,class:'node'});
+      const text=node.label||'(unread)';
+      const chunks=[];
+      if(text.length>19 && text.includes(' ')){
+        const words=text.split(' ');let line='';
+        words.forEach(word=>{if((line+' '+word).trim().length>17 && line){chunks.push(line);line=word;}else line=(line+' '+word).trim();});
+        if(line)chunks.push(line);
+      }else chunks.push(text);
+      chunks.forEach((part,i)=>{const t=make('text',{x:(x1+x2)/2,y:(y1+y2)/2+(i-(chunks.length-1)/2)*24,class:'node-text'});t.textContent=part;});
+    });
+    const counts={};errors.forEach(e=>counts[e.kind]=(counts[e.kind]||0)+1);
+    const kinds=[['missing_edge','missing edges'],['extra_edge','extra edges'],['wrong_arrow','wrong arrows'],['wrong_relationship','wrong edge labels'],['wrong_node_text','wrong node text']];
+    const summary=kinds.map(([kind,label])=>`${counts[kind]||0} ${label}`).join(' · ');
+    status.textContent=summary;
+    sourceCode.textContent=entry.sourceMmd;
+    inferredCode.textContent=entry.approaches[approach].mmd;
+    if(save) window.openai?.setWidgetState?.({modelContent:{case:caseSelect.value,approach},privateContent:{case:caseSelect.value,approach}}).catch(()=>{});
+  }
+  caseSelect.addEventListener('change',()=>render(true));
+  approachSelect.addEventListener('change',()=>render(true));
+  window.addEventListener('openai:set_globals',event=>{
+    const state=event.detail?.globals?.widgetState?.privateContent;
+    if(state?.case && data.cases[state.case]) caseSelect.value=state.case;
+    if(state?.approach && data.cases[caseSelect.value].approaches[state.approach]) approachSelect.value=state.approach;
+    render(false);
+  });
+  render(false);
+})();
+</script>

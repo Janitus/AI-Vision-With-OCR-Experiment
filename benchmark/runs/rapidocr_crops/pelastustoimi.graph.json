@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Halytys",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8740668371319771
+    },
+    {
+      "id": "box1",
+      "label": "Johtokeskus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8788200914859772
+    },
+    {
+      "id": "box2",
+      "label": "Hatakeskus",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.799187421798706
+    },
+    {
+      "id": "box3",
+      "label": "Ensihoito",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8168180167675019
+    },
+    {
+      "id": "box4",
+      "label": "Pelastuslaitos",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8774032831192017
+    },
+    {
+      "id": "box5",
+      "label": "Tilannekuva",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8795923888683319
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Halytys",
+    "Johtokeskus",
+    "Hatakeskus",
+    "Ensihoito",
+    "Pelastuslaitos",
+    "Tilannekuva"
+  ]
+}

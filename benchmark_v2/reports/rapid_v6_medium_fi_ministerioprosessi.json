@@ -1,0 +1,219 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 5,
+      "total": 5,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 10,
+      "total": 10,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 10,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Valmisteluketju",
+      "observed": "Valmisteluketju",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        37,
+        38,
+        286,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Aloite",
+      "observed": "Aloite",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        669,
+        131.0,
+        730,
+        148.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Ministeriö",
+      "observed": "Ministeriö",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        647,
+        291.0,
+        753,
+        308.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Lausunto",
+      "observed": "Lausunto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        652,
+        452.0,
+        748,
+        468.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Valtioneuvosto",
+      "observed": "Valtioneuvosto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        623,
+        611.0,
+        776,
+        628.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Päätös",
+      "observed": "Päätös",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        666,
+        771.0,
+        734,
+        788.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "saapuu",
+      "observed": "saapuu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        896,
+        204,
+        985,
+        235
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "pyytää",
+      "observed": "pyytää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        898,
+        362,
+        981,
+        399
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "palautuu",
+      "observed": "palautuu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        888,
+        522,
+        993,
+        559
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "hyväksyy",
+      "observed": "hyväksyy",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        887,
+        682,
+        993,
+        719
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        8
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

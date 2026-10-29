@@ -1,0 +1,190 @@
+{
+  "image": "sahkoverkko.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Sähköverkon osat",
+    "bbox": [
+      34,
+      30,
+      337,
+      69
+    ],
+    "confidence": 0.99998
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Voimala",
+      "type": "hex",
+      "center": [
+        165,
+        430
+      ],
+      "label_bbox": [
+        119,
+        414,
+        209,
+        448
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Sähköverkko",
+      "type": "hex",
+      "center": [
+        430,
+        430
+      ],
+      "label_bbox": [
+        364,
+        417,
+        495,
+        444
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Mittari",
+      "type": "hex",
+      "center": [
+        695,
+        430
+      ],
+      "label_bbox": [
+        657,
+        414,
+        732,
+        447
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99994
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Kuluttaja",
+      "type": "hex",
+      "center": [
+        960,
+        430
+      ],
+      "label_bbox": [
+        913,
+        414,
+        1006,
+        448
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.95848
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Raportti",
+      "type": "hex",
+      "center": [
+        1225,
+        430
+      ],
+      "label_bbox": [
+        1181,
+        416,
+        1268,
+        448
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        261,
+        321,
+        337,
+        351
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99865
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        530,
+        323,
+        594,
+        351
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99869
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        793,
+        322,
+        862,
+        354
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99995
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        1048,
+        322,
+        1138,
+        352
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    }
+  ],
+  "uncertainties": []
+}

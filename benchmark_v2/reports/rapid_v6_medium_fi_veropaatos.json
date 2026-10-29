@@ -1,0 +1,183 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 3,
+      "total": 3,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 8,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Veropäätöksen käsittely",
+      "observed": "Veropäätöksen käsittely",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        37,
+        38,
+        427,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Ilmoitus",
+      "observed": "Ilmoitus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        662,
+        152.0,
+        737,
+        168.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Tarkistus",
+      "observed": "Tarkistus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        656,
+        357.0,
+        744,
+        373.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Päätös",
+      "observed": "Päätös",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        666,
+        562.0,
+        734,
+        578.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Oikaisu",
+      "observed": "Oikaisu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        663,
+        767.0,
+        736,
+        783.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "vastaanottaa",
+      "observed": "vastaanottaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        917,
+        246,
+        1063,
+        277
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "arvioi",
+      "observed": "arvioi",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        953,
+        452,
+        1027,
+        483
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "voi johtaa",
+      "observed": "voi johtaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        932,
+        654,
+        1047,
+        689
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

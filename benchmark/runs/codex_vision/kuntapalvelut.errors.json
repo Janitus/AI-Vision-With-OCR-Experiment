@@ -1,0 +1,72 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 7,
+    "matched_topology": 7,
+    "truth_text_items": 14,
+    "observed_text_items": 13
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 1.0,
+    "node_label_recall": 1.0,
+    "node_cer": 0.0,
+    "node_type_exact": 1.0,
+    "mean_bbox_iou": 1.0,
+    "visible_text_precision": 0.9231,
+    "visible_text_recall": 0.8571,
+    "topology_precision": 1.0,
+    "topology_recall": 1.0,
+    "arrow_accuracy": 0.7143,
+    "relationship_exact": 0.7143,
+    "full_edge_precision": 0.5714,
+    "full_edge_recall": 0.5714,
+    "end_to_end_edge_precision": 0.5714,
+    "end_to_end_edge_recall": 0.5714
+  },
+  "errors": [
+    {
+      "kind": "wrong_arrow",
+      "expected": "n3->n5",
+      "observed": "unknown"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n3",
+      "target": "n5",
+      "expected": "tallentaa",
+      "observed": "unknown"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n1",
+      "target": "n5",
+      "expected": "jättää",
+      "observed": "vahvistaa"
+    },
+    {
+      "kind": "wrong_arrow",
+      "expected": "undirected",
+      "observed": "n5->n6"
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "jättää",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "tallentaa",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "vahvistaa",
+      "count": 1
+    }
+  ]
+}

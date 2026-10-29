@@ -1,0 +1,229 @@
+{
+  "source": "codex_visual_review",
+  "image": "verotus.png",
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Ilmoitus",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TM",
+      "label": "Maksu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TR",
+      "label": "Päätös",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BL",
+      "label": "Verovelvollinen",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BM",
+      "label": "Oikaisu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BR",
+      "label": "Verohallinto",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "määrää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TM",
+      "target": "TR",
+      "relationship": "unknown",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.45
+    },
+    {
+      "source": "BL",
+      "target": "BM",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          497,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BM",
+      "target": "BR",
+      "relationship": "unknown",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ],
+      "confidence": 0.45
+    },
+    {
+      "source": "BL",
+      "target": "TM",
+      "relationship": "maksaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BL",
+      "target": "TR",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          479
+        ],
+        [
+          931,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BR",
+      "target": "TL",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          479
+        ],
+        [
+          269,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "rendered_title": "Verotus · synteettinen testikaavio",
+  "visible_text": [
+    "Verotus · synteettinen testikaavio",
+    "Ilmoitus",
+    "Maksu",
+    "Päätös",
+    "Verovelvollinen",
+    "Oikaisu",
+    "Verohallinto",
+    "määrää",
+    "tarkistaa",
+    "maksaa",
+    "lähettää",
+    "lähettää"
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TM",
+      "target": "TR",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    },
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "BM",
+      "target": "BR",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    }
+  ],
+  "note": "Read from the rendered image. The fixture generator was authored in the same session, so this is not a blind independent model evaluation."
+}

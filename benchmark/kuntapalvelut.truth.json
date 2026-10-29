@@ -1,0 +1,225 @@
+{
+  "id": "kuntapalvelut",
+  "title": "Kuntapalvelut",
+  "rendered_title": "Kuntapalvelut · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Kuntalainen",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Hakemus",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Palvelupiste",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Päätös",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Asiakirja",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Arkisto",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n4",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          497,
+          520
+        ],
+        [
+          283,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "jättää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          645,
+          479
+        ],
+        [
+          975,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n2",
+      "relationship": "käsittelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n6",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          645,
+          176
+        ],
+        [
+          975,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n5",
+      "relationship": "tallentaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n5",
+      "target": "n4",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          931,
+          176
+        ],
+        [
+          269,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n6",
+      "target": "n5",
+      "relationship": "jättää",
+      "direction": "undirected",
+      "confidence": 1.0,
+      "points": [
+        [
+          1020,
+          479
+        ],
+        [
+          1020,
+          176
+        ]
+      ]
+    }
+  ]
+}

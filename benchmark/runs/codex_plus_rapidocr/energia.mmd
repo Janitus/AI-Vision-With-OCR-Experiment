@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Voimala"]
+  TM["Ennuste"]
+  TR["Kuluttaja"]
+  BL["Sähköverkko"]
+  BM["Mittari"]
+  BR["Varasto"]
+  TL -->|tasaa| TM
+  BL -->|siirtää| BM
+  TM -->|ohjaa| BM
+  TR -->|tasaa| BM
+  BR -->|tasaa| TM
+  BR -->|tuottaa| TL
+  TL -->|ohjaa| BR

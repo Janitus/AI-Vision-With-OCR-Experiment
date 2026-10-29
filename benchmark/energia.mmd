@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Energia
+  n1["Voimala"]
+  n2["Sähköverkko"]
+  n3["Mittari"]
+  n4["Kuluttaja"]
+  n5["Ennuste"]
+  n6["Varasto"]
+  n1 -->|ohjaa| n3
+  n1 -->|tasaa| n5
+  n6 -->|tuottaa| n1
+  n3 -->|siirtää| n2
+  n4 -->|mittaa| n3
+  n5 -->|ohjaa| n3
+  n6 -->|tasaa| n5

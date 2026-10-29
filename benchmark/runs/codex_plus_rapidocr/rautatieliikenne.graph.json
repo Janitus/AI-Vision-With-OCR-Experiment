@@ -1,0 +1,286 @@
+{
+  "image_size": [
+    1200,
+    700
+  ],
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Lippu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.793,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "TM",
+      "label": "Liikenteenohjaus",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "TR",
+      "label": "Aikataulu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.881,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BL",
+      "label": "Juna",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.796,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BM",
+      "label": "Matkustaja",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.838,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BR",
+      "label": "Asema",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.718,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TL",
+      "target": "TM",
+      "relationship": "unknown",
+      "direction": "unknown",
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          497,
+          135
+        ]
+      ],
+      "confidence": 0.45,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TM",
+      "target": "TR",
+      "relationship": "yhdistää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BL",
+      "target": "BM",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          497,
+          520
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "BM",
+      "target": "BR",
+      "relationship": "unknown",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ],
+      "confidence": 0.45,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BM",
+      "target": "TM",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          600,
+          479
+        ],
+        [
+          600,
+          176
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TR",
+      "target": "BL",
+      "relationship": "yhdistää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          176
+        ],
+        [
+          269,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BR",
+      "target": "TL",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          479
+        ],
+        [
+          269,
+          176
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TL",
+      "target": "TM",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    },
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "BM",
+      "target": "BR",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    },
+    {
+      "kind": "node_text_disagreement",
+      "node": "TM",
+      "vision_text": "Liikenteenohjaus",
+      "ocr_text": "Likenteenohjaus",
+      "ocr_bbox": [
+        516,
+        124,
+        683,
+        148
+      ]
+    },
+    {
+      "kind": "direction_unresolved",
+      "edge": 1
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 2,
+      "vision_text": "yhdistää",
+      "ocr_text": "yhdistaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 5,
+      "vision_text": "ohjaa",
+      "ocr_text": "1ohjaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 6,
+      "vision_text": "yhdistää",
+      "ocr_text": "Yhoistaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 7,
+      "vision_text": "ohjaa",
+      "ocr_text": "1ohjaa"
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "rapidocr_full",
+    "vision_source": "codex_visual_review"
+  },
+  "visible_text": [
+    "Rautatieliikenne · synteettinen testikaavio",
+    "Lippu",
+    "Liikenteenohjaus",
+    "Aikataulu",
+    "Juna",
+    "Matkustaja",
+    "Asema",
+    "yhdistää",
+    "vahvistaa",
+    "ohjaa",
+    "yhdistää",
+    "ohjaa"
+  ]
+}

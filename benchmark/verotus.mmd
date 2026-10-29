@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Verotus
+  n1["Verovelvollinen"]
+  n2["Ilmoitus"]
+  n3["Verohallinto"]
+  n4["Päätös"]
+  n5["Maksu"]
+  n6["Oikaisu"]
+  n1 -->|käsittelee| n3
+  n1 -->|määrää| n4
+  n1 -->|maksaa| n5
+  n1 -->|tarkistaa| n6
+  n3 -->|lähettää| n2
+  n2 -->|käsittelee| n4
+  n2 ---|määrää| n5

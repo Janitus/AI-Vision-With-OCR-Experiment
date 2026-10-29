@@ -1,0 +1,224 @@
+{
+  "node_count": 15,
+  "edge_count": 14,
+  "uncertainty_count": 34,
+  "uncertainties": [
+    {
+      "kind": "source_not_run",
+      "detail": "OCR and local vision model were unavailable for this sample review; all text and edges require machine verification."
+    },
+    {
+      "kind": "small_text",
+      "node": "term",
+      "detail": "Red fill lowers readability; exact spelling is uncertain."
+    },
+    {
+      "kind": "crossing_lines",
+      "detail": "Two diagonal lines between the yellow and blue/purple boxes appear to cross. Their endpoints and 'annetaan' labels are too ambiguous to emit as edges."
+    },
+    {
+      "kind": "cross_container_line",
+      "detail": "A 'perustuu' arrow crosses the boundary between the two orange containers near x=703, y=425; its source is unclear, so no edge was emitted."
+    },
+    {
+      "kind": "relationship_direction",
+      "source": "law_551",
+      "target": "decree_375",
+      "detail": "The line appears to point toward decree_375, although 'täydentää' could invite a different semantic reading; geometry was used."
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "legal_group",
+      "vision_text": "Puolustusvoimien säädösperusta",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "law_175",
+      "vision_text": "Valtioneuvostolaki (175/2003): Laki",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "law_551",
+      "vision_text": "Laki puolustusvoimista (551/2007): Laki",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1490",
+      "vision_text": "Tasavallan presidentin asetus sotilas- ja palvelusarvoista ym. (1490/2007): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_539",
+      "vision_text": "Valtioneuvoston asetus puolustusvoimien aluetoimistoista (539/2013): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_262",
+      "vision_text": "Valtioneuvoston ohjesääntö (262/2003): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_375",
+      "vision_text": "Valtioneuvoston asetus puolustusministeriöstä (375/2003): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1319",
+      "vision_text": "Valtioneuvoston asetus puolustusvoimista (1319/2001): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1089",
+      "vision_text": "Tasavallan presidentin asetus toimivallan jaosta sotilaskäskyasioissa (1089/2007): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "description_group",
+      "vision_text": "Puolustusvoimien kuvailu",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "term",
+      "vision_text": "Kokonaisuuteen liittyvät termit: Termi",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "organization",
+      "vision_text": "Puolustusvoimien osat ja niiden yleistykset: Organisaatioyksikkö",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "person",
+      "vision_text": "Puolustusvoimien toimijat ja niiden yleistykset: Henkilön sijoitus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "authority",
+      "vision_text": "Puolustusvoimien ja sen osien toimivalta: Toimivalta",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "task",
+      "vision_text": "Puolustusvoimien ja sen osien tehtävät: Tehtävä",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 1,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 2,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 3,
+      "vision_text": "tarkentaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 4,
+      "vision_text": "täydentää",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 5,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 6,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 7,
+      "vision_text": "täydentää",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 8,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 9,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 10,
+      "vision_text": "kuvaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 11,
+      "vision_text": "kuvaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 12,
+      "vision_text": "liittyy tai kuuluu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 13,
+      "vision_text": "annetaan",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 14,
+      "vision_text": "annetaan",
+      "ocr_text": null
+    }
+  ],
+  "notes": [
+    "Vision-only text has reduced confidence.",
+    "An edge is emitted only when the vision result includes trace points and valid endpoints.",
+    "Visual and OCR agreement does not prove semantic correctness."
+  ]
+}

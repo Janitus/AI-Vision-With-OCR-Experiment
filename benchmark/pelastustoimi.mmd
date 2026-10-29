@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Pelastustoimi
+  n1["Hälytys"]
+  n2["Hätäkeskus"]
+  n3["Pelastuslaitos"]
+  n4["Ensihoito"]
+  n5["Johtokeskus"]
+  n6["Tilannekuva"]
+  n2 -->|johtaa| n1
+  n1 -->|päivittää| n4
+  n3 -->|tukee| n2
+  n2 -->|hälyttää| n4
+  n2 -->|välittää| n6
+  n3 -->|johtaa| n4
+  n4 -->|päivittää| n5

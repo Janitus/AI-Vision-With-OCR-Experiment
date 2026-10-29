@@ -1,0 +1,272 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 0,
+    "matched_topology": 0,
+    "truth_text_items": 14,
+    "observed_text_items": 12
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 0.8333,
+    "node_label_recall": 0.8333,
+    "node_cer": 0.0577,
+    "node_type_exact": 0.0,
+    "mean_bbox_iou": 0.9832,
+    "visible_text_precision": 0.5,
+    "visible_text_recall": 0.4286,
+    "topology_precision": null,
+    "topology_recall": 0.0,
+    "arrow_accuracy": null,
+    "relationship_exact": null,
+    "full_edge_precision": null,
+    "full_edge_recall": 0.0,
+    "end_to_end_edge_precision": null,
+    "end_to_end_edge_recall": 0.0
+  },
+  "errors": [
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n6",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n1",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "wrong_node_text",
+      "truth_id": "n4",
+      "expected": "Päätös",
+      "observed": "Paatos",
+      "character_edits": 3,
+      "bbox_iou": 0.983
+    },
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n4",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n5",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n2",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "wrong_node_type",
+      "truth_id": "n3",
+      "expected": "rounded_rectangle",
+      "observed": "colored_rectangle"
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n1",
+        "target": "n4",
+        "relationship": "lähettää",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            497,
+            520
+          ],
+          [
+            283,
+            520
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n1",
+        "target": "n5",
+        "relationship": "jättää",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            645,
+            479
+          ],
+          [
+            975,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n4",
+        "target": "n2",
+        "relationship": "käsittelee",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            225,
+            479
+          ],
+          [
+            555,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n2",
+        "target": "n6",
+        "relationship": "vahvistaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            645,
+            176
+          ],
+          [
+            975,
+            479
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n3",
+        "target": "n5",
+        "relationship": "tallentaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            283,
+            135
+          ],
+          [
+            917,
+            135
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n5",
+        "target": "n4",
+        "relationship": "lähettää",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            931,
+            176
+          ],
+          [
+            269,
+            479
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n6",
+        "target": "n5",
+        "relationship": "jättää",
+        "direction": "undirected",
+        "confidence": 1.0,
+        "points": [
+          [
+            1020,
+            479
+          ],
+          [
+            1020,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "Kuntapalvelut · synteettinen testikaavio",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "Päätös",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "lähettää",
+      "count": 2
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "jättää",
+      "count": 2
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "käsittelee",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "tallentaa",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "Kuntapalvelut : synteettinen testikaavio",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "kasittelee",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "lahettaa",
+      "count": 2
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "jattaa",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "Paatos",
+      "count": 1
+    }
+  ]
+}

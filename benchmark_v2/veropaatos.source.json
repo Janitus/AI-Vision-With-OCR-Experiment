@@ -1,0 +1,124 @@
+{
+  "id": "veropaatos",
+  "title": "Veropäätöksen käsittely",
+  "context": "Verotus",
+  "layout": "TB",
+  "shape": "diamond",
+  "font": "arial",
+  "size": 22,
+  "background": "#ffffff",
+  "ink": "#202020",
+  "edge": "#202020",
+  "palette": [
+    "#ffffff",
+    "#ffffff",
+    "#ffffff",
+    "#ffffff"
+  ],
+  "nodes": [
+    {
+      "label": "Ilmoitus",
+      "x": 700,
+      "y": 160,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": 105
+    },
+    {
+      "label": "Tarkistus",
+      "x": 700,
+      "y": 365,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": 105
+    },
+    {
+      "label": "Päätös",
+      "x": 700,
+      "y": 570,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": 105
+    },
+    {
+      "label": "Oikaisu",
+      "x": 700,
+      "y": 775,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": 105
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "vastaanottaa",
+      "label_xy": [
+        990,
+        262
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          700,
+          212
+        ],
+        [
+          700,
+          312
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "arvioi",
+      "label_xy": [
+        990,
+        467
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          700,
+          418
+        ],
+        [
+          700,
+          518
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "voi johtaa",
+      "label_xy": [
+        990,
+        672
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          700,
+          622
+        ],
+        [
+          700,
+          722
+        ]
+      ]
+    }
+  ]
+}

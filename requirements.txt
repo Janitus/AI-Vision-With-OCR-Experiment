@@ -1,0 +1,6 @@
+paddleocr>=3,<4
+paddlepaddle>=3,<4
+Pillow>=10
+numpy>=1.26
+rapidocr>=3.10,<4
+onnxruntime>=1.20

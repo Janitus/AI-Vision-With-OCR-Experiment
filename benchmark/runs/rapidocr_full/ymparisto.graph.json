@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Nayte",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.82234459122022
+    },
+    {
+      "id": "box1",
+      "label": "Vesisto",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8349861577153206
+    },
+    {
+      "id": "box2",
+      "label": "Mittausasema",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.7919403222891
+    },
+    {
+      "id": "box3",
+      "label": "Analyysi",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8824599517716302
+    },
+    {
+      "id": "box4",
+      "label": "Kunta",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.7557011743386587
+    },
+    {
+      "id": "box5",
+      "label": "Raportti",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7702819406986237
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Ymparisto : synteettinen testikaavio",
+    "keraa",
+    "Nayte",
+    "Vesisto",
+    "Mittausasema",
+    "seuraa",
+    "mittaa",
+    "raportoi",
+    "mittaa",
+    "Analyysi",
+    "Kunta",
+    "Raportti"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Tulokset",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8638146917025248
+    },
+    {
+      "id": "box1",
+      "label": "Lahete",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8266375746045794
+    },
+    {
+      "id": "box2",
+      "label": "Laboratorio",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.782201811671257
+    },
+    {
+      "id": "box3",
+      "label": "Terveysasema",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.9224616655936608
+    },
+    {
+      "id": "box4",
+      "label": "Potilas",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8666845336556435
+    },
+    {
+      "id": "box5",
+      "label": "Erikoissairaanhoito",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8883876994252204
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Tulokset",
+    "Lahete",
+    "Laboratorio",
+    "Terveysasema",
+    "Potilas",
+    "Erikoissairaanhoito"
+  ]
+}

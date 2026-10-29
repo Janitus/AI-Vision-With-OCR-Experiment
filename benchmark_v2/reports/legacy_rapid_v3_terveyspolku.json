@@ -1,0 +1,219 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 4,
+      "total": 5,
+      "recall": 0.8,
+      "cer": 0.0227
+    },
+    "edge": {
+      "exact": 2,
+      "total": 4,
+      "recall": 0.5,
+      "cer": 0.1111
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 7,
+      "total": 10,
+      "recall": 0.7,
+      "cer": 0.0556,
+      "observed_items": 10,
+      "extra_ocr_items": 0,
+      "precision": 0.7
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Hoitopolku",
+      "observed": "Hoitopolku",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        216,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Potilas",
+      "observed": "Potilas",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        111,
+        428.0,
+        179,
+        445.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Terveysasema",
+      "observed": "Terveysasema",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        349,
+        429.0,
+        491,
+        450.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Lähete",
+      "observed": "Lahete",
+      "exact": false,
+      "character_edits": 1,
+      "bbox": [
+        661,
+        428.0,
+        729,
+        445.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Laboratorio",
+      "observed": "Laboratorio",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        911,
+        428.0,
+        1029,
+        445.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Tulokset",
+      "observed": "Tulokset",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1203,
+        428.0,
+        1288,
+        445.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "ottaa vastaan",
+      "observed": "ottaa vastaan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        208,
+        338,
+        355,
+        368
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "laatii",
+      "observed": "laati",
+      "exact": false,
+      "character_edits": 1,
+      "bbox": [
+        525,
+        337,
+        591,
+        369
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "lähettää",
+      "observed": "lahettaa",
+      "exact": false,
+      "character_edits": 3,
+      "bbox": [
+        784,
+        337,
+        881,
+        369
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "palauttaa",
+      "observed": "palauttaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1054,
+        334,
+        1163,
+        371
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

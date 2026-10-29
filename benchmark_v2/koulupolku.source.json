@@ -1,0 +1,210 @@
+{
+  "id": "koulupolku",
+  "title": "Opintopolku",
+  "context": "Koulutus",
+  "layout": "TB",
+  "shape": "text",
+  "font": "times",
+  "size": 27,
+  "background": "#ffffff",
+  "ink": "#1c1c1c",
+  "edge": "#222222",
+  "palette": [
+    "#ffffff",
+    "#ffffff",
+    "#ffffff",
+    "#ffffff",
+    "#ffffff",
+    "#ffffff"
+  ],
+  "nodes": [
+    {
+      "label": "Oppilas",
+      "x": 700,
+      "y": 130,
+      "shape": null,
+      "color": null,
+      "w": 200,
+      "h": 72
+    },
+    {
+      "label": "Kurssi A",
+      "x": 300,
+      "y": 375,
+      "shape": null,
+      "color": null,
+      "w": 205,
+      "h": 72
+    },
+    {
+      "label": "Kurssi B",
+      "x": 1100,
+      "y": 375,
+      "shape": null,
+      "color": null,
+      "w": 205,
+      "h": 72
+    },
+    {
+      "label": "Arviointi A",
+      "x": 300,
+      "y": 645,
+      "shape": null,
+      "color": null,
+      "w": 230,
+      "h": 72
+    },
+    {
+      "label": "Arviointi B",
+      "x": 1100,
+      "y": 645,
+      "shape": null,
+      "color": null,
+      "w": 230,
+      "h": 72
+    },
+    {
+      "label": "Todistus",
+      "x": 700,
+      "y": 760,
+      "shape": null,
+      "color": null,
+      "w": 200,
+      "h": 72
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "valitsee",
+      "label_xy": [
+        480,
+        245
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          641,
+          166
+        ],
+        [
+          359,
+          339
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "label": "valitsee",
+      "label_xy": [
+        920,
+        245
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          759,
+          166
+        ],
+        [
+          1041,
+          339
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "arvioidaan",
+      "label_xy": [
+        530,
+        510
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          300,
+          411
+        ],
+        [
+          300,
+          609
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "label": "arvioidaan",
+      "label_xy": [
+        870,
+        510
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1100,
+          411
+        ],
+        [
+          1100,
+          609
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "label": "koostaa",
+      "label_xy": [
+        420,
+        745
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          415,
+          678
+        ],
+        [
+          600,
+          731
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "koostaa",
+      "label_xy": [
+        980,
+        745
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          985,
+          678
+        ],
+        [
+          800,
+          731
+        ]
+      ]
+    }
+  ]
+}

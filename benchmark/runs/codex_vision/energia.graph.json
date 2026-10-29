@@ -1,0 +1,218 @@
+{
+  "source": "codex_visual_review",
+  "image": "energia.png",
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Voimala",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TM",
+      "label": "Ennuste",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TR",
+      "label": "Kuluttaja",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BL",
+      "label": "Sähköverkko",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BM",
+      "label": "Mittari",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BR",
+      "label": "Varasto",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "TL",
+      "target": "TM",
+      "relationship": "tasaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          497,
+          135
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BL",
+      "target": "BM",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          497,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TM",
+      "target": "BM",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          600,
+          176
+        ],
+        [
+          600,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TR",
+      "target": "BM",
+      "relationship": "tasaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          975,
+          176
+        ],
+        [
+          645,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BR",
+      "target": "TM",
+      "relationship": "tasaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          975,
+          479
+        ],
+        [
+          645,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BR",
+      "target": "TL",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          479
+        ],
+        [
+          269,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TL",
+      "target": "BR",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "rendered_title": "Energia · synteettinen testikaavio",
+  "visible_text": [
+    "Energia · synteettinen testikaavio",
+    "Voimala",
+    "Ennuste",
+    "Kuluttaja",
+    "Sähköverkko",
+    "Mittari",
+    "Varasto",
+    "tasaa",
+    "siirtää",
+    "ohjaa",
+    "tasaa",
+    "tasaa",
+    "tuottaa",
+    "ohjaa"
+  ],
+  "uncertainties": [],
+  "note": "Read from the rendered image. The fixture generator was authored in the same session, so this is not a blind independent model evaluation."
+}

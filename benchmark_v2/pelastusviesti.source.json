@@ -1,0 +1,156 @@
+{
+  "id": "pelastusviesti",
+  "title": "Pelastustoimen viestit",
+  "context": "Pelastustoimi",
+  "layout": "LR",
+  "shape": "box",
+  "font": "courier",
+  "size": 22,
+  "background": "#17242f",
+  "ink": "#f5f7fa",
+  "edge": "#b7d8ef",
+  "palette": [
+    "#233b4d",
+    "#284557",
+    "#244150",
+    "#294356",
+    "#25404f"
+  ],
+  "nodes": [
+    {
+      "label": "Hälytys",
+      "x": 140,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 200,
+      "h": null
+    },
+    {
+      "label": "Hätäkeskus",
+      "x": 420,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": null
+    },
+    {
+      "label": "Pelastuslaitos",
+      "x": 710,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 245,
+      "h": null
+    },
+    {
+      "label": "Tilannekuva",
+      "x": 1000,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 220,
+      "h": null
+    },
+    {
+      "label": "Johto",
+      "x": 1260,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 190,
+      "h": null
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "välittää",
+      "label_xy": [
+        280,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          240,
+          430
+        ],
+        [
+          310,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "hälyttää",
+      "label_xy": [
+        565,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          530,
+          430
+        ],
+        [
+          588,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "päivittää",
+      "label_xy": [
+        855,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          832,
+          430
+        ],
+        [
+          890,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "tiedottaa",
+      "label_xy": [
+        1130,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1110,
+          430
+        ],
+        [
+          1165,
+          430
+        ]
+      ]
+    }
+  ]
+}

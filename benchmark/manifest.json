@@ -1,0 +1,72 @@
+[
+  {
+    "id": "terveydenhuolto",
+    "context": "Terveydenhuolto",
+    "image": "terveydenhuolto.png",
+    "source": "terveydenhuolto.mmd",
+    "truth": "terveydenhuolto.truth.json"
+  },
+  {
+    "id": "ministeriot",
+    "context": "Ministeriöt",
+    "image": "ministeriot.png",
+    "source": "ministeriot.mmd",
+    "truth": "ministeriot.truth.json"
+  },
+  {
+    "id": "pelastustoimi",
+    "context": "Pelastustoimi",
+    "image": "pelastustoimi.png",
+    "source": "pelastustoimi.mmd",
+    "truth": "pelastustoimi.truth.json"
+  },
+  {
+    "id": "rautatieliikenne",
+    "context": "Rautatieliikenne",
+    "image": "rautatieliikenne.png",
+    "source": "rautatieliikenne.mmd",
+    "truth": "rautatieliikenne.truth.json"
+  },
+  {
+    "id": "koulutus",
+    "context": "Koulutus",
+    "image": "koulutus.png",
+    "source": "koulutus.mmd",
+    "truth": "koulutus.truth.json"
+  },
+  {
+    "id": "ymparisto",
+    "context": "Ympäristö",
+    "image": "ymparisto.png",
+    "source": "ymparisto.mmd",
+    "truth": "ymparisto.truth.json"
+  },
+  {
+    "id": "verotus",
+    "context": "Verotus",
+    "image": "verotus.png",
+    "source": "verotus.mmd",
+    "truth": "verotus.truth.json"
+  },
+  {
+    "id": "kirjastot",
+    "context": "Kirjastot",
+    "image": "kirjastot.png",
+    "source": "kirjastot.mmd",
+    "truth": "kirjastot.truth.json"
+  },
+  {
+    "id": "energia",
+    "context": "Energia",
+    "image": "energia.png",
+    "source": "energia.mmd",
+    "truth": "energia.truth.json"
+  },
+  {
+    "id": "kuntapalvelut",
+    "context": "Kuntapalvelut",
+    "image": "kuntapalvelut.png",
+    "source": "kuntapalvelut.mmd",
+    "truth": "kuntapalvelut.truth.json"
+  }
+]

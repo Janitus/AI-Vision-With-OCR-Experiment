@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Voimala",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8716471567749977
+    },
+    {
+      "id": "box1",
+      "label": "Ennuste",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8712021708488464
+    },
+    {
+      "id": "box2",
+      "label": "Kuluttaja",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8838910937309266
+    },
+    {
+      "id": "box3",
+      "label": "Sahkoverkko",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8929760803778967
+    },
+    {
+      "id": "box4",
+      "label": "Mittari",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.7668613195419312
+    },
+    {
+      "id": "box5",
+      "label": "Varasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7662981003522873
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Energia : synteettinen testikaavio",
+    "tasaa",
+    "Voimala",
+    "Ennuste",
+    "Kuluttaja",
+    "ohjaa",
+    "tuotaa",
+    "tasaa",
+    "ohjaa",
+    "siirtaa",
+    "Mittari",
+    "Sahkoverkko",
+    "Varasto"
+  ]
+}

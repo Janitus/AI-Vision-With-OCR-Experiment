@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Lippu",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8278292814890543
+    },
+    {
+      "id": "box1",
+      "label": "Liikenteenohjaus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8722524011836332
+    },
+    {
+      "id": "box2",
+      "label": "Aikataulu",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8878418624401092
+    },
+    {
+      "id": "box3",
+      "label": "Juna",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.7038938283920289
+    },
+    {
+      "id": "box4",
+      "label": "Matkustaja",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8725468028675426
+    },
+    {
+      "id": "box5",
+      "label": "Asema",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7614668905735016
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Lippu",
+    "Liikenteenohjaus",
+    "Aikataulu",
+    "Juna",
+    "Matkustaja",
+    "Asema"
+  ]
+}

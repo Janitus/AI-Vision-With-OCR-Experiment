@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Halytys",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8737407326698303
+    },
+    {
+      "id": "box1",
+      "label": "Johtokeskus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8883337080478668
+    },
+    {
+      "id": "box2",
+      "label": "Hatakeskus",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8773831129074097
+    },
+    {
+      "id": "box3",
+      "label": "Ensihoito",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8944398403167725
+    },
+    {
+      "id": "box4",
+      "label": "Pelastuslaitos",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.9208645383516948
+    },
+    {
+      "id": "box5",
+      "label": "Tilannekuva",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8695781727631887
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Pelastustoimi : synteettinen testikaavio",
+    "Halytys",
+    "Johtokeskus",
+    "Hatakeskus",
+    "paivittaa",
+    "halyttaa",
+    "tukee",
+    "paivittaa",
+    "valittaa",
+    "johtaa",
+    "Ensihoito",
+    "Pelastuslaitos",
+    "Tilannekuva"
+  ]
+}

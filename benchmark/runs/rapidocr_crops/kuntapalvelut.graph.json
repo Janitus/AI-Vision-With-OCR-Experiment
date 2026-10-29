@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Palvelupiste",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8701486037327693
+    },
+    {
+      "id": "box1",
+      "label": "Hakemus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8319676667451859
+    },
+    {
+      "id": "box2",
+      "label": "Asiakirja",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8666535437107086
+    },
+    {
+      "id": "box3",
+      "label": "Paatos",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8457794189453125
+    },
+    {
+      "id": "box4",
+      "label": "Kuntalainen",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8878909051418304
+    },
+    {
+      "id": "box5",
+      "label": "Arkisto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8219282180070877
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Palvelupiste",
+    "Hakemus",
+    "Asiakirja",
+    "Paatos",
+    "Kuntalainen",
+    "Arkisto"
+  ]
+}

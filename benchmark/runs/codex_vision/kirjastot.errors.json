@@ -1,0 +1,147 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 7,
+    "matched_topology": 5,
+    "truth_text_items": 14,
+    "observed_text_items": 11
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 1.0,
+    "node_label_recall": 1.0,
+    "node_cer": 0.0,
+    "node_type_exact": 1.0,
+    "mean_bbox_iou": 1.0,
+    "visible_text_precision": 0.9091,
+    "visible_text_recall": 0.7143,
+    "topology_precision": 0.7143,
+    "topology_recall": 0.7143,
+    "arrow_accuracy": 1.0,
+    "relationship_exact": 0.6,
+    "full_edge_precision": 0.4286,
+    "full_edge_recall": 0.4286,
+    "end_to_end_edge_precision": 0.4286,
+    "end_to_end_edge_recall": 0.4286
+  },
+  "errors": [
+    {
+      "kind": "wrong_relationship",
+      "source": "n2",
+      "target": "n5",
+      "expected": "varaa",
+      "observed": "unknown"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n1",
+      "target": "n6",
+      "expected": "palauttaa",
+      "observed": "välittää"
+    },
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "BM",
+        "target": "BL",
+        "relationship": "unknown",
+        "direction": "source_to_target",
+        "points": [
+          [
+            497,
+            520
+          ],
+          [
+            283,
+            520
+          ]
+        ],
+        "confidence": 0.45
+      }
+    },
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "BR",
+        "target": "BM",
+        "relationship": "unknown",
+        "direction": "unknown",
+        "points": [
+          [
+            917,
+            520
+          ],
+          [
+            703,
+            520
+          ]
+        ],
+        "confidence": 0.45
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n3",
+        "target": "n6",
+        "relationship": "luetteloi",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            917,
+            520
+          ],
+          [
+            283,
+            520
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n6",
+        "target": "n5",
+        "relationship": "palauttaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            269,
+            479
+          ],
+          [
+            931,
+            176
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "luetteloi",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "palauttaa",
+      "count": 2
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "varaa",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "välittää",
+      "count": 1
+    }
+  ]
+}

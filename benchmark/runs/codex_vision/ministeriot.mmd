@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Ministeriö"]
+  TM["Eduskunta"]
+  TR["Asetus"]
+  BL["Valtioneuvosto"]
+  BM["Virasto"]
+  BR["Lausunto"]
+  TM -->|antaa| TL
+  TM -->|lausuu| TR
+  BL -->|valmistelee| TM
+  BL -->|ohjaa| TR
+  TL -->|ohjaa| BR
+  BM -->|valmistelee| TR
+  BM -->|antaa| BR

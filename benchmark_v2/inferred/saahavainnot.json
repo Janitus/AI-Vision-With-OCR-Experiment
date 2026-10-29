@@ -1,0 +1,201 @@
+{
+  "image": "saahavainnot.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Säähavainnot",
+    "bbox": [
+      34,
+      31,
+      264,
+      68
+    ],
+    "confidence": 0.99995
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Sääasema",
+      "type": "text",
+      "center": [
+        700,
+        410
+      ],
+      "label_bbox": [
+        630,
+        394,
+        768,
+        426
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99439
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Tuuli",
+      "type": "text",
+      "center": [
+        230,
+        180
+      ],
+      "label_bbox": [
+        193,
+        162,
+        266,
+        198
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Sade",
+      "type": "text",
+      "center": [
+        1170,
+        180
+      ],
+      "label_bbox": [
+        1133,
+        162,
+        1207,
+        198
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Lämpötila",
+      "type": "text",
+      "center": [
+        230,
+        690
+      ],
+      "label_bbox": [
+        163,
+        674,
+        294,
+        709
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.95453
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Paine",
+      "type": "text",
+      "center": [
+        1170,
+        690
+      ],
+      "label_bbox": [
+        1129,
+        672,
+        1209,
+        710
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n1",
+      "target": "n0",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        394,
+        241,
+        475,
+        300
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99995
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n2",
+      "target": "n0",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        923,
+        240,
+        1006,
+        301
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99992
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n3",
+      "target": "n0",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        395,
+        559,
+        480,
+        628
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99992
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n4",
+      "target": "n0",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        920,
+        561,
+        1002,
+        625
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99995
+      }
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unassigned_ocr_text",
+      "text": "7",
+      "bbox": [
+        619,
+        444,
+        639,
+        461
+      ]
+    }
+  ]
+}

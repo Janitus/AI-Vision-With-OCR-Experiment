@@ -1,0 +1,219 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 5,
+      "total": 5,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 2,
+      "total": 2,
+      "recall": 1.0
+    },
+    "all": {
+      "exact": 10,
+      "total": 10,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 10,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Junamatkan vaiheet",
+      "observed": "Junamatkan vaiheet",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        363,
+        63
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Lippu",
+      "observed": "Lippu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        146,
+        213.0,
+        204,
+        232.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Asema",
+      "observed": "Asema",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        555,
+        213.0,
+        625,
+        228.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Juna",
+      "observed": "Juna",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        995,
+        413.0,
+        1045,
+        428.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Vaihto",
+      "observed": "Vaihto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        557,
+        648.0,
+        623,
+        663.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Määränpää",
+      "observed": "Määränpää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        123,
+        647.0,
+        227,
+        666.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "näytetään",
+      "observed": "näytetään",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        321,
+        142,
+        443,
+        177
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "nousta",
+      "observed": "nousta",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        756,
+        225,
+        854,
+        291
+      ],
+      "rotation": -24.8,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "jatkaa",
+      "observed": "jatkaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        764,
+        532,
+        856,
+        605
+      ],
+      "rotation": 28.8,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "saapuu",
+      "observed": "saapuu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        332,
+        698,
+        429,
+        729
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        9
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

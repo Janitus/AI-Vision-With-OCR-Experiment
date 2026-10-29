@@ -1,0 +1,153 @@
+{
+  "image": "kirjastokierto.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Kirjastokierto",
+    "bbox": [
+      33,
+      30,
+      261,
+      73
+    ],
+    "confidence": 1.0
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Teos",
+      "type": "pill",
+      "center": [
+        175,
+        430
+      ],
+      "label_bbox": [
+        144,
+        413,
+        203,
+        443
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Varaus",
+      "type": "pill",
+      "center": [
+        525,
+        430
+      ],
+      "label_bbox": [
+        484,
+        412,
+        565,
+        443
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Laina",
+      "type": "pill",
+      "center": [
+        875,
+        430
+      ],
+      "label_bbox": [
+        841,
+        412,
+        907,
+        444
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Palautus",
+      "type": "pill",
+      "center": [
+        1225,
+        430
+      ],
+      "label_bbox": [
+        1176,
+        411,
+        1273,
+        444
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "varataan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        308,
+        329,
+        391,
+        352
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99997
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "nouto",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        669,
+        327,
+        731,
+        354
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "palautetaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        995,
+        326,
+        1105,
+        352
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    }
+  ],
+  "uncertainties": []
+}

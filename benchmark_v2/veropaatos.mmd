@@ -1,0 +1,14 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "primaryColor": "#ffffff", "lineColor": "#202020", "textColor": "#202020"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Verotus
+  n1{"Ilmoitus"}
+  style n1 fill:#ffffff,stroke:#202020,color:#202020,font-family:Arial
+  n2{"Tarkistus"}
+  style n2 fill:#ffffff,stroke:#202020,color:#202020,font-family:Arial
+  n3{"Päätös"}
+  style n3 fill:#ffffff,stroke:#202020,color:#202020,font-family:Arial
+  n4{"Oikaisu"}
+  style n4 fill:#ffffff,stroke:#202020,color:#202020,font-family:Arial
+  n1 -->|vastaanottaa| n2
+  n2 -->|arvioi| n3
+  n3 -->|voi johtaa| n4

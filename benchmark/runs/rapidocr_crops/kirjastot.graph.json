@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Kirjasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8600218031141493
+    },
+    {
+      "id": "box1",
+      "label": "Asiakas",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8132250383496284
+    },
+    {
+      "id": "box2",
+      "label": "Laina",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.83152636885643
+    },
+    {
+      "id": "box3",
+      "label": "Palautus",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8389109174410502
+    },
+    {
+      "id": "box4",
+      "label": "Varaus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8239143575940814
+    },
+    {
+      "id": "box5",
+      "label": "Teos",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7973505616188049
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Kirjasto",
+    "Asiakas",
+    "Laina",
+    "Palautus",
+    "Varaus",
+    "Teos"
+  ]
+}

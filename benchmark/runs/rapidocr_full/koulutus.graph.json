@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Opettaja",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8868704504436917
+    },
+    {
+      "id": "box1",
+      "label": "Oppilas",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8390210121870041
+    },
+    {
+      "id": "box2",
+      "label": "Opetussuunnitelma",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8878107865651449
+    },
+    {
+      "id": "box3",
+      "label": "Arviointi",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8967129945755005
+    },
+    {
+      "id": "box4",
+      "label": "Kurssi",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8397530061858041
+    },
+    {
+      "id": "box5",
+      "label": "Koulu",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8327059249083201
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Koulutus : synteettinen testikaavio",
+    "opettaa",
+    "Opettaja",
+    "Oppilas",
+    "Opetussuunnitelma",
+    "kuvaa",
+    "opettaa",
+    "suorittaa",
+    "ohjaa",
+    "Arviointi",
+    "Kurssi",
+    "Koulu"
+  ]
+}

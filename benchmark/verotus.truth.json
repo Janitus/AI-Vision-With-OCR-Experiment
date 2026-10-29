@@ -1,0 +1,225 @@
+{
+  "id": "verotus",
+  "title": "Verotus",
+  "rendered_title": "Verotus · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Verovelvollinen",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Ilmoitus",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Verohallinto",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Päätös",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Maksu",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Oikaisu",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n3",
+      "relationship": "käsittelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n4",
+      "relationship": "määrää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          269,
+          479
+        ],
+        [
+          931,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "maksaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n6",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          497,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n2",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          931,
+          479
+        ],
+        [
+          269,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n4",
+      "relationship": "käsittelee",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "määrää",
+      "direction": "undirected",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          497,
+          135
+        ]
+      ]
+    }
+  ]
+}

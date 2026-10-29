@@ -1,0 +1,675 @@
+{
+  "image_size": [
+    1320,
+    903
+  ],
+  "nodes": [
+    {
+      "id": "legal_group",
+      "label": "Puolustusvoimien säädösperusta",
+      "type": "container",
+      "bbox": [
+        5,
+        9,
+        1307,
+        425
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "law_175",
+      "label": "Valtioneuvostolaki (175/2003): Laki",
+      "type": "green_rectangle",
+      "bbox": [
+        32,
+        61,
+        199,
+        156
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "law_551",
+      "label": "Laki puolustusvoimista (551/2007): Laki",
+      "type": "green_rectangle",
+      "bbox": [
+        607,
+        61,
+        774,
+        156
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_1490",
+      "label": "Tasavallan presidentin asetus sotilas- ja palvelusarvoista ym. (1490/2007): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        1110,
+        61,
+        1277,
+        156
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_539",
+      "label": "Valtioneuvoston asetus puolustusvoimien aluetoimistoista (539/2013): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        1110,
+        216,
+        1277,
+        311
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_262",
+      "label": "Valtioneuvoston ohjesääntö (262/2003): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        32,
+        312,
+        199,
+        408
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_375",
+      "label": "Valtioneuvoston asetus puolustusministeriöstä (375/2003): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        332,
+        312,
+        499,
+        408
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_1319",
+      "label": "Valtioneuvoston asetus puolustusvoimista (1319/2001): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        607,
+        312,
+        774,
+        408
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "decree_1089",
+      "label": "Tasavallan presidentin asetus toimivallan jaosta sotilaskäskyasioissa (1089/2007): Asetus",
+      "type": "green_rectangle",
+      "bbox": [
+        875,
+        312,
+        1041,
+        408
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "description_group",
+      "label": "Puolustusvoimien kuvailu",
+      "type": "container",
+      "bbox": [
+        296,
+        484,
+        1110,
+        893
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "term",
+      "label": "Kokonaisuuteen liittyvät termit: Termi",
+      "type": "red_rectangle",
+      "bbox": [
+        607,
+        515,
+        774,
+        611
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "organization",
+      "label": "Puolustusvoimien osat ja niiden yleistykset: Organisaatioyksikkö",
+      "type": "blue_rectangle",
+      "bbox": [
+        332,
+        592,
+        499,
+        687
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "person",
+      "label": "Puolustusvoimien toimijat ja niiden yleistykset: Henkilön sijoitus",
+      "type": "purple_rectangle",
+      "bbox": [
+        875,
+        592,
+        1041,
+        687
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "authority",
+      "label": "Puolustusvoimien ja sen osien toimivalta: Toimivalta",
+      "type": "yellow_rectangle",
+      "bbox": [
+        332,
+        785,
+        499,
+        881
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "task",
+      "label": "Puolustusvoimien ja sen osien tehtävät: Tehtävä",
+      "type": "yellow_rectangle",
+      "bbox": [
+        875,
+        785,
+        1041,
+        881
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    }
+  ],
+  "edges": [
+    {
+      "source": "decree_262",
+      "target": "law_175",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          116,
+          312
+        ],
+        [
+          116,
+          156
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_375",
+      "target": "law_175",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          334,
+          312
+        ],
+        [
+          198,
+          156
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_375",
+      "target": "decree_262",
+      "relationship": "tarkentaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          332,
+          361
+        ],
+        [
+          199,
+          361
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "law_551",
+      "target": "decree_375",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          607,
+          156
+        ],
+        [
+          499,
+          312
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_1319",
+      "target": "law_551",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          691,
+          312
+        ],
+        [
+          691,
+          156
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_1089",
+      "target": "law_551",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          882,
+          312
+        ],
+        [
+          774,
+          156
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_1089",
+      "target": "decree_1319",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          875,
+          361
+        ],
+        [
+          774,
+          361
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_1490",
+      "target": "law_551",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          1110,
+          101
+        ],
+        [
+          774,
+          101
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "decree_539",
+      "target": "law_551",
+      "relationship": "perustuu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          1110,
+          218
+        ],
+        [
+          774,
+          124
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "term",
+      "target": "organization",
+      "relationship": "kuvaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          607,
+          586
+        ],
+        [
+          499,
+          611
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "term",
+      "target": "person",
+      "relationship": "kuvaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          774,
+          586
+        ],
+        [
+          875,
+          611
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "person",
+      "target": "organization",
+      "relationship": "liittyy tai kuuluu",
+      "direction": "source_to_target",
+      "points": [
+        [
+          875,
+          662
+        ],
+        [
+          499,
+          662
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "authority",
+      "target": "organization",
+      "relationship": "annetaan",
+      "direction": "source_to_target",
+      "points": [
+        [
+          415,
+          785
+        ],
+        [
+          415,
+          687
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "task",
+      "target": "person",
+      "relationship": "annetaan",
+      "direction": "source_to_target",
+      "points": [
+        [
+          958,
+          785
+        ],
+        [
+          958,
+          687
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "source_not_run",
+      "detail": "OCR and local vision model were unavailable for this sample review; all text and edges require machine verification."
+    },
+    {
+      "kind": "small_text",
+      "node": "term",
+      "detail": "Red fill lowers readability; exact spelling is uncertain."
+    },
+    {
+      "kind": "crossing_lines",
+      "detail": "Two diagonal lines between the yellow and blue/purple boxes appear to cross. Their endpoints and 'annetaan' labels are too ambiguous to emit as edges."
+    },
+    {
+      "kind": "cross_container_line",
+      "detail": "A 'perustuu' arrow crosses the boundary between the two orange containers near x=703, y=425; its source is unclear, so no edge was emitted."
+    },
+    {
+      "kind": "relationship_direction",
+      "source": "law_551",
+      "target": "decree_375",
+      "detail": "The line appears to point toward decree_375, although 'täydentää' could invite a different semantic reading; geometry was used."
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "legal_group",
+      "vision_text": "Puolustusvoimien säädösperusta",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "law_175",
+      "vision_text": "Valtioneuvostolaki (175/2003): Laki",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "law_551",
+      "vision_text": "Laki puolustusvoimista (551/2007): Laki",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1490",
+      "vision_text": "Tasavallan presidentin asetus sotilas- ja palvelusarvoista ym. (1490/2007): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_539",
+      "vision_text": "Valtioneuvoston asetus puolustusvoimien aluetoimistoista (539/2013): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_262",
+      "vision_text": "Valtioneuvoston ohjesääntö (262/2003): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_375",
+      "vision_text": "Valtioneuvoston asetus puolustusministeriöstä (375/2003): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1319",
+      "vision_text": "Valtioneuvoston asetus puolustusvoimista (1319/2001): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "decree_1089",
+      "vision_text": "Tasavallan presidentin asetus toimivallan jaosta sotilaskäskyasioissa (1089/2007): Asetus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "description_group",
+      "vision_text": "Puolustusvoimien kuvailu",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "term",
+      "vision_text": "Kokonaisuuteen liittyvät termit: Termi",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "organization",
+      "vision_text": "Puolustusvoimien osat ja niiden yleistykset: Organisaatioyksikkö",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "person",
+      "vision_text": "Puolustusvoimien toimijat ja niiden yleistykset: Henkilön sijoitus",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "authority",
+      "vision_text": "Puolustusvoimien ja sen osien toimivalta: Toimivalta",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "node_text_unconfirmed",
+      "node": "task",
+      "vision_text": "Puolustusvoimien ja sen osien tehtävät: Tehtävä",
+      "ocr_text": null,
+      "ocr_bbox": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 1,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 2,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 3,
+      "vision_text": "tarkentaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 4,
+      "vision_text": "täydentää",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 5,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 6,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 7,
+      "vision_text": "täydentää",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 8,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 9,
+      "vision_text": "perustuu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 10,
+      "vision_text": "kuvaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 11,
+      "vision_text": "kuvaa",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 12,
+      "vision_text": "liittyy tai kuuluu",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 13,
+      "vision_text": "annetaan",
+      "ocr_text": null
+    },
+    {
+      "kind": "edge_text_unconfirmed",
+      "edge": 14,
+      "vision_text": "annetaan",
+      "ocr_text": null
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "not_run",
+    "vision_source": "manual_visual_review"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 7,
+    "matched_topology": 5,
+    "truth_text_items": 14,
+    "observed_text_items": 13
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 1.0,
+    "node_label_recall": 1.0,
+    "node_cer": 0.0,
+    "node_type_exact": 1.0,
+    "mean_bbox_iou": 1.0,
+    "visible_text_precision": 0.9231,
+    "visible_text_recall": 0.8571,
+    "topology_precision": 0.7143,
+    "topology_recall": 0.7143,
+    "arrow_accuracy": 0.8,
+    "relationship_exact": 0.8,
+    "full_edge_precision": 0.4286,
+    "full_edge_recall": 0.4286,
+    "end_to_end_edge_precision": 0.4286,
+    "end_to_end_edge_recall": 0.4286
+  },
+  "errors": [
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "TM",
+        "target": "TL",
+        "relationship": "unknown",
+        "direction": "unknown",
+        "points": [
+          [
+            497,
+            135
+          ],
+          [
+            283,
+            135
+          ]
+        ],
+        "confidence": 0.45,
+        "evidence": "vision_only"
+      }
+    },
+    {
+      "kind": "wrong_arrow",
+      "expected": "n2->n1",
+      "observed": "n1->n2"
+    },
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "TR",
+        "target": "BR",
+        "relationship": "mittaa",
+        "direction": "source_to_target",
+        "points": [
+          [
+            1020,
+            176
+          ],
+          [
+            1020,
+            479
+          ]
+        ],
+        "confidence": 0.6,
+        "evidence": "vision_only"
+      }
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n4",
+      "target": "n5",
+      "expected": "kerää",
+      "observed": "mittaa"
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n1",
+        "target": "n5",
+        "relationship": "mittaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            645,
+            176
+          ],
+          [
+            975,
+            479
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n2",
+        "target": "n3",
+        "relationship": "analysoi",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            917,
+            135
+          ],
+          [
+            283,
+            135
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "kerää",
+      "count": 1
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "analysoi",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "mittaa",
+      "count": 1
+    }
+  ]
+}

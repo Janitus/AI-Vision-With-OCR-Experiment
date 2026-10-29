@@ -1,0 +1,156 @@
+{
+  "id": "terveyspolku",
+  "title": "Hoitopolku",
+  "context": "Terveydenhuolto",
+  "layout": "LR",
+  "shape": "round",
+  "font": "segoe",
+  "size": 23,
+  "background": "#ffffff",
+  "ink": "#18324a",
+  "edge": "#256b95",
+  "palette": [
+    "#d7efff",
+    "#d8f4df",
+    "#fff0cd",
+    "#eadfff",
+    "#ffdce3"
+  ],
+  "nodes": [
+    {
+      "label": "Potilas",
+      "x": 145,
+      "y": 435,
+      "shape": null,
+      "color": null,
+      "w": 205,
+      "h": null
+    },
+    {
+      "label": "Terveysasema",
+      "x": 420,
+      "y": 435,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Lähete",
+      "x": 695,
+      "y": 435,
+      "shape": null,
+      "color": null,
+      "w": 205,
+      "h": null
+    },
+    {
+      "label": "Laboratorio",
+      "x": 970,
+      "y": 435,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Tulokset",
+      "x": 1245,
+      "y": 435,
+      "shape": null,
+      "color": null,
+      "w": 205,
+      "h": null
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "ottaa vastaan",
+      "label_xy": [
+        282,
+        353
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          248,
+          435
+        ],
+        [
+          312,
+          435
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "laatii",
+      "label_xy": [
+        558,
+        353
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          528,
+          435
+        ],
+        [
+          592,
+          435
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "lähettää",
+      "label_xy": [
+        833,
+        353
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          798,
+          435
+        ],
+        [
+          862,
+          435
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "palauttaa",
+      "label_xy": [
+        1108,
+        353
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1078,
+          435
+        ],
+        [
+          1142,
+          435
+        ]
+      ]
+    }
+  ]
+}

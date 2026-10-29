@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Palvelupiste"]
+  TM["Hakemus"]
+  TR["Asiakirja"]
+  BL["Päätös"]
+  BM["Kuntalainen"]
+  BR["Arkisto"]
+  TL ---|unknown [direction unknown]| TR
+  BL -->|käsittelee| TM
+  TR -->|lähettää| BL
+  TM -->|vahvistaa| BR
+  BM -->|vahvistaa| TR
+  BM -->|lähettää| BL
+  TR -->|jättää| BR

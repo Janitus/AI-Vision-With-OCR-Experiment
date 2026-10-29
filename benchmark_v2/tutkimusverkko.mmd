@@ -1,0 +1,21 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Georgia", "primaryColor": "#ffffff", "lineColor": "#304b62", "textColor": "#21313e"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Tutkimus
+  n1["Aineisto"]
+  style n1 fill:#e8f0f7,stroke:#21313e,color:#21313e,font-family:Georgia
+  n2["Keruu"]
+  style n2 fill:transparent,stroke:transparent,color:#21313e,font-family:Georgia
+  n3["Tallennus"]
+  style n3 fill:#e8f0f7,stroke:#21313e,color:#21313e,font-family:Georgia
+  n4["Analyysi"]
+  style n4 fill:transparent,stroke:transparent,color:#21313e,font-family:Georgia
+  n5["Julkaisu"]
+  style n5 fill:#e8f0f7,stroke:#21313e,color:#21313e,font-family:Georgia
+  n1 -->|ohjaa| n2
+  n1 -->|tallentaa| n3
+  n2 -->|tuottaa| n4
+  n3 -->|siirtää| n5
+  n4 ---|avaa| n5
+  linkStyle 0 stroke-dasharray: 8 5
+  linkStyle 2 stroke-dasharray: 8 5
+  linkStyle 4 stroke-dasharray: 8 5

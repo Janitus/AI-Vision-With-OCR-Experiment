@@ -1,0 +1,225 @@
+{
+  "id": "kirjastot",
+  "title": "Kirjastot",
+  "rendered_title": "Kirjastot · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Asiakas",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Kirjasto",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Teos",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Varaus",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Laina",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Palautus",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n5",
+      "target": "n1",
+      "relationship": "luetteloi",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          703,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n6",
+      "relationship": "palauttaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          555,
+          176
+        ],
+        [
+          225,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n4",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          225,
+          176
+        ],
+        [
+          555,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "varaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n6",
+      "relationship": "lainaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          180,
+          176
+        ],
+        [
+          180,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n6",
+      "relationship": "luetteloi",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          520
+        ],
+        [
+          283,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n6",
+      "target": "n5",
+      "relationship": "palauttaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          269,
+          479
+        ],
+        [
+          931,
+          176
+        ]
+      ]
+    }
+  ]
+}

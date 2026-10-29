@@ -1,0 +1,10 @@
+flowchart LR
+  n1["Hälytys"]
+  n2["Hätäkeskus"]
+  n3["Pelastuslaitos"]
+  n4["Tilannekuva"]
+  n5["Johto"]
+  n1 -->|välittää| n2
+  n2 -->|hälyttää| n3
+  n3 -->|päivittää| n4
+  n4 -->|tiedottaa| n5

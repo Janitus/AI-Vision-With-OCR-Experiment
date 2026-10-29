@@ -1,0 +1,13 @@
+flowchart TB
+  TL["Tulokset"]
+  TM["Lähete"]
+  TR["Laboratorio"]
+  BL["Terveysasema"]
+  BM["Potilas"]
+  BR["Erikoissairaanhoito"]
+  TL -->|lähettää| TM
+  BR -->|tutkii| BM
+  BM -->|lähettää| BL
+  BL -->|kirjaa| TM
+  TR -->|tutkii| BL
+  TL -->|tutkii| BR

@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Rautatieliikenne
+  n1["Matkustaja"]
+  n2["Asema"]
+  n3["Juna"]
+  n4["Aikataulu"]
+  n5["Lippu"]
+  n6["Liikenteenohjaus"]
+  n3 -->|vahvistaa| n1
+  n1 -->|yhdistää| n6
+  n3 -->|käyttää| n2
+  n2 -->|näyttää| n5
+  n4 -->|ohjaa| n3
+  n5 -->|vahvistaa| n4
+  n4 ---|yhdistää| n6

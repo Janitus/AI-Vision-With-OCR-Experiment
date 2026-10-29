@@ -1,0 +1,201 @@
+{
+  "image": "pelastusviesti.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Pelastustoimen viestit",
+    "bbox": [
+      35,
+      32,
+      400,
+      68
+    ],
+    "confidence": 1.0
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Hälytys",
+      "type": "box",
+      "center": [
+        140,
+        430
+      ],
+      "label_bbox": [
+        89,
+        415,
+        188,
+        446
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9991
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Hätäkeskus",
+      "type": "box",
+      "center": [
+        420,
+        430
+      ],
+      "label_bbox": [
+        352,
+        418,
+        487,
+        441
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99977
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Pelastuslaitos",
+      "type": "box",
+      "center": [
+        710,
+        430
+      ],
+      "label_bbox": [
+        616,
+        415,
+        804,
+        441
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Tilannekuva",
+      "type": "box",
+      "center": [
+        1000,
+        430
+      ],
+      "label_bbox": [
+        926,
+        418,
+        1073,
+        441
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Johto",
+      "type": "box",
+      "center": [
+        1260,
+        430
+      ],
+      "label_bbox": [
+        1223,
+        417,
+        1295,
+        442
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        226,
+        329,
+        333,
+        348
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.98877
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        510,
+        326,
+        618,
+        349
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.96296
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        793,
+        326,
+        916,
+        349
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.98267
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "tiedottaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        1069,
+        328,
+        1190,
+        350
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unassigned_ocr_text",
+      "text": "V",
+      "bbox": [
+        1143,
+        419,
+        1167,
+        441
+      ]
+    }
+  ]
+}

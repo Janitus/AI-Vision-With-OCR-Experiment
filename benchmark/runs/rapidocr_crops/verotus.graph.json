@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "IImoitus",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8418136702643501
+    },
+    {
+      "id": "box1",
+      "label": "Maksu",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.6735412776470184
+    },
+    {
+      "id": "box2",
+      "label": "Paatos",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8457794189453125
+    },
+    {
+      "id": "box3",
+      "label": "Verovelvollinen",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8663553893566132
+    },
+    {
+      "id": "box4",
+      "label": "Oikaisu",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8465741574764252
+    },
+    {
+      "id": "box5",
+      "label": "Verohallinto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.913108963232774
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "IImoitus",
+    "Maksu",
+    "Paatos",
+    "Verovelvollinen",
+    "Oikaisu",
+    "Verohallinto"
+  ]
+}

@@ -1,0 +1,52 @@
+<div id="graph-source-preview-v2">
+  <div class="viz-controls">
+    <label class="form-label" for="graph-v2-case">Diagram
+      <select class="form-select" id="graph-v2-case"></select>
+    </label>
+  </div>
+  <div id="graph-v2-meta" class="text-small" aria-live="polite"></div>
+  <img id="graph-v2-image" alt="Selected source graph preview" />
+  <details>
+    <summary>Show Mermaid source</summary>
+    <pre><code id="graph-v2-code"></code></pre>
+  </details>
+</div>
+<style>
+  #graph-source-preview-v2 { width:100%; color:var(--foreground); }
+  #graph-source-preview-v2 .viz-controls { margin-bottom:8px; }
+  #graph-source-preview-v2 .form-label { min-width:230px; }
+  #graph-source-preview-v2 #graph-v2-meta { margin:0 0 8px; }
+  #graph-source-preview-v2 img { display:block; width:100%; height:auto; aspect-ratio:28/17; object-fit:contain; }
+  #graph-source-preview-v2 details { margin-top:12px; font-size:13px; }
+  #graph-source-preview-v2 pre { white-space:pre-wrap; overflow-wrap:anywhere; font-size:12px; }
+</style>
+<script>
+(() => {
+  const root=document.getElementById('graph-source-preview-v2');
+  const cases=__DATA_JSON__;
+  const select=root.querySelector('#graph-v2-case');
+  const image=root.querySelector('#graph-v2-image');
+  const meta=root.querySelector('#graph-v2-meta');
+  const code=root.querySelector('#graph-v2-code');
+  cases.forEach((entry,i)=>{
+    const option=document.createElement('option');option.value=String(i);
+    option.textContent=`${i+1}. ${entry.title} · ${entry.context}`;select.appendChild(option);
+  });
+  const initial=window.openai?.widgetState?.privateContent?.case;
+  if(Number.isInteger(initial) && initial>=0 && initial<cases.length) select.value=String(initial);
+  function show(save){
+    const i=Number(select.value),entry=cases[i];
+    image.src=entry.image;
+    image.alt=`${entry.title}: full-resolution source graph preview`;
+    meta.textContent=`${entry.context} · ${entry.style} · ${entry.font} · ${entry.nodes} nodes · ${entry.edges} edges · text fit and contrast checked`;
+    code.textContent=entry.mermaid;
+    if(save) window.openai?.setWidgetState?.({modelContent:{case:i},privateContent:{case:i}}).catch(()=>{});
+  }
+  select.addEventListener('change',()=>show(true));
+  window.addEventListener('openai:set_globals',event=>{
+    const value=event.detail?.globals?.widgetState?.privateContent?.case;
+    if(Number.isInteger(value) && value>=0 && value<cases.length){select.value=String(value);show(false);}
+  });
+  show(false);
+})();
+</script>

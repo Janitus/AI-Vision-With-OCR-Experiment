@@ -1,0 +1,17 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Segoe UI", "primaryColor": "#fbfcf7", "lineColor": "#477a4e", "textColor": "#29402b"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Energia
+  n1{{"Voimala"}}
+  style n1 fill:#e6f4d9,stroke:#29402b,color:#29402b,font-family:Segoe UI
+  n2{{"Sähköverkko"}}
+  style n2 fill:#f6efc9,stroke:#29402b,color:#29402b,font-family:Segoe UI
+  n3{{"Mittari"}}
+  style n3 fill:#d9ecf4,stroke:#29402b,color:#29402b,font-family:Segoe UI
+  n4{{"Kuluttaja"}}
+  style n4 fill:#e8dff3,stroke:#29402b,color:#29402b,font-family:Segoe UI
+  n5{{"Raportti"}}
+  style n5 fill:#f7e2d5,stroke:#29402b,color:#29402b,font-family:Segoe UI
+  n1 -->|syöttää| n2
+  n2 -->|siirtää| n3
+  n3 -->|mittaa| n4
+  n4 -->|ilmoittaa| n5

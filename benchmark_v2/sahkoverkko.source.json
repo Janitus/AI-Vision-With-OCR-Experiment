@@ -1,0 +1,156 @@
+{
+  "id": "sahkoverkko",
+  "title": "Sähköverkon osat",
+  "context": "Energia",
+  "layout": "LR",
+  "shape": "hex",
+  "font": "segoe",
+  "size": 22,
+  "background": "#fbfcf7",
+  "ink": "#29402b",
+  "edge": "#477a4e",
+  "palette": [
+    "#e6f4d9",
+    "#f6efc9",
+    "#d9ecf4",
+    "#e8dff3",
+    "#f7e2d5"
+  ],
+  "nodes": [
+    {
+      "label": "Voimala",
+      "x": 165,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Sähköverkko",
+      "x": 430,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Mittari",
+      "x": 695,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Kuluttaja",
+      "x": 960,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    },
+    {
+      "label": "Raportti",
+      "x": 1225,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 215,
+      "h": null
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "syöttää",
+      "label_xy": [
+        298,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          272,
+          430
+        ],
+        [
+          322,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "siirtää",
+      "label_xy": [
+        563,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          538,
+          430
+        ],
+        [
+          588,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "mittaa",
+      "label_xy": [
+        828,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          802,
+          430
+        ],
+        [
+          852,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "ilmoittaa",
+      "label_xy": [
+        1093,
+        338
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1068,
+          430
+        ],
+        [
+          1118,
+          430
+        ]
+      ]
+    }
+  ]
+}

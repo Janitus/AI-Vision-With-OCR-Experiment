@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Ministerio",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.870355947451158
+    },
+    {
+      "id": "box1",
+      "label": "Eduskunta",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8891974508762359
+    },
+    {
+      "id": "box2",
+      "label": "Asetus",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8544189759663173
+    },
+    {
+      "id": "box3",
+      "label": "Valtioneuvosto",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.9050213813781738
+    },
+    {
+      "id": "box4",
+      "label": "Virasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8444894999265671
+    },
+    {
+      "id": "box5",
+      "label": "Lausunto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7780387070443895
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Ministerio",
+    "Eduskunta",
+    "Asetus",
+    "Valtioneuvosto",
+    "Virasto",
+    "Lausunto"
+  ]
+}

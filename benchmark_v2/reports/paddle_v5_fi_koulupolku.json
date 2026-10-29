@@ -1,0 +1,273 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 6,
+      "total": 6,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 6,
+      "total": 6,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 2,
+      "total": 2,
+      "recall": 1.0
+    },
+    "all": {
+      "exact": 13,
+      "total": 13,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 13,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Opintopolku",
+      "observed": "Opintopolku",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        238,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Oppilas",
+      "observed": "Oppilas",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        656,
+        121.0,
+        743,
+        146.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Kurssi A",
+      "observed": "Kurssi A",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        250,
+        366.0,
+        350,
+        385.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Kurssi B",
+      "observed": "Kurssi B",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1051,
+        366.0,
+        1149,
+        385.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Arviointi A",
+      "observed": "Arviointi A",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        235,
+        636.0,
+        365,
+        655.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Arviointi B",
+      "observed": "Arviointi B",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1036,
+        636.0,
+        1164,
+        655.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Todistus",
+      "observed": "Todistus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        652,
+        751.0,
+        749,
+        770.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        12
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "valitsee",
+      "observed": "valitsee",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        435,
+        208,
+        525,
+        281
+      ],
+      "rotation": 31.5,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "valitsee",
+      "observed": "valitsee",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        875,
+        208,
+        965,
+        281
+      ],
+      "rotation": -31.5,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "arvioidaan",
+      "observed": "arvioidaan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        474,
+        494,
+        586,
+        525
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "arvioidaan",
+      "observed": "arvioidaan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        814,
+        494,
+        926,
+        525
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "koostaa",
+      "observed": "koostaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        376,
+        730,
+        464,
+        761
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "koostaa",
+      "observed": "koostaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        936,
+        730,
+        1024,
+        761
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        11
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

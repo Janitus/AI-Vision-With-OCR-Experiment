@@ -1,0 +1,16 @@
+flowchart LR
+  n1["Aineisto"]
+  n2["Keruu"]
+  style n2 fill:none,stroke:none
+  n3["Tallennus"]
+  n4["Analyysi"]
+  style n4 fill:none,stroke:none
+  n5["Julkaisu"]
+  n1 -->|ohjaa| n2
+  n1 -->|tallentaa| n3
+  n2 -->|tuottaa| n4
+  n3 -->|siirtää| n5
+  n4 ---|avaa| n5
+  linkStyle 0 stroke-dasharray: 8 5
+  linkStyle 2 stroke-dasharray: 8 5
+  linkStyle 4 stroke-dasharray: 8 5

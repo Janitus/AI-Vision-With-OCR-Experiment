@@ -1,0 +1,225 @@
+{
+  "id": "koulutus",
+  "title": "Koulutus",
+  "rendered_title": "Koulutus · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Oppilas",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Koulu",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Opettaja",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Opetussuunnitelma",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Kurssi",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Arviointi",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "suorittaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          645,
+          176
+        ],
+        [
+          975,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n1",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          703,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          600,
+          176
+        ],
+        [
+          600,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n3",
+      "relationship": "arvioi",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n5",
+      "relationship": "kuvaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          225,
+          176
+        ],
+        [
+          555,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n6",
+      "relationship": "suorittaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          180,
+          176
+        ],
+        [
+          180,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          975,
+          176
+        ],
+        [
+          645,
+          479
+        ]
+      ]
+    }
+  ]
+}

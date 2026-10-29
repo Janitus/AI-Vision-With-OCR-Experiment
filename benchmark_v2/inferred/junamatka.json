@@ -1,0 +1,190 @@
+{
+  "image": "junamatka.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Junamatkan vaiheet",
+    "bbox": [
+      35,
+      31,
+      367,
+      68
+    ],
+    "confidence": 0.99999
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Lippu",
+      "type": "circle",
+      "center": [
+        175,
+        220
+      ],
+      "label_bbox": [
+        140,
+        204,
+        209,
+        239
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Asema",
+      "type": "circle",
+      "center": [
+        590,
+        220
+      ],
+      "label_bbox": [
+        552,
+        209,
+        628,
+        233
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Juna",
+      "type": "circle",
+      "center": [
+        1020,
+        420
+      ],
+      "label_bbox": [
+        988,
+        405,
+        1050,
+        435
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Vaihto",
+      "type": "circle",
+      "center": [
+        590,
+        655
+      ],
+      "label_bbox": [
+        553,
+        641,
+        627,
+        669
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Määränpää",
+      "type": "circle",
+      "center": [
+        175,
+        655
+      ],
+      "label_bbox": [
+        118,
+        640,
+        231,
+        670
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9972
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "näytetään",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        329,
+        145,
+        436,
+        172
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99975
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "nousta",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        762,
+        229,
+        846,
+        286
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99996
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "jatkaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        768,
+        535,
+        849,
+        600
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99997
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        339,
+        698,
+        422,
+        725
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99995
+      }
+    }
+  ],
+  "uncertainties": []
+}

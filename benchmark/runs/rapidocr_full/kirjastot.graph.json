@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Kirjasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8605141441027323
+    },
+    {
+      "id": "box1",
+      "label": "Asiakas",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8495331108570099
+    },
+    {
+      "id": "box2",
+      "label": "Laina",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8328086932500204
+    },
+    {
+      "id": "box3",
+      "label": "Palautus",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8415986365742154
+    },
+    {
+      "id": "box4",
+      "label": "Varaus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8486790657043457
+    },
+    {
+      "id": "box5",
+      "label": "Teos",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.7982731938362122
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Kirjastot : synteettinen testikaavio",
+    "luetteloi",
+    "Kirjasto",
+    "Asiakas",
+    "Laina",
+    "ivalittaa!",
+    "palauttaa",
+    "lainaa",
+    "Palautus",
+    "Varaus",
+    "Teos"
+  ]
+}

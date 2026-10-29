@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Palvelupiste",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.9214997979310843
+    },
+    {
+      "id": "box1",
+      "label": "Hakemus",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8331370651721954
+    },
+    {
+      "id": "box2",
+      "label": "Asiakirja",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8878448784351349
+    },
+    {
+      "id": "box3",
+      "label": "Paatos",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8248240862573896
+    },
+    {
+      "id": "box4",
+      "label": "Kuntalainen",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8819899956385294
+    },
+    {
+      "id": "box5",
+      "label": "Arkisto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8274050578474998
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Kuntapalvelut : synteettinen testikaavio",
+    "Palvelupiste",
+    "Hakemus",
+    "Asiakirja",
+    "kasittelee",
+    "lahettaa",
+    "vahvistaa",
+    "jattaa",
+    "lahettaa",
+    "Paatos",
+    "Kuntalainen",
+    "Arkisto"
+  ]
+}

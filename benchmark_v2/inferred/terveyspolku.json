@@ -1,0 +1,190 @@
+{
+  "image": "terveyspolku.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Hoitopolku",
+    "bbox": [
+      31,
+      28,
+      221,
+      74
+    ],
+    "confidence": 0.99997
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Potilas",
+      "type": "round",
+      "center": [
+        145,
+        435
+      ],
+      "label_bbox": [
+        106,
+        421,
+        184,
+        453
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Terveysasema",
+      "type": "round",
+      "center": [
+        420,
+        435
+      ],
+      "label_bbox": [
+        343,
+        422,
+        494,
+        454
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Lähete",
+      "type": "round",
+      "center": [
+        695,
+        435
+      ],
+      "label_bbox": [
+        655,
+        421,
+        734,
+        452
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Laboratorio",
+      "type": "round",
+      "center": [
+        970,
+        435
+      ],
+      "label_bbox": [
+        907,
+        422,
+        1033,
+        452
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Tulokset",
+      "type": "round",
+      "center": [
+        1245,
+        435
+      ],
+      "label_bbox": [
+        1198,
+        423,
+        1293,
+        451
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "ottaa vastaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        216,
+        339,
+        347,
+        365
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99988
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "laatii",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        531,
+        338,
+        585,
+        367
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99965
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        791,
+        339,
+        874,
+        366
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99868
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "palauttaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        1062,
+        337,
+        1155,
+        365
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99996
+      }
+    }
+  ],
+  "uncertainties": []
+}

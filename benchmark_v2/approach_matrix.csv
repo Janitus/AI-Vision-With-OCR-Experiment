@@ -1,0 +1,6 @@
+﻿approach,cases,all_visible_text_exact,all_visible_text_precision,extra_ocr_items,node_labels_exact,edge_labels_exact,rotated_edge_labels_exact,connections_found,connections_total,arrow_accuracy,fully_correct_edges,full_edge_recall,node_shape_accuracy,edge_stroke_accuracy,note
+legacy_rapid_v3,10,0.73,0.7449,0,0.7551,0.7073,0.9,0,41,,0,0,,,OCR only: no graph reconstruction; text matching uses known printed regions for evaluation
+paddle_v5_fi,10,1.0,0.9524,5,1.0,1.0,1.0,0,41,,0,0,,,OCR only: no graph reconstruction; text matching uses known printed regions for evaluation
+rapid_v6_medium_fi,10,1.0,0.9709,3,1.0,1.0,1.0,0,41,,0,0,,,OCR only: no graph reconstruction; text matching uses known printed regions for evaluation
+codex_visual_review_nonblind,10,,,,1.0,,,41,41,1.0,41,1.0,1.0,1.0,"Non-blind visual reading by fixture author; descriptive only, not independent AI evaluation"
+codex_visual_plus_rapid_v6_fi,10,1.0,0.9709,3,1.0,1.0,1.0,41,41,1.0,41,1.0,1.0,1.0,Non-blind fusion; 0 OCR/vision element disagreements

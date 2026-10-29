@@ -1,0 +1,225 @@
+{
+  "id": "rautatieliikenne",
+  "title": "Rautatieliikenne",
+  "rendered_title": "Rautatieliikenne · synteettinen testikaavio",
+  "synthetic": true,
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Matkustaja",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Asema",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Juna",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        520
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Aikataulu",
+      "type": "rounded_rectangle",
+      "center": [
+        1020,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Lippu",
+      "type": "rounded_rectangle",
+      "center": [
+        180,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Liikenteenohjaus",
+      "type": "rounded_rectangle",
+      "center": [
+        600,
+        135
+      ],
+      "confidence": 1.0,
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n3",
+      "target": "n1",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          497,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n1",
+      "target": "n6",
+      "relationship": "yhdistää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          600,
+          479
+        ],
+        [
+          600,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n3",
+      "target": "n2",
+      "relationship": "käyttää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ]
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "näyttää",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          931,
+          479
+        ],
+        [
+          269,
+          176
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n3",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          931,
+          176
+        ],
+        [
+          269,
+          479
+        ]
+      ]
+    },
+    {
+      "source": "n5",
+      "target": "n4",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "confidence": 1.0,
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "n4",
+      "target": "n6",
+      "relationship": "yhdistää",
+      "direction": "undirected",
+      "confidence": 1.0,
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          703,
+          135
+        ]
+      ]
+    }
+  ]
+}

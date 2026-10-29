@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Kirjasto"]
+  TM["Asiakas"]
+  TR["Laina"]
+  BL["Palautus"]
+  BM["Varaus"]
+  BR["Teos"]
+  TL -->|unknown| TR
+  TR -->|luetteloi| TM
+  TL -->|lainaa| BL
+  TL -->|välittää| BM
+  TM -->|välittää| BL
+  BM -->|unknown| BL
+  BR ---|unknown [direction unknown]| BM

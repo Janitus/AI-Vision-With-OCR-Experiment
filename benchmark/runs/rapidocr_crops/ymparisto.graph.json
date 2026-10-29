@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Nayte",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8303365111351013
+    },
+    {
+      "id": "box1",
+      "label": "Vesisto",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8667237982153893
+    },
+    {
+      "id": "box2",
+      "label": "Mittausasema",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.861847079717196
+    },
+    {
+      "id": "box3",
+      "label": "Analyysi",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8361818393071493
+    },
+    {
+      "id": "box4",
+      "label": "Kunta",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8163465857505798
+    },
+    {
+      "id": "box5",
+      "label": "Raportti",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8739142550362481
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Nayte",
+    "Vesisto",
+    "Mittausasema",
+    "Analyysi",
+    "Kunta",
+    "Raportti"
+  ]
+}

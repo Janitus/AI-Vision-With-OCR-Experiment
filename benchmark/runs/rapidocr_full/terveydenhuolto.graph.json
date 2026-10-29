@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Tulokset",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8879703548219469
+    },
+    {
+      "id": "box1",
+      "label": "Lahete",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8537783111844744
+    },
+    {
+      "id": "box2",
+      "label": "Laboratorio",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8582694828510284
+    },
+    {
+      "id": "box3",
+      "label": "Terveysasema",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.918890274488009
+    },
+    {
+      "id": "box4",
+      "label": "Potilas",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.863382913172245
+    },
+    {
+      "id": "box5",
+      "label": "Erikoissairaanhoito",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.9083735108375549
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Terveydenhuolto : synteettinen testikaavio",
+    "lahettaa",
+    "Tulokset",
+    "Lahete",
+    "Laboratorio",
+    "kirjaa",
+    " tutkii a",
+    "lahettaa",
+    "tutkii",
+    "Terveysasema",
+    "Potilas",
+    "Erikoissairaanhoito"
+  ]
+}

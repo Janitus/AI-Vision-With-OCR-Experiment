@@ -1,0 +1,235 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 5,
+      "total": 5,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 3,
+      "total": 5,
+      "recall": 0.6,
+      "cer": 0.2188
+    },
+    "rotated_edge": {
+      "exact": 1,
+      "total": 2,
+      "recall": 0.5
+    },
+    "all": {
+      "exact": 9,
+      "total": 11,
+      "recall": 0.8182,
+      "cer": 0.0753,
+      "observed_items": 10,
+      "extra_ocr_items": 0,
+      "precision": 0.9
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Tutkimusaineiston kulku",
+      "observed": "Tutkimusaineiston kulku",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        436,
+        63
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Aineisto",
+      "observed": "Aineisto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        657,
+        136.0,
+        742,
+        153.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Keruu",
+      "observed": "Keruu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        229,
+        362.0,
+        291,
+        378.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Tallennus",
+      "observed": "Tallennus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1089,
+        361.0,
+        1191,
+        378.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Analyysi",
+      "observed": "Analyysi",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        215,
+        651.0,
+        303,
+        673.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Julkaisu",
+      "observed": "Julkaisu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1097,
+        651.0,
+        1183,
+        668.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "ohjaa",
+      "observed": "",
+      "exact": false,
+      "character_edits": 5,
+      "bbox": [
+        428,
+        206,
+        511,
+        273
+      ],
+      "rotation": 27.0,
+      "ocr_indices": []
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "tallentaa",
+      "observed": "tallentaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        876,
+        202,
+        983,
+        278
+      ],
+      "rotation": -27.1,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "tuottaa",
+      "observed": "tuottaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        401,
+        506,
+        489,
+        535
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "siirtää",
+      "observed": "siirtaa",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        914,
+        504,
+        995,
+        536
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "avaa",
+      "observed": "avaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        668,
+        697,
+        733,
+        723
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        9
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

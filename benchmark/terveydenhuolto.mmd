@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Terveydenhuolto
+  n1["Potilas"]
+  n2["Terveysasema"]
+  n3["Lähete"]
+  n4["Laboratorio"]
+  n5["Erikoissairaanhoito"]
+  n6["Tulokset"]
+  n1 -->|lähettää| n2
+  n5 -->|tutkii| n1
+  n2 -->|kirjaa| n3
+  n4 -->|välittää| n2
+  n5 -->|konsultoi| n2
+  n6 -->|lähettää| n3
+  n5 ---|tutkii| n6

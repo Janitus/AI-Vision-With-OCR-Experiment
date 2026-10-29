@@ -1,0 +1,14 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Calibri", "primaryColor": "#fffefa", "lineColor": "#8d5e47", "textColor": "#3a2b28"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Kirjastot
+  n1(["Teos"])
+  style n1 fill:#f8e4cc,stroke:#3a2b28,color:#3a2b28,font-family:Calibri
+  n2(["Varaus"])
+  style n2 fill:#e3efff,stroke:#3a2b28,color:#3a2b28,font-family:Calibri
+  n3(["Laina"])
+  style n3 fill:#f8dfdf,stroke:#3a2b28,color:#3a2b28,font-family:Calibri
+  n4(["Palautus"])
+  style n4 fill:#e6f3dd,stroke:#3a2b28,color:#3a2b28,font-family:Calibri
+  n1 -->|varataan| n2
+  n2 -->|nouto| n3
+  n3 -->|palautetaan| n4

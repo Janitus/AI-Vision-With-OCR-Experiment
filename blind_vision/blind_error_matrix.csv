@@ -1,0 +1,2 @@
+﻿approach,title_error_rate,node_detection_error_rate,node_label_error_rate,node_shape_error_rate,topology_error_rate,arrow_error_rate,relationship_error_rate,stroke_error_rate,full_edge_error_rate,end_to_end_edge_error_rate
+codex_vision_blind,0.0,0.0,0.0,0.0816,0.0,0.0244,0.0,0.0,0.0244,0.0244

@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Ministeriöt
+  n1["Eduskunta"]
+  n2["Valtioneuvosto"]
+  n3["Ministeriö"]
+  n4["Virasto"]
+  n5["Asetus"]
+  n6["Lausunto"]
+  n2 -->|valmistelee| n1
+  n1 -->|antaa| n3
+  n1 -->|lausuu| n5
+  n2 -->|käsittelee| n5
+  n3 -->|ohjaa| n6
+  n4 -->|valmistelee| n5
+  n6 -->|antaa| n4

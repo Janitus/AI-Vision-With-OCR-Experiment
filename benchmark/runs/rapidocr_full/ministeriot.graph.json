@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Ministerio",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8259297013282776
+    },
+    {
+      "id": "box1",
+      "label": "Eduskunta",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.8704364001750946
+    },
+    {
+      "id": "box2",
+      "label": "Asetus",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.8463004401751927
+    },
+    {
+      "id": "box3",
+      "label": "Valtioneuvosto",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.8852375189463297
+    },
+    {
+      "id": "box4",
+      "label": "Virasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8734038695693016
+    },
+    {
+      "id": "box5",
+      "label": "Lausunto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8434286316235861
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Ministeriot : synteettinen testikaavio",
+    "antaa",
+    "lausuu",
+    "Ministerio",
+    "Eduskunta",
+    "Asetus",
+    "valmistelee",
+    "kiohjaae",
+    "valmistelee",
+    "antaa",
+    "Valtioneuvosto",
+    "Virasto",
+    "Lausunto"
+  ]
+}

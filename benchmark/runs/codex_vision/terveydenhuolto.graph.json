@@ -1,0 +1,200 @@
+{
+  "source": "codex_visual_review",
+  "image": "terveydenhuolto.png",
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Tulokset",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TM",
+      "label": "Lähete",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TR",
+      "label": "Laboratorio",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BL",
+      "label": "Terveysasema",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BM",
+      "label": "Potilas",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BR",
+      "label": "Erikoissairaanhoito",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "TL",
+      "target": "TM",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          497,
+          135
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BR",
+      "target": "BM",
+      "relationship": "tutkii",
+      "direction": "source_to_target",
+      "points": [
+        [
+          917,
+          520
+        ],
+        [
+          703,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BM",
+      "target": "BL",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          520
+        ],
+        [
+          283,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BL",
+      "target": "TM",
+      "relationship": "kirjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TR",
+      "target": "BL",
+      "relationship": "tutkii",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          176
+        ],
+        [
+          269,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TL",
+      "target": "BR",
+      "relationship": "tutkii",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "rendered_title": "Terveydenhuolto · synteettinen testikaavio",
+  "visible_text": [
+    "Terveydenhuolto · synteettinen testikaavio",
+    "Tulokset",
+    "Lähete",
+    "Laboratorio",
+    "Terveysasema",
+    "Potilas",
+    "Erikoissairaanhoito",
+    "lähettää",
+    "tutkii",
+    "lähettää",
+    "kirjaa",
+    "tutkii",
+    "tutkii"
+  ],
+  "uncertainties": [],
+  "note": "Read from the rendered image. The fixture generator was authored in the same session, so this is not a blind independent model evaluation."
+}

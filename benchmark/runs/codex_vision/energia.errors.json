@@ -1,0 +1,95 @@
+{
+  "counts": {
+    "truth_nodes": 6,
+    "predicted_nodes": 6,
+    "matched_nodes": 6,
+    "truth_edges": 7,
+    "predicted_edges": 7,
+    "matched_topology": 6,
+    "truth_text_items": 14,
+    "observed_text_items": 14
+  },
+  "metrics": {
+    "node_precision": 1.0,
+    "node_recall": 1.0,
+    "node_text_exact": 1.0,
+    "node_label_recall": 1.0,
+    "node_cer": 0.0,
+    "node_type_exact": 1.0,
+    "mean_bbox_iou": 1.0,
+    "visible_text_precision": 0.9286,
+    "visible_text_recall": 0.9286,
+    "topology_precision": 0.8571,
+    "topology_recall": 0.8571,
+    "arrow_accuracy": 0.8333,
+    "relationship_exact": 0.8333,
+    "full_edge_precision": 0.5714,
+    "full_edge_recall": 0.5714,
+    "end_to_end_edge_precision": 0.5714,
+    "end_to_end_edge_recall": 0.5714
+  },
+  "errors": [
+    {
+      "kind": "wrong_arrow",
+      "expected": "n3->n2",
+      "observed": "n2->n3"
+    },
+    {
+      "kind": "wrong_relationship",
+      "source": "n4",
+      "target": "n3",
+      "expected": "mittaa",
+      "observed": "tasaa"
+    },
+    {
+      "kind": "extra_edge",
+      "predicted_edge": {
+        "source": "TL",
+        "target": "BR",
+        "relationship": "ohjaa",
+        "direction": "source_to_target",
+        "points": [
+          [
+            269,
+            176
+          ],
+          [
+            931,
+            479
+          ]
+        ],
+        "confidence": 0.75
+      }
+    },
+    {
+      "kind": "missing_edge",
+      "truth_edge": {
+        "source": "n1",
+        "target": "n3",
+        "relationship": "ohjaa",
+        "direction": "source_to_target",
+        "confidence": 1.0,
+        "points": [
+          [
+            225,
+            176
+          ],
+          [
+            555,
+            479
+          ]
+        ]
+      }
+    },
+    {
+      "kind": "missing_visible_text",
+      "text": "mittaa",
+      "count": 1
+    },
+    {
+      "kind": "extra_or_wrong_visible_text",
+      "text": "tasaa",
+      "count": 1
+    }
+  ]
+}

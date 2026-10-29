@@ -1,0 +1,17 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "primaryColor": "#f7fbff", "lineColor": "#1765ab", "textColor": "#17304d"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Liikenne
+  n1(("Lippu"))
+  style n1 fill:#d8e9ff,stroke:#17304d,color:#17304d,font-family:Arial
+  n2(("Asema"))
+  style n2 fill:#e0f5e4,stroke:#17304d,color:#17304d,font-family:Arial
+  n3(("Juna"))
+  style n3 fill:#fff1d5,stroke:#17304d,color:#17304d,font-family:Arial
+  n4(("Vaihto"))
+  style n4 fill:#efdffc,stroke:#17304d,color:#17304d,font-family:Arial
+  n5(("Määränpää"))
+  style n5 fill:#d7f3f1,stroke:#17304d,color:#17304d,font-family:Arial
+  n1 -->|näytetään| n2
+  n2 -->|nousta| n3
+  n3 -->|jatkaa| n4
+  n4 -->|saapuu| n5

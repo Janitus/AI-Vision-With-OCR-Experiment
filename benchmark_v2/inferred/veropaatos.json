@@ -1,0 +1,153 @@
+{
+  "image": "veropaatos.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Veropäätöksen käsittely",
+    "bbox": [
+      33,
+      31,
+      431,
+      74
+    ],
+    "confidence": 0.99993
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Ilmoitus",
+      "type": "diamond",
+      "center": [
+        700,
+        160
+      ],
+      "label_bbox": [
+        658,
+        143,
+        741,
+        174
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.96291
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Tarkistus",
+      "type": "diamond",
+      "center": [
+        700,
+        365
+      ],
+      "label_bbox": [
+        651,
+        350,
+        748,
+        379
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Päätös",
+      "type": "diamond",
+      "center": [
+        700,
+        570
+      ],
+      "label_bbox": [
+        661,
+        555,
+        738,
+        585
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9833
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Oikaisu",
+      "type": "diamond",
+      "center": [
+        700,
+        775
+      ],
+      "label_bbox": [
+        659,
+        759,
+        740,
+        790
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99988
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "vastaanottaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        925,
+        249,
+        1054,
+        273
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "arvioi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        960,
+        454,
+        1021,
+        482
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99996
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "voi johtaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        938,
+        655,
+        1039,
+        686
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99986
+      }
+    }
+  ],
+  "uncertainties": []
+}

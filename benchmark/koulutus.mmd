@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Koulutus
+  n1["Oppilas"]
+  n2["Koulu"]
+  n3["Opettaja"]
+  n4["Opetussuunnitelma"]
+  n5["Kurssi"]
+  n6["Arviointi"]
+  n1 -->|suorittaa| n2
+  n4 -->|opettaa| n1
+  n1 -->|ohjaa| n5
+  n4 -->|arvioi| n3
+  n3 -->|kuvaa| n5
+  n3 -->|suorittaa| n6
+  n4 -->|opettaa| n5

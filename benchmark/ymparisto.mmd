@@ -1,0 +1,15 @@
+flowchart TB
+  %% Synthetic Finland-themed benchmark: Ympäristö
+  n1["Vesistö"]
+  n2["Mittausasema"]
+  n3["Näyte"]
+  n4["Analyysi"]
+  n5["Raportti"]
+  n6["Kunta"]
+  n2 -->|kerää| n1
+  n1 -->|mittaa| n5
+  n2 -->|analysoi| n3
+  n4 -->|raportoi| n3
+  n3 -->|seuraa| n5
+  n4 -->|kerää| n5
+  n5 -->|mittaa| n6

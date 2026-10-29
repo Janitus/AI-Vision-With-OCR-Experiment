@@ -1,0 +1,241 @@
+{
+  "image_size": [
+    1200,
+    700
+  ],
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Opettaja",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.887,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "TM",
+      "label": "Oppilas",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.839,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "TR",
+      "label": "Opetussuunnitelma",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.888,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BL",
+      "label": "Arviointi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.897,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BM",
+      "label": "Kurssi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.84,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BR",
+      "label": "Koulu",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.833,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "unknown",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.45,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TR",
+      "target": "TM",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          917,
+          135
+        ],
+        [
+          703,
+          135
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TL",
+      "target": "BL",
+      "relationship": "suorittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          180,
+          176
+        ],
+        [
+          180,
+          479
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TL",
+      "target": "BM",
+      "relationship": "kuvaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          176
+        ],
+        [
+          555,
+          479
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TM",
+      "target": "BM",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          600,
+          176
+        ],
+        [
+          600,
+          479
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TM",
+      "target": "BR",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          645,
+          176
+        ],
+        [
+          975,
+          479
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TR",
+      "target": "BM",
+      "relationship": "opettaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          975,
+          176
+        ],
+        [
+          645,
+          479
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TM",
+      "target": "TL",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "rapidocr_full",
+    "vision_source": "codex_visual_review"
+  },
+  "visible_text": [
+    "Koulutus · synteettinen testikaavio",
+    "Opettaja",
+    "Oppilas",
+    "Opetussuunnitelma",
+    "Arviointi",
+    "Kurssi",
+    "Koulu",
+    "opettaa",
+    "suorittaa",
+    "kuvaa",
+    "ohjaa",
+    "opettaa",
+    "opettaa"
+  ]
+}

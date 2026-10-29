@@ -1,0 +1,224 @@
+{
+  "source": "codex_visual_review",
+  "image": "ymparisto.png",
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Näyte",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TM",
+      "label": "Vesistö",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "TR",
+      "label": "Mittausasema",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BL",
+      "label": "Analyysi",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BM",
+      "label": "Kunta",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "BR",
+      "label": "Raportti",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "edges": [
+    {
+      "source": "TM",
+      "target": "TL",
+      "relationship": "unknown",
+      "direction": "unknown",
+      "points": [
+        [
+          497,
+          135
+        ],
+        [
+          283,
+          135
+        ]
+      ],
+      "confidence": 0.45
+    },
+    {
+      "source": "TM",
+      "target": "TR",
+      "relationship": "kerää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          703,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BL",
+      "target": "TL",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "points": [
+        [
+          180,
+          479
+        ],
+        [
+          180,
+          176
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TL",
+      "target": "BR",
+      "relationship": "seuraa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          269,
+          176
+        ],
+        [
+          931,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "TR",
+      "target": "BR",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          1020,
+          176
+        ],
+        [
+          1020,
+          479
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BL",
+      "target": "BR",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          283,
+          520
+        ],
+        [
+          917,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    },
+    {
+      "source": "BR",
+      "target": "BM",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          917,
+          520
+        ],
+        [
+          703,
+          520
+        ]
+      ],
+      "confidence": 0.75
+    }
+  ],
+  "rendered_title": "Ympäristö · synteettinen testikaavio",
+  "visible_text": [
+    "Ympäristö · synteettinen testikaavio",
+    "Näyte",
+    "Vesistö",
+    "Mittausasema",
+    "Analyysi",
+    "Kunta",
+    "Raportti",
+    "kerää",
+    "raportoi",
+    "seuraa",
+    "mittaa",
+    "mittaa",
+    "mittaa"
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TM",
+      "target": "TL",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    }
+  ],
+  "note": "Read from the rendered image. The fixture generator was authored in the same session, so this is not a blind independent model evaluation."
+}

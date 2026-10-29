@@ -1,0 +1,293 @@
+{
+  "image_size": [
+    1200,
+    700
+  ],
+  "nodes": [
+    {
+      "id": "TL",
+      "label": "Hälytys",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        94,
+        283,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "TM",
+      "label": "Johtokeskus",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        94,
+        703,
+        176
+      ],
+      "confidence": 0.888,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "TR",
+      "label": "Hätäkeskus",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        94,
+        1123,
+        176
+      ],
+      "confidence": 0.65,
+      "evidence": "vision_only"
+    },
+    {
+      "id": "BL",
+      "label": "Ensihoito",
+      "type": "rounded_rectangle",
+      "bbox": [
+        77,
+        479,
+        283,
+        561
+      ],
+      "confidence": 0.894,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BM",
+      "label": "Pelastuslaitos",
+      "type": "rounded_rectangle",
+      "bbox": [
+        497,
+        479,
+        703,
+        561
+      ],
+      "confidence": 0.9,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "id": "BR",
+      "label": "Tilannekuva",
+      "type": "rounded_rectangle",
+      "bbox": [
+        917,
+        479,
+        1123,
+        561
+      ],
+      "confidence": 0.87,
+      "evidence": "ocr_and_vision"
+    }
+  ],
+  "edges": [
+    {
+      "source": "TL",
+      "target": "TR",
+      "relationship": "unknown",
+      "direction": "unknown",
+      "points": [
+        [
+          283,
+          135
+        ],
+        [
+          917,
+          135
+        ]
+      ],
+      "confidence": 0.45,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TL",
+      "target": "BL",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          180,
+          176
+        ],
+        [
+          180,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BL",
+      "target": "TM",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          225,
+          479
+        ],
+        [
+          555,
+          176
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "TR",
+      "target": "BL",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          931,
+          176
+        ],
+        [
+          269,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    },
+    {
+      "source": "BM",
+      "target": "BL",
+      "relationship": "johtaa",
+      "direction": "source_to_target",
+      "points": [
+        [
+          497,
+          520
+        ],
+        [
+          283,
+          520
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "BM",
+      "target": "TR",
+      "relationship": "tukee",
+      "direction": "source_to_target",
+      "points": [
+        [
+          645,
+          479
+        ],
+        [
+          975,
+          176
+        ]
+      ],
+      "confidence": 0.75,
+      "evidence": "ocr_and_vision"
+    },
+    {
+      "source": "TR",
+      "target": "BR",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "points": [
+        [
+          1020,
+          176
+        ],
+        [
+          1020,
+          479
+        ]
+      ],
+      "confidence": 0.6,
+      "evidence": "vision_only"
+    }
+  ],
+  "uncertainties": [
+    {
+      "kind": "unreadable_or_obscured_edge",
+      "source": "TL",
+      "target": "TR",
+      "detail": "Visible segment, but label or arrowhead is obscured."
+    },
+    {
+      "kind": "node_text_disagreement",
+      "node": "TL",
+      "vision_text": "Hälytys",
+      "ocr_text": "Halytys",
+      "ocr_bbox": [
+        140,
+        120,
+        221,
+        152
+      ]
+    },
+    {
+      "kind": "node_text_disagreement",
+      "node": "TR",
+      "vision_text": "Hätäkeskus",
+      "ocr_text": "Hatakeskus",
+      "ocr_bbox": [
+        962,
+        125,
+        1079,
+        146
+      ]
+    },
+    {
+      "kind": "direction_unresolved",
+      "edge": 1
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 2,
+      "vision_text": "päivittää",
+      "ocr_text": "paivittaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 3,
+      "vision_text": "päivittää",
+      "ocr_text": "paivittaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 4,
+      "vision_text": "hälyttää",
+      "ocr_text": "halyttaa"
+    },
+    {
+      "kind": "edge_text_disagreement",
+      "edge": 7,
+      "vision_text": "välittää",
+      "ocr_text": "valittaa"
+    }
+  ],
+  "provenance": {
+    "ocr_engine": "rapidocr_full",
+    "vision_source": "codex_visual_review"
+  },
+  "visible_text": [
+    "Pelastustoimi · synteettinen testikaavio",
+    "Hälytys",
+    "Johtokeskus",
+    "Hätäkeskus",
+    "Ensihoito",
+    "Pelastuslaitos",
+    "Tilannekuva",
+    "päivittää",
+    "päivittää",
+    "hälyttää",
+    "johtaa",
+    "tukee",
+    "välittää"
+  ]
+}

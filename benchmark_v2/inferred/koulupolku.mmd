@@ -1,0 +1,19 @@
+flowchart LR
+  n0["Oppilas"]
+  style n0 fill:none,stroke:none
+  n1["Kurssi A"]
+  style n1 fill:none,stroke:none
+  n2["Kurssi B"]
+  style n2 fill:none,stroke:none
+  n3["Arviointi A"]
+  style n3 fill:none,stroke:none
+  n4["Arviointi B"]
+  style n4 fill:none,stroke:none
+  n5["Todistus"]
+  style n5 fill:none,stroke:none
+  n0 -->|valitsee| n1
+  n0 -->|valitsee| n2
+  n1 -->|arvioidaan| n3
+  n2 -->|arvioidaan| n4
+  n3 -->|koostaa| n5
+  n4 -->|koostaa| n5

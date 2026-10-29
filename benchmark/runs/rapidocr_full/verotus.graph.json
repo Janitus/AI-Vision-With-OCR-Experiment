@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "IImoitus",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8096828195783827
+    },
+    {
+      "id": "box1",
+      "label": "Maksu",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.7911764085292816
+    },
+    {
+      "id": "box2",
+      "label": "Paatos",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.7831075702394757
+    },
+    {
+      "id": "box3",
+      "label": "Verovelvollinen",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.9244204871356487
+    },
+    {
+      "id": "box4",
+      "label": "Oikaisu",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8416831493377686
+    },
+    {
+      "id": "box5",
+      "label": "Verohallinto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8602945850445674
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_full",
+  "visible_text": [
+    "Verotus : synteettinen testikaavio",
+    "maaraa",
+    "IImoitus",
+    "Maksu",
+    "Paatos",
+    "maksaa",
+    "lahettaa",
+    "tarkistaa",
+    "Verovelvollinen",
+    "Oikaisu",
+    "Verohallinto"
+  ]
+}

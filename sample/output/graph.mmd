@@ -1,0 +1,30 @@
+flowchart TB
+  legal_group["Puolustusvoimien säädösperusta"]
+  law_175["Valtioneuvostolaki (175/2003): Laki"]
+  law_551["Laki puolustusvoimista (551/2007): Laki"]
+  decree_1490["Tasavallan presidentin asetus sotilas- ja palvelusarvoista ym. (1490/2007): Asetus"]
+  decree_539["Valtioneuvoston asetus puolustusvoimien aluetoimistoista (539/2013): Asetus"]
+  decree_262["Valtioneuvoston ohjesääntö (262/2003): Asetus"]
+  decree_375["Valtioneuvoston asetus puolustusministeriöstä (375/2003): Asetus"]
+  decree_1319["Valtioneuvoston asetus puolustusvoimista (1319/2001): Asetus"]
+  decree_1089["Tasavallan presidentin asetus toimivallan jaosta sotilaskäskyasioissa (1089/2007): Asetus"]
+  description_group["Puolustusvoimien kuvailu"]
+  term["Kokonaisuuteen liittyvät termit: Termi"]
+  organization["Puolustusvoimien osat ja niiden yleistykset: Organisaatioyksikkö"]
+  person["Puolustusvoimien toimijat ja niiden yleistykset: Henkilön sijoitus"]
+  authority["Puolustusvoimien ja sen osien toimivalta: Toimivalta"]
+  task["Puolustusvoimien ja sen osien tehtävät: Tehtävä"]
+  decree_262 -->|perustuu| law_175
+  decree_375 -->|perustuu| law_175
+  decree_375 -->|tarkentaa| decree_262
+  law_551 -->|täydentää| decree_375
+  decree_1319 -->|perustuu| law_551
+  decree_1089 -->|perustuu| law_551
+  decree_1089 -->|täydentää| decree_1319
+  decree_1490 -->|perustuu| law_551
+  decree_539 -->|perustuu| law_551
+  term -->|kuvaa| organization
+  term -->|kuvaa| person
+  person -->|liittyy tai kuuluu| organization
+  authority -->|annetaan| organization
+  task -->|annetaan| person

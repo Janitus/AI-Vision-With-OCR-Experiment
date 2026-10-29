@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Ilmoitus"]
+  TM["Maksu"]
+  TR["Päätös"]
+  BL["Verovelvollinen"]
+  BM["Oikaisu"]
+  BR["Verohallinto"]
+  TM -->|määrää| TL
+  TM -->|unknown| TR
+  BL -->|tarkistaa| BM
+  BM -->|unknown| BR
+  BL -->|maksaa| TM
+  BL -->|lähettää| TR
+  BR -->|lähettää| TL

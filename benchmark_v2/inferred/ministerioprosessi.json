@@ -1,0 +1,190 @@
+{
+  "image": "ministerioprosessi.png",
+  "image_size": [
+    1400,
+    850
+  ],
+  "source": "Codex visual reading + RapidOCR v6 medium fi",
+  "title": {
+    "text": "Valmisteluketju",
+    "bbox": [
+      33,
+      30,
+      289,
+      72
+    ],
+    "confidence": 0.99998
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "label": "Aloite",
+      "type": "box",
+      "center": [
+        700,
+        140
+      ],
+      "label_bbox": [
+        664,
+        125,
+        734,
+        153
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "n1",
+      "label": "Ministeriö",
+      "type": "box",
+      "center": [
+        700,
+        300
+      ],
+      "label_bbox": [
+        643,
+        286,
+        757,
+        313
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99975
+      }
+    },
+    {
+      "id": "n2",
+      "label": "Lausunto",
+      "type": "box",
+      "center": [
+        700,
+        460
+      ],
+      "label_bbox": [
+        647,
+        448,
+        752,
+        474
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n3",
+      "label": "Valtioneuvosto",
+      "type": "box",
+      "center": [
+        700,
+        620
+      ],
+      "label_bbox": [
+        619,
+        606,
+        780,
+        635
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 1.0
+      }
+    },
+    {
+      "id": "n4",
+      "label": "Päätös",
+      "type": "box",
+      "center": [
+        700,
+        780
+      ],
+      "label_bbox": [
+        662,
+        766,
+        738,
+        794
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9751
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "source": "n0",
+      "target": "n1",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        905,
+        208,
+        976,
+        228
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99998
+      }
+    },
+    {
+      "id": "e1",
+      "source": "n1",
+      "target": "n2",
+      "relationship": "pyytää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        903,
+        364,
+        975,
+        398
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.97494
+      }
+    },
+    {
+      "id": "e2",
+      "source": "n2",
+      "target": "n3",
+      "relationship": "palautuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        896,
+        526,
+        985,
+        554
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.99999
+      }
+    },
+    {
+      "id": "e3",
+      "source": "n3",
+      "target": "n4",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false,
+      "label_bbox": [
+        891,
+        681,
+        986,
+        718
+      ],
+      "confidence": {
+        "vision_review": "subjective, not calibrated",
+        "ocr": 0.9996
+      }
+    }
+  ],
+  "uncertainties": []
+}

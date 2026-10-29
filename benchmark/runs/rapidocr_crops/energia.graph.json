@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "box0",
+      "label": "Voimala",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        94,
+        284,
+        177
+      ],
+      "confidence": 0.8446794375777245
+    },
+    {
+      "id": "box1",
+      "label": "Ennuste",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        94,
+        704,
+        177
+      ],
+      "confidence": 0.7802341729402542
+    },
+    {
+      "id": "box2",
+      "label": "Kuluttaja",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        94,
+        1124,
+        177
+      ],
+      "confidence": 0.7792512655258179
+    },
+    {
+      "id": "box3",
+      "label": "Sahkoverkko",
+      "type": "colored_rectangle",
+      "bbox": [
+        77,
+        479,
+        284,
+        562
+      ],
+      "confidence": 0.9137922922770182
+    },
+    {
+      "id": "box4",
+      "label": "Mittari",
+      "type": "colored_rectangle",
+      "bbox": [
+        497,
+        479,
+        704,
+        562
+      ],
+      "confidence": 0.8018295019865036
+    },
+    {
+      "id": "box5",
+      "label": "Varasto",
+      "type": "colored_rectangle",
+      "bbox": [
+        917,
+        479,
+        1124,
+        562
+      ],
+      "confidence": 0.8483255505561829
+    }
+  ],
+  "edges": [],
+  "source": "rapidocr_crops",
+  "visible_text": [
+    "Voimala",
+    "Ennuste",
+    "Kuluttaja",
+    "Sahkoverkko",
+    "Mittari",
+    "Varasto"
+  ]
+}

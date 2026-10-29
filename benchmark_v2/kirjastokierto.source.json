@@ -1,0 +1,124 @@
+{
+  "id": "kirjastokierto",
+  "title": "Kirjastokierto",
+  "context": "Kirjastot",
+  "layout": "LR",
+  "shape": "pill",
+  "font": "calibri",
+  "size": 25,
+  "background": "#fffefa",
+  "ink": "#3a2b28",
+  "edge": "#8d5e47",
+  "palette": [
+    "#f8e4cc",
+    "#e3efff",
+    "#f8dfdf",
+    "#e6f3dd"
+  ],
+  "nodes": [
+    {
+      "label": "Teos",
+      "x": 175,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 225,
+      "h": null
+    },
+    {
+      "label": "Varaus",
+      "x": 525,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 225,
+      "h": null
+    },
+    {
+      "label": "Laina",
+      "x": 875,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 225,
+      "h": null
+    },
+    {
+      "label": "Palautus",
+      "x": 1225,
+      "y": 430,
+      "shape": null,
+      "color": null,
+      "w": 225,
+      "h": null
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "varataan",
+      "label_xy": [
+        350,
+        340
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          288,
+          430
+        ],
+        [
+          412,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "nouto",
+      "label_xy": [
+        700,
+        340
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          638,
+          430
+        ],
+        [
+          762,
+          430
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "palautetaan",
+      "label_xy": [
+        1050,
+        340
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          988,
+          430
+        ],
+        [
+          1112,
+          430
+        ]
+      ]
+    }
+  ]
+}

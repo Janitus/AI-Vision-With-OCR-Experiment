@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Lippu"]
+  TM["Liikenteenohjaus"]
+  TR["Aikataulu"]
+  BL["Juna"]
+  BM["Matkustaja"]
+  BR["Asema"]
+  TL ---|unknown [direction unknown]| TM
+  TM -->|yhdistää| TR
+  BL -->|vahvistaa| BM
+  BM -->|unknown| BR
+  BM -->|ohjaa| TM
+  TR -->|yhdistää| BL
+  BR -->|ohjaa| TL

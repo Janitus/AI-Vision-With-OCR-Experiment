@@ -1,0 +1,156 @@
+{
+  "id": "junamatka",
+  "title": "Junamatkan vaiheet",
+  "context": "Liikenne",
+  "layout": "LR",
+  "shape": "circle",
+  "font": "arial_bold",
+  "size": 21,
+  "background": "#f7fbff",
+  "ink": "#17304d",
+  "edge": "#1765ab",
+  "palette": [
+    "#d8e9ff",
+    "#e0f5e4",
+    "#fff1d5",
+    "#efdffc",
+    "#d7f3f1"
+  ],
+  "nodes": [
+    {
+      "label": "Lippu",
+      "x": 175,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 170,
+      "h": 120
+    },
+    {
+      "label": "Asema",
+      "x": 590,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 170,
+      "h": 120
+    },
+    {
+      "label": "Juna",
+      "x": 1020,
+      "y": 420,
+      "shape": null,
+      "color": null,
+      "w": 170,
+      "h": 120
+    },
+    {
+      "label": "Vaihto",
+      "x": 590,
+      "y": 655,
+      "shape": null,
+      "color": null,
+      "w": 170,
+      "h": 120
+    },
+    {
+      "label": "Määränpää",
+      "x": 175,
+      "y": 655,
+      "shape": null,
+      "color": null,
+      "w": 170,
+      "h": 120
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "näytetään",
+      "label_xy": [
+        382,
+        160
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          260,
+          220
+        ],
+        [
+          505,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "nousta",
+      "label_xy": [
+        805,
+        258
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          675,
+          260
+        ],
+        [
+          935,
+          380
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "jatkaa",
+      "label_xy": [
+        810,
+        568
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          935,
+          466
+        ],
+        [
+          675,
+          609
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "saapuu",
+      "label_xy": [
+        380,
+        713
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          505,
+          655
+        ],
+        [
+          260,
+          655
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+flowchart TB
+  TL["Näyte"]
+  TM["Vesistö"]
+  TR["Mittausasema"]
+  BL["Analyysi"]
+  BM["Kunta"]
+  BR["Raportti"]
+  TM ---|unknown [direction unknown]| TL
+  TM -->|kerää| TR
+  BL -->|raportoi| TL
+  TL -->|seuraa| BR
+  TR -->|mittaa| BR
+  BL -->|mittaa| BR
+  BR -->|mittaa| BM

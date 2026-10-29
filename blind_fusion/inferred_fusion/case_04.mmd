@@ -1,0 +1,10 @@
+flowchart LR
+  n1["Aloite"]
+  n2["Ministeriö"]
+  n3["Lausunto"]
+  n4["Valtioneuvosto"]
+  n5["Päätös"]
+  n1 -->|saapuu| n2
+  n2 -->|pyytää| n3
+  n3 -->|palautuu| n4
+  n4 -->|hyväksyy| n5

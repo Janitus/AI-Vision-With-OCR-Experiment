@@ -1,0 +1,17 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Courier New", "primaryColor": "#17242f", "lineColor": "#b7d8ef", "textColor": "#f5f7fa"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Pelastustoimi
+  n1["Hälytys"]
+  style n1 fill:#233b4d,stroke:#f5f7fa,color:#f5f7fa,font-family:Courier New
+  n2["Hätäkeskus"]
+  style n2 fill:#284557,stroke:#f5f7fa,color:#f5f7fa,font-family:Courier New
+  n3["Pelastuslaitos"]
+  style n3 fill:#244150,stroke:#f5f7fa,color:#f5f7fa,font-family:Courier New
+  n4["Tilannekuva"]
+  style n4 fill:#294356,stroke:#f5f7fa,color:#f5f7fa,font-family:Courier New
+  n5["Johto"]
+  style n5 fill:#25404f,stroke:#f5f7fa,color:#f5f7fa,font-family:Courier New
+  n1 -->|välittää| n2
+  n2 -->|hälyttää| n3
+  n3 -->|päivittää| n4
+  n4 -->|tiedottaa| n5

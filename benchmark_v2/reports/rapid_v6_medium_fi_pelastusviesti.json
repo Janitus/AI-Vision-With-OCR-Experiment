@@ -1,0 +1,230 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 5,
+      "total": 5,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 4,
+      "total": 4,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 10,
+      "total": 10,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 11,
+      "extra_ocr_items": 1,
+      "precision": 0.9091
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Pelastustoimen viestit",
+      "observed": "Pelastustoimen viestit",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        395,
+        63
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Hälytys",
+      "observed": "Hälytys",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        94,
+        422.0,
+        185,
+        440.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Hätäkeskus",
+      "observed": "Hätäkeskus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        355,
+        422.0,
+        485,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Pelastuslaitos",
+      "observed": "Pelastuslaitos",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        619,
+        422.0,
+        801,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Tilannekuva",
+      "observed": "Tilannekuva",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        928,
+        422.0,
+        1071,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Johto",
+      "observed": "Johto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1227,
+        422.0,
+        1292,
+        436.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "välittää",
+      "observed": "välittää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        217,
+        324,
+        343,
+        353
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "hälyttää",
+      "observed": "hälyttää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        502,
+        322,
+        628,
+        355
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "päivittää",
+      "observed": "päivittää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        786,
+        322,
+        925,
+        355
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "tiedottaa",
+      "observed": "tiedottaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1060,
+        324,
+        1199,
+        353
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    }
+  ],
+  "unmatched_ocr": [
+    {
+      "index": 9,
+      "text": "V",
+      "bbox": [
+        1143.0,
+        419.0,
+        1167.0,
+        441.0
+      ]
+    }
+  ]
+}
