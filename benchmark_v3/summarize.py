@@ -74,9 +74,9 @@ def main():
             extras=(counts["predicted_nodes"]-counts["matched_nodes"])+(
                 counts["predicted_edges"]-counts["matched_topology"])
         row["total_error_count"]=expected-correct+extras
-        row["total_items_scored"]=expected+extras
-        row["total_error_rate"]=rate(row["total_error_count"],row["total_items_scored"])
-    keys=["approach","modality","cases","total_error_scope","total_error_count","total_items_scored","total_error_rate"]+[k for k in rows[0] if k not in {"approach","modality","cases","total_error_scope","total_error_count","total_items_scored","total_error_rate"}]
+        row["source_items"]=expected
+        row["total_error_rate"]=rate(row["total_error_count"],expected)
+    keys=["approach","modality","cases","total_error_scope","total_error_count","source_items","total_error_rate"]+[k for k in rows[0] if k not in {"approach","modality","cases","total_error_scope","total_error_count","source_items","total_error_rate"}]
     with (ROOT/"approach_matrix.csv").open("w",encoding="utf-8-sig",newline="") as f:
         w=csv.DictWriter(f,fieldnames=keys);w.writeheader();w.writerows(rows)
     (ROOT/"approach_matrix.json").write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding="utf-8")
@@ -101,16 +101,16 @@ def main():
         f"Automated text checks: {clipped} clipped labels, {overlapped} overlapping text regions; minimum text/background contrast {min_contrast:.2f}:1. All ten PNGs were inspected with `view_image`. Text-only nodes have a background patch that keeps lines from crossing letters. Shape boundaries and every printed label are fully visible. The diagrams are synthetic Finnish-context examples, not verified real-world organizational facts.","",
         "## Approach matrix","",
         "**P/R means precision/recall.** Precision asks: of the nodes or connections the method reported, what fraction matched the source? Recall asks: of the source nodes or connections, what fraction did it find? Connection matching checks endpoints; arrow, label, and stroke are scored separately. For example, vision-only edge P/R of 96.3%/92.9% means 105 of 109 reported connections and 105 of 113 source connections matched.","",
-        "**Total error** counts wrong or missing source items plus extra reported items, divided by source items plus extra items. For OCR, an item is one printed text region (title, node label, or edge label). For vision, an item is a title, a node with the correct label and shape, or an edge with the correct endpoints, arrow, label, and dashed state. Extra items raise the error count and denominator. **RapidOCR's 8.1% is the lowest numerical rate, but it is a text-only result; it does not rank above vision on graph extraction because it supplies no nodes, connections, or arrow directions.** Compare totals within each modality.","",
+        "**Total errors per source item** uses the same fixed denominator for all approaches: 206 source items (10 titles, 83 nodes, 113 edges). The numerator is wrong or missing source items plus extra reported outputs. For OCR, those items mean printed text regions only. The OCR engine may also return unmatched text boxes; those are extra outputs, not extra source items. For vision, an item is a title, a node with the correct label and shape, or an edge with the correct endpoints, arrow, label, and dashed state. Extra outputs are counted separately in the detail tables. This is an error-event rate, so it could exceed 100% if a method emitted many extras. The denominator is numerically equal across modalities, but the checks differ. **RapidOCR's text-only rate cannot rank it above vision on graph extraction**, because OCR alone does not reconstruct connections or arrow directions. Compare totals within each modality.","",
         "Other rates are errors divided by expected items; lower is better. `—` means the approach does not produce that output. OCR text scores use location-matched visible text regions, including rotated edge labels. Graph scores use coordinate-matched nodes (155 px tolerance). Missing edges count as errors in each edge error rate.","",
-        "| Approach | Scored unit | Total error |",
+        "| Approach | Scored unit | Errors / 206 source items |",
         "|---|---|---:|"]
     def pct(v):return "—" if v is None else f"{v*100:.1f}%"
     for r in rows:
         scope="OCR text" if r["modality"]=="OCR only" else "Graph"
-        lines.append(f"| {r['approach']} | {scope} | {r['total_error_count']}/{r['total_items_scored']} ({pct(r['total_error_rate'])}) |")
+        lines.append(f"| {r['approach']} | {scope} | {r['total_error_count']}/{r['source_items']} ({pct(r['total_error_rate'])}) |")
     lines += ["", "### OCR text errors", "",
-        "| Approach | Title | Node labels | Edge labels | Unmatched OCR snippets |",
+        "| Approach | Title | Node labels | Edge labels | Unmatched OCR boxes |",
         "|---|---:|---:|---:|---:|"]
     for r in rows[:3]:
         lines.append(f"| {r['approach']} | {pct(r['title_text_error'])} | {pct(r['node_text_error'])} | {pct(r['edge_text_error'])} | {r['false_positive_text']} |")
@@ -128,7 +128,7 @@ def main():
                       ("Fully correct edge","full_edge_error")]:
         lines.append(f"| {label} | {pct(rows[3][key])} | {pct(rows[4][key])} |")
     lines += ["| Unknown directions (count) | " + str(rows[3]["unknown_directions"]) + " | " + str(rows[4]["unknown_directions"]) + " |"]
-    lines += ["","Other per-type rates and counts, including relationship, dashed stroke, unknown directions and relationships, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). Unmatched OCR snippets are potential false positives under this spatial matcher; some could be misplaced fragments of real text.", "",
+    lines += ["","Other per-type rates and counts, including relationship, dashed stroke, unknown directions and relationships, all visible text, and false positives, are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR/vision conflicts are in [uncertainties.json](uncertainties.json). An unmatched OCR box is a text detection that could not be assigned to one of the 206 printed regions; it may be a false detection or a misplaced fragment of real text.", "",
         "## Observed result", "",
         "RapidOCR PP-OCRv6 was strongest on literal text here: 203/206 exact visible regions, versus PaddleOCR's 187/206 and the old baseline's 145/206. Both Codex sessions found all 83 nodes and read their labels exactly. Vision-only recovered 105/113 connections and 101/113 fully correct edges; fusion recovered 107/113 connections but 94/113 fully correct edges. Fusion marked ten directions `unknown`, often on links with no visible arrowhead, while vision-only used `undirected` for those links. The sessions also differed on the two opposite edges in case 10. OCR assistance coincided with two more found connections, while the fully correct edge count fell by seven. These separate sessions cannot isolate OCR as the cause of either difference.", "",
         "A scoring correction maps the fusion output's `plain` node shape to the source's `text` (unboxed) shape. Both vision runs therefore have 73/83 correct node shapes. Earlier fusion shape and total error figures that treated `plain` as a distinct shape were inflated; the current matrix and ledger supersede them.", "",
@@ -143,15 +143,15 @@ def main():
         head="".join(f"<th scope='col'>{html.escape(str(h))}</th>" for h in headers)
         records="".join("<tr>"+"".join(f"<td>{html.escape(str(cell))}</td>" for cell in record)+"</tr>" for record in body)
         return f"<div class='scroll'><table><thead><tr>{head}</tr></thead><tbody>{records}</tbody></table></div>"
-    summary=table(["Approach","Scored unit","Total error"],[(r["approach"],"OCR text" if r["modality"]=="OCR only" else "Graph",f"{r['total_error_count']}/{r['total_items_scored']} ({pct(r['total_error_rate'])})") for r in rows])
-    ocr_table=table(["Approach","Title","Node labels","Edge labels","Unmatched OCR"],[(r["approach"],pct(r["title_text_error"]),pct(r["node_text_error"]),pct(r["edge_text_error"]),r["false_positive_text"]) for r in rows[:3]])
+    summary=table(["Approach","Scored unit","Errors / 206 source items"],[(r["approach"],"OCR text" if r["modality"]=="OCR only" else "Graph",f"{r['total_error_count']}/{r['source_items']} ({pct(r['total_error_rate'])})") for r in rows])
+    ocr_table=table(["Approach","Title","Node labels","Edge labels","Unmatched OCR boxes"],[(r["approach"],pct(r["title_text_error"]),pct(r["node_text_error"]),pct(r["edge_text_error"]),r["false_positive_text"]) for r in rows[:3]])
     detection=table(["Approach","Node P/R","Connection P/R","Extra nodes","Extra edges"],[(r["approach"],f"{pct(r['node_precision'])}/{pct(r['node_recall'])}",f"{pct(r['edge_precision'])}/{pct(r['edge_recall'])}",r["false_positive_nodes"],r["false_positive_edges"]) for r in rows[3:]])
     graph_errors=table(["Error type","Vision only","Vision + OCR"],[(label,pct(rows[3][key]),pct(rows[4][key])) for label,key in [("Title text","title_text_error"),("Node label","node_text_error"),("Edge label","edge_text_error"),("Arrow direction","arrow_error"),("Dashed/solid stroke","dashed_error"),("Node shape","shape_error"),("Fully correct edge","full_edge_error")]]+[("Unknown directions (count)",rows[3]["unknown_directions"],rows[4]["unknown_directions"])])
     page=f"""<!doctype html><html lang='en'><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Benchmark v3 approach matrix</title>
 <style>body{{font:16px/1.5 system-ui,sans-serif;background:#f5f7fa;color:#172d3c;margin:24px}}main{{max-width:1050px;margin:auto}}h1{{font-size:1.9rem}}h2{{margin-top:32px}}.card{{background:white;border:1px solid #cbd5df;border-radius:10px;padding:18px;margin:18px 0}}.scroll{{overflow-x:auto}}table{{border-collapse:collapse;width:100%;background:white}}th,td{{padding:10px 12px;border-bottom:1px solid #d8e1e8;text-align:left;vertical-align:top}}th{{background:#e8f0f6}}tr:nth-child(even) td{{background:#f8fafc}}a{{color:#145889}}.muted{{color:#4e6473}}</style>
-<main><h1>Graph benchmark: approach matrix</h1><p class='muted'>Ten Finnish-context diagrams. Error rates are lower-is-better. The OCR and graph totals score different outputs; compare within each group.</p>
+<main><h1>Graph benchmark: approach matrix</h1><p class='muted'>Ten Finnish-context diagrams. All headline rates divide error events by the same 206 source items; extra outputs count as errors, not additional source items. OCR and graph totals score different outputs, so compare within each group.</p>
 <div class='card'><h2>All five approaches</h2>{summary}</div>
-<div class='card'><h2>OCR text errors</h2><p>Each source item is one printed title, node label, or edge label. Unmatched OCR snippets count as potential false positives.</p>{ocr_table}</div>
+<div class='card'><h2>OCR text errors</h2><p>Each source item is one printed title, node label, or edge label. An unmatched OCR box is an extra text detection, possibly a false detection or a misplaced fragment of real text.</p>{ocr_table}</div>
 <div class='card'><h2>Graph detection</h2><p>P/R means precision/recall. Connection matching checks endpoint pairs; arrow and label correctness are scored below.</p>{detection}</div>
 <div class='card'><h2>Graph error types</h2>{graph_errors}</div>
 <p><a href='results_viewer.html'>Compare graph images</a> · <a href='REPORT.md'>Read the validation report</a> · <a href='approach_matrix.csv' download>Download full CSV</a></p></main></html>"""
