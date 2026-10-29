@@ -37,14 +37,17 @@ def compare(slug,pred):
         if pi in used_p or ti in used_t:continue
         used_p.add(pi);used_t.add(ti);mapping[actual_nodes[pi].get("id")]=ti
         matches.append((pi,ti,d))
-    errors=[];exact_node=exact_shape=0
+    errors=[];exact_node=exact_shape=full_node=0
     for pi,ti,d in matches:
         p=actual_nodes[pi];t=expected_nodes[ti]
-        if clean(p.get("label"))==clean(t["label"]):exact_node+=1
+        good_label=clean(p.get("label"))==clean(t["label"])
+        if good_label:exact_node+=1
         else:errors.append({"kind":"wrong_node_text","expected":t["label"],"observed":p.get("label"),"node":ti})
         es=shape(t.get("shape") or truth["shape"]);ps=shape(p.get("type"))
-        if es==ps:exact_shape+=1
+        good_shape=es==ps
+        if good_shape:exact_shape+=1
         else:errors.append({"kind":"wrong_node_shape","expected":es,"observed":ps,"node":ti})
+        full_node+=good_label and good_shape
         if d>35:errors.append({"kind":"node_coordinate_offset","node":ti,"pixels":round(d,1)})
     for ti,t in enumerate(expected_nodes):
         if ti not in used_t:errors.append({"kind":"missing_node","expected":t["label"],"node":ti})
@@ -80,7 +83,8 @@ def compare(slug,pred):
     for ti,t in enumerate(expected_edges):
         if ti not in used_edges:errors.append({"kind":"missing_edge","edge":ti,"expected":[t["source"],t["target"],t["label"]]})
     counts={"truth_nodes":len(expected_nodes),"predicted_nodes":len(actual_nodes),"matched_nodes":len(matches),
-            "exact_node_labels":exact_node,"exact_node_shapes":exact_shape,"truth_edges":len(expected_edges),
+            "exact_node_labels":exact_node,"exact_node_shapes":exact_shape,
+            "fully_correct_nodes":full_node,"truth_edges":len(expected_edges),
             "predicted_edges":len(actual_edges),"matched_topology":topology,"correct_arrows":direction,
             "correct_relationships":relation,"correct_strokes":stroke,"fully_correct_edges":full,
             "end_to_end_edges":end_to_end,"title_exact":int(title_exact)}

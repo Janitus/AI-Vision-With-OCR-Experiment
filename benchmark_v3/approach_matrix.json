@@ -21,7 +21,10 @@
     "dashed_error": null,
     "shape_error": null,
     "unknown_relationships": null,
-    "full_edge_error": null
+    "full_edge_error": null,
+    "total_error_count": 61,
+    "total_items_scored": 206,
+    "total_error_rate": 0.2961
   },
   {
     "approach": "paddle_v5_fi",
@@ -45,7 +48,10 @@
     "dashed_error": null,
     "shape_error": null,
     "unknown_relationships": null,
-    "full_edge_error": null
+    "full_edge_error": null,
+    "total_error_count": 59,
+    "total_items_scored": 246,
+    "total_error_rate": 0.2398
   },
   {
     "approach": "rapid_v6_medium_fi",
@@ -69,7 +75,10 @@
     "dashed_error": null,
     "shape_error": null,
     "unknown_relationships": null,
-    "full_edge_error": null
+    "full_edge_error": null,
+    "total_error_count": 18,
+    "total_items_scored": 221,
+    "total_error_rate": 0.0814
   },
   {
     "approach": "blind_vision",
@@ -93,11 +102,14 @@
     "dashed_error": 0.0708,
     "shape_error": 0.1205,
     "unknown_relationships": 0,
-    "full_edge_error": 0.1062
+    "full_edge_error": 0.1062,
+    "total_error_count": 26,
+    "total_items_scored": 210,
+    "total_error_rate": 0.1238
   },
   {
     "approach": "blind_fusion",
-    "modality": "Codex vision + RapidOCR",
+    "modality": "Codex vision + RapidOCR PP-OCRv6 medium Finnish",
     "cases": 10,
     "title_text_error": 0.0,
     "node_text_error": 0.0,
@@ -117,6 +129,9 @@
     "dashed_error": 0.0708,
     "shape_error": 0.3614,
     "unknown_relationships": 0,
-    "full_edge_error": 0.1681
+    "full_edge_error": 0.1681,
+    "total_error_count": 54,
+    "total_items_scored": 211,
+    "total_error_rate": 0.2559
   }
 ]

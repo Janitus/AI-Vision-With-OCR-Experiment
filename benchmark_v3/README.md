@@ -20,6 +20,8 @@ The v3 OCR runners reuse the locally cached models in `benchmark_v2/models`. Rap
 
 `python benchmark_v3/prepare_blind_inputs.py` recreates anonymous copies of source images and RapidOCR observations in ignored input folders. Two fresh Codex tasks inspect either just those images or the images with OCR. They must save all ten predictions under `blind_vision/predictions` or `blind_fusion/predictions` before scoring. This is procedural blinding with audited tool use, not filesystem isolation. The saved results can be rescored with:
 
+The blind fusion task used the raw **RapidOCR 3.10 PP-OCRv6 medium Finnish** observations. Codex compared OCR with the image and wrote the graph; no automated fusion algorithm was run. PaddleOCR PP-OCRv5 Finnish and the old RapidOCR baseline were OCR-only comparison rows.
+
 ```powershell
 python benchmark_v3/evaluate_blind.py blind_vision
 python benchmark_v3/evaluate_blind.py blind_fusion
