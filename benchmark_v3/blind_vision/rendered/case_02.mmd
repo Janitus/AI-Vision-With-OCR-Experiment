@@ -1,0 +1,23 @@
+flowchart LR
+  a["Aloite"]
+  b["Valmisteluryhmä"]
+  c["Oikeudellinen arvio"]
+  d["Lausuntopyyntö"]
+  e["Ministeriö"]
+  f["Budjettitarkistus"]
+  g["Valtioneuvosto"]
+  h["Eduskunta"]
+  i["Toimeenpano"]
+  a -->|käynnistää| b
+  b -->|selvittää| c
+  d -->|palautuu| e
+  e -->|sovittaa| f
+  g -->|antaa esityksen| h
+  h -->|hyväksyy| i
+  b -->|laatii| d
+  c -->|arvioi kulut| f
+  e -->|esittelee| g
+  f -->|raportoi| h
+  i -->|seuranta| e
+  linkStyle 10 stroke-dasharray: 8 5
+  c -->|kuule| d

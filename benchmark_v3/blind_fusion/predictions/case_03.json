@@ -1,0 +1,172 @@
+{
+  "title": "Säähavaintojen yhdistäminen",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Sääasema",
+      "type": "plain",
+      "center": [
+        900,
+        188
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "b",
+      "label": "Tuulianturi",
+      "type": "plain",
+      "center": [
+        320,
+        392
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "c",
+      "label": "Sademittari",
+      "type": "plain",
+      "center": [
+        900,
+        392
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "d",
+      "label": "Lämpöanturi",
+      "type": "plain",
+      "center": [
+        1480,
+        392
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e",
+      "label": "Raakahavainnot",
+      "type": "plain",
+      "center": [
+        320,
+        722
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "f",
+      "label": "Laatutarkistus",
+      "type": "plain",
+      "center": [
+        900,
+        722
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "g",
+      "label": "Malliajo",
+      "type": "plain",
+      "center": [
+        1480,
+        722
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "h",
+      "label": "Ennuste",
+      "type": "plain",
+      "center": [
+        900,
+        957
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "edges": [
+    {
+      "source": "b",
+      "target": "a",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "a",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "a",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "kokoaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "varatieto",
+      "direction": "unknown",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "vertaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "h",
+      "target": "f",
+      "relationship": "palaute",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "The word 'vahvistaa' appears near the Laatutarkistus–Malliajo area without a distinct visible line; no separate edge is inferred.",
+    "Tuulianturi–Raakahavainnot has no visible arrowhead."
+  ],
+  "ocr_disagreements": []
+}

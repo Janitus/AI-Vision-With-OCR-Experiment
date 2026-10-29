@@ -2,6 +2,8 @@
 
 **Current findings:** [short report](BENCHMARK_SUMMARY.md) · [combined approach matrix](blind_vision/combined_approach_matrix.csv) · [blind OCR + vision comparison](blind_fusion/FUSION_REPORT.md) · [side-by-side viewer](blind_fusion/comparison_viewer.html).
 
+**New complex benchmark:** [v3 validation report](benchmark_v3/REPORT.md) · [five-approach matrix](benchmark_v3/approach_matrix.csv) · [source / blind vision / OCR-assisted viewer](benchmark_v3/results_viewer.html). Ten new Finnish-context diagrams contain 83 nodes and 113 edges; source images, Mermaid, structured truth, OCR observations, and separately saved blind predictions are included.
+
 The ten-case original evaluation is in [benchmark/README.md](benchmark/README.md). The varied second set, its sources, rendered images, OCR observations, and validation are in [benchmark_v2/README.md](benchmark_v2/README.md). Two separate fresh Codex sessions produced [image-only](blind_vision/BLIND_REPORT.md) and [OCR-assisted](blind_fusion/FUSION_REPORT.md) graph predictions before they were scored against source data.
 
 On these ten clean synthetic diagrams, RapidOCR PP-OCRv6 medium Finnish read all 100 expected text items with three false positives. Blind Codex vision recovered 40/41 fully correct edges; a separate OCR-assisted session recovered 41/41 and rejected the three false OCR detections. The arrow improvement cannot be attributed to OCR alone because OCR does not provide arrow direction. Both sessions called four pill shapes rounded rectangles. See the reports for denominators, uncertainty handling, and test limits.

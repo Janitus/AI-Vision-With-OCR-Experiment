@@ -1,0 +1,33 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Calibri", "primaryColor": "#fffefa", "lineColor": "#548674", "textColor": "#273934"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Kansanterveys
+  n1(["Varaus"])
+  style n1 fill:#e1f3e9,stroke:#273934,color:#273934,font-family:Calibri
+  n2["Asiakas"]
+  style n2 fill:transparent,stroke:transparent,color:#273934,font-family:Calibri
+  n3["Hoitaja"]
+  style n3 fill:#fff1dc,stroke:#273934,color:#273934,font-family:Calibri
+  n4{"Annos"}
+  style n4 fill:#f0e5f6,stroke:#273934,color:#273934,font-family:Calibri
+  n5(["Rokotuspiste"])
+  style n5 fill:#e1f3e9,stroke:#273934,color:#273934,font-family:Calibri
+  n6["Kirjaus"]
+  style n6 fill:#e9f0ff,stroke:#273934,color:#273934,font-family:Calibri
+  n7["Seuranta"]
+  style n7 fill:transparent,stroke:transparent,color:#273934,font-family:Calibri
+  n8{{"Rekisteri"}}
+  style n8 fill:#f0e5f6,stroke:#273934,color:#273934,font-family:Calibri
+  n9("Muistutus")
+  style n9 fill:#e1f3e9,stroke:#273934,color:#273934,font-family:Calibri
+  n1 -->|vahvistaa| n2
+  n2 -->|saapuu| n3
+  n3 -->|tarkistaa| n4
+  n4 -->|toimitetaan| n5
+  n5 -->|merkitsee| n6
+  n6 -->|käynnistää| n7
+  n6 -->|siirtää tiedon| n8
+  n8 -->|lähettää| n9
+  n9 -->|kutsuu uudelleen| n2
+  n3 -->|kirjaa erän| n6
+  n7 ---|tarvittaessa| n9
+  linkStyle 8 stroke-dasharray: 8 5

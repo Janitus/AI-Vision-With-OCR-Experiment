@@ -1,0 +1,22 @@
+flowchart LR
+  a["Matkustaja"]
+  b["Aikataulu"]
+  c["Laituri"]
+  d["Juna"]
+  e["Liikenteenohjaus"]
+  f["Vaihtoasema"]
+  g["Häiriöviesti"]
+  h["Määränpää"]
+  a -->|tarkistaa| b
+  b -->|osoittaa| c
+  c -->|ohjaa| d
+  a -->|lähettää kyselyn| e
+  b -->|reitittää| f
+  c -->|varoitus| g
+  d -->|saapuu| h
+  e -->|vahvistaa vaihdon| f
+  f -->|ilmoittaa| g
+  g -->|päivittää| h
+  e -->|muuttaa laiturin| c
+  linkStyle 10 stroke-dasharray: 8 5
+  d ---|tilanne| g

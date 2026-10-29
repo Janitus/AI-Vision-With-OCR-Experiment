@@ -1,0 +1,834 @@
+{
+  "approach": "blind_fusion",
+  "counts": {
+    "truth_nodes": 83,
+    "predicted_nodes": 83,
+    "matched_nodes": 83,
+    "exact_node_labels": 83,
+    "exact_node_shapes": 53,
+    "truth_edges": 113,
+    "predicted_edges": 112,
+    "matched_topology": 107,
+    "correct_arrows": 97,
+    "correct_relationships": 105,
+    "correct_strokes": 105,
+    "fully_correct_edges": 94,
+    "end_to_end_edges": 94,
+    "title_exact": 10
+  },
+  "error_rates": {
+    "title_error_rate": 0.0,
+    "node_detection_error_rate": 0.0,
+    "node_label_error_rate": 0.0,
+    "node_shape_error_rate": 0.3614,
+    "topology_error_rate": 0.0531,
+    "arrow_error_rate": 0.1416,
+    "relationship_error_rate": 0.0708,
+    "stroke_error_rate": 0.0708,
+    "full_edge_error_rate": 0.1681,
+    "end_to_end_edge_error_rate": 0.1681
+  },
+  "cases": {
+    "case_01": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 10,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 10,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0909,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0909,
+        "end_to_end_edge_error_rate": 0.0909
+      },
+      "errors": [
+        {
+          "kind": "wrong_arrow",
+          "edge": 10,
+          "expected": [
+            3,
+            7,
+            "undirected"
+          ],
+          "observed": [
+            3,
+            7,
+            "unknown"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Erikoissairaanhoito–Jatkohoito has no visible arrowhead; direction unknown."
+      ]
+    },
+    "case_02": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 9,
+        "truth_edges": 12,
+        "predicted_edges": 12,
+        "matched_topology": 11,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 11,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0833,
+        "arrow_error_rate": 0.0833,
+        "relationship_error_rate": 0.0833,
+        "stroke_error_rate": 0.0833,
+        "full_edge_error_rate": 0.0833,
+        "end_to_end_edge_error_rate": 0.0833
+      },
+      "errors": [
+        {
+          "kind": "extra_edge",
+          "predicted_edge": 3,
+          "endpoints": [
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 11,
+          "expected": [
+            3,
+            5,
+            "kuulee"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The diagonal labels 'laatii' and 'kuulee' sit in gaps along crossing routes; their edge assignment is less certain than the visible endpoints."
+      ]
+    },
+    "case_03": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 0,
+        "truth_edges": 11,
+        "predicted_edges": 10,
+        "matched_topology": 9,
+        "correct_arrows": 8,
+        "correct_relationships": 8,
+        "correct_strokes": 9,
+        "fully_correct_edges": 7,
+        "end_to_end_edges": 7,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 1.0,
+        "topology_error_rate": 0.1818,
+        "arrow_error_rate": 0.2727,
+        "relationship_error_rate": 0.2727,
+        "stroke_error_rate": 0.1818,
+        "full_edge_error_rate": 0.3636,
+        "end_to_end_edge_error_rate": 0.3636
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 1
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 2
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 3
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 4
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 5
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 6
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 7
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 0
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 10,
+          "expected": [
+            1,
+            4,
+            "undirected"
+          ],
+          "observed": [
+            1,
+            4,
+            "unknown"
+          ]
+        },
+        {
+          "kind": "extra_edge",
+          "predicted_edge": 5,
+          "endpoints": [
+            2,
+            5
+          ]
+        },
+        {
+          "kind": "wrong_relationship",
+          "edge": 7,
+          "expected": "vahvistaa",
+          "observed": "syöttää"
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 4,
+          "expected": [
+            0,
+            5,
+            "lähettää"
+          ]
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 6,
+          "expected": [
+            4,
+            6,
+            "syöttää"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The word 'vahvistaa' appears near the Laatutarkistus–Malliajo area without a distinct visible line; no separate edge is inferred.",
+        "Tuulianturi–Raakahavainnot has no visible arrowhead."
+      ]
+    },
+    "case_04": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 10,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 10,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0909,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0909,
+        "end_to_end_edge_error_rate": 0.0909
+      },
+      "errors": [
+        {
+          "kind": "wrong_arrow",
+          "edge": 10,
+          "expected": [
+            0,
+            4,
+            "undirected"
+          ],
+          "observed": [
+            0,
+            4,
+            "unknown"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Voimala–Kuluttaja horizontal varasyöttö line has no visible arrowhead."
+      ]
+    },
+    "case_05": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "truth_edges": 12,
+        "predicted_edges": 12,
+        "matched_topology": 12,
+        "correct_arrows": 11,
+        "correct_relationships": 12,
+        "correct_strokes": 12,
+        "fully_correct_edges": 11,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0833,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0833,
+        "end_to_end_edge_error_rate": 0.0833
+      },
+      "errors": [
+        {
+          "kind": "wrong_arrow",
+          "edge": 11,
+          "expected": [
+            6,
+            3,
+            "undirected"
+          ],
+          "observed": [
+            3,
+            6,
+            "unknown"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Juna–Häiriöviesti diagonal line has no visible arrowhead.",
+        "The 'vahvistaa vaihdon' text lies above the lower Liikenteenohjaus–Vaihtoasema edge, near the dashed diagonal; edge-label assignment is uncertain."
+      ]
+    },
+    "case_06": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 5,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 10,
+        "correct_arrows": 10,
+        "correct_relationships": 10,
+        "correct_strokes": 10,
+        "fully_correct_edges": 10,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.4444,
+        "topology_error_rate": 0.0909,
+        "arrow_error_rate": 0.0909,
+        "relationship_error_rate": 0.0909,
+        "stroke_error_rate": 0.0909,
+        "full_edge_error_rate": 0.0909,
+        "end_to_end_edge_error_rate": 0.0909
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 0
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 1
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 4
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 6
+        },
+        {
+          "kind": "extra_edge",
+          "predicted_edge": 8,
+          "endpoints": [
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 10,
+          "expected": [
+            6,
+            8,
+            "tarvittaessa"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Seuranta–Rekisteri line has no visible arrowhead.",
+        "'kutsuu uudelleen' sits near the dashed Muistutus–Asiakas line where several diagonals cross."
+      ]
+    },
+    "case_07": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 0,
+        "truth_edges": 10,
+        "predicted_edges": 10,
+        "matched_topology": 9,
+        "correct_arrows": 8,
+        "correct_relationships": 9,
+        "correct_strokes": 8,
+        "fully_correct_edges": 7,
+        "end_to_end_edges": 7,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 1.0,
+        "topology_error_rate": 0.1,
+        "arrow_error_rate": 0.2,
+        "relationship_error_rate": 0.1,
+        "stroke_error_rate": 0.2,
+        "full_edge_error_rate": 0.3,
+        "end_to_end_edge_error_rate": 0.3
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 0
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 1
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 2
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 3
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 4
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 5
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 6
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "pill",
+          "observed": "round",
+          "node": 7
+        },
+        {
+          "kind": "extra_edge",
+          "predicted_edge": 2,
+          "endpoints": [
+            1,
+            2
+          ]
+        },
+        {
+          "kind": "wrong_stroke",
+          "edge": 8,
+          "expected_dashed": true,
+          "observed_dashed": false
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 9,
+          "expected": [
+            4,
+            7,
+            "undirected"
+          ],
+          "observed": [
+            4,
+            7,
+            "unknown"
+          ]
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 2,
+          "expected": [
+            1,
+            3,
+            "tuottaa"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu lines have no visible arrowhead.",
+        "The horizontal Analyysi–Vertaisarvio line shows arrowheads at both ends; the nearby 'palauttaa korjattavaksi' label is offset below the line, so its assignment to the reverse direction is uncertain."
+      ]
+    },
+    "case_08": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 0,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 10,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 10,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 1.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0909,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0909,
+        "end_to_end_edge_error_rate": 0.0909
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 6
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 3
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 1
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 2
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 5
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 7
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 4
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 0
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 10,
+          "expected": [
+            3,
+            7,
+            "undirected"
+          ],
+          "observed": [
+            3,
+            7,
+            "unknown"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The 'varatieto' diagonal from Keskuskirjasto to Palautus has no visible arrowhead.",
+        "The dashed 'noutoilmoitus' line has an arrow at Noutopiste, even though that direction is semantically unusual; the visible arrow is followed."
+      ]
+    },
+    "case_09": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 9,
+        "truth_edges": 13,
+        "predicted_edges": 13,
+        "matched_topology": 12,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 12,
+        "fully_correct_edges": 10,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0769,
+        "arrow_error_rate": 0.1538,
+        "relationship_error_rate": 0.1538,
+        "stroke_error_rate": 0.0769,
+        "full_edge_error_rate": 0.2308,
+        "end_to_end_edge_error_rate": 0.2308
+      },
+      "errors": [
+        {
+          "kind": "wrong_arrow",
+          "edge": 12,
+          "expected": [
+            1,
+            4,
+            "undirected"
+          ],
+          "observed": [
+            1,
+            4,
+            "unknown"
+          ]
+        },
+        {
+          "kind": "wrong_relationship",
+          "edge": 4,
+          "expected": "päivittää",
+          "observed": "lähettää yksiköt"
+        },
+        {
+          "kind": "extra_edge",
+          "predicted_edge": 5,
+          "endpoints": [
+            2,
+            4
+          ]
+        },
+        {
+          "kind": "missing_edge",
+          "edge": 11,
+          "expected": [
+            2,
+            6,
+            "lähettää yksiköt"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The 'päivittää' and 'lähettää yksiköt' labels occupy one diagonal Pelastuslaitos–Tilannekeskus route; they are recorded as parallel relationships, but a second distinct line is not visible.",
+        "Hätäkeskus–Tilannekeskus vertical connection has no visible arrowhead.",
+        "The long diagonal from Tiedote toward Kuntalainen crosses other lines; its arrowhead is visible at Kuntalainen."
+      ]
+    },
+    "case_10": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 6,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 8,
+        "correct_relationships": 11,
+        "correct_strokes": 10,
+        "fully_correct_edges": 8,
+        "end_to_end_edges": 8,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.25,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.2727,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0909,
+        "full_edge_error_rate": 0.2727,
+        "end_to_end_edge_error_rate": 0.2727
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 0
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "text",
+          "observed": "plain",
+          "node": 4
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 10,
+          "expected": [
+            1,
+            4,
+            "undirected"
+          ],
+          "observed": [
+            1,
+            4,
+            "unknown"
+          ]
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 7,
+          "expected": [
+            2,
+            6,
+            "source_to_target"
+          ],
+          "observed": [
+            6,
+            2,
+            "source_to_target"
+          ]
+        },
+        {
+          "kind": "wrong_arrow",
+          "edge": 9,
+          "expected": [
+            6,
+            2,
+            "source_to_target"
+          ],
+          "observed": [
+            2,
+            6,
+            "source_to_target"
+          ]
+        },
+        {
+          "kind": "wrong_stroke",
+          "edge": 9,
+          "expected_dashed": true,
+          "observed_dashed": false
+        }
+      ],
+      "uncertainties": [
+        "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead.",
+        "The vertical Tarkastus–Käsittely route has arrows at both ends, with two nearby labels; their assignment to opposite directions is inferred from the label positions."
+      ]
+    }
+  },
+  "node_precision": 1.0,
+  "node_recall": 1.0,
+  "edge_precision": 0.9554,
+  "edge_recall": 0.9469,
+  "unknown_relationships": 0
+}

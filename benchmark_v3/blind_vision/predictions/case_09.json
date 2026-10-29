@@ -1,0 +1,197 @@
+{
+  "title": "Tulvatilanteen viestintä",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Sadehavainto",
+      "type": "rectangle",
+      "center": [
+        270,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Hätäkeskus",
+      "type": "rectangle",
+      "center": [
+        900,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Pelastuslaitos",
+      "type": "rectangle",
+      "center": [
+        1530,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Kuntalainen",
+      "type": "rectangle",
+      "center": [
+        270,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Tilannekeskus",
+      "type": "rectangle",
+      "center": [
+        900,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Vesilaitos",
+      "type": "rectangle",
+      "center": [
+        1530,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Evakuointi",
+      "type": "rectangle",
+      "center": [
+        270,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Sairaala",
+      "type": "rectangle",
+      "center": [
+        900,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "i",
+      "label": "Tiedote",
+      "type": "rectangle",
+      "center": [
+        1530,
+        880
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "d",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "yhteys",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.75
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "pyytää arviota",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "määrää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "ohjaa potilaita",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "e",
+      "relationship": "lähettää yksiköt",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "turvaa veden",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "i",
+      "target": "d",
+      "relationship": "julkaisee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "The word päivittää is on the Pelastuslaitos–Tilannekeskus diagonal alongside lähettää yksiköt, with no clear second line.",
+    "Hätäkeskus–Tilannekeskus has no visible arrowhead."
+  ]
+}

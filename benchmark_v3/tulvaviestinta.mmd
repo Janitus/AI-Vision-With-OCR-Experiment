@@ -1,0 +1,35 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "primaryColor": "#16232b", "lineColor": "#b6d1dc", "textColor": "#f3f6f7"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Pelastustoimi
+  n1["Sadehavainto"]
+  style n1 fill:#24404e,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n2["Hätäkeskus"]
+  style n2 fill:#2a4754,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n3["Pelastuslaitos"]
+  style n3 fill:#304b56,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n4["Kuntalainen"]
+  style n4 fill:#24404e,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n5["Tilannekeskus"]
+  style n5 fill:#2a4754,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n6["Vesilaitos"]
+  style n6 fill:#304b56,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n7["Evakuointi"]
+  style n7 fill:#24404e,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n8["Sairaala"]
+  style n8 fill:#2a4754,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n9["Tiedote"]
+  style n9 fill:#304b56,stroke:#f3f6f7,color:#f3f6f7,font-family:Arial
+  n1 -->|hälyttää| n2
+  n2 -->|välittää| n3
+  n1 -->|varoitus| n4
+  n4 -->|ilmoittaa| n5
+  n3 -->|päivittää| n5
+  n5 -->|pyytää arviota| n6
+  n5 -->|määrää| n7
+  n6 -->|turvaa veden| n8
+  n7 -->|ohjaa potilaita| n8
+  n8 -->|raportoi| n9
+  n9 -->|julkaisee| n4
+  n3 -->|lähettää yksiköt| n7
+  n2 ---|yhteys| n5
+  linkStyle 11 stroke-dasharray: 8 5

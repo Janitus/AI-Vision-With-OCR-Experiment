@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Georgia", "primaryColor": "#ffffff", "lineColor": "#333333", "textColor": "#282828"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Verotus
+  n1["Verovelvollinen"]
+  style n1 fill:transparent,stroke:transparent,color:#282828,font-family:Georgia
+  n2["Ilmoitus"]
+  style n2 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n3{"Tarkastus"}
+  style n3 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n4{"Päätös"}
+  style n4 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n5["Lisäselvitys"]
+  style n5 fill:transparent,stroke:transparent,color:#282828,font-family:Georgia
+  n6["Oikaisupyyntö"]
+  style n6 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n7{"Käsittely"}
+  style n7 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n8["Lopputulos"]
+  style n8 fill:#ffffff,stroke:#282828,color:#282828,font-family:Georgia
+  n1 -->|antaa| n2
+  n2 -->|siirtää| n3
+  n3 -->|ratkaisee| n4
+  n1 -->|täydentää| n5
+  n5 -->|liitetään| n6
+  n6 -->|käynnistää| n7
+  n7 -->|vahvistaa| n8
+  n3 -->|tarkistaa uudelleen| n7
+  n4 -->|voi johtaa| n6
+  n7 -->|palauttaa tarkastukseen| n3
+  n2 ---|liittyy| n5
+  linkStyle 9 stroke-dasharray: 8 5

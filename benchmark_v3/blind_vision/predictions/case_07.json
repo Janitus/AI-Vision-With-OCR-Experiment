@@ -1,0 +1,163 @@
+{
+  "title": "Tutkimusjulkaisun työnkulku",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Tutkimuskysymys",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        185
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Aineiston keruu",
+      "type": "rounded_rectangle",
+      "center": [
+        320,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Eettinen arvio",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Mittaus",
+      "type": "rounded_rectangle",
+      "center": [
+        1480,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Tallennus",
+      "type": "rounded_rectangle",
+      "center": [
+        320,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Analyysi",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Vertaisarvio",
+      "type": "rounded_rectangle",
+      "center": [
+        1480,
+        720
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Julkaisu",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        955
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "c",
+      "relationship": "edellyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "tuottaa",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "arkistoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "mahdollistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "lähettää",
+      "direction": "both",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "avoin aineisto",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "suosittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu have no visible arrowheads.",
+    "The text palauttaa korjattavaksi appears near the Vertaisarvio–Julkaisu diagonal; no distinct edge is visible."
+  ]
+}

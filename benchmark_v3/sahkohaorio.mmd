@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Segoe UI", "primaryColor": "#17212b", "lineColor": "#b4d6e5", "textColor": "#f3f8fa"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Energia
+  n1{{"Voimala"}}
+  style n1 fill:#294252,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n2{{"Kantaverkko"}}
+  style n2 fill:#335063,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n3{{"Sähköasema"}}
+  style n3 fill:#2a4555,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n4{{"Jakeluverkko"}}
+  style n4 fill:#355468,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n5{{"Kuluttaja"}}
+  style n5 fill:#294252,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n6{{"Mittari"}}
+  style n6 fill:#335063,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n7{{"Valvomo"}}
+  style n7 fill:#2a4555,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n8{{"Korjausryhmä"}}
+  style n8 fill:#355468,stroke:#f3f8fa,color:#f3f8fa,font-family:Segoe UI
+  n1 -->|syöttää| n2
+  n2 -->|siirtää| n3
+  n3 -->|muuntaa| n4
+  n4 -->|jakaa| n5
+  n5 -->|kuittaa| n6
+  n6 -->|hälyttää| n7
+  n7 -->|lähettää| n8
+  n8 -->|korjaa| n3
+  n7 -->|valvoo| n2
+  n4 -->|vikatieto| n7
+  n1 ---|varasyöttö| n5
+  linkStyle 8 stroke-dasharray: 8 5

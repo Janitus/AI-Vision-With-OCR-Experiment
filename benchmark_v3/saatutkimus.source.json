@@ -1,0 +1,335 @@
+{
+  "id": "saatutkimus",
+  "title": "Säähavaintojen yhdistäminen",
+  "context": "Sää ja tutkimus",
+  "layout": "TB",
+  "shape": "text",
+  "font": "verdana",
+  "size": 23,
+  "background": "#fbfdff",
+  "ink": "#193247",
+  "edge": "#35677d",
+  "palette": [
+    "#fbfdff"
+  ],
+  "nodes": [
+    {
+      "label": "Sääasema",
+      "x": 900,
+      "y": 185,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Tuulianturi",
+      "x": 320,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Sademittari",
+      "x": 900,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Lämpöanturi",
+      "x": 1480,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Raakahavainnot",
+      "x": 320,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Laatutarkistus",
+      "x": 900,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Malliajo",
+      "x": 1480,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Ennuste",
+      "x": 900,
+      "y": 955,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 1,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        610,
+        288
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          455,
+          342
+        ],
+        [
+          765,
+          233
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        690,
+        288
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          900,
+          340
+        ],
+        [
+          900,
+          235
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 0,
+      "label": "mittaa",
+      "label_xy": [
+        1190,
+        288
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1345,
+          342
+        ],
+        [
+          1035,
+          233
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "label": "kokoaa",
+      "label_xy": [
+        610,
+        452
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          846,
+          235
+        ],
+        [
+          374,
+          670
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "label": "lähettää",
+      "label_xy": [
+        900,
+        518
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          900,
+          235
+        ],
+        [
+          900,
+          670
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "vertaa",
+      "label_xy": [
+        610,
+        720
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          455,
+          720
+        ],
+        [
+          765,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "label": "syöttää",
+      "label_xy": [
+        1167,
+        720
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          455,
+          720
+        ],
+        [
+          1345,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "vahvistaa",
+      "label_xy": [
+        1190,
+        658
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          720
+        ],
+        [
+          1345,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "tuottaa",
+      "label_xy": [
+        1190,
+        838
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1357,
+          770
+        ],
+        [
+          1023,
+          905
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 5,
+      "label": "palaute",
+      "label_xy": [
+        900,
+        838
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          900,
+          905
+        ],
+        [
+          900,
+          770
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "label": "varatieto",
+      "label_xy": [
+        320,
+        555
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          320,
+          440
+        ],
+        [
+          320,
+          670
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

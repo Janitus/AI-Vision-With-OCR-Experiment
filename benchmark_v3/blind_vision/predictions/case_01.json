@@ -1,0 +1,178 @@
+{
+  "title": "Päivystyksen hoitoverkko",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Potilaan yhteydenotto",
+      "type": "rounded_rectangle",
+      "center": [
+        250,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Hoitaja",
+      "type": "rounded_rectangle",
+      "center": [
+        680,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Päivystävä lääkäri",
+      "type": "rounded_rectangle",
+      "center": [
+        1120,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Erikoissairaanhoito",
+      "type": "rounded_rectangle",
+      "center": [
+        1550,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Puhelinneuvonta",
+      "type": "rounded_rectangle",
+      "center": [
+        250,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Laboratorio",
+      "type": "rounded_rectangle",
+      "center": [
+        680,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Kuvantaminen",
+      "type": "rounded_rectangle",
+      "center": [
+        1120,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Jatkohoito",
+      "type": "rounded_rectangle",
+      "center": [
+        1550,
+        830
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "kirjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "arvioi hoidon tarpeen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "f",
+      "relationship": "tilaa kokeet",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "pyytää kuvauksen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "h",
+      "relationship": "suunnittelee",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.75
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "varaa ajan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "välittää näytteet",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "toimittaa kuvat",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "c",
+      "relationship": "palauttaa tulokset",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Erikoissairaanhoito–Jatkohoito has no visible arrowhead."
+  ]
+}

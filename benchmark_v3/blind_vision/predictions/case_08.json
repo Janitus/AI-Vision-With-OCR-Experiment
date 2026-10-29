@@ -1,0 +1,179 @@
+{
+  "title": "Kaukolainauksen palveluverkko",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Noutopiste",
+      "type": "text",
+      "center": [
+        440,
+        273
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Laina",
+      "type": "text",
+      "center": [
+        900,
+        160
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Palautus",
+      "type": "text",
+      "center": [
+        1360,
+        273
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Kuljetus",
+      "type": "text",
+      "center": [
+        250,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Lukija",
+      "type": "text",
+      "center": [
+        1550,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Keskuskirjasto",
+      "type": "text",
+      "center": [
+        440,
+        825
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Varaus",
+      "type": "text",
+      "center": [
+        1360,
+        825
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Lähikirjasto",
+      "type": "text",
+      "center": [
+        900,
+        940
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "luovuttaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "palautetaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "a",
+      "relationship": "toimittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "d",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "pyytää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "f",
+      "relationship": "saatavuus",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "h",
+      "relationship": "vastaanottaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "kohdistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "f",
+      "relationship": "tiedustelee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "a",
+      "relationship": "noutoilmoitus",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.85
+    },
+    {
+      "source": "f",
+      "target": "c",
+      "relationship": "varatieto",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.65
+    }
+  ],
+  "uncertainties": [
+    "Keskuskirjasto–Palautus diagonal labelled varatieto has no visible arrowhead.",
+    "The dashed noutoilmoitus appears to run from Lukija toward Noutopiste across other lines."
+  ]
+}

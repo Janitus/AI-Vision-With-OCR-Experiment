@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Verdana", "primaryColor": "#fbfdff", "lineColor": "#35677d", "textColor": "#193247"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Sää ja tutkimus
+  n1["Sääasema"]
+  style n1 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n2["Tuulianturi"]
+  style n2 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n3["Sademittari"]
+  style n3 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n4["Lämpöanturi"]
+  style n4 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n5["Raakahavainnot"]
+  style n5 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n6["Laatutarkistus"]
+  style n6 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n7["Malliajo"]
+  style n7 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n8["Ennuste"]
+  style n8 fill:transparent,stroke:transparent,color:#193247,font-family:Verdana
+  n2 -->|mittaa| n1
+  n3 -->|mittaa| n1
+  n4 -->|mittaa| n1
+  n1 -->|kokoaa| n5
+  n1 -->|lähettää| n6
+  n5 -->|vertaa| n6
+  n5 -->|syöttää| n7
+  n6 -->|vahvistaa| n7
+  n7 -->|tuottaa| n8
+  n8 -->|palaute| n6
+  n2 ---|varatieto| n5
+  linkStyle 9 stroke-dasharray: 8 5

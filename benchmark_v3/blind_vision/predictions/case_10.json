@@ -1,0 +1,171 @@
+{
+  "title": "Verotuksen oikaisuprosessi",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Verovelvollinen",
+      "type": "text",
+      "center": [
+        250,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Ilmoitus",
+      "type": "rectangle",
+      "center": [
+        680,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Tarkastus",
+      "type": "diamond",
+      "center": [
+        1120,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Päätös",
+      "type": "diamond",
+      "center": [
+        1550,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Lisäselvitys",
+      "type": "text",
+      "center": [
+        250,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Oikaisupyyntö",
+      "type": "rectangle",
+      "center": [
+        680,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Käsittely",
+      "type": "diamond",
+      "center": [
+        1120,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Lopputulos",
+      "type": "rectangle",
+      "center": [
+        1550,
+        830
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "ratkaisee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "liittyy",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "liitetään",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "c",
+      "relationship": "tarkistaa uudelleen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "f",
+      "relationship": "voi johtaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead.",
+    "The text palauttaa tarkastukseen lies near the Käsittely–Tarkastus vertical and Päätös–Oikaisupyyntö diagonal, but no distinct third edge is visible."
+  ]
+}

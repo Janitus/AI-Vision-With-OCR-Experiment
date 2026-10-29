@@ -1,0 +1,338 @@
+{
+  "id": "paivystyksen_verkko",
+  "title": "Päivystyksen hoitoverkko",
+  "context": "Terveydenhuolto",
+  "layout": "LR",
+  "shape": "round",
+  "font": "segoe",
+  "size": 22,
+  "background": "#ffffff",
+  "ink": "#17324b",
+  "edge": "#386f95",
+  "palette": [
+    "#e6f2ff",
+    "#e5f6ed",
+    "#fff1d8",
+    "#eee5f9"
+  ],
+  "nodes": [
+    {
+      "label": "Potilaan yhteydenotto",
+      "x": 250,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Hoitaja",
+      "x": 680,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Päivystävä lääkäri",
+      "x": 1120,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Erikoissairaanhoito",
+      "x": 1550,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Puhelinneuvonta",
+      "x": 250,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Laboratorio",
+      "x": 680,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kuvantaminen",
+      "x": 1120,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Jatkohoito",
+      "x": 1550,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "kirjaa",
+      "label_xy": [
+        465,
+        260
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          385,
+          260
+        ],
+        [
+          545,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "arvioi hoidon tarpeen",
+      "label_xy": [
+        900,
+        155
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          815,
+          260
+        ],
+        [
+          985,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "lähettää",
+      "label_xy": [
+        1335,
+        260
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1255,
+          260
+        ],
+        [
+          1415,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "label": "ohjaa",
+      "label_xy": [
+        250,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          250,
+          310
+        ],
+        [
+          250,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "varaa ajan",
+      "label_xy": [
+        465,
+        830
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          385,
+          830
+        ],
+        [
+          545,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "välittää näytteet",
+      "label_xy": [
+        900,
+        725
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          815,
+          830
+        ],
+        [
+          985,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "toimittaa kuvat",
+      "label_xy": [
+        1335,
+        725
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1255,
+          830
+        ],
+        [
+          1415,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "label": "tilaa kokeet",
+      "label_xy": [
+        680,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          680,
+          310
+        ],
+        [
+          680,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "label": "pyytää kuvauksen",
+      "label_xy": [
+        1120,
+        545
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1120,
+          310
+        ],
+        [
+          1120,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "label": "palauttaa tulokset",
+      "label_xy": [
+        900,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          719,
+          780
+        ],
+        [
+          1081,
+          310
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "label": "suunnittelee",
+      "label_xy": [
+        1550,
+        545
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          1550,
+          310
+        ],
+        [
+          1550,
+          780
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

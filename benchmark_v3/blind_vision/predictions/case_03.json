@@ -1,0 +1,171 @@
+{
+  "title": "Säähavaintojen yhdistäminen",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Tuulianturi",
+      "type": "text",
+      "center": [
+        320,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Sääasema",
+      "type": "text",
+      "center": [
+        900,
+        187
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Sademittari",
+      "type": "text",
+      "center": [
+        900,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Lämpöanturi",
+      "type": "text",
+      "center": [
+        1480,
+        390
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Raakahavainnot",
+      "type": "text",
+      "center": [
+        320,
+        721
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Laatutarkistus",
+      "type": "text",
+      "center": [
+        900,
+        721
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Malliajo",
+      "type": "text",
+      "center": [
+        1480,
+        721
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Ennuste",
+      "type": "text",
+      "center": [
+        900,
+        957
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "b",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.6
+    },
+    {
+      "source": "d",
+      "target": "b",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "varatieto",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.8
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "kokoaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "vertaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "f",
+      "relationship": "palaute",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "A vertical mittaa near the upper diagonals is not clearly attached to the Sademittari edge.",
+    "The word vahvistaa appears near the Laatutarkistus–Malliajo edge without a clearly separate line."
+  ]
+}

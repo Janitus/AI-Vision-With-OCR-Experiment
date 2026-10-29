@@ -1,0 +1,335 @@
+{
+  "id": "kaukolainaus",
+  "title": "Kaukolainauksen palveluverkko",
+  "context": "Kirjastot",
+  "layout": "LR",
+  "shape": "text",
+  "font": "courier",
+  "size": 22,
+  "background": "#fffdf8",
+  "ink": "#49342c",
+  "edge": "#8a604e",
+  "palette": [
+    "#fffdf8"
+  ],
+  "nodes": [
+    {
+      "label": "Lukija",
+      "x": 1550,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Varaus",
+      "x": 1360,
+      "y": 826,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Lähikirjasto",
+      "x": 900,
+      "y": 940,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Keskuskirjasto",
+      "x": 440,
+      "y": 826,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kuljetus",
+      "x": 250,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Noutopiste",
+      "x": 440,
+      "y": 274,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Laina",
+      "x": 900,
+      "y": 160,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Palautus",
+      "x": 1360,
+      "y": 274,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "pyytää",
+      "label_xy": [
+        1455,
+        688
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1516,
+          600
+        ],
+        [
+          1394,
+          776
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "kohdistaa",
+      "label_xy": [
+        1130,
+        883
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1225,
+          859
+        ],
+        [
+          1035,
+          907
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "tiedustelee",
+      "label_xy": [
+        670,
+        883
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          765,
+          907
+        ],
+        [
+          575,
+          859
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "lähettää",
+      "label_xy": [
+        345,
+        688
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          406,
+          776
+        ],
+        [
+          284,
+          600
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "toimittaa",
+      "label_xy": [
+        345,
+        412
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          284,
+          500
+        ],
+        [
+          406,
+          324
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "luovuttaa",
+      "label_xy": [
+        670,
+        217
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          575,
+          241
+        ],
+        [
+          765,
+          193
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "palautetaan",
+      "label_xy": [
+        1130,
+        217
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          193
+        ],
+        [
+          1225,
+          241
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "label": "vastaanottaa",
+      "label_xy": [
+        1130,
+        607
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1325,
+          324
+        ],
+        [
+          935,
+          890
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "label": "noutoilmoitus",
+      "label_xy": [
+        995,
+        412
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1415,
+          516
+        ],
+        [
+          575,
+          308
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "saatavuus",
+      "label_xy": [
+        900,
+        826
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1225,
+          826
+        ],
+        [
+          575,
+          826
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "label": "varatieto",
+      "label_xy": [
+        900,
+        550
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          523,
+          776
+        ],
+        [
+          1277,
+          324
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

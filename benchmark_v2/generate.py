@@ -194,7 +194,10 @@ def render(case: dict) -> dict:
             x1,y1,x2,y2=box; inset=(x2-x1)*.17
             poly=[(x1+inset,y1),(x2-inset,y1),(x2,(y1+y2)/2),(x2-inset,y2),(x1+inset,y2),(x1,(y1+y2)/2)]
             draw.polygon(poly,fill=fill);draw.line(poly+[poly[0]],fill=ink,width=3)
-        elif shape!="text": raise ValueError(shape)
+        elif shape=="text":
+            if case.get("clear_text_background",False):
+                draw.rectangle(box,fill=case["background"])
+        else: raise ValueError(shape)
         # Word wrapping uses measured font width, and text must fit the visible shape.
         usable=(box[2]-box[0])*(.65 if shape in ("diamond","hex","circle") else .83)
         size=case["size"]

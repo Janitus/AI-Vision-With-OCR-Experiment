@@ -1,0 +1,18 @@
+{
+  "blind_vision": {
+    "thread_id": "01a1883d-284a-7da1-b1d0-88a6d2def058",
+    "input": "ten anonymized PNGs only",
+    "predictions_saved_before_scoring": true,
+    "recorded_accesses": "Ten view_image calls for the allowed images, one repeat view of case_02, a listing of the allowed image directory, writes and validation in the prediction directory.",
+    "source_or_truth_access_recorded": false,
+    "ocr_access_recorded": false
+  },
+  "blind_fusion": {
+    "thread_id": "01a18841-2315-7601-b263-1c36de0d7a19",
+    "input": "ten anonymized PNGs and ten raw RapidOCR PP-OCRv6 JSON observations",
+    "predictions_saved_before_scoring": true,
+    "recorded_accesses": "Ten view_image calls for the allowed images, reads of the ten allowed OCR JSON files, and writes and validation in the prediction directory.",
+    "source_or_truth_access_recorded": false
+  },
+  "limits": "Based on thread tool logs, not filesystem enforced isolation. The two tasks had ordinary project filesystem permissions but were prompted to restrict reads."
+}

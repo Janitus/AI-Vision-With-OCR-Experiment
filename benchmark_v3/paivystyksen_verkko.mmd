@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Segoe UI", "primaryColor": "#ffffff", "lineColor": "#386f95", "textColor": "#17324b"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Terveydenhuolto
+  n1("Potilaan yhteydenotto")
+  style n1 fill:#e6f2ff,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n2("Hoitaja")
+  style n2 fill:#e5f6ed,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n3("Päivystävä lääkäri")
+  style n3 fill:#fff1d8,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n4("Erikoissairaanhoito")
+  style n4 fill:#eee5f9,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n5("Puhelinneuvonta")
+  style n5 fill:#e6f2ff,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n6("Laboratorio")
+  style n6 fill:#e5f6ed,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n7("Kuvantaminen")
+  style n7 fill:#fff1d8,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n8("Jatkohoito")
+  style n8 fill:#eee5f9,stroke:#17324b,color:#17324b,font-family:Segoe UI
+  n1 -->|kirjaa| n2
+  n2 -->|arvioi hoidon tarpeen| n3
+  n3 -->|lähettää| n4
+  n1 -->|ohjaa| n5
+  n5 -->|varaa ajan| n6
+  n6 -->|välittää näytteet| n7
+  n7 -->|toimittaa kuvat| n8
+  n2 -->|tilaa kokeet| n6
+  n3 -->|pyytää kuvauksen| n7
+  n6 -->|palauttaa tulokset| n3
+  n4 ---|suunnittelee| n8
+  linkStyle 9 stroke-dasharray: 8 5

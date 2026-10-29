@@ -1,0 +1,20 @@
+flowchart LR
+  a["Sääasema"]
+  b["Tuulianturi"]
+  c["Sademittari"]
+  d["Lämpöanturi"]
+  e["Raakahavainnot"]
+  f["Laatutarkistus"]
+  g["Malliajo"]
+  h["Ennuste"]
+  b -->|mittaa| a
+  c -->|mittaa| a
+  d -->|mittaa| a
+  a -->|kokoaa| e
+  b ---|varatieto| e
+  c -->|lähettää| f
+  e -->|vertaa| f
+  f -->|syöttää| g
+  g -->|tuottaa| h
+  h -->|palaute| f
+  linkStyle 9 stroke-dasharray: 8 5

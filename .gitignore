@@ -9,6 +9,7 @@
 
 # OCR model downloads and temporary outputs
 benchmark_v2/models/
+benchmark_v3/models/
 *.onnx
 *.pdiparams
 *.pdmodel
@@ -20,6 +21,9 @@ benchmark_v2/models/
 blind_vision/images/
 blind_fusion/images/
 blind_fusion/ocr/
+benchmark_v3/blind_vision/images/
+benchmark_v3/blind_fusion/images/
+benchmark_v3/blind_fusion/ocr/
 
 # Local secrets and editor files
 .env

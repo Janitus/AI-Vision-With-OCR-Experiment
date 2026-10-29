@@ -1,0 +1,501 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 10,
+      "total": 11,
+      "recall": 0.9091,
+      "cer": 0.0143
+    },
+    "rotated_edge": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0
+    },
+    "all": {
+      "exact": 19,
+      "total": 20,
+      "recall": 0.95,
+      "cer": 0.0072,
+      "observed_items": 29,
+      "extra_ocr_items": 9,
+      "precision": 0.6552
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Päivystyksen hoitoverkko",
+      "observed": "Päivystyksen hoitoverkko",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        456,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Potilaan yhteydenotto",
+      "observed": "Potilaan yhteydenotto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        144,
+        252.0,
+        356,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Hoitaja",
+      "observed": "Hoitaja",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        646,
+        253.0,
+        714,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Päivystävä lääkäri",
+      "observed": "Päivystävä lääkäri",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1037,
+        252.0,
+        1204,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Erikoissairaanhoito",
+      "observed": "Erikoissairaanhoito",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1460,
+        252.0,
+        1639,
+        269.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Puhelinneuvonta",
+      "observed": "Puhelinneuvonta",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        170,
+        822.0,
+        330,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        25
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Laboratorio",
+      "observed": "Laboratorio",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        624,
+        822.0,
+        736,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        27
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 6,
+      "expected": "Kuvantaminen",
+      "observed": "Kuvantaminen",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1051,
+        823.0,
+        1188,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        29
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 7,
+      "expected": "Jatkohoito",
+      "observed": "Jatkohoito",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1500,
+        822.0,
+        1600,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        30
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "kirjaa",
+      "observed": "kirjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        430,
+        242,
+        501,
+        279
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "arvioi hoidon tarpeen",
+      "observed": "arvioi hoidon tarpeen",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        790,
+        136,
+        1010,
+        173
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "lähettää",
+      "observed": "lähettää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1286,
+        244,
+        1383,
+        276
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "ohjaa",
+      "observed": "ohjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        214,
+        526,
+        287,
+        563
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        13
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "varaa ajan",
+      "observed": "varaa ajan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        406,
+        812,
+        523,
+        849
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        26
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "välittää näytteet",
+      "observed": "välittää näytteet",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        814,
+        706,
+        985,
+        743
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        22
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 6,
+      "expected": "toimittaa kuvat",
+      "observed": "toimittaa kuvat",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1254,
+        709,
+        1415,
+        741
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        23
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 7,
+      "expected": "tilaa kokeet",
+      "observed": "tilaa kokeet",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        616,
+        529,
+        744,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        14
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 8,
+      "expected": "pyytää kuvauksen",
+      "observed": "pyytää kuvauksen",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1102,
+        452,
+        1139,
+        638
+      ],
+      "rotation": -90.0,
+      "ocr_indices": [
+        11
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 9,
+      "expected": "palauttaa tulokset",
+      "observed": "palauttaa tulokset -",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        806,
+        526,
+        994,
+        563
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        15,
+        17
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 10,
+      "expected": "suunnittelee",
+      "observed": "suunnittelee",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1482,
+        529,
+        1618,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        16
+      ]
+    }
+  ],
+  "unmatched_ocr": [
+    {
+      "index": 8,
+      "text": "Mudol",
+      "bbox": [
+        1038,
+        338,
+        1059,
+        362
+      ]
+    },
+    {
+      "index": 9,
+      "text": "",
+      "bbox": [
+        1016,
+        369,
+        1034,
+        391
+      ]
+    },
+    {
+      "index": 10,
+      "text": "psp",
+      "bbox": [
+        991,
+        398,
+        1012,
+        422
+      ]
+    },
+    {
+      "index": 12,
+      "text": "aultualk",
+      "bbox": [
+        944,
+        460,
+        966,
+        483
+      ]
+    },
+    {
+      "index": 18,
+      "text": "admitui",
+      "bbox": [
+        851,
+        580,
+        872,
+        603
+      ]
+    },
+    {
+      "index": 19,
+      "text": "l",
+      "bbox": [
+        829,
+        609,
+        850,
+        632
+      ]
+    },
+    {
+      "index": 20,
+      "text": "T",
+      "bbox": [
+        804,
+        639,
+        827,
+        663
+      ]
+    },
+    {
+      "index": 21,
+      "text": "stududut",
+      "bbox": [
+        760,
+        699,
+        780,
+        722
+      ]
+    },
+    {
+      "index": 24,
+      "text": "auhudt",
+      "bbox": [
+        735,
+        728,
+        757,
+        753
+      ]
+    },
+    {
+      "index": 28,
+      "text": ":",
+      "bbox": [
+        966,
+        821,
+        978,
+        838
+      ]
+    }
+  ]
+}

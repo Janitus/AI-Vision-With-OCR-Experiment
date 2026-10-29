@@ -1,0 +1,2842 @@
+[
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_title_text",
+    "expected": "Päivystyksen hoitoverkko",
+    "observed": "Paivystyksen hoitoverkko",
+    "bbox": [
+      38,
+      38,
+      456,
+      70
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_node_text",
+    "expected": "Päivystävä lääkäri",
+    "observed": "Paivystava laakari",
+    "bbox": [
+      1037,
+      252.0,
+      1204,
+      274.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      1286,
+      244,
+      1383,
+      276
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_edge_text",
+    "expected": "välittää näytteet",
+    "observed": "valittaa naytteet",
+    "bbox": [
+      814,
+      706,
+      985,
+      743
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_edge_text",
+    "expected": "pyytää kuvauksen",
+    "observed": "pyytaa kuvauksen",
+    "bbox": [
+      1102,
+      452,
+      1139,
+      638
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_title_text",
+    "expected": "Ministeriöiden hankekierto",
+    "observed": "Ministerioiden hankekierto",
+    "bbox": [
+      38,
+      38,
+      467,
+      63
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_node_text",
+    "expected": "Valmisteluryhmä",
+    "observed": "Valmisteluryhma",
+    "bbox": [
+      815,
+      211.0,
+      984,
+      233.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_node_text",
+    "expected": "Lausuntopyyntö",
+    "observed": "Lausuntopyynto",
+    "bbox": [
+      189,
+      542.0,
+      350,
+      563.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_node_text",
+    "expected": "Ministeriö",
+    "observed": "Ministerio",
+    "bbox": [
+      849,
+      541.0,
+      950,
+      558.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_edge_text",
+    "expected": "käynnistää",
+    "observed": "kaynnistaa",
+    "bbox": [
+      524,
+      202,
+      646,
+      239
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_edge_text",
+    "expected": "selvittää",
+    "observed": "selvittaa",
+    "bbox": [
+      1166,
+      204,
+      1265,
+      236
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_edge_text",
+    "expected": "hyväksyy",
+    "observed": "hyvaksyy",
+    "bbox": [
+      1162,
+      862,
+      1268,
+      899
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_title_text",
+    "expected": "Säähavaintojen yhdistäminen",
+    "observed": "Saahavaintojen yhdistaminen",
+    "bbox": [
+      38,
+      38,
+      516,
+      70
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_text",
+    "expected": "Sääasema",
+    "observed": "Saaasema",
+    "bbox": [
+      840,
+      178.0,
+      960,
+      195.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_text",
+    "expected": "Lämpöanturi",
+    "observed": "Lampoanturi",
+    "bbox": [
+      1407,
+      383.0,
+      1553,
+      405.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      846,
+      502,
+      955,
+      535
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_edge_text",
+    "expected": "syöttää",
+    "observed": "syottaa",
+    "bbox": [
+      1117,
+      702,
+      1217,
+      737
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_title_text",
+    "expected": "Sähköhäiriön tilannekuva",
+    "observed": "Sahkohairion tilannekuva",
+    "bbox": [
+      38,
+      38,
+      450,
+      63
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_node_text",
+    "expected": "Sähköasema",
+    "observed": "Sahkoasema",
+    "bbox": [
+      839,
+      932.0,
+      960,
+      949.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_node_text",
+    "expected": "Korjausryhmä",
+    "observed": "Korjausryhma",
+    "bbox": [
+      1294,
+      266.0,
+      1426,
+      288.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "syöttää",
+    "observed": "syottaa",
+    "bbox": [
+      1410,
+      670,
+      1499,
+      705
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "siirtää",
+    "observed": "sirtaa",
+    "bbox": [
+      1092,
+      867,
+      1169,
+      899
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "hälyttää",
+    "observed": "halyttaa",
+    "bbox": [
+      622,
+      198,
+      718,
+      235
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      1082,
+      201,
+      1179,
+      233
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "varasyöttö",
+    "observed": "varasyotto",
+    "bbox": [
+      841,
+      532,
+      959,
+      567
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_title_text",
+    "expected": "Junaliikenteen ohjaus",
+    "observed": "Junalikenteen ohjaus",
+    "bbox": [
+      38,
+      38,
+      393,
+      70
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_node_text",
+    "expected": "Liikenteenohjaus",
+    "observed": "Likenteenohjaus",
+    "bbox": [
+      176,
+      824.0,
+      323,
+      841.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_node_text",
+    "expected": "Häiriöviesti",
+    "observed": "Hairioviesti",
+    "bbox": [
+      1062,
+      823.0,
+      1177,
+      838.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_node_text",
+    "expected": "Määränpää",
+    "observed": "Maaranpaa",
+    "bbox": [
+      1494,
+      823.0,
+      1606,
+      842.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää kyselyn",
+    "observed": "lahettaa kyselyn",
+    "bbox": [
+      156,
+      528,
+      344,
+      563
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "vahvistaa vaihdon",
+    "observed": "vahvistaavaihdon",
+    "bbox": [
+      361,
+      710,
+      569,
+      741
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "päivittää",
+    "observed": "paivittaa",
+    "bbox": [
+      1280,
+      812,
+      1389,
+      847
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "reitittää",
+    "observed": "reitittaa",
+    "bbox": [
+      630,
+      530,
+      729,
+      561
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_edge_text",
+    "expected": "käynnistää",
+    "observed": "kaynnistaa",
+    "bbox": [
+      843,
+      698,
+      957,
+      732
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_edge_text",
+    "expected": "siirtää tiedon",
+    "observed": "siirtaa tiedon",
+    "bbox": [
+      1148,
+      700,
+      1282,
+      730
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      1169,
+      865,
+      1261,
+      895
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_edge_text",
+    "expected": "kirjaa erän",
+    "observed": "kirjaa eran",
+    "bbox": [
+      1474,
+      368,
+      1586,
+      402
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_title_text",
+    "expected": "Tutkimusjulkaisun työnkulku",
+    "observed": "Tutkimusjulkaisun tyonkulku",
+    "bbox": [
+      38,
+      38,
+      506,
+      70
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_edge_text",
+    "expected": "edellyttää",
+    "observed": "edellyttaa",
+    "bbox": [
+      848,
+      270,
+      953,
+      305
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_edge_text",
+    "expected": "hyväksyy",
+    "observed": "hyvaksyy",
+    "bbox": [
+      1138,
+      372,
+      1243,
+      407
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      1146,
+      704,
+      1234,
+      735
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_text",
+    "expected": "Lähikirjasto",
+    "observed": "Lahikirjasto",
+    "bbox": [
+      822,
+      932.0,
+      978,
+      950.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_edge_text",
+    "expected": "pyytää",
+    "observed": "pyytaä",
+    "bbox": [
+      1405,
+      672,
+      1505,
+      704
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "lahettaa",
+    "bbox": [
+      282,
+      674,
+      408,
+      703
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_title_text",
+    "expected": "Tulvatilanteen viestintä",
+    "observed": "Tulvatilanteen viestinta",
+    "bbox": [
+      38,
+      38,
+      412,
+      63
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_node_text",
+    "expected": "Hätäkeskus",
+    "observed": "Hatakeskus",
+    "bbox": [
+      843,
+      212.0,
+      957,
+      228.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "hälyttää",
+    "observed": "halyttaa",
+    "bbox": [
+      536,
+      202,
+      634,
+      237
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "välittää",
+    "observed": "valittaa",
+    "bbox": [
+      1170,
+      204,
+      1261,
+      235
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "päivittää",
+    "observed": "paivittaa",
+    "bbox": [
+      1164,
+      368,
+      1267,
+      403
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "pyytää arviota",
+    "observed": "pyytaa arviota",
+    "bbox": [
+      1136,
+      532,
+      1293,
+      567
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "määrää",
+    "observed": "maaraa",
+    "bbox": [
+      538,
+      700,
+      633,
+      730
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää yksiköt",
+    "observed": "lahettaa yksikot",
+    "bbox": [
+      974,
+      448,
+      1146,
+      483
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_text",
+    "expected": "Päätös",
+    "observed": "Paatos",
+    "bbox": [
+      1519,
+      252.0,
+      1581,
+      268.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_text",
+    "expected": "Lisäselvitys",
+    "observed": "Lisaselvitys",
+    "bbox": [
+      197,
+      822.0,
+      303,
+      843.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_text",
+    "expected": "Oikaisupyyntö",
+    "observed": "Oikaisupyynto",
+    "bbox": [
+      613,
+      822.0,
+      746,
+      843.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_text",
+    "expected": "Käsittely",
+    "observed": "Kasittely",
+    "bbox": [
+      1079,
+      822.0,
+      1161,
+      843.0
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "siirtää",
+    "observed": "sirtaa",
+    "bbox": [
+      860,
+      244,
+      941,
+      276
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "täydentää",
+    "observed": "taydentaa",
+    "bbox": [
+      194,
+      526,
+      307,
+      563
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "liitetään",
+    "observed": "litetaan",
+    "bbox": [
+      416,
+      814,
+      514,
+      846
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "käynnistää",
+    "observed": "kaynnistaa",
+    "bbox": [
+      839,
+      812,
+      961,
+      849
+    ]
+  },
+  {
+    "approach": "legacy_rapid_v3",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "voi johtaa",
+    "observed": "johtaa",
+    "bbox": [
+      1166,
+      456,
+      1279,
+      493
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_edge_text",
+    "expected": "palauttaa tulokset",
+    "observed": "palauttaa tulokset -",
+    "bbox": [
+      806,
+      526,
+      994,
+      563
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "Mudol",
+    "bbox": [
+      1038,
+      338,
+      1059,
+      362
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      1016,
+      369,
+      1034,
+      391
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "psp",
+    "bbox": [
+      991,
+      398,
+      1012,
+      422
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "aultualk",
+    "bbox": [
+      944,
+      460,
+      966,
+      483
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "admitui",
+    "bbox": [
+      851,
+      580,
+      872,
+      603
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "l",
+    "bbox": [
+      829,
+      609,
+      850,
+      632
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "T",
+    "bbox": [
+      804,
+      639,
+      827,
+      663
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "stududut",
+    "bbox": [
+      760,
+      699,
+      780,
+      722
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "auhudt",
+    "bbox": [
+      735,
+      728,
+      757,
+      753
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": ":",
+    "bbox": [
+      966,
+      821,
+      978,
+      838
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_edge_text",
+    "expected": "raportoi",
+    "observed": "inr raportoi",
+    "bbox": [
+      1166,
+      696,
+      1264,
+      733
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "wrong_edge_text",
+    "expected": "seuranta",
+    "observed": "seuranta W",
+    "bbox": [
+      1296,
+      770,
+      1399,
+      799
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "extra_ocr_text",
+    "observed": "X",
+    "bbox": [
+      1369,
+      536,
+      1395,
+      562
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "extra_ocr_text",
+    "observed": "Wutu",
+    "bbox": [
+      1077,
+      639,
+      1098,
+      655
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_edge_text",
+    "expected": "mittaa",
+    "observed": "0 mittaa",
+    "bbox": [
+      562,
+      257,
+      658,
+      319
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_edge_text",
+    "expected": "mittaa",
+    "observed": "mr",
+    "bbox": [
+      674,
+      243,
+      706,
+      333
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      896,
+      885,
+      904,
+      904
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "extra_ocr_text",
+    "observed": "Ze",
+    "bbox": [
+      1025,
+      893,
+      1043,
+      906
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "siirtää",
+    "observed": "siirtää NNNN",
+    "bbox": [
+      1092,
+      867,
+      1169,
+      899
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "muuntaa",
+    "observed": "muuntaa Ttttttattn",
+    "bbox": [
+      618,
+      868,
+      723,
+      898
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "hälyttää",
+    "observed": "hälyttää Atututututabababababa",
+    "bbox": [
+      622,
+      198,
+      718,
+      235
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "lähettää",
+    "observed": "Watatatatalaltaltaltaltals lähettää",
+    "bbox": [
+      1082,
+      201,
+      1179,
+      233
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "korjaa",
+    "observed": "4 korjaa",
+    "bbox": [
+      1091,
+      588,
+      1169,
+      625
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "valvoo",
+    "observed": "totte valvoo Iuts",
+    "bbox": [
+      1089,
+      477,
+      1171,
+      509
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "vikatieto",
+    "observed": "",
+    "bbox": [
+      628,
+      442,
+      712,
+      544
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "A",
+    "bbox": [
+      934,
+      210,
+      948,
+      228
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "musr",
+    "bbox": [
+      952,
+      237,
+      970,
+      259
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "S",
+    "bbox": [
+      973,
+      268,
+      992,
+      290
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "S",
+    "bbox": [
+      995,
+      298,
+      1014,
+      321
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "3",
+    "bbox": [
+      1016,
+      331,
+      1036,
+      353
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "matt",
+    "bbox": [
+      1039,
+      362,
+      1057,
+      384
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      351,
+      335,
+      398,
+      398
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "Iu",
+    "bbox": [
+      1081,
+      424,
+      1100,
+      447
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "-",
+    "bbox": [
+      1189,
+      581,
+      1208,
+      604
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "Susduu",
+    "bbox": [
+      1211,
+      612,
+      1231,
+      635
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "Modout",
+    "bbox": [
+      1232,
+      643,
+      1251,
+      666
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "M",
+    "bbox": [
+      1254,
+      675,
+      1273,
+      698
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "Sut",
+    "bbox": [
+      1276,
+      706,
+      1294,
+      728
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "So",
+    "bbox": [
+      1296,
+      736,
+      1318,
+      762
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "wlalulatatalalalalalatata",
+    "bbox": [
+      1166,
+      854,
+      1227,
+      876
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "vahvistaa vaihdon",
+    "observed": "uu vahvistaa vaihdon r",
+    "bbox": [
+      361,
+      710,
+      569,
+      741
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "reitittää",
+    "observed": "reitittää idnto",
+    "bbox": [
+      630,
+      530,
+      729,
+      561
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_edge_text",
+    "expected": "muuttaa laiturin",
+    "observed": "- muuttaa laiturin pubutate",
+    "bbox": [
+      486,
+      600,
+      668,
+      631
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "bote",
+    "bbox": [
+      958,
+      349,
+      980,
+      367
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      862,
+      410,
+      886,
+      429
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      830,
+      432,
+      852,
+      450
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "indtutde",
+    "bbox": [
+      767,
+      474,
+      790,
+      492
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "",
+    "bbox": [
+      480,
+      661,
+      504,
+      679
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_edge_text",
+    "expected": "merkitsee",
+    "observed": "merkitsee IIhyr",
+    "bbox": [
+      1162,
+      535,
+      1268,
+      565
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "e",
+    "bbox": [
+      1375,
+      210,
+      1393,
+      228
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "I",
+    "bbox": [
+      966,
+      289,
+      987,
+      311
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "I",
+    "bbox": [
+      991,
+      316,
+      1012,
+      339
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "II",
+    "bbox": [
+      1045,
+      371,
+      1065,
+      392
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "Il",
+    "bbox": [
+      1123,
+      453,
+      1144,
+      475
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "I",
+    "bbox": [
+      1387,
+      729,
+      1405,
+      749
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "I",
+    "bbox": [
+      1410,
+      755,
+      1434,
+      779
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "-",
+    "bbox": [
+      1464,
+      812,
+      1483,
+      832
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "extra_ocr_text",
+    "observed": "□α∞",
+    "bbox": [
+      642,
+      244,
+      722,
+      278
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_edge_text",
+    "expected": "luovuttaa",
+    "observed": "luovuttaa anbo",
+    "bbox": [
+      600,
+      202,
+      739,
+      231
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_edge_text",
+    "expected": "noutoilmoitus",
+    "observed": "Ite noutoilmoitus",
+    "bbox": [
+      900,
+      398,
+      1091,
+      427
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "ttatot",
+    "bbox": [
+      293,
+      617,
+      338,
+      676
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "extra_ocr_text",
+    "observed": "X",
+    "bbox": [
+      738,
+      206,
+      764,
+      233
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "extra_ocr_text",
+    "observed": "e",
+    "bbox": [
+      746,
+      541,
+      760,
+      558
+    ]
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_edge_text",
+    "expected": "liittyy",
+    "observed": "liitty",
+    "bbox": [
+      428,
+      526,
+      503,
+      563
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "extra_ocr_text",
+    "observed": "1",
+    "bbox": [
+      711.0,
+      757.0,
+      737.0,
+      785.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_edge_text",
+    "expected": "hälyttää",
+    "observed": "hälyttää wwwwwwww",
+    "bbox": [
+      622,
+      198,
+      718,
+      235
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "SNARAAL",
+    "bbox": [
+      951.0,
+      235.0,
+      973.0,
+      262.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "1000s",
+    "bbox": [
+      993.0,
+      296.0,
+      1017.0,
+      326.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "MAGANAEX",
+    "bbox": [
+      1057.0,
+      390.0,
+      1081.0,
+      420.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "extra_ocr_text",
+    "observed": "SAPUNAKX",
+    "bbox": [
+      1208.0,
+      610.0,
+      1234.0,
+      639.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "extra_ocr_text",
+    "observed": "z000de",
+    "bbox": [
+      891.0,
+      389.0,
+      920.0,
+      413.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_ocr_text",
+    "observed": "一",
+    "bbox": [
+      992.0,
+      317.0,
+      1015.0,
+      340.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_edge_text",
+    "expected": "noutoilmoitus",
+    "observed": "noutoilmoitus atstoe",
+    "bbox": [
+      900,
+      398,
+      1091,
+      427
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "unatunun",
+    "bbox": [
+      618.0,
+      313.0,
+      645.0,
+      329.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "ratmn",
+    "bbox": [
+      837.0,
+      367.0,
+      866.0,
+      384.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "atoose",
+    "bbox": [
+      1132.0,
+      440.0,
+      1160.0,
+      458.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "atmnot",
+    "bbox": [
+      1169.0,
+      449.0,
+      1198.0,
+      467.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "wonn",
+    "bbox": [
+      1245.0,
+      468.0,
+      1272.0,
+      485.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "wputun",
+    "bbox": [
+      1280.0,
+      477.0,
+      1309.0,
+      494.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "wat",
+    "bbox": [
+      1316.0,
+      486.0,
+      1346.0,
+      504.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "extra_ocr_text",
+    "observed": "mnman",
+    "bbox": [
+      1353.0,
+      496.0,
+      1382.0,
+      512.0
+    ]
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_text",
+    "expected": "Päätös",
+    "observed": "Päätos",
+    "bbox": [
+      1519,
+      252.0,
+      1581,
+      268.0
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "extra_edge",
+    "predicted_edge": 11,
+    "endpoints": [
+      2,
+      3
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "missing_edge",
+    "edge": 11,
+    "expected": [
+      3,
+      5,
+      "kuulee"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "extra_edge",
+    "predicted_edge": 5,
+    "endpoints": [
+      2,
+      5
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_relationship",
+    "edge": 7,
+    "expected": "vahvistaa",
+    "observed": "syöttää"
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "missing_edge",
+    "edge": 4,
+    "expected": [
+      0,
+      5,
+      "lähettää"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "missing_edge",
+    "edge": 6,
+    "expected": [
+      4,
+      6,
+      "syöttää"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 0
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 4
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_edge",
+    "predicted_edge": 8,
+    "endpoints": [
+      6,
+      7
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "missing_edge",
+    "edge": 10,
+    "expected": [
+      6,
+      8,
+      "tarvittaessa"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 0
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 1
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 2
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 3
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 4
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 5
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 6
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 7
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "extra_edge",
+    "predicted_edge": 2,
+    "endpoints": [
+      1,
+      2
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_arrow",
+    "edge": 6,
+    "expected": [
+      5,
+      6,
+      "source_to_target"
+    ],
+    "observed": [
+      5,
+      6,
+      "both"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "missing_edge",
+    "edge": 2,
+    "expected": [
+      1,
+      3,
+      "tuottaa"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "missing_edge",
+    "edge": 8,
+    "expected": [
+      6,
+      5,
+      "palauttaa korjattavaksi"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_relationship",
+    "edge": 4,
+    "expected": "päivittää",
+    "observed": "lähettää yksiköt"
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "missing_edge",
+    "edge": 11,
+    "expected": [
+      2,
+      6,
+      "lähettää yksiköt"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_arrow",
+    "edge": 7,
+    "expected": [
+      2,
+      6,
+      "source_to_target"
+    ],
+    "observed": [
+      6,
+      2,
+      "source_to_target"
+    ]
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "missing_edge",
+    "edge": 9,
+    "expected": [
+      6,
+      2,
+      "palauttaa tarkastukseen"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_01",
+    "slug": "paivystyksen_verkko",
+    "kind": "wrong_arrow",
+    "edge": 10,
+    "expected": [
+      3,
+      7,
+      "undirected"
+    ],
+    "observed": [
+      3,
+      7,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "extra_edge",
+    "predicted_edge": 3,
+    "endpoints": [
+      2,
+      3
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_02",
+    "slug": "ministerioiden_hanke",
+    "kind": "missing_edge",
+    "edge": 11,
+    "expected": [
+      3,
+      5,
+      "kuulee"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 1
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 2
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 3
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 4
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 5
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 6
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 7
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 0
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_arrow",
+    "edge": 10,
+    "expected": [
+      1,
+      4,
+      "undirected"
+    ],
+    "observed": [
+      1,
+      4,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "extra_edge",
+    "predicted_edge": 5,
+    "endpoints": [
+      2,
+      5
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "wrong_relationship",
+    "edge": 7,
+    "expected": "vahvistaa",
+    "observed": "syöttää"
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "missing_edge",
+    "edge": 4,
+    "expected": [
+      0,
+      5,
+      "lähettää"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "slug": "saatutkimus",
+    "kind": "missing_edge",
+    "edge": 6,
+    "expected": [
+      4,
+      6,
+      "syöttää"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_04",
+    "slug": "sahkohaorio",
+    "kind": "wrong_arrow",
+    "edge": 10,
+    "expected": [
+      0,
+      4,
+      "undirected"
+    ],
+    "observed": [
+      0,
+      4,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_05",
+    "slug": "junaliikenteen_ohjaus",
+    "kind": "wrong_arrow",
+    "edge": 11,
+    "expected": [
+      6,
+      3,
+      "undirected"
+    ],
+    "observed": [
+      3,
+      6,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 0
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 1
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 4
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 6
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "extra_edge",
+    "predicted_edge": 8,
+    "endpoints": [
+      6,
+      7
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "slug": "rokotusketju",
+    "kind": "missing_edge",
+    "edge": 10,
+    "expected": [
+      6,
+      8,
+      "tarvittaessa"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 0
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 1
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 2
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 3
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 4
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 5
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 6
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_node_shape",
+    "expected": "pill",
+    "observed": "round",
+    "node": 7
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "extra_edge",
+    "predicted_edge": 2,
+    "endpoints": [
+      1,
+      2
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_stroke",
+    "edge": 8,
+    "expected_dashed": true,
+    "observed_dashed": false
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "wrong_arrow",
+    "edge": 9,
+    "expected": [
+      4,
+      7,
+      "undirected"
+    ],
+    "observed": [
+      4,
+      7,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "slug": "tutkimusjulkaisu",
+    "kind": "missing_edge",
+    "edge": 2,
+    "expected": [
+      1,
+      3,
+      "tuottaa"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 6
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 3
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 1
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 2
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 5
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 7
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 4
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 0
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "slug": "kaukolainaus",
+    "kind": "wrong_arrow",
+    "edge": 10,
+    "expected": [
+      3,
+      7,
+      "undirected"
+    ],
+    "observed": [
+      3,
+      7,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_arrow",
+    "edge": 12,
+    "expected": [
+      1,
+      4,
+      "undirected"
+    ],
+    "observed": [
+      1,
+      4,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "wrong_relationship",
+    "edge": 4,
+    "expected": "päivittää",
+    "observed": "lähettää yksiköt"
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "extra_edge",
+    "predicted_edge": 5,
+    "endpoints": [
+      2,
+      4
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "slug": "tulvaviestinta",
+    "kind": "missing_edge",
+    "edge": 11,
+    "expected": [
+      2,
+      6,
+      "lähettää yksiköt"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 0
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_node_shape",
+    "expected": "text",
+    "observed": "plain",
+    "node": 4
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_arrow",
+    "edge": 10,
+    "expected": [
+      1,
+      4,
+      "undirected"
+    ],
+    "observed": [
+      1,
+      4,
+      "unknown"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_arrow",
+    "edge": 7,
+    "expected": [
+      2,
+      6,
+      "source_to_target"
+    ],
+    "observed": [
+      6,
+      2,
+      "source_to_target"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_arrow",
+    "edge": 9,
+    "expected": [
+      6,
+      2,
+      "source_to_target"
+    ],
+    "observed": [
+      2,
+      6,
+      "source_to_target"
+    ]
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "slug": "veron_oikaisu",
+    "kind": "wrong_stroke",
+    "edge": 9,
+    "expected_dashed": true,
+    "observed_dashed": false
+  }
+]

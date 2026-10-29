@@ -1,0 +1,19 @@
+flowchart LR
+  a("Tutkimuskysymys")
+  b("Aineiston keruu")
+  c("Eettinen arvio")
+  d("Mittaus")
+  e("Tallennus")
+  f("Analyysi")
+  g("Vertaisarvio")
+  h("Julkaisu")
+  a -->|ohjaa| b
+  a -->|edellyttää| c
+  b ---|tuottaa| c
+  c -->|hyväksyy| d
+  d -->|arkistoi| e
+  e -->|mahdollistaa| f
+  f -->|lähettää| g
+  g -->|palauttaa korjattavaksi| f
+  g -->|suosittaa| h
+  e ---|avoin aineisto| h

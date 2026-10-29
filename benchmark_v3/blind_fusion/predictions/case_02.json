@@ -1,0 +1,197 @@
+{
+  "title": "Ministeriöiden hankekierto",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Aloite",
+      "type": "rectangle",
+      "center": [
+        270,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "b",
+      "label": "Valmisteluryhmä",
+      "type": "rectangle",
+      "center": [
+        900,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "c",
+      "label": "Oikeudellinen arvio",
+      "type": "rectangle",
+      "center": [
+        1530,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "d",
+      "label": "Lausuntopyyntö",
+      "type": "rectangle",
+      "center": [
+        270,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e",
+      "label": "Ministeriö",
+      "type": "rectangle",
+      "center": [
+        900,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "f",
+      "label": "Budjettitarkistus",
+      "type": "rectangle",
+      "center": [
+        1530,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "g",
+      "label": "Valtioneuvosto",
+      "type": "rectangle",
+      "center": [
+        270,
+        881
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "h",
+      "label": "Eduskunta",
+      "type": "rectangle",
+      "center": [
+        900,
+        881
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "i",
+      "label": "Toimeenpano",
+      "type": "rectangle",
+      "center": [
+        1530,
+        881
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "selvittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "d",
+      "relationship": "laatii",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "kuulee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "arvioi kulut",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "palautuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "sovittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "esittelee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "antaa esityksen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "i",
+      "target": "e",
+      "relationship": "seuranta",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "The diagonal labels 'laatii' and 'kuulee' sit in gaps along crossing routes; their edge assignment is less certain than the visible endpoints."
+  ],
+  "ocr_disagreements": []
+}

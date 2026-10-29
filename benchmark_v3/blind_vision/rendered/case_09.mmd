@@ -1,0 +1,22 @@
+flowchart LR
+  a["Sadehavainto"]
+  b["Hätäkeskus"]
+  c["Pelastuslaitos"]
+  d["Kuntalainen"]
+  e["Tilannekeskus"]
+  f["Vesilaitos"]
+  g["Evakuointi"]
+  h["Sairaala"]
+  i["Tiedote"]
+  a -->|hälyttää| b
+  b -->|välittää| c
+  a -->|varoitus| d
+  b ---|yhteys| e
+  d -->|ilmoittaa| e
+  e -->|pyytää arviota| f
+  e -->|määrää| g
+  g -->|ohjaa potilaita| h
+  h -->|raportoi| i
+  c -->|lähettää yksiköt| e
+  f -->|turvaa veden| h
+  i -->|julkaisee| d

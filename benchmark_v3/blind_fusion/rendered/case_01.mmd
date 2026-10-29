@@ -1,0 +1,21 @@
+flowchart LR
+  a("Potilaan yhteydenotto")
+  b("Hoitaja")
+  c("Päivystävä lääkäri")
+  d("Erikoissairaanhoito")
+  e("Puhelinneuvonta")
+  f("Laboratorio")
+  g("Kuvantaminen")
+  h("Jatkohoito")
+  a -->|kirjaa| b
+  b -->|arvioi hoidon tarpeen| c
+  c -->|lähettää| d
+  a -->|ohjaa| e
+  b -->|tilaa kokeet| f
+  c -->|pyytää kuvauksen| g
+  d ---|suunnittelee| h
+  e -->|varaa ajan| f
+  f -->|välittää näytteet| g
+  g -->|toimittaa kuvat| h
+  f -->|palauttaa tulokset| c
+  linkStyle 10 stroke-dasharray: 8 5

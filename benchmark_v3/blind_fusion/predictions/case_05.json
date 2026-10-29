@@ -1,0 +1,190 @@
+{
+  "title": "Junaliikenteen ohjaus",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Matkustaja",
+      "type": "ellipse",
+      "center": [
+        250,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "b",
+      "label": "Aikataulu",
+      "type": "ellipse",
+      "center": [
+        680,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "c",
+      "label": "Laituri",
+      "type": "ellipse",
+      "center": [
+        1120,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "d",
+      "label": "Juna",
+      "type": "ellipse",
+      "center": [
+        1550,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e",
+      "label": "Liikenteenohjaus",
+      "type": "ellipse",
+      "center": [
+        250,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "f",
+      "label": "Vaihtoasema",
+      "type": "ellipse",
+      "center": [
+        680,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "g",
+      "label": "Häiriöviesti",
+      "type": "ellipse",
+      "center": [
+        1120,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "h",
+      "label": "Määränpää",
+      "type": "ellipse",
+      "center": [
+        1550,
+        831
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "osoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "lähettää kyselyn",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "f",
+      "relationship": "reitittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "h",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "vahvistaa vaihdon",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "c",
+      "relationship": "muuttaa laiturin",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "g",
+      "relationship": "tilanne",
+      "direction": "unknown",
+      "dashed": false,
+      "confidence": 0.7
+    }
+  ],
+  "uncertainties": [
+    "Juna–Häiriöviesti diagonal line has no visible arrowhead.",
+    "The 'vahvistaa vaihdon' text lies above the lower Liikenteenohjaus–Vaihtoasema edge, near the dashed diagonal; edge-label assignment is uncertain."
+  ],
+  "ocr_disagreements": [
+    "OCR reports spurious 'z000de' near an edge; no matching visible text."
+  ]
+}

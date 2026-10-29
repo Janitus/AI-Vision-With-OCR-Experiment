@@ -1,0 +1,390 @@
+{
+  "id": "tulvaviestinta",
+  "title": "Tulvatilanteen viestintä",
+  "context": "Pelastustoimi",
+  "layout": "TB",
+  "shape": "box",
+  "font": "arial",
+  "size": 22,
+  "background": "#16232b",
+  "ink": "#f3f6f7",
+  "edge": "#b6d1dc",
+  "palette": [
+    "#24404e",
+    "#2a4754",
+    "#304b56"
+  ],
+  "nodes": [
+    {
+      "label": "Sadehavainto",
+      "x": 270,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Hätäkeskus",
+      "x": 900,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Pelastuslaitos",
+      "x": 1530,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kuntalainen",
+      "x": 270,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Tilannekeskus",
+      "x": 900,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Vesilaitos",
+      "x": 1530,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Evakuointi",
+      "x": 270,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Sairaala",
+      "x": 900,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Tiedote",
+      "x": 1530,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "hälyttää",
+      "label_xy": [
+        585,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          220
+        ],
+        [
+          765,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "välittää",
+      "label_xy": [
+        1215,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          220
+        ],
+        [
+          1395,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "label": "varoitus",
+      "label_xy": [
+        270,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          270,
+          270
+        ],
+        [
+          270,
+          500
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "ilmoittaa",
+      "label_xy": [
+        585,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          550
+        ],
+        [
+          765,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "label": "päivittää",
+      "label_xy": [
+        1215,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1435,
+          270
+        ],
+        [
+          995,
+          500
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "pyytää arviota",
+      "label_xy": [
+        1215,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          550
+        ],
+        [
+          1395,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "label": "määrää",
+      "label_xy": [
+        585,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          805,
+          600
+        ],
+        [
+          365,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "turvaa veden",
+      "label_xy": [
+        1215,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1435,
+          600
+        ],
+        [
+          995,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "ohjaa potilaita",
+      "label_xy": [
+        585,
+        880
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          880
+        ],
+        [
+          765,
+          880
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "label": "raportoi",
+      "label_xy": [
+        1215,
+        880
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          880
+        ],
+        [
+          1395,
+          880
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "target": 3,
+      "label": "julkaisee",
+      "label_xy": [
+        900,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1395,
+          845
+        ],
+        [
+          405,
+          585
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "label": "lähettää yksiköt",
+      "label_xy": [
+        1060,
+        466
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1435,
+          270
+        ],
+        [
+          365,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "label": "yhteys",
+      "label_xy": [
+        900,
+        385
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          900,
+          270
+        ],
+        [
+          900,
+          500
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

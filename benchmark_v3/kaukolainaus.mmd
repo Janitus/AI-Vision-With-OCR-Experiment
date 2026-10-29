@@ -1,0 +1,31 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Courier New", "primaryColor": "#fffdf8", "lineColor": "#8a604e", "textColor": "#49342c"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Kirjastot
+  n1["Lukija"]
+  style n1 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n2["Varaus"]
+  style n2 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n3["Lähikirjasto"]
+  style n3 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n4["Keskuskirjasto"]
+  style n4 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n5["Kuljetus"]
+  style n5 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n6["Noutopiste"]
+  style n6 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n7["Laina"]
+  style n7 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n8["Palautus"]
+  style n8 fill:transparent,stroke:transparent,color:#49342c,font-family:Courier New
+  n1 -->|pyytää| n2
+  n2 -->|kohdistaa| n3
+  n3 -->|tiedustelee| n4
+  n4 -->|lähettää| n5
+  n5 -->|toimittaa| n6
+  n6 -->|luovuttaa| n7
+  n7 -->|palautetaan| n8
+  n8 -->|vastaanottaa| n3
+  n1 -->|noutoilmoitus| n6
+  n2 -->|saatavuus| n4
+  n4 ---|varatieto| n8
+  linkStyle 8 stroke-dasharray: 8 5

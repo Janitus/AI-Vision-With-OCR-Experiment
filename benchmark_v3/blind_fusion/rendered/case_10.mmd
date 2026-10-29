@@ -1,0 +1,20 @@
+flowchart LR
+  a["Verovelvollinen"]
+  b["Ilmoitus"]
+  c{"Tarkastus"}
+  d{"Päätös"}
+  e["Lisäselvitys"]
+  f["Oikaisupyyntö"]
+  g{"Käsittely"}
+  h["Lopputulos"]
+  a -->|antaa| b
+  b -->|siirtää| c
+  c -->|ratkaisee| d
+  a -->|täydentää| e
+  b ---|liittyy| e
+  e -->|liitetään| f
+  f -->|käynnistää| g
+  g -->|vahvistaa| h
+  d -->|voi johtaa| f
+  g -->|tarkistaa uudelleen| c
+  c -->|palauttaa tarkastukseen| g

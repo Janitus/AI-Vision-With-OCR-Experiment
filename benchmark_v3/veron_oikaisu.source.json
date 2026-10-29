@@ -1,0 +1,335 @@
+{
+  "id": "veron_oikaisu",
+  "title": "Verotuksen oikaisuprosessi",
+  "context": "Verotus",
+  "layout": "LR",
+  "shape": "diamond",
+  "font": "georgia",
+  "size": 21,
+  "background": "#ffffff",
+  "ink": "#282828",
+  "edge": "#333333",
+  "palette": [
+    "#ffffff"
+  ],
+  "nodes": [
+    {
+      "label": "Verovelvollinen",
+      "x": 250,
+      "y": 260,
+      "shape": "text",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Ilmoitus",
+      "x": 680,
+      "y": 260,
+      "shape": "box",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Tarkastus",
+      "x": 1120,
+      "y": 260,
+      "shape": "diamond",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Päätös",
+      "x": 1550,
+      "y": 260,
+      "shape": "diamond",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Lisäselvitys",
+      "x": 250,
+      "y": 830,
+      "shape": "text",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Oikaisupyyntö",
+      "x": 680,
+      "y": 830,
+      "shape": "box",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Käsittely",
+      "x": 1120,
+      "y": 830,
+      "shape": "diamond",
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Lopputulos",
+      "x": 1550,
+      "y": 830,
+      "shape": "box",
+      "color": null,
+      "w": 235,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "antaa",
+      "label_xy": [
+        465,
+        260
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          368,
+          260
+        ],
+        [
+          562,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "siirtää",
+      "label_xy": [
+        900,
+        260
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          798,
+          260
+        ],
+        [
+          1002,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "ratkaisee",
+      "label_xy": [
+        1335,
+        260
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1238,
+          260
+        ],
+        [
+          1432,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "label": "täydentää",
+      "label_xy": [
+        250,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          250,
+          310
+        ],
+        [
+          250,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "liitetään",
+      "label_xy": [
+        465,
+        830
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          368,
+          830
+        ],
+        [
+          562,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "käynnistää",
+      "label_xy": [
+        900,
+        830
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          798,
+          830
+        ],
+        [
+          1002,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "vahvistaa",
+      "label_xy": [
+        1335,
+        830
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1238,
+          830
+        ],
+        [
+          1432,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "label": "tarkistaa uudelleen",
+      "label_xy": [
+        1120,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1120,
+          310
+        ],
+        [
+          1120,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "label": "voi johtaa",
+      "label_xy": [
+        1223,
+        474
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1474,
+          310
+        ],
+        [
+          756,
+          780
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "label": "palauttaa tarkastukseen",
+      "label_xy": [
+        1120,
+        616
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1120,
+          780
+        ],
+        [
+          1120,
+          310
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "label": "liittyy",
+      "label_xy": [
+        465,
+        545
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          642,
+          310
+        ],
+        [
+          288,
+          780
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

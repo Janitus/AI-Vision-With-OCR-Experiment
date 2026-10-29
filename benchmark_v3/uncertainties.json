@@ -1,0 +1,230 @@
+[
+  {
+    "approach": "blind_vision",
+    "case": "case_01",
+    "kind": "self_reported_uncertainty",
+    "detail": "Erikoissairaanhoito–Jatkohoito has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_02",
+    "kind": "self_reported_uncertainty",
+    "detail": "The long diagonal labelled kuule is partly obscured by other lines; its source is uncertain."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "kind": "self_reported_uncertainty",
+    "detail": "A vertical mittaa near the upper diagonals is not clearly attached to the Sademittari edge."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_03",
+    "kind": "self_reported_uncertainty",
+    "detail": "The word vahvistaa appears near the Laatutarkistus–Malliajo edge without a clearly separate line."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_04",
+    "kind": "self_reported_uncertainty",
+    "detail": "Voimala–Kuluttaja has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_05",
+    "kind": "self_reported_uncertainty",
+    "detail": "Juna–Häiriöviesti diagonal has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "kind": "self_reported_uncertainty",
+    "detail": "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu have no visible arrowheads."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_07",
+    "kind": "self_reported_uncertainty",
+    "detail": "The text palauttaa korjattavaksi appears near the Vertaisarvio–Julkaisu diagonal; no distinct edge is visible."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_08",
+    "kind": "self_reported_uncertainty",
+    "detail": "Keskuskirjasto–Palautus diagonal labelled varatieto has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_08",
+    "kind": "self_reported_uncertainty",
+    "detail": "The dashed noutoilmoitus appears to run from Lukija toward Noutopiste across other lines."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_09",
+    "kind": "self_reported_uncertainty",
+    "detail": "The word päivittää is on the Pelastuslaitos–Tilannekeskus diagonal alongside lähettää yksiköt, with no clear second line."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_09",
+    "kind": "self_reported_uncertainty",
+    "detail": "Hätäkeskus–Tilannekeskus has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_10",
+    "kind": "self_reported_uncertainty",
+    "detail": "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead."
+  },
+  {
+    "approach": "blind_vision",
+    "case": "case_10",
+    "kind": "self_reported_uncertainty",
+    "detail": "The text palauttaa tarkastukseen lies near the Käsittely–Tarkastus vertical and Päätös–Oikaisupyyntö diagonal, but no distinct third edge is visible."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_01",
+    "kind": "self_reported_uncertainty",
+    "detail": "Erikoissairaanhoito–Jatkohoito has no visible arrowhead; direction unknown."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_01",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR reports a spurious '1' near the dashed Laboratorio–Päivystävä lääkäri line; no such label is visible."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_02",
+    "kind": "self_reported_uncertainty",
+    "detail": "The diagonal labels 'laatii' and 'kuulee' sit in gaps along crossing routes; their edge assignment is less certain than the visible endpoints."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "kind": "self_reported_uncertainty",
+    "detail": "The word 'vahvistaa' appears near the Laatutarkistus–Malliajo area without a distinct visible line; no separate edge is inferred."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_03",
+    "kind": "self_reported_uncertainty",
+    "detail": "Tuulianturi–Raakahavainnot has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_04",
+    "kind": "self_reported_uncertainty",
+    "detail": "Voimala–Kuluttaja horizontal varasyöttö line has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_04",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR produces several nonsensical strings ('wwwwwwww', 'SNARAAL', '1000s', 'MAGANAEX', 'SAPUNAKX') in empty or line regions; none are visible graph labels."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_05",
+    "kind": "self_reported_uncertainty",
+    "detail": "Juna–Häiriöviesti diagonal line has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_05",
+    "kind": "self_reported_uncertainty",
+    "detail": "The 'vahvistaa vaihdon' text lies above the lower Liikenteenohjaus–Vaihtoasema edge, near the dashed diagonal; edge-label assignment is uncertain."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_05",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR reports spurious 'z000de' near an edge; no matching visible text."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "kind": "self_reported_uncertainty",
+    "detail": "Seuranta–Rekisteri line has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "kind": "self_reported_uncertainty",
+    "detail": "'kutsuu uudelleen' sits near the dashed Muistutus–Asiakas line where several diagonals cross."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_06",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR reports an isolated '一' near an edge; no such graph label is visible."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "kind": "self_reported_uncertainty",
+    "detail": "Aineiston keruu–Eettinen arvio and Tallennus–Julkaisu lines have no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_07",
+    "kind": "self_reported_uncertainty",
+    "detail": "The horizontal Analyysi–Vertaisarvio line shows arrowheads at both ends; the nearby 'palauttaa korjattavaksi' label is offset below the line, so its assignment to the reverse direction is uncertain."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "kind": "self_reported_uncertainty",
+    "detail": "The 'varatieto' diagonal from Keskuskirjasto to Palautus has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "kind": "self_reported_uncertainty",
+    "detail": "The dashed 'noutoilmoitus' line has an arrow at Noutopiste, even though that direction is semantically unusual; the visible arrow is followed."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_08",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR returns multiple nonsensical strings in blank areas or on slanted lines; they are not visible labels."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "kind": "self_reported_uncertainty",
+    "detail": "The 'päivittää' and 'lähettää yksiköt' labels occupy one diagonal Pelastuslaitos–Tilannekeskus route; they are recorded as parallel relationships, but a second distinct line is not visible."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "kind": "self_reported_uncertainty",
+    "detail": "Hätäkeskus–Tilannekeskus vertical connection has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_09",
+    "kind": "self_reported_uncertainty",
+    "detail": "The long diagonal from Tiedote toward Kuntalainen crosses other lines; its arrowhead is visible at Kuntalainen."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "kind": "self_reported_uncertainty",
+    "detail": "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "kind": "self_reported_uncertainty",
+    "detail": "The vertical Tarkastus–Käsittely route has arrows at both ends, with two nearby labels; their assignment to opposite directions is inferred from the label positions."
+  },
+  {
+    "approach": "blind_fusion",
+    "case": "case_10",
+    "kind": "ocr_vision_disagreement",
+    "detail": "OCR reads 'Päätos'; the image visibly says 'Päätös'."
+  }
+]

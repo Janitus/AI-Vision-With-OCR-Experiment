@@ -1,0 +1,178 @@
+{
+  "title": "Sähköhäiriön tilannekuva",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Mittari",
+      "type": "hexagon",
+      "center": [
+        440,
+        275
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Valvomo",
+      "type": "hexagon",
+      "center": [
+        900,
+        160
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Korjausryhmä",
+      "type": "hexagon",
+      "center": [
+        1360,
+        275
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Kuluttaja",
+      "type": "hexagon",
+      "center": [
+        250,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Voimala",
+      "type": "hexagon",
+      "center": [
+        1550,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Jakeluverkko",
+      "type": "hexagon",
+      "center": [
+        440,
+        825
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Sähköasema",
+      "type": "hexagon",
+      "center": [
+        900,
+        940
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Kantaverkko",
+      "type": "hexagon",
+      "center": [
+        1360,
+        825
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "a",
+      "relationship": "kuittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "d",
+      "relationship": "varasyöttö",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "f",
+      "target": "d",
+      "relationship": "jakaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "b",
+      "relationship": "vikatieto",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "korjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "h",
+      "relationship": "valvoo",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "g",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "f",
+      "relationship": "muuntaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": [
+    "Voimala–Kuluttaja has no visible arrowhead."
+  ]
+}

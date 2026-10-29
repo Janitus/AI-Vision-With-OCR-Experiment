@@ -1,0 +1,186 @@
+{
+  "title": "Rokotusketjun seuranta",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Varaus",
+      "type": "rounded_rectangle",
+      "center": [
+        270,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Asiakas",
+      "type": "text",
+      "center": [
+        900,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Hoitaja",
+      "type": "rectangle",
+      "center": [
+        1530,
+        220
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Annos",
+      "type": "diamond",
+      "center": [
+        270,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Rokotuspiste",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Kirjaus",
+      "type": "rectangle",
+      "center": [
+        1530,
+        550
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Seuranta",
+      "type": "text",
+      "center": [
+        270,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Rekisteri",
+      "type": "hexagon",
+      "center": [
+        900,
+        880
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "i",
+      "label": "Muistutus",
+      "type": "rounded_rectangle",
+      "center": [
+        1530,
+        880
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "kirjaa erän",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "toimitetaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "merkitsee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "siirtää tiedon",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "tarvittaessa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "i",
+      "target": "b",
+      "relationship": "kutsuu uudelleen",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.95
+    }
+  ],
+  "uncertainties": []
+}

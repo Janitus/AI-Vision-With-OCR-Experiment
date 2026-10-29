@@ -1,0 +1,186 @@
+{
+  "title": "Junaliikenteen ohjaus",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Matkustaja",
+      "type": "ellipse",
+      "center": [
+        250,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "b",
+      "label": "Aikataulu",
+      "type": "ellipse",
+      "center": [
+        680,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "c",
+      "label": "Laituri",
+      "type": "ellipse",
+      "center": [
+        1120,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "d",
+      "label": "Juna",
+      "type": "ellipse",
+      "center": [
+        1550,
+        260
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "e",
+      "label": "Liikenteenohjaus",
+      "type": "ellipse",
+      "center": [
+        250,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "f",
+      "label": "Vaihtoasema",
+      "type": "ellipse",
+      "center": [
+        680,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "g",
+      "label": "Häiriöviesti",
+      "type": "ellipse",
+      "center": [
+        1120,
+        830
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "h",
+      "label": "Määränpää",
+      "type": "ellipse",
+      "center": [
+        1550,
+        830
+      ],
+      "confidence": 0.98
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "osoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "lähettää kyselyn",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "b",
+      "target": "f",
+      "relationship": "reitittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "h",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "vahvistaa vaihdon",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.95
+    },
+    {
+      "source": "e",
+      "target": "c",
+      "relationship": "muuttaa laiturin",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.95
+    },
+    {
+      "source": "d",
+      "target": "g",
+      "relationship": "tilanne",
+      "direction": "undirected",
+      "dashed": false,
+      "confidence": 0.65
+    }
+  ],
+  "uncertainties": [
+    "Juna–Häiriöviesti diagonal has no visible arrowhead."
+  ]
+}

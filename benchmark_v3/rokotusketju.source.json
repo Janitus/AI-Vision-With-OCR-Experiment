@@ -1,0 +1,347 @@
+{
+  "id": "rokotusketju",
+  "title": "Rokotusketjun seuranta",
+  "context": "Kansanterveys",
+  "layout": "TB",
+  "shape": "box",
+  "font": "calibri",
+  "size": 23,
+  "background": "#fffefa",
+  "ink": "#273934",
+  "edge": "#548674",
+  "palette": [
+    "#e1f3e9",
+    "#e9f0ff",
+    "#fff1dc",
+    "#f0e5f6"
+  ],
+  "nodes": [
+    {
+      "label": "Varaus",
+      "x": 270,
+      "y": 220,
+      "shape": "pill",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Asiakas",
+      "x": 900,
+      "y": 220,
+      "shape": "text",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Hoitaja",
+      "x": 1530,
+      "y": 220,
+      "shape": "box",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Annos",
+      "x": 270,
+      "y": 550,
+      "shape": "diamond",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Rokotuspiste",
+      "x": 900,
+      "y": 550,
+      "shape": "pill",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kirjaus",
+      "x": 1530,
+      "y": 550,
+      "shape": "box",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Seuranta",
+      "x": 270,
+      "y": 880,
+      "shape": "text",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Rekisteri",
+      "x": 900,
+      "y": 880,
+      "shape": "hex",
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Muistutus",
+      "x": 1530,
+      "y": 880,
+      "shape": "round",
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "vahvistaa",
+      "label_xy": [
+        585,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          220
+        ],
+        [
+          765,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "saapuu",
+      "label_xy": [
+        1215,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          220
+        ],
+        [
+          1395,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "tarkistaa",
+      "label_xy": [
+        900,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1395,
+          255
+        ],
+        [
+          405,
+          515
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "toimitetaan",
+      "label_xy": [
+        585,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          550
+        ],
+        [
+          765,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "merkitsee",
+      "label_xy": [
+        1215,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          550
+        ],
+        [
+          1395,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "käynnistää",
+      "label_xy": [
+        900,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1395,
+          585
+        ],
+        [
+          405,
+          845
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "siirtää tiedon",
+      "label_xy": [
+        1215,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1435,
+          600
+        ],
+        [
+          995,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "label": "lähettää",
+      "label_xy": [
+        1215,
+        880
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          880
+        ],
+        [
+          1395,
+          880
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "target": 1,
+      "label": "kutsuu uudelleen",
+      "label_xy": [
+        1295,
+        634
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1482,
+          830
+        ],
+        [
+          948,
+          270
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "label": "kirjaa erän",
+      "label_xy": [
+        1530,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1530,
+          270
+        ],
+        [
+          1530,
+          500
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "label": "tarvittaessa",
+      "label_xy": [
+        603,
+        880
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          880
+        ],
+        [
+          1395,
+          880
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

@@ -1,0 +1,366 @@
+{
+  "id": "ministerioiden_hanke",
+  "title": "Ministeriöiden hankekierto",
+  "context": "Valtionhallinto",
+  "layout": "TB",
+  "shape": "box",
+  "font": "georgia",
+  "size": 22,
+  "background": "#ffffff",
+  "ink": "#222222",
+  "edge": "#333333",
+  "palette": [
+    "#f5f5f5"
+  ],
+  "nodes": [
+    {
+      "label": "Aloite",
+      "x": 270,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Valmisteluryhmä",
+      "x": 900,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Oikeudellinen arvio",
+      "x": 1530,
+      "y": 220,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Lausuntopyyntö",
+      "x": 270,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Ministeriö",
+      "x": 900,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Budjettitarkistus",
+      "x": 1530,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Valtioneuvosto",
+      "x": 270,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Eduskunta",
+      "x": 900,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Toimeenpano",
+      "x": 1530,
+      "y": 880,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "käynnistää",
+      "label_xy": [
+        585,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          220
+        ],
+        [
+          765,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "selvittää",
+      "label_xy": [
+        1215,
+        220
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          220
+        ],
+        [
+          1395,
+          220
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "laatii",
+      "label_xy": [
+        585,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          805,
+          270
+        ],
+        [
+          365,
+          500
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "palautuu",
+      "label_xy": [
+        585,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          550
+        ],
+        [
+          765,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "label": "arvioi kulut",
+      "label_xy": [
+        1530,
+        385
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1530,
+          270
+        ],
+        [
+          1530,
+          500
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "sovittaa",
+      "label_xy": [
+        1215,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          550
+        ],
+        [
+          1395,
+          550
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "label": "esittelee",
+      "label_xy": [
+        585,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          805,
+          600
+        ],
+        [
+          365,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "label": "raportoi",
+      "label_xy": [
+        1215,
+        715
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1435,
+          600
+        ],
+        [
+          995,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "antaa esityksen",
+      "label_xy": [
+        585,
+        880
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          880
+        ],
+        [
+          765,
+          880
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "label": "hyväksyy",
+      "label_xy": [
+        1215,
+        880
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          880
+        ],
+        [
+          1395,
+          880
+        ]
+      ]
+    },
+    {
+      "source": 8,
+      "target": 4,
+      "label": "seuranta",
+      "label_xy": [
+        1347,
+        784
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1435,
+          830
+        ],
+        [
+          995,
+          600
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "label": "kuulee",
+      "label_xy": [
+        603,
+        488
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          405,
+          550
+        ],
+        [
+          1395,
+          550
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

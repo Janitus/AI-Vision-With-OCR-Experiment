@@ -1,0 +1,21 @@
+flowchart LR
+  a["Laina"]
+  b["Noutopiste"]
+  c["Palautus"]
+  d["Kuljetus"]
+  e["Lukija"]
+  f["Keskuskirjasto"]
+  g["Varaus"]
+  h["Lähikirjasto"]
+  b -->|luovuttaa| a
+  a -->|palautetaan| c
+  d -->|toimittaa| b
+  e -->|noutoilmoitus| b
+  linkStyle 3 stroke-dasharray: 8 5
+  f -->|lähettää| d
+  e -->|pyytää| g
+  g -->|saatavuus| f
+  g -->|kohdistaa| h
+  h -->|tiedustelee| f
+  c -->|vastaanottaa| h
+  f ---|varatieto| c

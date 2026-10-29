@@ -1,0 +1,381 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 10,
+      "total": 10,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 19,
+      "total": 19,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 19,
+      "extra_ocr_items": 0,
+      "precision": 1.0
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Tutkimusjulkaisun työnkulku",
+      "observed": "Tutkimusjulkaisun työnkulku",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        506,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Tutkimuskysymys",
+      "observed": "Tutkimuskysymys",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        814,
+        177.0,
+        987,
+        198.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Aineiston keruu",
+      "observed": "Aineiston keruu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        245,
+        382.0,
+        395,
+        398.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Eettinen arvio",
+      "observed": "Eettinen arvio",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        835,
+        382.0,
+        965,
+        398.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Mittaus",
+      "observed": "Mittaus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1445,
+        382.0,
+        1514,
+        398.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Tallennus",
+      "observed": "Tallennus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        275,
+        712.0,
+        366,
+        728.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Analyysi",
+      "observed": "Analyysi",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        858,
+        712.0,
+        942,
+        733.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        12
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 6,
+      "expected": "Vertaisarvio",
+      "observed": "Vertaisarvio",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1423,
+        712.0,
+        1537,
+        728.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        14
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 7,
+      "expected": "Julkaisu",
+      "observed": "Julkaisu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        862,
+        947.0,
+        938,
+        963.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        18
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "ohjaa",
+      "observed": "ohjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        576,
+        270,
+        645,
+        305
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "edellyttää",
+      "observed": "edellyttää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        848,
+        270,
+        953,
+        305
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "tuottaa",
+      "observed": "tuottaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        592,
+        376,
+        673,
+        405
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "hyväksyy",
+      "observed": "hyväksyy",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1138,
+        372,
+        1243,
+        407
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "arkistoi",
+      "observed": "arkistoi",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        857,
+        540,
+        943,
+        571
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "mahdollistaa",
+      "observed": "mahdollistaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        544,
+        704,
+        675,
+        735
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        11
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 6,
+      "expected": "lähettää",
+      "observed": "lähettää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1146,
+        704,
+        1234,
+        735
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        13
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 7,
+      "expected": "suosittaa",
+      "observed": "suosittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1142,
+        822,
+        1239,
+        853
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        17
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 8,
+      "expected": "palauttaa korjattavaksi",
+      "observed": "palauttaa korjattavaksi",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1083,
+        764,
+        1297,
+        799
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        15
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 9,
+      "expected": "avoin aineisto",
+      "observed": "avoin aineisto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        540,
+        822,
+        681,
+        853
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        16
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

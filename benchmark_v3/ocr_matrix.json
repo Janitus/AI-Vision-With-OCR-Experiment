@@ -1,0 +1,1130 @@
+[
+  {
+    "approach": "legacy_rapid_v3",
+    "cases_ran": 10,
+    "totals": {
+      "title": {
+        "exact": 3,
+        "total": 10,
+        "recall": 0.3
+      },
+      "node": {
+        "exact": 66,
+        "total": 83,
+        "recall": 0.7952
+      },
+      "edge": {
+        "exact": 76,
+        "total": 113,
+        "recall": 0.6726
+      },
+      "rotated_edge": {
+        "exact": 5,
+        "total": 6,
+        "recall": 0.8333
+      },
+      "all": {
+        "exact": 145,
+        "total": 206,
+        "observed_items": 206,
+        "extra_ocr_items": 0,
+        "recall": 0.7039,
+        "precision": 0.7039
+      }
+    },
+    "cases": {
+      "junaliikenteen_ohjaus": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.0476
+        },
+        "node": {
+          "exact": 5,
+          "total": 8,
+          "recall": 0.625,
+          "cer": 0.1026
+        },
+        "edge": {
+          "exact": 8,
+          "total": 12,
+          "recall": 0.6667,
+          "cer": 0.0756
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 13,
+          "total": 21,
+          "recall": 0.619,
+          "cer": 0.0826,
+          "observed_items": 21,
+          "extra_ocr_items": 0,
+          "precision": 0.619
+        }
+      },
+      "kaukolainaus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 7,
+          "total": 8,
+          "recall": 0.875,
+          "cer": 0.0145
+        },
+        "edge": {
+          "exact": 9,
+          "total": 11,
+          "recall": 0.8182,
+          "cer": 0.0377
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 17,
+          "total": 20,
+          "recall": 0.85,
+          "cer": 0.0245,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.85
+        }
+      },
+      "ministerioiden_hanke": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.0385
+        },
+        "node": {
+          "exact": 6,
+          "total": 9,
+          "recall": 0.6667,
+          "cer": 0.0261
+        },
+        "edge": {
+          "exact": 9,
+          "total": 12,
+          "recall": 0.75,
+          "cer": 0.0561
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 15,
+          "total": 22,
+          "recall": 0.6818,
+          "cer": 0.0403,
+          "observed_items": 22,
+          "extra_ocr_items": 0,
+          "precision": 0.6818
+        }
+      },
+      "paivystyksen_verkko": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.0417
+        },
+        "node": {
+          "exact": 7,
+          "total": 8,
+          "recall": 0.875,
+          "cer": 0.0531
+        },
+        "edge": {
+          "exact": 8,
+          "total": 11,
+          "recall": 0.7273,
+          "cer": 0.0643
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0
+        },
+        "all": {
+          "exact": 15,
+          "total": 20,
+          "recall": 0.75,
+          "cer": 0.0578,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.75
+        }
+      },
+      "rokotusketju": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 7,
+          "total": 11,
+          "recall": 0.6364,
+          "cer": 0.0783
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 17,
+          "total": 21,
+          "recall": 0.8095,
+          "cer": 0.0435,
+          "observed_items": 21,
+          "extra_ocr_items": 0,
+          "precision": 0.8095
+        }
+      },
+      "saatutkimus": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.1111
+        },
+        "node": {
+          "exact": 6,
+          "total": 8,
+          "recall": 0.75,
+          "cer": 0.0476
+        },
+        "edge": {
+          "exact": 9,
+          "total": 11,
+          "recall": 0.8182,
+          "cer": 0.0779
+        },
+        "rotated_edge": {
+          "exact": 3,
+          "total": 3,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 15,
+          "total": 20,
+          "recall": 0.75,
+          "cer": 0.0691,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.75
+        }
+      },
+      "sahkohaorio": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.1667
+        },
+        "node": {
+          "exact": 6,
+          "total": 8,
+          "recall": 0.75,
+          "cer": 0.04
+        },
+        "edge": {
+          "exact": 6,
+          "total": 11,
+          "recall": 0.5455,
+          "cer": 0.175
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 12,
+          "total": 20,
+          "recall": 0.6,
+          "cer": 0.1173,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.6
+        }
+      },
+      "tulvaviestinta": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.0417
+        },
+        "node": {
+          "exact": 8,
+          "total": 9,
+          "recall": 0.8889,
+          "cer": 0.0211
+        },
+        "edge": {
+          "exact": 7,
+          "total": 13,
+          "recall": 0.5385,
+          "cer": 0.1484
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 15,
+          "total": 23,
+          "recall": 0.6522,
+          "cer": 0.0891,
+          "observed_items": 23,
+          "extra_ocr_items": 0,
+          "precision": 0.6522
+        }
+      },
+      "tutkimusjulkaisu": {
+        "title": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0,
+          "cer": 0.037
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 7,
+          "total": 10,
+          "recall": 0.7,
+          "cer": 0.0577
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 15,
+          "total": 19,
+          "recall": 0.7895,
+          "cer": 0.032,
+          "observed_items": 19,
+          "extra_ocr_items": 0,
+          "precision": 0.7895
+        }
+      },
+      "veron_oikaisu": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 4,
+          "total": 8,
+          "recall": 0.5,
+          "cer": 0.0732
+        },
+        "edge": {
+          "exact": 6,
+          "total": 11,
+          "recall": 0.5455,
+          "cer": 0.1368
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 11,
+          "total": 20,
+          "recall": 0.55,
+          "cer": 0.0978,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.55
+        }
+      }
+    }
+  },
+  {
+    "approach": "paddle_v5_fi",
+    "cases_ran": 10,
+    "totals": {
+      "title": {
+        "exact": 10,
+        "total": 10,
+        "recall": 1.0
+      },
+      "node": {
+        "exact": 83,
+        "total": 83,
+        "recall": 1.0
+      },
+      "edge": {
+        "exact": 94,
+        "total": 113,
+        "recall": 0.8319
+      },
+      "rotated_edge": {
+        "exact": 3,
+        "total": 6,
+        "recall": 0.5
+      },
+      "all": {
+        "exact": 187,
+        "total": 206,
+        "observed_items": 245,
+        "extra_ocr_items": 40,
+        "recall": 0.9078,
+        "precision": 0.7633
+      }
+    },
+    "cases": {
+      "junaliikenteen_ohjaus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 9,
+          "total": 12,
+          "recall": 0.75,
+          "cer": 0.1849
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 18,
+          "total": 21,
+          "recall": 0.8571,
+          "cer": 0.1009,
+          "observed_items": 23,
+          "extra_ocr_items": 2,
+          "precision": 0.7826
+        }
+      },
+      "kaukolainaus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 9,
+          "total": 11,
+          "recall": 0.8182,
+          "cer": 0.0849
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 18,
+          "total": 20,
+          "recall": 0.9,
+          "cer": 0.0441,
+          "observed_items": 21,
+          "extra_ocr_items": 1,
+          "precision": 0.8571
+        }
+      },
+      "ministerioiden_hanke": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 12,
+          "recall": 0.8333,
+          "cer": 0.0561
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 20,
+          "total": 22,
+          "recall": 0.9091,
+          "cer": 0.0242,
+          "observed_items": 24,
+          "extra_ocr_items": 2,
+          "precision": 0.8333
+        }
+      },
+      "paivystyksen_verkko": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 11,
+          "recall": 0.9091,
+          "cer": 0.0143
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 19,
+          "total": 20,
+          "recall": 0.95,
+          "cer": 0.0072,
+          "observed_items": 29,
+          "extra_ocr_items": 9,
+          "precision": 0.6552
+        }
+      },
+      "rokotusketju": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 11,
+          "recall": 0.9091,
+          "cer": 0.0522
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 20,
+          "total": 21,
+          "recall": 0.9524,
+          "cer": 0.029,
+          "observed_items": 29,
+          "extra_ocr_items": 8,
+          "precision": 0.6897
+        }
+      },
+      "saatutkimus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 9,
+          "total": 11,
+          "recall": 0.8182,
+          "cer": 0.0909
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 3,
+          "recall": 0.3333
+        },
+        "all": {
+          "exact": 18,
+          "total": 20,
+          "recall": 0.9,
+          "cer": 0.0372,
+          "observed_items": 21,
+          "extra_ocr_items": 1,
+          "precision": 0.8571
+        }
+      },
+      "sahkohaorio": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 4,
+          "total": 11,
+          "recall": 0.3636,
+          "cer": 1.0875
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 1,
+          "recall": 0.0
+        },
+        "all": {
+          "exact": 13,
+          "total": 20,
+          "recall": 0.65,
+          "cer": 0.486,
+          "observed_items": 33,
+          "extra_ocr_items": 14,
+          "precision": 0.3939
+        }
+      },
+      "tulvaviestinta": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 13,
+          "total": 13,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 23,
+          "total": 23,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 25,
+          "extra_ocr_items": 2,
+          "precision": 0.92
+        }
+      },
+      "tutkimusjulkaisu": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 10,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 19,
+          "total": 19,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 20,
+          "extra_ocr_items": 1,
+          "precision": 0.95
+        }
+      },
+      "veron_oikaisu": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 11,
+          "recall": 0.9091,
+          "cer": 0.0085
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 19,
+          "total": 20,
+          "recall": 0.95,
+          "cer": 0.0044,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.95
+        }
+      }
+    }
+  },
+  {
+    "approach": "rapid_v6_medium_fi",
+    "cases_ran": 10,
+    "totals": {
+      "title": {
+        "exact": 10,
+        "total": 10,
+        "recall": 1.0
+      },
+      "node": {
+        "exact": 82,
+        "total": 83,
+        "recall": 0.988
+      },
+      "edge": {
+        "exact": 111,
+        "total": 113,
+        "recall": 0.9823
+      },
+      "rotated_edge": {
+        "exact": 6,
+        "total": 6,
+        "recall": 1.0
+      },
+      "all": {
+        "exact": 203,
+        "total": 206,
+        "observed_items": 221,
+        "extra_ocr_items": 15,
+        "recall": 0.9854,
+        "precision": 0.9186
+      }
+    },
+    "cases": {
+      "junaliikenteen_ohjaus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 12,
+          "total": 12,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 21,
+          "total": 21,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 22,
+          "extra_ocr_items": 1,
+          "precision": 0.9545
+        }
+      },
+      "kaukolainaus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 11,
+          "recall": 0.9091,
+          "cer": 0.066
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 19,
+          "total": 20,
+          "recall": 0.95,
+          "cer": 0.0343,
+          "observed_items": 28,
+          "extra_ocr_items": 8,
+          "precision": 0.6786
+        }
+      },
+      "ministerioiden_hanke": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 12,
+          "total": 12,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 22,
+          "total": 22,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 22,
+          "extra_ocr_items": 0,
+          "precision": 1.0
+        }
+      },
+      "paivystyksen_verkko": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 11,
+          "total": 11,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 20,
+          "total": 20,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 21,
+          "extra_ocr_items": 1,
+          "precision": 0.9524
+        }
+      },
+      "rokotusketju": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 11,
+          "total": 11,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 21,
+          "total": 21,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 22,
+          "extra_ocr_items": 1,
+          "precision": 0.9545
+        }
+      },
+      "saatutkimus": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 11,
+          "total": 11,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 3,
+          "total": 3,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 20,
+          "total": 20,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 1.0
+        }
+      },
+      "sahkohaorio": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 11,
+          "recall": 0.9091,
+          "cer": 0.1125
+        },
+        "rotated_edge": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0
+        },
+        "all": {
+          "exact": 19,
+          "total": 20,
+          "recall": 0.95,
+          "cer": 0.0503,
+          "observed_items": 24,
+          "extra_ocr_items": 4,
+          "precision": 0.7917
+        }
+      },
+      "tulvaviestinta": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 9,
+          "total": 9,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 13,
+          "total": 13,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 23,
+          "total": 23,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 23,
+          "extra_ocr_items": 0,
+          "precision": 1.0
+        }
+      },
+      "tutkimusjulkaisu": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 8,
+          "total": 8,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "edge": {
+          "exact": 10,
+          "total": 10,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 19,
+          "total": 19,
+          "recall": 1.0,
+          "cer": 0.0,
+          "observed_items": 19,
+          "extra_ocr_items": 0,
+          "precision": 1.0
+        }
+      },
+      "veron_oikaisu": {
+        "title": {
+          "exact": 1,
+          "total": 1,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "node": {
+          "exact": 7,
+          "total": 8,
+          "recall": 0.875,
+          "cer": 0.0122
+        },
+        "edge": {
+          "exact": 11,
+          "total": 11,
+          "recall": 1.0,
+          "cer": 0.0
+        },
+        "rotated_edge": {
+          "exact": 0,
+          "total": 0,
+          "recall": null
+        },
+        "all": {
+          "exact": 19,
+          "total": 20,
+          "recall": 0.95,
+          "cer": 0.0044,
+          "observed_items": 20,
+          "extra_ocr_items": 0,
+          "precision": 0.95
+        }
+      }
+    }
+  }
+]

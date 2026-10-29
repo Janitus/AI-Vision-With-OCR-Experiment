@@ -1,0 +1,192 @@
+{
+  "title": "Rokotusketjun seuranta",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Varaus",
+      "type": "rounded_rectangle",
+      "center": [
+        270,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "b",
+      "label": "Asiakas",
+      "type": "plain",
+      "center": [
+        900,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "c",
+      "label": "Hoitaja",
+      "type": "rectangle",
+      "center": [
+        1530,
+        221
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "d",
+      "label": "Annos",
+      "type": "diamond",
+      "center": [
+        270,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e",
+      "label": "Rokotuspiste",
+      "type": "rounded_rectangle",
+      "center": [
+        900,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "f",
+      "label": "Kirjaus",
+      "type": "rectangle",
+      "center": [
+        1530,
+        551
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "g",
+      "label": "Seuranta",
+      "type": "plain",
+      "center": [
+        270,
+        881
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "h",
+      "label": "Rekisteri",
+      "type": "hexagon",
+      "center": [
+        900,
+        881
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "i",
+      "label": "Muistutus",
+      "type": "rounded_rectangle",
+      "center": [
+        1530,
+        881
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "kirjaa erän",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "toimitetaan",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "merkitsee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "siirtää tiedon",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "tarvittaessa",
+      "direction": "unknown",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "i",
+      "target": "b",
+      "relationship": "kutsuu uudelleen",
+      "direction": "source_to_target",
+      "dashed": true,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Seuranta–Rekisteri line has no visible arrowhead.",
+    "'kutsuu uudelleen' sits near the dashed Muistutus–Asiakas line where several diagonals cross."
+  ],
+  "ocr_disagreements": [
+    "OCR reports an isolated '一' near an edge; no such graph label is visible."
+  ]
+}

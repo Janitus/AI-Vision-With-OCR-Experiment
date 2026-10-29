@@ -1,0 +1,313 @@
+{
+  "id": "tutkimusjulkaisu",
+  "title": "Tutkimusjulkaisun työnkulku",
+  "context": "Tutkimus",
+  "layout": "TB",
+  "shape": "pill",
+  "font": "times",
+  "size": 23,
+  "background": "#ffffff",
+  "ink": "#242424",
+  "edge": "#333333",
+  "palette": [
+    "#ffffff"
+  ],
+  "nodes": [
+    {
+      "label": "Tutkimuskysymys",
+      "x": 900,
+      "y": 185,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Aineiston keruu",
+      "x": 320,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Eettinen arvio",
+      "x": 900,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Mittaus",
+      "x": 1480,
+      "y": 390,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Tallennus",
+      "x": 320,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Analyysi",
+      "x": 900,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Vertaisarvio",
+      "x": 1480,
+      "y": 720,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Julkaisu",
+      "x": 900,
+      "y": 955,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "ohjaa",
+      "label_xy": [
+        610,
+        288
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          765,
+          233
+        ],
+        [
+          455,
+          342
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "label": "edellyttää",
+      "label_xy": [
+        900,
+        288
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          900,
+          235
+        ],
+        [
+          900,
+          340
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "label": "tuottaa",
+      "label_xy": [
+        633,
+        390
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          455,
+          390
+        ],
+        [
+          1345,
+          390
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "hyväksyy",
+      "label_xy": [
+        1190,
+        390
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          390
+        ],
+        [
+          1345,
+          390
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "arkistoi",
+      "label_xy": [
+        900,
+        555
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1345,
+          428
+        ],
+        [
+          455,
+          682
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "mahdollistaa",
+      "label_xy": [
+        610,
+        720
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          455,
+          720
+        ],
+        [
+          765,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "lähettää",
+      "label_xy": [
+        1190,
+        720
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          720
+        ],
+        [
+          1345,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "suosittaa",
+      "label_xy": [
+        1190,
+        838
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1357,
+          770
+        ],
+        [
+          1023,
+          905
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "label": "palauttaa korjattavaksi",
+      "label_xy": [
+        1190,
+        782
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          1345,
+          720
+        ],
+        [
+          1035,
+          720
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "label": "avoin aineisto",
+      "label_xy": [
+        610,
+        838
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          443,
+          770
+        ],
+        [
+          777,
+          905
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

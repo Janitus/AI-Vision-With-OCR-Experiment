@@ -1,0 +1,182 @@
+{
+  "title": "Verotuksen oikaisuprosessi",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Verovelvollinen",
+      "type": "plain",
+      "center": [
+        250,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "b",
+      "label": "Ilmoitus",
+      "type": "rectangle",
+      "center": [
+        680,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "c",
+      "label": "Tarkastus",
+      "type": "diamond",
+      "center": [
+        1120,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "d",
+      "label": "Päätös",
+      "type": "diamond",
+      "center": [
+        1550,
+        261
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "e",
+      "label": "Lisäselvitys",
+      "type": "plain",
+      "center": [
+        250,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "f",
+      "label": "Oikaisupyyntö",
+      "type": "rectangle",
+      "center": [
+        680,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "g",
+      "label": "Käsittely",
+      "type": "diamond",
+      "center": [
+        1120,
+        831
+      ],
+      "confidence": 0.96
+    },
+    {
+      "id": "h",
+      "label": "Lopputulos",
+      "type": "rectangle",
+      "center": [
+        1550,
+        831
+      ],
+      "confidence": 0.96
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "ratkaisee",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "b",
+      "target": "e",
+      "relationship": "liittyy",
+      "direction": "unknown",
+      "dashed": false,
+      "confidence": 0.7
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "liitetään",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "d",
+      "target": "f",
+      "relationship": "voi johtaa",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "g",
+      "target": "c",
+      "relationship": "tarkistaa uudelleen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    },
+    {
+      "source": "c",
+      "target": "g",
+      "relationship": "palauttaa tarkastukseen",
+      "direction": "source_to_target",
+      "dashed": false,
+      "confidence": 0.9
+    }
+  ],
+  "uncertainties": [
+    "Ilmoitus–Lisäselvitys diagonal has no visible arrowhead.",
+    "The vertical Tarkastus–Käsittely route has arrows at both ends, with two nearby labels; their assignment to opposite directions is inferred from the label positions."
+  ],
+  "ocr_disagreements": [
+    "OCR reads 'Päätos'; the image visibly says 'Päätös'."
+  ]
+}

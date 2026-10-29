@@ -1,0 +1,30 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Times New Roman", "primaryColor": "#ffffff", "lineColor": "#333333", "textColor": "#242424"}}}%%
+flowchart TB
+  %% Synthetic Finnish-context graph: Tutkimus
+  n1(["Tutkimuskysymys"])
+  style n1 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n2(["Aineiston keruu"])
+  style n2 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n3(["Eettinen arvio"])
+  style n3 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n4(["Mittaus"])
+  style n4 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n5(["Tallennus"])
+  style n5 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n6(["Analyysi"])
+  style n6 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n7(["Vertaisarvio"])
+  style n7 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n8(["Julkaisu"])
+  style n8 fill:#ffffff,stroke:#242424,color:#242424,font-family:Times New Roman
+  n1 -->|ohjaa| n2
+  n1 -->|edellyttää| n3
+  n2 -->|tuottaa| n4
+  n3 -->|hyväksyy| n4
+  n4 -->|arkistoi| n5
+  n5 -->|mahdollistaa| n6
+  n6 -->|lähettää| n7
+  n7 -->|suosittaa| n8
+  n7 -->|palauttaa korjattavaksi| n6
+  n5 ---|avoin aineisto| n8
+  linkStyle 8 stroke-dasharray: 8 5

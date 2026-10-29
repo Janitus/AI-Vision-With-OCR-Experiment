@@ -1,0 +1,21 @@
+flowchart LR
+  a["Mittari"]
+  b["Valvomo"]
+  c["Korjausryhmä"]
+  d["Voimala"]
+  e["Kantaverkko"]
+  f["Sähköasema"]
+  g["Jakeluverkko"]
+  h["Kuluttaja"]
+  h -->|kuittaa| a
+  a -->|hälyttää| b
+  b -->|lähettää| c
+  c -->|korjaa| f
+  d -->|syöttää| e
+  e -->|siirtää| f
+  f -->|muuntaa| g
+  g -->|jakaa| h
+  g -->|vikatieto| b
+  b -->|valvoo| e
+  linkStyle 9 stroke-dasharray: 8 5
+  d ---|varasyöttö| h

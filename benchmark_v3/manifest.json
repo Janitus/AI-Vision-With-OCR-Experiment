@@ -1,0 +1,92 @@
+[
+  {
+    "id": "paivystyksen_verkko",
+    "title": "Päivystyksen hoitoverkko",
+    "context": "Terveydenhuolto",
+    "style": "round",
+    "font": "segoe",
+    "image": "paivystyksen_verkko.png",
+    "mermaid": "paivystyksen_verkko.mmd"
+  },
+  {
+    "id": "ministerioiden_hanke",
+    "title": "Ministeriöiden hankekierto",
+    "context": "Valtionhallinto",
+    "style": "box",
+    "font": "georgia",
+    "image": "ministerioiden_hanke.png",
+    "mermaid": "ministerioiden_hanke.mmd"
+  },
+  {
+    "id": "saatutkimus",
+    "title": "Säähavaintojen yhdistäminen",
+    "context": "Sää ja tutkimus",
+    "style": "text",
+    "font": "verdana",
+    "image": "saatutkimus.png",
+    "mermaid": "saatutkimus.mmd"
+  },
+  {
+    "id": "sahkohaorio",
+    "title": "Sähköhäiriön tilannekuva",
+    "context": "Energia",
+    "style": "hex",
+    "font": "segoe",
+    "image": "sahkohaorio.png",
+    "mermaid": "sahkohaorio.mmd"
+  },
+  {
+    "id": "junaliikenteen_ohjaus",
+    "title": "Junaliikenteen ohjaus",
+    "context": "Liikenne",
+    "style": "circle",
+    "font": "arial_bold",
+    "image": "junaliikenteen_ohjaus.png",
+    "mermaid": "junaliikenteen_ohjaus.mmd"
+  },
+  {
+    "id": "rokotusketju",
+    "title": "Rokotusketjun seuranta",
+    "context": "Kansanterveys",
+    "style": "box",
+    "font": "calibri",
+    "image": "rokotusketju.png",
+    "mermaid": "rokotusketju.mmd"
+  },
+  {
+    "id": "tutkimusjulkaisu",
+    "title": "Tutkimusjulkaisun työnkulku",
+    "context": "Tutkimus",
+    "style": "pill",
+    "font": "times",
+    "image": "tutkimusjulkaisu.png",
+    "mermaid": "tutkimusjulkaisu.mmd"
+  },
+  {
+    "id": "kaukolainaus",
+    "title": "Kaukolainauksen palveluverkko",
+    "context": "Kirjastot",
+    "style": "text",
+    "font": "courier",
+    "image": "kaukolainaus.png",
+    "mermaid": "kaukolainaus.mmd"
+  },
+  {
+    "id": "tulvaviestinta",
+    "title": "Tulvatilanteen viestintä",
+    "context": "Pelastustoimi",
+    "style": "box",
+    "font": "arial",
+    "image": "tulvaviestinta.png",
+    "mermaid": "tulvaviestinta.mmd"
+  },
+  {
+    "id": "veron_oikaisu",
+    "title": "Verotuksen oikaisuprosessi",
+    "context": "Verotus",
+    "style": "diamond",
+    "font": "georgia",
+    "image": "veron_oikaisu.png",
+    "mermaid": "veron_oikaisu.mmd"
+  }
+]

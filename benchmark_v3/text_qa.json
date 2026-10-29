@@ -1,0 +1,2919 @@
+{
+  "paivystyksen_verkko": {
+    "title_bbox": [
+      38,
+      38,
+      456,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          144,
+          252.0,
+          356,
+          274.0
+        ],
+        "text": "Potilaan yhteydenotto"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          646,
+          253.0,
+          714,
+          274.0
+        ],
+        "text": "Hoitaja"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1037,
+          252.0,
+          1204,
+          274.0
+        ],
+        "text": "Päivystävä lääkäri"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          1460,
+          252.0,
+          1639,
+          269.0
+        ],
+        "text": "Erikoissairaanhoito"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          170,
+          822.0,
+          330,
+          839.0
+        ],
+        "text": "Puhelinneuvonta"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          624,
+          822.0,
+          736,
+          839.0
+        ],
+        "text": "Laboratorio"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          1051,
+          823.0,
+          1188,
+          839.0
+        ],
+        "text": "Kuvantaminen"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          1500,
+          822.0,
+          1600,
+          839.0
+        ],
+        "text": "Jatkohoito"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          430,
+          242,
+          501,
+          279
+        ],
+        "text": "kirjaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          790,
+          136,
+          1010,
+          173
+        ],
+        "text": "arvioi hoidon tarpeen",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          1286,
+          244,
+          1383,
+          276
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          214,
+          526,
+          287,
+          563
+        ],
+        "text": "ohjaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          406,
+          812,
+          523,
+          849
+        ],
+        "text": "varaa ajan",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          814,
+          706,
+          985,
+          743
+        ],
+        "text": "välittää näytteet",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1254,
+          709,
+          1415,
+          741
+        ],
+        "text": "toimittaa kuvat",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          616,
+          529,
+          744,
+          561
+        ],
+        "text": "tilaa kokeet",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1102,
+          452,
+          1139,
+          638
+        ],
+        "text": "pyytää kuvauksen",
+        "rotation": -90.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          806,
+          526,
+          994,
+          563
+        ],
+        "text": "palauttaa tulokset",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          1482,
+          529,
+          1618,
+          561
+        ],
+        "text": "suunnittelee",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        115,
+        210,
+        385,
+        310
+      ],
+      [
+        545,
+        210,
+        815,
+        310
+      ],
+      [
+        985,
+        210,
+        1255,
+        310
+      ],
+      [
+        1415,
+        210,
+        1685,
+        310
+      ],
+      [
+        115,
+        780,
+        385,
+        880
+      ],
+      [
+        545,
+        780,
+        815,
+        880
+      ],
+      [
+        985,
+        780,
+        1255,
+        880
+      ],
+      [
+        1415,
+        780,
+        1685,
+        880
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 10.8
+  },
+  "ministerioiden_hanke": {
+    "title_bbox": [
+      38,
+      38,
+      467,
+      63
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          240,
+          211.0,
+          299,
+          228.0
+        ],
+        "text": "Aloite"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          815,
+          211.0,
+          984,
+          233.0
+        ],
+        "text": "Valmisteluryhmä"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1434,
+          211.0,
+          1625,
+          228.0
+        ],
+        "text": "Oikeudellinen arvio"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          189,
+          542.0,
+          350,
+          563.0
+        ],
+        "text": "Lausuntopyyntö"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          849,
+          541.0,
+          950,
+          558.0
+        ],
+        "text": "Ministeriö"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          1447,
+          541.0,
+          1613,
+          563.0
+        ],
+        "text": "Budjettitarkistus"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          195,
+          871.0,
+          344,
+          888.0
+        ],
+        "text": "Valtioneuvosto"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          846,
+          871.0,
+          953,
+          888.0
+        ],
+        "text": "Eduskunta"
+      },
+      {
+        "kind": "node",
+        "id": 8,
+        "bbox": [
+          1462,
+          871.0,
+          1597,
+          893.0
+        ],
+        "text": "Toimeenpano"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          524,
+          202,
+          646,
+          239
+        ],
+        "text": "käynnistää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          1166,
+          204,
+          1265,
+          236
+        ],
+        "text": "selvittää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          550,
+          369,
+          619,
+          401
+        ],
+        "text": "laatii",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          532,
+          532,
+          637,
+          569
+        ],
+        "text": "palautuu",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          1466,
+          369,
+          1594,
+          401
+        ],
+        "text": "arvioi kulut",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          1168,
+          534,
+          1262,
+          566
+        ],
+        "text": "sovittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          536,
+          699,
+          633,
+          731
+        ],
+        "text": "esittelee",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1166,
+          696,
+          1264,
+          733
+        ],
+        "text": "raportoi",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          504,
+          862,
+          667,
+          899
+        ],
+        "text": "antaa esityksen",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          1162,
+          862,
+          1268,
+          899
+        ],
+        "text": "hyväksyy",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          1296,
+          770,
+          1399,
+          799
+        ],
+        "text": "seuranta",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 11,
+        "bbox": [
+          562,
+          472,
+          645,
+          504
+        ],
+        "text": "kuulee",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        135,
+        170,
+        405,
+        270
+      ],
+      [
+        765,
+        170,
+        1035,
+        270
+      ],
+      [
+        1395,
+        170,
+        1665,
+        270
+      ],
+      [
+        135,
+        500,
+        405,
+        600
+      ],
+      [
+        765,
+        500,
+        1035,
+        600
+      ],
+      [
+        1395,
+        500,
+        1665,
+        600
+      ],
+      [
+        135,
+        830,
+        405,
+        930
+      ],
+      [
+        765,
+        830,
+        1035,
+        930
+      ],
+      [
+        1395,
+        830,
+        1665,
+        930
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 14.59
+  },
+  "saatutkimus": {
+    "title_bbox": [
+      38,
+      38,
+      516,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          840,
+          178.0,
+          960,
+          195.0
+        ],
+        "text": "Sääasema"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          258,
+          382.0,
+          383,
+          400.0
+        ],
+        "text": "Tuulianturi"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          833,
+          382.0,
+          967,
+          400.0
+        ],
+        "text": "Sademittari"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          1407,
+          383.0,
+          1553,
+          405.0
+        ],
+        "text": "Lämpöanturi"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          226,
+          712.0,
+          414,
+          730.0
+        ],
+        "text": "Raakahavainnot"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          817,
+          712.0,
+          983,
+          730.0
+        ],
+        "text": "Laatutarkistus"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          1436,
+          712.0,
+          1523,
+          735.0
+        ],
+        "text": "Malliajo"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          852,
+          948.0,
+          947,
+          965.0
+        ],
+        "text": "Ennuste"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          562,
+          257,
+          658,
+          319
+        ],
+        "text": "mittaa",
+        "rotation": 19.4
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          674,
+          243,
+          706,
+          333
+        ],
+        "text": "mittaa",
+        "rotation": 90.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          1142,
+          257,
+          1238,
+          319
+        ],
+        "text": "mittaa",
+        "rotation": -19.4
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          561,
+          436,
+          659,
+          469
+        ],
+        "text": "kokoaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          846,
+          502,
+          955,
+          535
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          565,
+          704,
+          655,
+          735
+        ],
+        "text": "vertaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1117,
+          702,
+          1217,
+          737
+        ],
+        "text": "syöttää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1128,
+          642,
+          1251,
+          675
+        ],
+        "text": "vahvistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1141,
+          822,
+          1239,
+          853
+        ],
+        "text": "tuottaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          850,
+          820,
+          951,
+          857
+        ],
+        "text": "palaute",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          262,
+          539,
+          379,
+          571
+        ],
+        "text": "varatieto",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        765,
+        135,
+        1035,
+        235
+      ],
+      [
+        185,
+        340,
+        455,
+        440
+      ],
+      [
+        765,
+        340,
+        1035,
+        440
+      ],
+      [
+        1345,
+        340,
+        1615,
+        440
+      ],
+      [
+        185,
+        670,
+        455,
+        770
+      ],
+      [
+        765,
+        670,
+        1035,
+        770
+      ],
+      [
+        1345,
+        670,
+        1615,
+        770
+      ],
+      [
+        765,
+        905,
+        1035,
+        1005
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 12.97
+  },
+  "sahkohaorio": {
+    "title_bbox": [
+      38,
+      38,
+      450,
+      63
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          1511,
+          542.0,
+          1589,
+          559.0
+        ],
+        "text": "Voimala"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          1300,
+          818.0,
+          1420,
+          835.0
+        ],
+        "text": "Kantaverkko"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          839,
+          932.0,
+          960,
+          949.0
+        ],
+        "text": "Sähköasema"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          377,
+          818.0,
+          502,
+          835.0
+        ],
+        "text": "Jakeluverkko"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          208,
+          542.0,
+          291,
+          564.0
+        ],
+        "text": "Kuluttaja"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          408,
+          267.0,
+          471,
+          283.0
+        ],
+        "text": "Mittari"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          857,
+          152.0,
+          943,
+          169.0
+        ],
+        "text": "Valvomo"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          1294,
+          266.0,
+          1426,
+          288.0
+        ],
+        "text": "Korjausryhmä"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          1410,
+          670,
+          1499,
+          705
+        ],
+        "text": "syöttää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          1092,
+          867,
+          1169,
+          899
+        ],
+        "text": "siirtää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          618,
+          868,
+          723,
+          898
+        ],
+        "text": "muuntaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          308,
+          670,
+          381,
+          707
+        ],
+        "text": "jakaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          302,
+          396,
+          387,
+          428
+        ],
+        "text": "kuittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          622,
+          198,
+          718,
+          235
+        ],
+        "text": "hälyttää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1082,
+          201,
+          1179,
+          233
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1091,
+          588,
+          1169,
+          625
+        ],
+        "text": "korjaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1089,
+          477,
+          1171,
+          509
+        ],
+        "text": "valvoo",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          628,
+          442,
+          712,
+          544
+        ],
+        "text": "vikatieto",
+        "rotation": 55.4
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          841,
+          532,
+          959,
+          567
+        ],
+        "text": "varasyöttö",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        1415,
+        500,
+        1685,
+        600
+      ],
+      [
+        1225,
+        776,
+        1495,
+        876
+      ],
+      [
+        765,
+        890,
+        1035,
+        990
+      ],
+      [
+        305,
+        776,
+        575,
+        876
+      ],
+      [
+        115,
+        500,
+        385,
+        600
+      ],
+      [
+        305,
+        224,
+        575,
+        324
+      ],
+      [
+        765,
+        110,
+        1035,
+        210
+      ],
+      [
+        1225,
+        224,
+        1495,
+        324
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 7.49
+  },
+  "junaliikenteen_ohjaus": {
+    "title_bbox": [
+      38,
+      38,
+      393,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          194,
+          253.0,
+          305,
+          272.0
+        ],
+        "text": "Matkustaja"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          632,
+          253.0,
+          728,
+          268.0
+        ],
+        "text": "Aikataulu"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1087,
+          253.0,
+          1152,
+          268.0
+        ],
+        "text": "Laituri"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          1525,
+          253.0,
+          1575,
+          268.0
+        ],
+        "text": "Juna"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          176,
+          824.0,
+          323,
+          841.0
+        ],
+        "text": "Liikenteenohjaus"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          613,
+          823.0,
+          746,
+          838.0
+        ],
+        "text": "Vaihtoasema"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          1062,
+          823.0,
+          1177,
+          838.0
+        ],
+        "text": "Häiriöviesti"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          1494,
+          823.0,
+          1606,
+          842.0
+        ],
+        "text": "Määränpää"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          410,
+          244,
+          520,
+          275
+        ],
+        "text": "tarkistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          848,
+          244,
+          952,
+          275
+        ],
+        "text": "osoittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          1296,
+          242,
+          1374,
+          277
+        ],
+        "text": "ohjaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          156,
+          528,
+          344,
+          563
+        ],
+        "text": "lähettää kyselyn",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          361,
+          710,
+          569,
+          741
+        ],
+        "text": "vahvistaa vaihdon",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          845,
+          814,
+          955,
+          845
+        ],
+        "text": "ilmoittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1280,
+          812,
+          1389,
+          847
+        ],
+        "text": "päivittää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          630,
+          530,
+          729,
+          561
+        ],
+        "text": "reitittää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1104,
+          492,
+          1135,
+          597
+        ],
+        "text": "varoitus",
+        "rotation": -90.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          486,
+          600,
+          668,
+          631
+        ],
+        "text": "muuttaa laiturin",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          1502,
+          530,
+          1599,
+          561
+        ],
+        "text": "saapuu",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 11,
+        "bbox": [
+          1290,
+          530,
+          1381,
+          561
+        ],
+        "text": "tilanne",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        132,
+        210,
+        368,
+        310
+      ],
+      [
+        562,
+        210,
+        798,
+        310
+      ],
+      [
+        1002,
+        210,
+        1238,
+        310
+      ],
+      [
+        1432,
+        210,
+        1668,
+        310
+      ],
+      [
+        132,
+        780,
+        368,
+        880
+      ],
+      [
+        562,
+        780,
+        798,
+        880
+      ],
+      [
+        1002,
+        780,
+        1238,
+        880
+      ],
+      [
+        1432,
+        780,
+        1668,
+        880
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 10.38
+  },
+  "rokotusketju": {
+    "title_bbox": [
+      38,
+      38,
+      426,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          238,
+          211.0,
+          302,
+          226.0
+        ],
+        "text": "Varaus"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          866,
+          210.0,
+          934,
+          226.0
+        ],
+        "text": "Asiakas"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1496,
+          210.0,
+          1563,
+          230.0
+        ],
+        "text": "Hoitaja"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          241,
+          541.0,
+          299,
+          556.0
+        ],
+        "text": "Annos"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          840,
+          540.0,
+          960,
+          560.0
+        ],
+        "text": "Rokotuspiste"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          1498,
+          540.0,
+          1561,
+          560.0
+        ],
+        "text": "Kirjaus"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          228,
+          871.0,
+          312,
+          886.0
+        ],
+        "text": "Seuranta"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          860,
+          870.0,
+          939,
+          886.0
+        ],
+        "text": "Rekisteri"
+      },
+      {
+        "kind": "node",
+        "id": 8,
+        "bbox": [
+          1482,
+          870.0,
+          1577,
+          886.0
+        ],
+        "text": "Muistutus"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          534,
+          205,
+          635,
+          235
+        ],
+        "text": "vahvistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          1174,
+          205,
+          1257,
+          235
+        ],
+        "text": "saapuu",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          852,
+          370,
+          948,
+          400
+        ],
+        "text": "tarkistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          524,
+          535,
+          646,
+          565
+        ],
+        "text": "toimitetaan",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          1162,
+          535,
+          1268,
+          565
+        ],
+        "text": "merkitsee",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          843,
+          698,
+          957,
+          732
+        ],
+        "text": "käynnistää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1148,
+          700,
+          1282,
+          730
+        ],
+        "text": "siirtää tiedon",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1169,
+          865,
+          1261,
+          895
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1210,
+          619,
+          1379,
+          649
+        ],
+        "text": "kutsuu uudelleen",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          1474,
+          368,
+          1586,
+          402
+        ],
+        "text": "kirjaa erän",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          543,
+          865,
+          663,
+          895
+        ],
+        "text": "tarvittaessa",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        135,
+        170,
+        405,
+        270
+      ],
+      [
+        765,
+        170,
+        1035,
+        270
+      ],
+      [
+        1395,
+        170,
+        1665,
+        270
+      ],
+      [
+        135,
+        500,
+        405,
+        600
+      ],
+      [
+        765,
+        500,
+        1035,
+        600
+      ],
+      [
+        1395,
+        500,
+        1665,
+        600
+      ],
+      [
+        135,
+        830,
+        405,
+        930
+      ],
+      [
+        765,
+        830,
+        1035,
+        930
+      ],
+      [
+        1395,
+        830,
+        1665,
+        930
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 10.02
+  },
+  "tutkimusjulkaisu": {
+    "title_bbox": [
+      38,
+      38,
+      506,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          814,
+          177.0,
+          987,
+          198.0
+        ],
+        "text": "Tutkimuskysymys"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          245,
+          382.0,
+          395,
+          398.0
+        ],
+        "text": "Aineiston keruu"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          835,
+          382.0,
+          965,
+          398.0
+        ],
+        "text": "Eettinen arvio"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          1445,
+          382.0,
+          1514,
+          398.0
+        ],
+        "text": "Mittaus"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          275,
+          712.0,
+          366,
+          728.0
+        ],
+        "text": "Tallennus"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          858,
+          712.0,
+          942,
+          733.0
+        ],
+        "text": "Analyysi"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          1423,
+          712.0,
+          1537,
+          728.0
+        ],
+        "text": "Vertaisarvio"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          862,
+          947.0,
+          938,
+          963.0
+        ],
+        "text": "Julkaisu"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          576,
+          270,
+          645,
+          305
+        ],
+        "text": "ohjaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          848,
+          270,
+          953,
+          305
+        ],
+        "text": "edellyttää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          592,
+          376,
+          673,
+          405
+        ],
+        "text": "tuottaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          1138,
+          372,
+          1243,
+          407
+        ],
+        "text": "hyväksyy",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          857,
+          540,
+          943,
+          571
+        ],
+        "text": "arkistoi",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          544,
+          704,
+          675,
+          735
+        ],
+        "text": "mahdollistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1146,
+          704,
+          1234,
+          735
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1142,
+          822,
+          1239,
+          853
+        ],
+        "text": "suosittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1083,
+          764,
+          1297,
+          799
+        ],
+        "text": "palauttaa korjattavaksi",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          540,
+          822,
+          681,
+          853
+        ],
+        "text": "avoin aineisto",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        765,
+        135,
+        1035,
+        235
+      ],
+      [
+        185,
+        340,
+        455,
+        440
+      ],
+      [
+        765,
+        340,
+        1035,
+        440
+      ],
+      [
+        1345,
+        340,
+        1615,
+        440
+      ],
+      [
+        185,
+        670,
+        455,
+        770
+      ],
+      [
+        765,
+        670,
+        1035,
+        770
+      ],
+      [
+        1345,
+        670,
+        1615,
+        770
+      ],
+      [
+        765,
+        905,
+        1035,
+        1005
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 15.52
+  },
+  "kaukolainaus": {
+    "title_bbox": [
+      38,
+      38,
+      555,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          1511,
+          542.0,
+          1589,
+          560.0
+        ],
+        "text": "Lukija"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          1321,
+          819.0,
+          1399,
+          832.0
+        ],
+        "text": "Varaus"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          822,
+          932.0,
+          978,
+          950.0
+        ],
+        "text": "Lähikirjasto"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          349,
+          818.0,
+          531,
+          836.0
+        ],
+        "text": "Keskuskirjasto"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          198,
+          542.0,
+          302,
+          560.0
+        ],
+        "text": "Kuljetus"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          375,
+          266.0,
+          505,
+          284.0
+        ],
+        "text": "Noutopiste"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          867,
+          152.0,
+          932,
+          166.0
+        ],
+        "text": "Laina"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          1308,
+          266.0,
+          1412,
+          280.0
+        ],
+        "text": "Palautus"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          1405,
+          672,
+          1505,
+          704
+        ],
+        "text": "pyytää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          1060,
+          868,
+          1199,
+          897
+        ],
+        "text": "kohdistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          588,
+          868,
+          753,
+          897
+        ],
+        "text": "tiedustelee",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          282,
+          674,
+          408,
+          703
+        ],
+        "text": "lähettää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          276,
+          398,
+          415,
+          427
+        ],
+        "text": "toimittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          600,
+          202,
+          739,
+          231
+        ],
+        "text": "luovuttaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1048,
+          200,
+          1213,
+          233
+        ],
+        "text": "palautetaan",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1041,
+          593,
+          1219,
+          621
+        ],
+        "text": "vastaanottaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          900,
+          398,
+          1091,
+          427
+        ],
+        "text": "noutoilmoitus",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          830,
+          812,
+          969,
+          840
+        ],
+        "text": "saatavuus",
+        "rotation": -0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          830,
+          536,
+          969,
+          565
+        ],
+        "text": "varatieto",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        1415,
+        500,
+        1685,
+        600
+      ],
+      [
+        1225,
+        776,
+        1495,
+        876
+      ],
+      [
+        765,
+        890,
+        1035,
+        990
+      ],
+      [
+        305,
+        776,
+        575,
+        876
+      ],
+      [
+        115,
+        500,
+        385,
+        600
+      ],
+      [
+        305,
+        224,
+        575,
+        324
+      ],
+      [
+        765,
+        110,
+        1035,
+        210
+      ],
+      [
+        1225,
+        224,
+        1495,
+        324
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 11.41
+  },
+  "tulvaviestinta": {
+    "title_bbox": [
+      38,
+      38,
+      412,
+      63
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          203,
+          212.0,
+          336,
+          228.0
+        ],
+        "text": "Sadehavainto"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          843,
+          212.0,
+          957,
+          228.0
+        ],
+        "text": "Hätäkeskus"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1462,
+          212.0,
+          1597,
+          228.0
+        ],
+        "text": "Pelastuslaitos"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          212,
+          542.0,
+          327,
+          558.0
+        ],
+        "text": "Kuntalainen"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          831,
+          542.0,
+          970,
+          558.0
+        ],
+        "text": "Tilannekeskus"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          1483,
+          542.0,
+          1577,
+          558.0
+        ],
+        "text": "Vesilaitos"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          219,
+          872.0,
+          320,
+          888.0
+        ],
+        "text": "Evakuointi"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          860,
+          872.0,
+          940,
+          888.0
+        ],
+        "text": "Sairaala"
+      },
+      {
+        "kind": "node",
+        "id": 8,
+        "bbox": [
+          1494,
+          872.0,
+          1566,
+          888.0
+        ],
+        "text": "Tiedote"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          536,
+          202,
+          634,
+          237
+        ],
+        "text": "hälyttää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          1170,
+          204,
+          1261,
+          235
+        ],
+        "text": "välittää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          221,
+          370,
+          319,
+          401
+        ],
+        "text": "varoitus",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          534,
+          534,
+          637,
+          565
+        ],
+        "text": "ilmoittaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          1164,
+          368,
+          1267,
+          403
+        ],
+        "text": "päivittää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          1136,
+          532,
+          1293,
+          567
+        ],
+        "text": "pyytää arviota",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          538,
+          700,
+          633,
+          730
+        ],
+        "text": "määrää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1142,
+          700,
+          1289,
+          731
+        ],
+        "text": "turvaa veden",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          507,
+          862,
+          663,
+          897
+        ],
+        "text": "ohjaa potilaita",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          1168,
+          862,
+          1263,
+          897
+        ],
+        "text": "raportoi",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          846,
+          698,
+          954,
+          733
+        ],
+        "text": "julkaisee",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 11,
+        "bbox": [
+          974,
+          448,
+          1146,
+          483
+        ],
+        "text": "lähettää yksiköt",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 12,
+        "bbox": [
+          858,
+          368,
+          943,
+          403
+        ],
+        "text": "yhteys",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        135,
+        170,
+        405,
+        270
+      ],
+      [
+        765,
+        170,
+        1035,
+        270
+      ],
+      [
+        1395,
+        170,
+        1665,
+        270
+      ],
+      [
+        135,
+        500,
+        405,
+        600
+      ],
+      [
+        765,
+        500,
+        1035,
+        600
+      ],
+      [
+        1395,
+        500,
+        1665,
+        600
+      ],
+      [
+        135,
+        830,
+        405,
+        930
+      ],
+      [
+        765,
+        830,
+        1035,
+        930
+      ],
+      [
+        1395,
+        830,
+        1665,
+        930
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 8.53
+  },
+  "veron_oikaisu": {
+    "title_bbox": [
+      37,
+      38,
+      490,
+      70
+    ],
+    "text_boxes": [
+      {
+        "kind": "node",
+        "id": 0,
+        "bbox": [
+          177,
+          252.0,
+          321,
+          268.0
+        ],
+        "text": "Verovelvollinen"
+      },
+      {
+        "kind": "node",
+        "id": 1,
+        "bbox": [
+          641,
+          252.0,
+          719,
+          268.0
+        ],
+        "text": "Ilmoitus"
+      },
+      {
+        "kind": "node",
+        "id": 2,
+        "bbox": [
+          1074,
+          252.0,
+          1166,
+          268.0
+        ],
+        "text": "Tarkastus"
+      },
+      {
+        "kind": "node",
+        "id": 3,
+        "bbox": [
+          1519,
+          252.0,
+          1581,
+          268.0
+        ],
+        "text": "Päätös"
+      },
+      {
+        "kind": "node",
+        "id": 4,
+        "bbox": [
+          197,
+          822.0,
+          303,
+          843.0
+        ],
+        "text": "Lisäselvitys"
+      },
+      {
+        "kind": "node",
+        "id": 5,
+        "bbox": [
+          613,
+          822.0,
+          746,
+          843.0
+        ],
+        "text": "Oikaisupyyntö"
+      },
+      {
+        "kind": "node",
+        "id": 6,
+        "bbox": [
+          1079,
+          822.0,
+          1161,
+          843.0
+        ],
+        "text": "Käsittely"
+      },
+      {
+        "kind": "node",
+        "id": 7,
+        "bbox": [
+          1497,
+          822.0,
+          1602,
+          843.0
+        ],
+        "text": "Lopputulos"
+      },
+      {
+        "kind": "edge",
+        "id": 0,
+        "bbox": [
+          428,
+          246,
+          502,
+          275
+        ],
+        "text": "antaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 1,
+        "bbox": [
+          860,
+          244,
+          941,
+          276
+        ],
+        "text": "siirtää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 2,
+        "bbox": [
+          1282,
+          244,
+          1388,
+          276
+        ],
+        "text": "ratkaisee",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 3,
+        "bbox": [
+          194,
+          526,
+          307,
+          563
+        ],
+        "text": "täydentää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 4,
+        "bbox": [
+          416,
+          814,
+          514,
+          846
+        ],
+        "text": "liitetään",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 5,
+        "bbox": [
+          839,
+          812,
+          961,
+          849
+        ],
+        "text": "käynnistää",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 6,
+        "bbox": [
+          1280,
+          814,
+          1390,
+          846
+        ],
+        "text": "vahvistaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 7,
+        "bbox": [
+          1020,
+          529,
+          1219,
+          561
+        ],
+        "text": "tarkistaa uudelleen",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 8,
+        "bbox": [
+          1166,
+          456,
+          1279,
+          493
+        ],
+        "text": "voi johtaa",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 9,
+        "bbox": [
+          998,
+          598,
+          1242,
+          635
+        ],
+        "text": "palauttaa tarkastukseen",
+        "rotation": 0.0
+      },
+      {
+        "kind": "edge",
+        "id": 10,
+        "bbox": [
+          428,
+          526,
+          503,
+          563
+        ],
+        "text": "liittyy",
+        "rotation": 0.0
+      }
+    ],
+    "node_boxes": [
+      [
+        132,
+        210,
+        368,
+        310
+      ],
+      [
+        562,
+        210,
+        798,
+        310
+      ],
+      [
+        1002,
+        210,
+        1238,
+        310
+      ],
+      [
+        1432,
+        210,
+        1668,
+        310
+      ],
+      [
+        132,
+        780,
+        368,
+        880
+      ],
+      [
+        562,
+        780,
+        798,
+        880
+      ],
+      [
+        1002,
+        780,
+        1238,
+        880
+      ],
+      [
+        1432,
+        780,
+        1668,
+        880
+      ]
+    ],
+    "clipped_text_count": 0,
+    "overlapping_text_count": 0,
+    "minimum_text_contrast": 14.74
+  }
+}
