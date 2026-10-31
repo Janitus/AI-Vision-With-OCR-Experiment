@@ -60,13 +60,13 @@ with PdfPages(OUT,metadata={"Title":"Our graph-reading test",
         ("Old OCR", "9 title, 23 node-text, and 42 edge-text errors"),
         ("Blind vision", "18 node-shape errors; 1 wrong arrow; 1 wrong stroke"),
         ("Blind vision + OCR", "8 node-shape errors; 3 wrong arrows; 1 wrong stroke"),
+        ("Deterministic OCR union", "Vision graph unchanged: 18 shape, 1 arrow, 1 stroke"),
     ]
     for i,(label,detail) in enumerate(error_rows):
         y=.307-i*.040
         ax.add_patch(Rectangle((.055,y-.035),.89,.035,facecolor=pale if i%2==0 else "white",transform=ax.transAxes))
         txt(ax,.070,y-.008,label,8.3,"bold")
         txt(ax,.280,y-.008,detail,8.2)
-    txt(ax,.055,.086,"The OCR-evidence union keeps the blind-vision graph unchanged, so those graph scores match by design.",8.5,color=grey)
     foot(ax,1);pdf.savefig(fig);plt.close(fig)
 
     examples=[
