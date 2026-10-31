@@ -52,6 +52,8 @@ Other rates are errors divided by expected items; lower is better. `—` means t
 | Fully correct edge | 10.6% | 10.6% |
 | Unknown directions (count) | 0 | 0 |
 
+No matched connection had the wrong dashed/solid stroke: 105/105 matched connections had correct strokes. The displayed 8/113 stroke incompleteness comes entirely from eight missing source connections. Those omissions also enter the per-type arrow and label rates. The 26 non-overlapping blind-vision ledger entries are 10 wrong node shapes, 8 missing edges, 4 extra edges, 2 wrong relationship labels, and 2 wrong arrows.
+
 An `unknown` arrow direction is logged as `unresolved_arrow`, not `wrong_arrow`. It still prevents a fully correct edge because the graph cannot be used without resolving that direction. Arrowless source links are scored against the source's visible no-arrow mark; the benchmark does not infer whether the underlying relationship is semantically undirected.
 
 Other per-type rates and counts are in [approach_matrix.csv](approach_matrix.csv). Every mismatch and extra item is in [item_error_ledger.json](item_error_ledger.json). Self-reported ambiguities and OCR conflicts are in [uncertainties.json](uncertainties.json). An unmatched OCR box may be a false detection or a misplaced fragment of real text.

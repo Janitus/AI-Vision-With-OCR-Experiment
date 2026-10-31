@@ -2,7 +2,7 @@
 
 **Share this report as one file:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf). It includes the matrix and example diagrams without requiring access to this repository.
 
-We tested ten clean, synthetic Finnish-context diagrams with varied layouts, shapes, fonts, colors, arrow styles, and edge labels. Together they contain **83 nodes, 113 edges, and 206 printed text regions**. The test asks whether an image can be turned into a complete graph without a human checking it.
+These are informal notes from a small experiment, not a research paper. We tested ten clean, synthetic Finnish-context diagrams with varied layouts, shapes, fonts, colors, arrow styles, and edge labels. Together they contain **83 nodes, 113 edges, and 206 printed text regions**. The test asks whether an image can be turned into a complete graph without a human checking it.
 
 **Observed answer for this set: no.** The best OCR engine read most text, but OCR alone did not produce connections or arrow directions. Blind Codex vision reconstructed only **4 of 10 figures without a scored error**. Adding deduplicated OCR observations to that saved vision graph left the graph result at **4 of 10**. This is a result for these ten diagrams, not an estimate for all figures.
 
@@ -22,13 +22,22 @@ Every row uses **206 source items as the denominator**: 10 titles, 83 nodes, and
 | Node precision / recall | 100% / 100% |
 | Connection precision / recall | 96.3% / 92.9% |
 | Fully correct edges | 101/113 |
-| Extra edges | 4 |
-| Wrong or missing node shapes | 10/83 |
-| Wrong or missing edge labels | 10/113 |
-| Arrow not established correctly | 10/113 |
-| Dashed/solid stroke errors | 8/113 |
 
-**Precision** is the share of reported items that match the source; **recall** is the share of source items found. Connection matching checks endpoints. A *fully correct edge* also requires the arrow direction, printed relationship label, and dashed/solid stroke to match. The error-type rows can overlap on the same edge, so they must not be added together.
+**Precision** is the share of reported items that match the source; **recall** is the share of source items found. Connection matching checks endpoints. A *fully correct edge* also requires the arrow direction, printed relationship label, and dashed/solid stroke to match. The detailed per-type rates in the full matrix can overlap on the same edge, so they must not be added together.
+
+### What went wrong in the blind-vision graph?
+
+These are the **26 non-overlapping entries** in the item-level error ledger:
+
+| Error | Count | What it means |
+|---|---:|---|
+| Wrong node shape | 10 | The node's text was correct, but its visible shape was misclassified. |
+| Missed connection | 8 | A link visible in the source was left out. |
+| Extra connection | 4 | A link was reported where the source had none. |
+| Wrong edge label | 2 | The printed relationship on a matched link was read incorrectly. |
+| Wrong arrow direction | 2 | A matched link pointed the wrong way. |
+
+No matched link had the wrong dashed/solid stroke style. The detailed scorer's 8/113 stroke *incomplete* rate counts the eight omitted links, whose stroke could not be checked. The same omitted links also contribute to the per-type arrow and label rates; the ledger table above avoids counting them repeatedly.
 
 ## Example: source and blind reconstruction
 
