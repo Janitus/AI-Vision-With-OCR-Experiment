@@ -1,0 +1,22 @@
+%% Paired route fixture: orthogonal detours; exact paths are in .source.json
+flowchart LR
+  n0(["Matkustaja"])
+  n1(["Aikataulu"])
+  n2(["Laituri"])
+  n3(["Juna"])
+  n4(["Liikenteenohjaus"])
+  n5(["Vaihtoasema"])
+  n6(["Häiriöviesti"])
+  n7(["Määränpää"])
+  n0 -->|tarkistaa| n1
+  n1 -->|osoittaa| n2
+  n2 -->|ohjaa| n3
+  n0 -->|lähettää kyselyn| n4
+  n4 -->|vahvistaa vaihdon| n5
+  n5 -->|ilmoittaa| n6
+  n6 -->|päivittää| n7
+  n1 -->|reitittää| n5
+  n2 -->|varoitus| n6
+  n4 -->|muuttaa laiturin| n2
+  n3 -->|saapuu| n7
+  n6 ---|tilanne| n3

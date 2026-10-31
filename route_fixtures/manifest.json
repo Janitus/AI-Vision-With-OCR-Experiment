@@ -1,0 +1,18 @@
+[
+  {
+    "id": "rail_curved",
+    "title": "Junaliikenteen ohjaus",
+    "route_style": "cubic Bezier",
+    "image": "rail_curved.png",
+    "source_json": "rail_curved.source.json",
+    "mermaid": "rail_curved.mmd"
+  },
+  {
+    "id": "rail_elbow",
+    "title": "Junaliikenteen ohjaus",
+    "route_style": "orthogonal detours",
+    "image": "rail_elbow.png",
+    "source_json": "rail_elbow.source.json",
+    "mermaid": "rail_elbow.mmd"
+  }
+]

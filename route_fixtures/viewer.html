@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paired routed-arrow test figures</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;background:#f4f7fa;color:#172d3c;margin:24px}
+main{max-width:1800px;margin:auto}h1{margin-bottom:.2em}p{max-width:1000px}
+section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+figure{background:white;border:1px solid #bdccd7;border-radius:8px;margin:0;padding:10px}
+figcaption{font-weight:700;margin-bottom:8px}img{width:100%;height:auto;display:block}
+a{color:#145889}small{color:#4d6473}
+@media(max-width:1000px){section{grid-template-columns:1fr}}
+</style>
+<main>
+<h1>Curved and bent arrow routes</h1>
+<p>One Finnish rail graph, three route styles. Every line was checked against the bounds of unrelated nodes. Click an image for its full-size PNG.</p>
+<section>
+<figure><figcaption>Straight baseline</figcaption><a href="../benchmark_v4/junaliikenteen_ohjaus.png"><img src="../benchmark_v4/junaliikenteen_ohjaus.png" alt="Straight rail-control graph"></a></figure>
+<figure><figcaption>Curved arrows</figcaption><a href="rail_curved.png"><img src="rail_curved.png" alt="Rail-control graph with cubic Bézier arrows"></a></figure>
+<figure><figcaption>Right-angle detours</figcaption><a href="rail_elbow.png"><img src="rail_elbow.png" alt="Rail-control graph with bent orthogonal arrows"></a></figure>
+</section>
+<p><small>The two new figures have matching nodes and edge topology. Their precise routes are in the source JSON files; Mermaid files preserve the graph structure.</small></p>
+<p><a href="README.md">Fixture method</a> · <a href="route_qa.json">Geometry QA</a> · <a href="manifest.json">Source manifest</a></p>
+</main>
+</html>

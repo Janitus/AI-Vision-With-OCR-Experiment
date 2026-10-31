@@ -1,5 +1,7 @@
 # Conservative graph extraction
 
+**Routed-arrow test figures:** [straight / curved / right-angle comparison](route_fixtures/viewer.html) · [fixture method and QA](route_fixtures/README.md). These are paired source figures for future extraction tests; no new OCR or vision accuracy is claimed yet.
+
 **Corrected rerun (v4):** [short findings](FINDINGS.md) · [six-approach matrix](benchmark_v4/approach_matrix.csv) · [side-by-side viewer](benchmark_v4/results_viewer.html). V4 fixes hidden/coincident source edges in v3; both fresh blind runs matched all 105 visible edge records. Earlier v3 graph rates are superseded.
 
 **Shareable report:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf) | [Read the web version](FINDINGS.md).
