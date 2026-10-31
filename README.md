@@ -1,6 +1,6 @@
 # Conservative graph extraction
 
-**Start here:** [Short findings report, results matrix, and example figures](FINDINGS.md).
+**Shareable report:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf) | [Read the web version](FINDINGS.md).
 
 **Current findings:** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
 

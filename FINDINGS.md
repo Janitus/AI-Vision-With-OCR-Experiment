@@ -1,5 +1,7 @@
 # Can OCR and AI vision reliably reconstruct diagrams?
 
+**Share this report as one file:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf). It includes the matrix and example diagrams without requiring access to this repository.
+
 We tested ten clean, synthetic Finnish-context diagrams with varied layouts, shapes, fonts, colors, arrow styles, and edge labels. Together they contain **83 nodes, 113 edges, and 206 printed text regions**. The test asks whether an image can be turned into a complete graph without a human checking it.
 
 **Observed answer for this set: no.** The best OCR engine read most text, but OCR alone did not produce connections or arrow directions. Blind Codex vision reconstructed only **4 of 10 figures without a scored error**. Adding deduplicated OCR observations to that saved vision graph left the graph result at **4 of 10**. This is a result for these ten diagrams, not an estimate for all figures.
@@ -12,20 +14,19 @@ We tested ten clean, synthetic Finnish-context diagrams with varied layouts, sha
 | PaddleOCR PP-OCRv5 Finnish | Printed text | 59 (28.6%) | 0 | 187/206 text regions exact; 40 unmatched OCR boxes |
 | Older RapidOCR baseline | Printed text | 61 (29.6%) | 0 | 145/206 text regions exact; 0 unmatched OCR boxes |
 | Blind Codex vision | Complete graph | **26 (12.6%)** | 4 | 83/83 nodes and 105/113 connections found; 101/113 edges fully correct |
-| Vision + deduplicated RapidOCR evidence | Complete graph | **26 (12.6%)** | 4 | Same graph as vision; 200 OCR boxes attached to matching text, 23 retained as unmatched evidence |
 
-Every row uses **206 source items as the denominator**: 10 titles, 83 nodes, and 113 edges. Extra outputs add errors to the numerator. The OCR rows score text regions; the vision rows score graph elements, including node shape and full edge properties. Their percentages therefore measure **different tasks**. Compare the three OCR rows with one another, and the two graph rows with one another; an 8.7% OCR text error rate does **not** mean RapidOCR reconstructs graphs better than vision.
+Every row uses **206 source items as the denominator**: 10 titles, 83 nodes, and 113 edges. Extra outputs add errors to the numerator. The OCR rows score text regions; the vision row scores graph elements, including node shape and full edge properties. Their percentages therefore measure **different tasks**. Compare OCR engines with one another; an 8.7% OCR text error rate does **not** mean RapidOCR reconstructs graphs better than vision.
 
-| Graph metric | Blind vision | Vision + OCR evidence |
-|---|---:|---:|
-| Node precision / recall | 100% / 100% | 100% / 100% |
-| Connection precision / recall | 96.3% / 92.9% | 96.3% / 92.9% |
-| Fully correct edges | 101/113 | 101/113 |
-| Extra edges | 4 | 4 |
-| Wrong or missing node shapes | 10/83 | 10/83 |
-| Wrong or missing edge labels | 10/113 | 10/113 |
-| Arrow not established correctly | 10/113 | 10/113 |
-| Dashed/solid stroke errors | 8/113 | 8/113 |
+| Graph metric | Blind vision |
+|---|---:|
+| Node precision / recall | 100% / 100% |
+| Connection precision / recall | 96.3% / 92.9% |
+| Fully correct edges | 101/113 |
+| Extra edges | 4 |
+| Wrong or missing node shapes | 10/83 |
+| Wrong or missing edge labels | 10/113 |
+| Arrow not established correctly | 10/113 |
+| Dashed/solid stroke errors | 8/113 |
 
 **Precision** is the share of reported items that match the source; **recall** is the share of source items found. Connection matching checks endpoints. A *fully correct edge* also requires the arrow direction, printed relationship label, and dashed/solid stroke to match. The error-type rows can overlap on the same edge, so they must not be added together.
 
@@ -41,7 +42,7 @@ See the [interactive side-by-side viewer](benchmark_v3/results_viewer.html) for 
 
 ## What the combined approach did
 
-The final combined row is a **deterministic union**, not a second AI prediction. It matched each exact-text RapidOCR box to at most one existing vision element, kept unmatched boxes as evidence, and did not add nodes or edges. Its identical graph accuracy is therefore expected. A separate historical Codex session that saw both images and OCR is retained in the [full validation report](benchmark_v3/REPORT.md), but is not mixed into this matrix.
+The saved **deterministic OCR evidence union** is not a second graph prediction. It matched each exact-text RapidOCR box to at most one existing vision element, kept unmatched boxes as evidence, and did not add nodes or edges. Its graph accuracy is identical to blind vision **by construction**, so it is omitted from the primary accuracy table. Its separate row remains in the [full machine-readable matrix](benchmark_v3/approach_matrix.csv) for traceability. A historical Codex session that saw both images and OCR is retained in the [full validation report](benchmark_v3/REPORT.md); it was a different experiment.
 
 The images were generated from known graphs and checked for visible text. The blind vision prediction was saved before scoring; the task access audit is [here](benchmark_v3/session_audit.json). The set is small and synthetic, and image matching in the scorer uses position tolerances. These results show that **review-free reconstruction failed on most of the tested diagrams**; they do not establish a universal failure rate or test semantic truth beyond what the figures visibly state.
 
