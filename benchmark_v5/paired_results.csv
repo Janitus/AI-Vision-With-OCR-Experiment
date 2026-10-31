@@ -1,0 +1,19 @@
+﻿approach,route,mode,source_items,events,exact_text,extra_text,topology,complete_edges,wrong_arrows,shape_mismatches
+RapidOCR PP-OCRv6 Finnish,straight,OCR text,21,1,21,1,,,,
+RapidOCR PP-OCRv6 Finnish,curved,OCR text,21,0,21,0,,,,
+RapidOCR PP-OCRv6 Finnish,right_angle,OCR text,21,1,21,1,,,,
+PaddleOCR PP-OCRv5 Finnish,straight,OCR text,21,5,18,2,,,,
+PaddleOCR PP-OCRv5 Finnish,curved,OCR text,21,0,21,0,,,,
+PaddleOCR PP-OCRv5 Finnish,right_angle,OCR text,21,0,21,0,,,,
+Older RapidOCR baseline,straight,OCR text,21,8,13,0,,,,
+Older RapidOCR baseline,curved,OCR text,21,7,14,0,,,,
+Older RapidOCR baseline,right_angle,OCR text,21,7,14,0,,,,
+Blind Codex vision,straight,Graph,21,8,,,12,12,0,8
+Blind Codex vision,curved,Graph,21,0,,,12,12,0,0
+Blind Codex vision,right_angle,Graph,21,0,,,12,12,0,0
+Blind Codex + RapidOCR,straight,Graph,21,9,,,12,11,1,8
+Blind Codex + RapidOCR,curved,Graph,21,1,,,12,11,1,0
+Blind Codex + RapidOCR,right_angle,Graph,21,1,,,12,11,1,0
+Vision + deterministic OCR evidence,straight,Graph,21,8,,,12,12,0,8
+Vision + deterministic OCR evidence,curved,Graph,21,0,,,12,12,0,0
+Vision + deterministic OCR evidence,right_angle,Graph,21,0,,,12,12,0,0

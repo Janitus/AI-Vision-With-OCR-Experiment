@@ -1,0 +1,412 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 9,
+      "total": 11,
+      "recall": 0.8182,
+      "cer": 0.0849
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 0,
+      "recall": null
+    },
+    "all": {
+      "exact": 18,
+      "total": 20,
+      "recall": 0.9,
+      "cer": 0.0441,
+      "observed_items": 21,
+      "extra_ocr_items": 1,
+      "precision": 0.8571
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Kaukolainauksen palveluverkko",
+      "observed": "Kaukolainauksen palveluverkko",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        555,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Lukija",
+      "observed": "Lukija",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1511,
+        542.0,
+        1589,
+        560.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        12
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Varaus",
+      "observed": "Varaus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1321,
+        819.0,
+        1399,
+        832.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        19
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Lähikirjasto",
+      "observed": "Lähikirjasto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        822,
+        932.0,
+        978,
+        950.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        22
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Keskuskirjasto",
+      "observed": "Keskuskirjasto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        349,
+        818.0,
+        531,
+        836.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        17
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Kuljetus",
+      "observed": "Kuljetus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        198,
+        542.0,
+        302,
+        560.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Noutopiste",
+      "observed": "Noutopiste",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        375,
+        266.0,
+        505,
+        284.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 6,
+      "expected": "Laina",
+      "observed": "Laina",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        867,
+        152.0,
+        932,
+        166.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 7,
+      "expected": "Palautus",
+      "observed": "Palautus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1308,
+        266.0,
+        1412,
+        280.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "pyytää",
+      "observed": "pyytää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1405,
+        672,
+        1505,
+        704
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        16
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "kohdistaa",
+      "observed": "kohdistaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1060,
+        868,
+        1199,
+        897
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        21
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "tiedustelee",
+      "observed": "tiedustelee",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        588,
+        868,
+        753,
+        897
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        20
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "lähettää",
+      "observed": "lähettää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        282,
+        674,
+        408,
+        703
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        15
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "toimittaa",
+      "observed": "toimittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        276,
+        398,
+        415,
+        427
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "luovuttaa",
+      "observed": "luovuttaa anbo",
+      "exact": false,
+      "character_edits": 5,
+      "bbox": [
+        600,
+        202,
+        739,
+        231
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2,
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 6,
+      "expected": "palautetaan",
+      "observed": "palautetaan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1048,
+        200,
+        1213,
+        233
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 7,
+      "expected": "vastaanottaa",
+      "observed": "vastaanottaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1041,
+        593,
+        1219,
+        621
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        13
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 8,
+      "expected": "noutoilmoitus",
+      "observed": "Ite noutoilmoitus",
+      "exact": false,
+      "character_edits": 4,
+      "bbox": [
+        900,
+        398,
+        1091,
+        427
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        7,
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 9,
+      "expected": "saatavuus",
+      "observed": "saatavuus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        830,
+        812,
+        969,
+        840
+      ],
+      "rotation": -0.0,
+      "ocr_indices": [
+        18
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 10,
+      "expected": "varatieto",
+      "observed": "varatieto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        830,
+        536,
+        969,
+        565
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        11
+      ]
+    }
+  ],
+  "unmatched_ocr": [
+    {
+      "index": 14,
+      "text": "ttatot",
+      "bbox": [
+        293,
+        617,
+        338,
+        676
+      ]
+    }
+  ]
+}

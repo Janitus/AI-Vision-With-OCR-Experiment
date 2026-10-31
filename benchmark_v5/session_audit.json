@@ -1,0 +1,14 @@
+{
+  "blind_vision": {
+    "prediction_count": 12,
+    "reported_path_count": 37,
+    "all_reported_paths_within_assigned_inputs_or_outputs": true,
+    "limitation": "self-reported access log; no filesystem-enforced isolation"
+  },
+  "blind_fusion": {
+    "prediction_count": 12,
+    "reported_path_count": 54,
+    "all_reported_paths_within_assigned_inputs_or_outputs": true,
+    "limitation": "self-reported access log; no filesystem-enforced isolation"
+  }
+}

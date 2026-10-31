@@ -1,0 +1,88 @@
+{
+  "paivystyksen_verkko": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 11,
+    "removed_v3_edge_indices": []
+  },
+  "ministerioiden_hanke": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 11,
+    "removed_v3_edge_indices": [
+      11
+    ]
+  },
+  "saatutkimus": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 9,
+    "removed_v3_edge_indices": [
+      4,
+      6
+    ]
+  },
+  "sahkohaorio": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 11,
+    "removed_v3_edge_indices": []
+  },
+  "junaliikenteen_ohjaus": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 12,
+    "removed_v3_edge_indices": []
+  },
+  "rokotusketju": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 10,
+    "removed_v3_edge_indices": [
+      10
+    ]
+  },
+  "tutkimusjulkaisu": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 8,
+    "removed_v3_edge_indices": [
+      2,
+      8
+    ]
+  },
+  "kaukolainaus": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 11,
+    "removed_v3_edge_indices": []
+  },
+  "tulvaviestinta": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 12,
+    "removed_v3_edge_indices": [
+      11
+    ]
+  },
+  "veron_oikaisu": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 10,
+    "removed_v3_edge_indices": [
+      9
+    ]
+  },
+  "rail_curved": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 12,
+    "route_qa_reference": "../route_fixtures/route_qa.json"
+  },
+  "rail_elbow": {
+    "hidden_by_nonendpoint_nodes": 0,
+    "coincident_edge_pairs": 0,
+    "checked_edges": 12,
+    "route_qa_reference": "../route_fixtures/route_qa.json"
+  }
+}

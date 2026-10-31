@@ -1,0 +1,162 @@
+{
+  "title": "Sähköhäiriön tilannekuva",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Valvomo",
+      "type": "hex",
+      "center": [
+        900,
+        160
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Mittari",
+      "type": "hex",
+      "center": [
+        440,
+        275
+      ]
+    },
+    {
+      "id": "c",
+      "label": "Korjausryhmä",
+      "type": "hex",
+      "center": [
+        1360,
+        275
+      ]
+    },
+    {
+      "id": "d",
+      "label": "Kuluttaja",
+      "type": "hex",
+      "center": [
+        250,
+        550
+      ]
+    },
+    {
+      "id": "e",
+      "label": "Voimala",
+      "type": "hex",
+      "center": [
+        1550,
+        550
+      ]
+    },
+    {
+      "id": "f",
+      "label": "Jakeluverkko",
+      "type": "hex",
+      "center": [
+        440,
+        825
+      ]
+    },
+    {
+      "id": "g",
+      "label": "Kantaverkko",
+      "type": "hex",
+      "center": [
+        1360,
+        825
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Sähköasema",
+      "type": "hex",
+      "center": [
+        900,
+        940
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "b",
+      "target": "a",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "a",
+      "target": "c",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "d",
+      "target": "b",
+      "relationship": "kuittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "a",
+      "relationship": "vikatieto",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "a",
+      "target": "g",
+      "relationship": "valvoo",
+      "direction": "source_to_target",
+      "dashed": true
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "varasyöttö",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "h",
+      "relationship": "korjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "d",
+      "relationship": "jakaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "h",
+      "target": "f",
+      "relationship": "muuntaa",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "The horizontal varasyöttö connection has no visible arrowhead."
+  ],
+  "ocr_disagreements": [
+    "Several RapidOCR strings are artifacts; the image reads Valvomo, Mittari, Korjausryhmä, Kuluttaja, Voimala, Jakeluverkko, Kantaverkko, and Sähköasema."
+  ]
+}

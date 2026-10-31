@@ -1,0 +1,138 @@
+{
+  "title": "Tutkimusjulkaisun työnkulku",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Tutkimuskysymys",
+      "type": "round",
+      "center": [
+        900,
+        185
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Aineiston keruu",
+      "type": "round",
+      "center": [
+        320,
+        390
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Eettinen arvio",
+      "type": "round",
+      "center": [
+        900,
+        390
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Mittaus",
+      "type": "round",
+      "center": [
+        1480,
+        390
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Tallennus",
+      "type": "round",
+      "center": [
+        320,
+        720
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Analyysi",
+      "type": "round",
+      "center": [
+        900,
+        720
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Vertaisarvio",
+      "type": "round",
+      "center": [
+        1480,
+        720
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Julkaisu",
+      "type": "round",
+      "center": [
+        900,
+        955
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n3",
+      "relationship": "edellyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "arkistoi",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "mahdollistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "suosittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n8",
+      "relationship": "avoin aineisto",
+      "direction": "undirected",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Tallennus–Julkaisu avoin aineisto: no visible arrowhead; marked undirected."
+  ]
+}

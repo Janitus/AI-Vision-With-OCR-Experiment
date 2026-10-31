@@ -1,0 +1,685 @@
+{
+  "title": "Rokotusketjun seuranta",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Varaus",
+      "type": "round",
+      "center": [
+        270,
+        220
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Asiakas",
+      "type": "text",
+      "center": [
+        900,
+        220
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Hoitaja",
+      "type": "box",
+      "center": [
+        1530,
+        220
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Annos",
+      "type": "diamond",
+      "center": [
+        270,
+        550
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Rokotuspiste",
+      "type": "round",
+      "center": [
+        900,
+        550
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Kirjaus",
+      "type": "box",
+      "center": [
+        1530,
+        550
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Seuranta",
+      "type": "text",
+      "center": [
+        270,
+        880
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Rekisteri",
+      "type": "hex",
+      "center": [
+        900,
+        880
+      ]
+    },
+    {
+      "id": "n9",
+      "label": "Muistutus",
+      "type": "round",
+      "center": [
+        1530,
+        880
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "toimitetaan",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "merkitsee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n6",
+      "relationship": "kirjaa erän",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n8",
+      "relationship": "siirtää tiedon",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n9",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n9",
+      "target": "n2",
+      "relationship": "kutsuu uudelleen",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": [],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 15,
+      "text": "siirtää tiedon",
+      "confidence": 0.99988,
+      "polygon": [
+        [
+          1156.0,
+          703.0
+        ],
+        [
+          1274.0,
+          703.0
+        ],
+        [
+          1274.0,
+          727.0
+        ],
+        [
+          1156.0,
+          727.0
+        ]
+      ],
+      "center_distance": 0.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n6",
+      "ocr_index": 12,
+      "text": "Kirjaus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1495.0,
+          535.0
+        ],
+        [
+          1565.0,
+          535.0
+        ],
+        [
+          1565.0,
+          564.0
+        ],
+        [
+          1495.0,
+          564.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 18,
+      "text": "lähettää",
+      "confidence": 0.99717,
+      "polygon": [
+        [
+          1176.0,
+          867.0
+        ],
+        [
+          1254.0,
+          867.0
+        ],
+        [
+          1254.0,
+          892.0
+        ],
+        [
+          1176.0,
+          892.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 6,
+      "text": "tarkistaa",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          860.0,
+          375.0
+        ],
+        [
+          939.0,
+          375.0
+        ],
+        [
+          939.0,
+          396.0
+        ],
+        [
+          860.0,
+          396.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 9,
+      "text": "toimitetaan",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          529.0,
+          539.0
+        ],
+        [
+          640.0,
+          539.0
+        ],
+        [
+          640.0,
+          562.0
+        ],
+        [
+          529.0,
+          562.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n5",
+      "ocr_index": 10,
+      "text": "Rokotuspiste",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          838.0,
+          536.0
+        ],
+        [
+          963.0,
+          536.0
+        ],
+        [
+          963.0,
+          563.0
+        ],
+        [
+          838.0,
+          563.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n4",
+      "ocr_index": 8,
+      "text": "Annos",
+      "confidence": 0.99996,
+      "polygon": [
+        [
+          236.0,
+          534.0
+        ],
+        [
+          305.0,
+          536.0
+        ],
+        [
+          304.0,
+          564.0
+        ],
+        [
+          235.0,
+          562.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n1",
+      "ocr_index": 1,
+      "text": "Varaus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          233.0,
+          203.0
+        ],
+        [
+          307.0,
+          206.0
+        ],
+        [
+          306.0,
+          235.0
+        ],
+        [
+          232.0,
+          232.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 2,
+      "text": "vahvistaa",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          540.0,
+          208.0
+        ],
+        [
+          628.0,
+          208.0
+        ],
+        [
+          628.0,
+          233.0
+        ],
+        [
+          540.0,
+          233.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 4,
+      "text": "saapuu",
+      "confidence": 0.99859,
+      "polygon": [
+        [
+          1180.0,
+          208.0
+        ],
+        [
+          1251.0,
+          208.0
+        ],
+        [
+          1251.0,
+          230.0
+        ],
+        [
+          1180.0,
+          230.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 11,
+      "text": "merkitsee",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1170.0,
+          540.0
+        ],
+        [
+          1262.0,
+          540.0
+        ],
+        [
+          1262.0,
+          561.0
+        ],
+        [
+          1170.0,
+          561.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 14,
+      "text": "käynnistää",
+      "confidence": 0.99864,
+      "polygon": [
+        [
+          852.0,
+          702.0
+        ],
+        [
+          949.0,
+          702.0
+        ],
+        [
+          949.0,
+          726.0
+        ],
+        [
+          852.0,
+          726.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n7",
+      "ocr_index": 16,
+      "text": "Seuranta",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          224.0,
+          865.0
+        ],
+        [
+          315.0,
+          865.0
+        ],
+        [
+          315.0,
+          893.0
+        ],
+        [
+          224.0,
+          893.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n2",
+      "ocr_index": 3,
+      "text": "Asiakas",
+      "confidence": 0.99995,
+      "polygon": [
+        [
+          862.0,
+          204.0
+        ],
+        [
+          938.0,
+          204.0
+        ],
+        [
+          938.0,
+          233.0
+        ],
+        [
+          862.0,
+          233.0
+        ]
+      ],
+      "center_distance": 1.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 7,
+      "text": "kirjaa erän",
+      "confidence": 0.99991,
+      "polygon": [
+        [
+          1481.0,
+          368.0
+        ],
+        [
+          1579.0,
+          370.0
+        ],
+        [
+          1579.0,
+          399.0
+        ],
+        [
+          1480.0,
+          396.0
+        ]
+      ],
+      "center_distance": 1.8
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n8",
+      "ocr_index": 17,
+      "text": "Rekisteri",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          857.0,
+          864.0
+        ],
+        [
+          943.0,
+          864.0
+        ],
+        [
+          943.0,
+          892.0
+        ],
+        [
+          857.0,
+          892.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n9",
+      "ocr_index": 19,
+      "text": "Muistutus",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          1479.0,
+          864.0
+        ],
+        [
+          1581.0,
+          864.0
+        ],
+        [
+          1581.0,
+          892.0
+        ],
+        [
+          1479.0,
+          892.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n3",
+      "ocr_index": 5,
+      "text": "Hoitaja",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          1490.0,
+          201.0
+        ],
+        [
+          1568.0,
+          204.0
+        ],
+        [
+          1567.0,
+          236.0
+        ],
+        [
+          1489.0,
+          233.0
+        ]
+      ],
+      "center_distance": 2.1
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Rokotusketjun seuranta",
+      "confidence": 0.98735,
+      "polygon": [
+        [
+          33.0,
+          32.0
+        ],
+        [
+          430.0,
+          32.0
+        ],
+        [
+          430.0,
+          72.0
+        ],
+        [
+          33.0,
+          72.0
+        ]
+      ],
+      "center_distance": 68.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 13,
+      "text": "kutsuu uudelleen",
+      "confidence": 0.99979,
+      "polygon": [
+        [
+          1218.0,
+          624.0
+        ],
+        [
+          1370.0,
+          624.0
+        ],
+        [
+          1370.0,
+          644.0
+        ],
+        [
+          1218.0,
+          644.0
+        ]
+      ],
+      "center_distance": 115.3
+    }
+  ],
+  "ocr_unassigned": [],
+  "ocr_disagreements": []
+}

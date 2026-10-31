@@ -1,0 +1,619 @@
+{
+  "title": "Säähavaintojen yhdistäminen",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Sääasema",
+      "type": "text",
+      "center": [
+        900,
+        220
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Tuulianturi",
+      "type": "text",
+      "center": [
+        320,
+        392
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Sademittari",
+      "type": "text",
+      "center": [
+        900,
+        392
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Lämpöanturi",
+      "type": "text",
+      "center": [
+        1480,
+        392
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Raakahavainnot",
+      "type": "text",
+      "center": [
+        320,
+        720
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Laatutarkistus",
+      "type": "text",
+      "center": [
+        900,
+        720
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Malliajo",
+      "type": "text",
+      "center": [
+        1480,
+        720
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Ennuste",
+      "type": "text",
+      "center": [
+        900,
+        955
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n2",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "varatieto",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "kokoaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "vertaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n6",
+      "relationship": "palaute",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": [
+    "Tuulianturi–Raakahavainnot: no visible arrowhead; marked undirected."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "node",
+      "target_key": "n2",
+      "ocr_index": 5,
+      "text": "Tuulianturi",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          254.0,
+          378.0
+        ],
+        [
+          386.0,
+          378.0
+        ],
+        [
+          386.0,
+          405.0
+        ],
+        [
+          254.0,
+          405.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n4",
+      "ocr_index": 7,
+      "text": "Lämpöanturi",
+      "confidence": 0.99922,
+      "polygon": [
+        [
+          1404.0,
+          377.0
+        ],
+        [
+          1557.0,
+          377.0
+        ],
+        [
+          1557.0,
+          407.0
+        ],
+        [
+          1404.0,
+          407.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 11,
+      "text": "vertaa",
+      "confidence": 0.9991,
+      "polygon": [
+        [
+          572.0,
+          708.0
+        ],
+        [
+          647.0,
+          708.0
+        ],
+        [
+          647.0,
+          732.0
+        ],
+        [
+          572.0,
+          732.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n3",
+      "ocr_index": 6,
+      "text": "Sademittari",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          831.0,
+          378.0
+        ],
+        [
+          970.0,
+          378.0
+        ],
+        [
+          970.0,
+          405.0
+        ],
+        [
+          831.0,
+          405.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n6",
+      "ocr_index": 12,
+      "text": "Laatutarkistus",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          815.0,
+          708.0
+        ],
+        [
+          985.0,
+          710.0
+        ],
+        [
+          985.0,
+          734.0
+        ],
+        [
+          815.0,
+          732.0
+        ]
+      ],
+      "center_distance": 1.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 15,
+      "text": "palaute",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          859.0,
+          824.0
+        ],
+        [
+          943.0,
+          824.0
+        ],
+        [
+          943.0,
+          852.0
+        ],
+        [
+          859.0,
+          852.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 16,
+      "text": "tuottaa",
+      "confidence": 0.99991,
+      "polygon": [
+        [
+          1148.0,
+          826.0
+        ],
+        [
+          1230.0,
+          826.0
+        ],
+        [
+          1230.0,
+          850.0
+        ],
+        [
+          1148.0,
+          850.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 9,
+      "text": "varatieto",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          268.0,
+          541.0
+        ],
+        [
+          370.0,
+          541.0
+        ],
+        [
+          370.0,
+          569.0
+        ],
+        [
+          268.0,
+          569.0
+        ]
+      ],
+      "center_distance": 1.4
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n7",
+      "ocr_index": 14,
+      "text": "Malliajo",
+      "confidence": 0.9997,
+      "polygon": [
+        [
+          1432.0,
+          704.0
+        ],
+        [
+          1527.0,
+          707.0
+        ],
+        [
+          1526.0,
+          738.0
+        ],
+        [
+          1431.0,
+          736.0
+        ]
+      ],
+      "center_distance": 1.6
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n8",
+      "ocr_index": 17,
+      "text": "Ennuste",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          850.0,
+          943.0
+        ],
+        [
+          950.0,
+          943.0
+        ],
+        [
+          950.0,
+          971.0
+        ],
+        [
+          850.0,
+          971.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 13,
+      "text": "vahvistaa",
+      "confidence": 0.99993,
+      "polygon": [
+        [
+          1134.0,
+          708.0
+        ],
+        [
+          1243.0,
+          710.0
+        ],
+        [
+          1242.0,
+          734.0
+        ],
+        [
+          1134.0,
+          732.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n5",
+      "ocr_index": 10,
+      "text": "Raakahavainnot",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          225.0,
+          709.0
+        ],
+        [
+          419.0,
+          709.0
+        ],
+        [
+          419.0,
+          735.0
+        ],
+        [
+          225.0,
+          735.0
+        ]
+      ],
+      "center_distance": 2.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 4,
+      "text": "mittaa",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          569.0,
+          289.0
+        ],
+        [
+          642.0,
+          264.0
+        ],
+        [
+          650.0,
+          289.0
+        ],
+        [
+          577.0,
+          314.0
+        ]
+      ],
+      "center_distance": 17.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 8,
+      "text": "kokoaa",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          570.0,
+          439.0
+        ],
+        [
+          651.0,
+          439.0
+        ],
+        [
+          651.0,
+          467.0
+        ],
+        [
+          570.0,
+          467.0
+        ]
+      ],
+      "center_distance": 17.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 3,
+      "text": "mittaa",
+      "confidence": 0.99994,
+      "polygon": [
+        [
+          1157.0,
+          263.0
+        ],
+        [
+          1231.0,
+          289.0
+        ],
+        [
+          1222.0,
+          314.0
+        ],
+        [
+          1148.0,
+          289.0
+        ]
+      ],
+      "center_distance": 17.3
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Säähavaintojen yhdistäminen",
+      "confidence": 0.98472,
+      "polygon": [
+        [
+          34.0,
+          32.0
+        ],
+        [
+          519.0,
+          32.0
+        ],
+        [
+          519.0,
+          72.0
+        ],
+        [
+          34.0,
+          72.0
+        ]
+      ],
+      "center_distance": 23.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n1",
+      "ocr_index": 1,
+      "text": "Sääasema",
+      "confidence": 0.99727,
+      "polygon": [
+        [
+          836.0,
+          172.0
+        ],
+        [
+          962.0,
+          174.0
+        ],
+        [
+          962.0,
+          201.0
+        ],
+        [
+          836.0,
+          199.0
+        ]
+      ],
+      "center_distance": 33.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 2,
+      "text": "mittaa",
+      "confidence": 0.79424,
+      "polygon": [
+        [
+          679.0,
+          249.0
+        ],
+        [
+          703.0,
+          250.0
+        ],
+        [
+          701.0,
+          325.0
+        ],
+        [
+          677.0,
+          324.0
+        ]
+      ],
+      "center_distance": 210.9
+    }
+  ],
+  "ocr_unassigned": [],
+  "ocr_disagreements": []
+}

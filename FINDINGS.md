@@ -2,38 +2,40 @@
 
 **One-file version:** [Download the illustrated PDF](finnish_diagram_extraction_findings.pdf). These are informal experiment notes, not a research paper.
 
-We reran the ten clean, synthetic Finnish-context diagrams after finding that several v3 source links were hidden by nodes or coincident with other links. The corrected set contains **83 nodes, 105 visible edges, and 198 printed text regions**. Its source PNGs pass automated checks for text clipping, text overlap, edge occlusion by unrelated nodes, and coincident edge routes. The earlier v3 graph error rates are superseded.
+We reran the ten corrected Finnish-context diagrams with two additional renderings of the rail diagram: one with curved Bézier arrows and one with right-angle detours. The straight, curved, and right-angle rail images have the same graph content, so they are paired examples rather than independent graphs.
 
-## Corrected matrix
+The twelve images contain **99 node instances, 129 edge instances, and 240 printed text regions**. Source QA found 0 clipped labels, 0 overlapping text regions, 0 links obstructed by unrelated nodes, and 0 coincident route pairs. The new routed paths also passed their dedicated geometric checks.
 
-| Approach | Task | Scorer events / 198 | Exact figures | Main events |
+## Results matrix
+
+| Approach | Output | Scorer events / 240 | Exact figures | Main event types |
 |---|---|---:|---:|---|
-| RapidOCR PP-OCRv6 Finnish | Printed text | **16 (8.1%)** | 6/10 | 2 edge-label errors; 14 unmatched boxes |
-| PaddleOCR PP-OCRv5 Finnish | Printed text | 57 (28.8%) | 1/10 | 19 edge-label errors; 38 unmatched boxes |
-| Older RapidOCR baseline | Printed text | 60 (30.3%) | 0/10 | 7 title, 17 node, 36 edge-label errors |
-| Blind Codex vision | Graph | 16 (8.1%) | 8/10 | 16 strict node-shape category mismatches |
-| Blind Codex + RapidOCR | Graph | **8 (4.0%)** | 9/10 | 8 strict node-shape category mismatches |
-| Vision + deterministic OCR evidence | Graph | 16 (8.1%) | 8/10 | Same vision graph; OCR only attached as evidence |
+| RapidOCR PP-OCRv6 Finnish | OCR text | **17 (7.1%)** | 7/12 | 0 title, 0 node, 2 edge text errors; 15 unmatched boxes |
+| PaddleOCR PP-OCRv5 Finnish | OCR text | **57 (23.8%)** | 3/12 | 0 title, 0 node, 19 edge text errors; 38 unmatched boxes |
+| Older RapidOCR baseline | OCR text | **74 (30.8%)** | 0/12 | 9 title, 23 node, 42 edge text errors; 0 unmatched boxes |
+| Blind Codex vision | Graph | **20 (8.3%)** | 7/12 | 18 shape mismatches; 1 wrong arrows; 1 wrong strokes |
+| Blind Codex + RapidOCR | Graph | **12 (5.0%)** | 8/12 | 8 shape mismatches; 3 wrong arrows; 1 wrong strokes |
+| Vision + deterministic OCR evidence | Graph | **20 (8.3%)** | 7/12 | 18 shape mismatches; 1 wrong arrows; 1 wrong strokes |
 
-Every row divides by the same **198 source items** (10 titles, 83 nodes, 105 edges), with extra outputs added to the numerator. OCR rows test printed text and its location; graph rows test complete graph elements. These percentages therefore compare methods **within the same task**, not OCR against vision as if they produced the same output. The shape-category mismatches concern ellipse versus pill, and pill versus rounded rectangle. They are strict taxonomy differences; the figures remain visually rounded in both versions.
+Every row uses 240 source items as the denominator (12 titles, 99 nodes, 129 edges); extra outputs add events to the numerator. OCR rows score printed text. Graph rows score nodes and complete edges. Their percentages describe different tasks and should not be ranked against each other as if they produce the same output.
 
-## Error breakdown
+## What changed when arrows curved or bent?
 
-| Check | Image-only vision | Image + RapidOCR | What it means |
-|---|---:|---:|---|
-| Missing or extra nodes | 0 | 0 | All 83 node positions were matched. |
-| Wrong title or node text | 0 | 0 | Printed titles and node labels matched exactly. |
-| Missing or extra edge records | 0 | 0 | All 105 source endpoint pairs were matched. |
-| Wrong edge label, arrowhead, or stroke | 0 | 0 | Printed relationships and visible marks matched. |
-| Node-shape category mismatch | 16 | 8 | Rounded shapes received a different strict type label. |
-| Arrowless semantic direction left unknown | 0 | 8 | No arrowhead was visible, so these are *not* visual arrow errors. |
+| Approach | Straight events / 21 | Curved events / 21 | Right-angle events / 21 |
+|---|---:|---:|---:|
+| RapidOCR PP-OCRv6 Finnish | 1 | 0 | 1 |
+| PaddleOCR PP-OCRv5 Finnish | 5 | 0 | 0 |
+| Older RapidOCR baseline | 8 | 7 | 7 |
+| Blind Codex vision | 8 | 0 | 0 |
+| Blind Codex + RapidOCR | 9 | 1 | 1 |
+| Vision + deterministic OCR evidence | 8 | 0 | 0 |
 
-The independent fusion run saw the anonymous images **and raw RapidOCR PP-OCRv6 medium Finnish observations**. Its lower shape-event count cannot be attributed to OCR from one run: the two fresh agents may simply have made different visual judgments. The deterministic union matched OCR text to the saved image-only graph without changing nodes or edges; its identical graph score is expected.
+These are three versions of **one** graph. The straight figure uses oval nodes while the routed variants use pill nodes; line and label placement differ too. This is a paired topology comparison, not an isolated route-shape test. It does not establish a general error rate for curved arrows or prove that OCR caused a fusion change. The prediction schema records graph connections, not the exact pixel path, so route reproduction itself is not scored.
 
-The corrected set no longer supports the earlier claim that most tested diagrams failed review-free reconstruction. Under this scorer, **both blind runs matched all 105 visible edge records**. The test remains small and synthetic, with crisp generated images, exact instructions, and procedural rather than filesystem-enforced blinding. It cannot establish a universal error rate or semantic truth beyond what the diagrams print. A cautious real-world workflow should still retain the image, OCR observations, predictions, and uncertainties for review.
+The blind image-only run and the independent image-plus-RapidOCR run saved predictions before scoring. The fusion run saw raw RapidOCR PP-OCRv6 medium Finnish observations. A deterministic evidence union kept the image-only graph unchanged and merely attached OCR boxes, so its graph score is identical by design. Arrowless links labeled semantically unknown were counted as visually faithful, not as arrow mistakes.
 
-| Corrected source | Blind image-only reconstruction |
-|---|---|
-| <img src="benchmark_v4/tutkimusjulkaisu.png" alt="Corrected research-publication source graph" width="440"> | <img src="benchmark_v4/blind_vision/rendered/case_07.png" alt="Blind reconstructed graph" width="440"> |
+| Straight baseline | Curved arrows | Right-angle detours |
+|---|---|---|
+| <img src="benchmark_v5/junaliikenteen_ohjaus.png" alt="Straight rail graph" width="300"> | <img src="benchmark_v5/rail_curved.png" alt="Curved rail graph" width="300"> | <img src="benchmark_v5/rail_elbow.png" alt="Right-angle rail graph" width="300"> |
 
-Browse [all ten source / vision / fusion comparisons](benchmark_v4/results_viewer.html), the [full validation report](benchmark_v4/REPORT.md), [matrix CSV](benchmark_v4/approach_matrix.csv), and [item-level ledger](benchmark_v4/item_error_ledger.json). The old v3 data remains available as a record of the source-graph flaw.
+Browse the [12-case source / vision / fusion viewer](benchmark_v5/results_viewer.html), [full validation report](benchmark_v5/REPORT.md), [approach matrix](benchmark_v5/approach_matrix.csv), [paired route results](benchmark_v5/paired_results.csv), and [item-level ledger](benchmark_v5/item_error_ledger.json). The ten-case v4 report remains archived separately. This clean synthetic experiment does not test real-world semantic truth or a universal reliability rate.

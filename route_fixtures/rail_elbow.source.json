@@ -3,7 +3,7 @@
   "title": "Junaliikenteen ohjaus",
   "context": "Liikenne",
   "layout": "LR",
-  "shape": "circle",
+  "shape": "pill",
   "font": "arial_bold",
   "size": 21,
   "background": "#f8fbff",

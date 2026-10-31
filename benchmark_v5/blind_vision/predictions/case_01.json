@@ -1,0 +1,157 @@
+{
+  "title": "Päivystyksen hoitoverkko",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Potilaan yhteydenotto",
+      "type": "round",
+      "center": [
+        250,
+        260
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Hoitaja",
+      "type": "round",
+      "center": [
+        680,
+        260
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Päivystävä lääkäri",
+      "type": "round",
+      "center": [
+        1120,
+        260
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Erikoissairaanhoito",
+      "type": "round",
+      "center": [
+        1550,
+        260
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Puhelinneuvonta",
+      "type": "round",
+      "center": [
+        250,
+        830
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Laboratorio",
+      "type": "round",
+      "center": [
+        680,
+        830
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Kuvantaminen",
+      "type": "round",
+      "center": [
+        1120,
+        830
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Jatkohoito",
+      "type": "round",
+      "center": [
+        1550,
+        830
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "kirjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "arvioi hoidon tarpeen",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n6",
+      "relationship": "tilaa kokeet",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n7",
+      "relationship": "pyytää kuvauksen",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n8",
+      "relationship": "suunnittelee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "varaa ajan",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "välittää näytteet",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "toimittaa kuvat",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n3",
+      "relationship": "palauttaa tulokset",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": []
+}

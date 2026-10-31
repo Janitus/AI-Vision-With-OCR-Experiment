@@ -1,5 +1,9 @@
 # OCR + vision graph reconstruction: short report
 
+## Latest routed-arrow rerun (v5)
+
+[Short findings](FINDINGS.md) · [full report](benchmark_v5/REPORT.md) · [paired route results](benchmark_v5/paired_results.csv). This includes ten corrected v4 figures plus curved and right-angle versions of one rail graph. The rail trio is paired, not independent.
+
 ## Current corrected rerun (v4)
 
 [Short findings](FINDINGS.md) · [Full v4 report](benchmark_v4/REPORT.md). V4 removes eight visually ambiguous source edges from v3 and reruns all three OCR engines plus two fresh blind Codex approaches. Both blind runs matched 105/105 visible edge records under the corrected visual rubric. Strict graph scorer events are 16/198 for image-only vision and 8/198 for image + RapidOCR, all from rounded node-shape category disagreements. The earlier v3 graph error rates are superseded.

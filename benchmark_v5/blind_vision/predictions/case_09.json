@@ -1,0 +1,175 @@
+{
+  "title": "Tulvatilanteen viestintä",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Sadehavainto",
+      "type": "box",
+      "center": [
+        270,
+        220
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Hätäkeskus",
+      "type": "box",
+      "center": [
+        900,
+        220
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Pelastuslaitos",
+      "type": "box",
+      "center": [
+        1530,
+        220
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Kuntalainen",
+      "type": "box",
+      "center": [
+        270,
+        550
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Tilannekeskus",
+      "type": "box",
+      "center": [
+        900,
+        550
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Vesilaitos",
+      "type": "box",
+      "center": [
+        1530,
+        550
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Evakuointi",
+      "type": "box",
+      "center": [
+        270,
+        880
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Sairaala",
+      "type": "box",
+      "center": [
+        900,
+        880
+      ]
+    },
+    {
+      "id": "n9",
+      "label": "Tiedote",
+      "type": "box",
+      "center": [
+        1530,
+        880
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "välittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n4",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "yhteys",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n5",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "pyytää arviota",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n7",
+      "relationship": "määrää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n8",
+      "relationship": "turvaa veden",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "ohjaa potilaita",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n9",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n9",
+      "target": "n4",
+      "relationship": "julkaisee",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Hätäkeskus–Tilannekeskus yhteys: no visible arrowhead; marked undirected."
+  ]
+}

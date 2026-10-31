@@ -1,0 +1,56 @@
+Input reads:
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images | tools.exec_command (PowerShell Get-ChildItem)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr | tools.exec_command (PowerShell Get-ChildItem)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions | tools.exec_command (Python glob)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\build_predictions.py | tools.exec_command (Python execution)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_01.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_02.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_03.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_04.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_05.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_06.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_07.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_08.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_09.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_10.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_11.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\images\case_12.png | tools.view_image
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_01.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_02.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_03.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_04.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_05.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_06.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_07.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_08.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_09.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_10.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_11.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\ocr\case_12.rapid_v6_medium_fi.json | tools.exec_command (PowerShell Get-Content)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_01.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_02.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_03.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_04.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_05.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_06.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_07.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_08.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_09.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_10.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_11.json | tools.exec_command (Python validation read)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_12.json | tools.exec_command (Python validation read)
+Output writes:
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\build_predictions.py | tools.apply_patch
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_01.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_02.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_03.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_04.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_05.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_06.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_07.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_08.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_09.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_10.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_11.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\predictions\case_12.json | tools.exec_command (Python)
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v5\fusion\access_log.txt | tools.exec_command (Python)

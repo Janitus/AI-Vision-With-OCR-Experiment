@@ -1,0 +1,145 @@
+{
+  "title": "Säähavaintojen yhdistäminen",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Sääasema",
+      "type": "text",
+      "center": [
+        900,
+        220
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Tuulianturi",
+      "type": "text",
+      "center": [
+        320,
+        392
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Sademittari",
+      "type": "text",
+      "center": [
+        900,
+        392
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Lämpöanturi",
+      "type": "text",
+      "center": [
+        1480,
+        392
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Raakahavainnot",
+      "type": "text",
+      "center": [
+        320,
+        720
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Laatutarkistus",
+      "type": "text",
+      "center": [
+        900,
+        720
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Malliajo",
+      "type": "text",
+      "center": [
+        1480,
+        720
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Ennuste",
+      "type": "text",
+      "center": [
+        900,
+        955
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n2",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n1",
+      "relationship": "mittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "varatieto",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "kokoaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "vertaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "tuottaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n6",
+      "relationship": "palaute",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": [
+    "Tuulianturi–Raakahavainnot: no visible arrowhead; marked undirected."
+  ]
+}

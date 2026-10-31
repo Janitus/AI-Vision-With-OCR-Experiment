@@ -1,0 +1,735 @@
+{
+  "id": "rail_elbow",
+  "title": "Junaliikenteen ohjaus",
+  "context": "Liikenne",
+  "layout": "LR",
+  "shape": "pill",
+  "font": "arial_bold",
+  "size": 21,
+  "background": "#f8fbff",
+  "ink": "#173452",
+  "edge": "#2b6eaa",
+  "palette": [
+    "#dcecff",
+    "#e1f5eb",
+    "#fff0d8",
+    "#eee4fb"
+  ],
+  "nodes": [
+    {
+      "label": "Matkustaja",
+      "x": 250,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Aikataulu",
+      "x": 680,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Laituri",
+      "x": 1120,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Juna",
+      "x": 1550,
+      "y": 260,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Liikenteenohjaus",
+      "x": 250,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Vaihtoasema",
+      "x": 680,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Häiriöviesti",
+      "x": 1120,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    },
+    {
+      "label": "Määränpää",
+      "x": 1550,
+      "y": 830,
+      "shape": null,
+      "color": null,
+      "w": 235,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "tarkistaa",
+      "label_xy": [
+        465,
+        125
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          368,
+          260
+        ],
+        [
+          562,
+          260
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          367.5,
+          260
+        ],
+        [
+          "L",
+          420,
+          260
+        ],
+        [
+          "L",
+          420,
+          145
+        ],
+        [
+          "L",
+          510,
+          145
+        ],
+        [
+          "L",
+          510,
+          260
+        ],
+        [
+          "L",
+          562.5,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "osoittaa",
+      "label_xy": [
+        900,
+        125
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          798,
+          260
+        ],
+        [
+          1002,
+          260
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          797.5,
+          260
+        ],
+        [
+          "L",
+          850,
+          260
+        ],
+        [
+          "L",
+          850,
+          125
+        ],
+        [
+          "L",
+          950,
+          125
+        ],
+        [
+          "L",
+          950,
+          260
+        ],
+        [
+          "L",
+          1002.5,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "ohjaa",
+      "label_xy": [
+        1335,
+        125
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1238,
+          260
+        ],
+        [
+          1432,
+          260
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          1237.5,
+          260
+        ],
+        [
+          "L",
+          1290,
+          260
+        ],
+        [
+          "L",
+          1290,
+          145
+        ],
+        [
+          "L",
+          1380,
+          145
+        ],
+        [
+          "L",
+          1380,
+          260
+        ],
+        [
+          "L",
+          1432.5,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "label": "lähettää kyselyn",
+      "label_xy": [
+        110,
+        545
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          250,
+          310
+        ],
+        [
+          250,
+          780
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          250,
+          310.0
+        ],
+        [
+          "L",
+          250,
+          390
+        ],
+        [
+          "L",
+          80,
+          390
+        ],
+        [
+          "L",
+          80,
+          700
+        ],
+        [
+          "L",
+          250,
+          700
+        ],
+        [
+          "L",
+          250,
+          780.0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "vahvistaa vaihdon",
+      "label_xy": [
+        465,
+        985
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          368,
+          830
+        ],
+        [
+          562,
+          830
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          367.5,
+          830
+        ],
+        [
+          "L",
+          420,
+          830
+        ],
+        [
+          "L",
+          420,
+          965
+        ],
+        [
+          "L",
+          510,
+          965
+        ],
+        [
+          "L",
+          510,
+          830
+        ],
+        [
+          "L",
+          562.5,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "ilmoittaa",
+      "label_xy": [
+        900,
+        985
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          798,
+          830
+        ],
+        [
+          1002,
+          830
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          797.5,
+          830
+        ],
+        [
+          "L",
+          850,
+          830
+        ],
+        [
+          "L",
+          850,
+          965
+        ],
+        [
+          "L",
+          950,
+          965
+        ],
+        [
+          "L",
+          950,
+          830
+        ],
+        [
+          "L",
+          1002.5,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "päivittää",
+      "label_xy": [
+        1335,
+        985
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1238,
+          830
+        ],
+        [
+          1432,
+          830
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          1237.5,
+          830
+        ],
+        [
+          "L",
+          1290,
+          830
+        ],
+        [
+          "L",
+          1290,
+          965
+        ],
+        [
+          "L",
+          1380,
+          965
+        ],
+        [
+          "L",
+          1380,
+          830
+        ],
+        [
+          "L",
+          1432.5,
+          830
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 5,
+      "label": "reitittää",
+      "label_xy": [
+        820,
+        530
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          680,
+          310
+        ],
+        [
+          680,
+          780
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          680,
+          310.0
+        ],
+        [
+          "L",
+          680,
+          380
+        ],
+        [
+          "L",
+          810,
+          380
+        ],
+        [
+          "L",
+          810,
+          690
+        ],
+        [
+          "L",
+          680,
+          690
+        ],
+        [
+          "L",
+          680,
+          780.0
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 6,
+      "label": "varoitus",
+      "label_xy": [
+        980,
+        530
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1120,
+          310
+        ],
+        [
+          1120,
+          780
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          1120,
+          310.0
+        ],
+        [
+          "L",
+          1120,
+          380
+        ],
+        [
+          "L",
+          990,
+          380
+        ],
+        [
+          "L",
+          990,
+          690
+        ],
+        [
+          "L",
+          1120,
+          690
+        ],
+        [
+          "L",
+          1120,
+          780.0
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "label": "muuttaa laiturin",
+      "label_xy": [
+        680,
+        585
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          326,
+          780
+        ],
+        [
+          1044,
+          310
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          300,
+          780.0
+        ],
+        [
+          "L",
+          300,
+          610
+        ],
+        [
+          "L",
+          920,
+          610
+        ],
+        [
+          "L",
+          920,
+          350
+        ],
+        [
+          "L",
+          1002.5,
+          350
+        ],
+        [
+          "L",
+          1002.5,
+          260
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "label": "saapuu",
+      "label_xy": [
+        1690,
+        550
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1550,
+          310
+        ],
+        [
+          1550,
+          780
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          1550,
+          310.0
+        ],
+        [
+          "L",
+          1550,
+          380
+        ],
+        [
+          "L",
+          1730,
+          380
+        ],
+        [
+          "L",
+          1730,
+          700
+        ],
+        [
+          "L",
+          1550,
+          700
+        ],
+        [
+          "L",
+          1550,
+          780.0
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 3,
+      "label": "tilanne",
+      "label_xy": [
+        1435,
+        515
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          1158,
+          780
+        ],
+        [
+          1512,
+          310
+        ]
+      ],
+      "route": [
+        [
+          "M",
+          1170,
+          780.0
+        ],
+        [
+          "L",
+          1170,
+          540
+        ],
+        [
+          "L",
+          1500,
+          540
+        ],
+        [
+          "L",
+          1500,
+          310.0
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true,
+  "route_style": "orthogonal detours"
+}

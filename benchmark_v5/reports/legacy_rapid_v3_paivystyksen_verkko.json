@@ -1,0 +1,399 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 0,
+      "total": 1,
+      "recall": 0.0,
+      "cer": 0.0417
+    },
+    "node": {
+      "exact": 7,
+      "total": 8,
+      "recall": 0.875,
+      "cer": 0.0531
+    },
+    "edge": {
+      "exact": 8,
+      "total": 11,
+      "recall": 0.7273,
+      "cer": 0.0643
+    },
+    "rotated_edge": {
+      "exact": 0,
+      "total": 1,
+      "recall": 0.0
+    },
+    "all": {
+      "exact": 15,
+      "total": 20,
+      "recall": 0.75,
+      "cer": 0.0578,
+      "observed_items": 20,
+      "extra_ocr_items": 0,
+      "precision": 0.75
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Päivystyksen hoitoverkko",
+      "observed": "Paivystyksen hoitoverkko",
+      "exact": false,
+      "character_edits": 1,
+      "bbox": [
+        38,
+        38,
+        456,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Potilaan yhteydenotto",
+      "observed": "Potilaan yhteydenotto",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        144,
+        252.0,
+        356,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Hoitaja",
+      "observed": "Hoitaja",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        646,
+        253.0,
+        714,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Päivystävä lääkäri",
+      "observed": "Paivystava laakari",
+      "exact": false,
+      "character_edits": 6,
+      "bbox": [
+        1037,
+        252.0,
+        1204,
+        274.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Erikoissairaanhoito",
+      "observed": "Erikoissairaanhoito",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1460,
+        252.0,
+        1639,
+        269.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Puhelinneuvonta",
+      "observed": "Puhelinneuvonta",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        170,
+        822.0,
+        330,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        15
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Laboratorio",
+      "observed": "Laboratorio",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        624,
+        822.0,
+        736,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        16
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 6,
+      "expected": "Kuvantaminen",
+      "observed": "Kuvantaminen",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1051,
+        823.0,
+        1188,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        17
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 7,
+      "expected": "Jatkohoito",
+      "observed": "Jatkohoito",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1500,
+        822.0,
+        1600,
+        839.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        19
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "kirjaa",
+      "observed": "kirjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        430,
+        242,
+        501,
+        279
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "arvioi hoidon tarpeen",
+      "observed": "arvioi hoidon tarpeen",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        790,
+        136,
+        1010,
+        173
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "lähettää",
+      "observed": "lahettaa",
+      "exact": false,
+      "character_edits": 3,
+      "bbox": [
+        1286,
+        244,
+        1383,
+        276
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "ohjaa",
+      "observed": "ohjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        214,
+        526,
+        287,
+        563
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "varaa ajan",
+      "observed": "varaa ajan",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        406,
+        812,
+        523,
+        849
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        18
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "välittää näytteet",
+      "observed": "valittaa naytteet",
+      "exact": false,
+      "character_edits": 4,
+      "bbox": [
+        814,
+        706,
+        985,
+        743
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        13
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 6,
+      "expected": "toimittaa kuvat",
+      "observed": "toimittaa kuvat",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1254,
+        709,
+        1415,
+        741
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        14
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 7,
+      "expected": "tilaa kokeet",
+      "observed": "tilaa kokeet",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        616,
+        529,
+        744,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 8,
+      "expected": "pyytää kuvauksen",
+      "observed": "pyytaa kuvauksen",
+      "exact": false,
+      "character_edits": 2,
+      "bbox": [
+        1102,
+        452,
+        1139,
+        638
+      ],
+      "rotation": -90.0,
+      "ocr_indices": [
+        8
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 9,
+      "expected": "palauttaa tulokset",
+      "observed": "palauttaa tulokset",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        806,
+        526,
+        994,
+        563
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        11
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 10,
+      "expected": "suunnittelee",
+      "observed": "suunnittelee",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1482,
+        529,
+        1618,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        12
+      ]
+    }
+  ],
+  "unmatched_ocr": []
+}

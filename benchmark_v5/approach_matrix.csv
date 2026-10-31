@@ -1,0 +1,7 @@
+﻿approach,mode,source_items,errors,error_rate,exact_text,extra_text,title_errors,node_label_errors,edge_label_errors,shape_mismatches,missing_nodes,extra_nodes,missing_edges,extra_edges,wrong_arrows,unresolved_directed_arrows,arrowless_semantics_unknown,wrong_strokes,fully_correct_edges,node_precision,node_recall,edge_precision,edge_recall,perfect_figures
+RapidOCR PP-OCRv6 Finnish,OCR text,240,17,7.1,238,15,0,0,2,,,,,,,,,,,,,,,7
+PaddleOCR PP-OCRv5 Finnish,OCR text,240,57,23.8,221,38,0,0,19,,,,,,,,,,,,,,,3
+Older RapidOCR baseline,OCR text,240,74,30.8,166,0,9,23,42,,,,,,,,,,,,,,,0
+Blind Codex vision,Graph,240,20,8.3,,,0,0,0,18,0,0,0,0,1,0,0,1,127,1.0,1.0,1.0,1.0,7
+Blind Codex + RapidOCR,Graph,240,12,5.0,,,0,0,0,8,0,0,0,0,3,0,0,1,125,1.0,1.0,1.0,1.0,8
+Vision + deterministic OCR evidence,Graph,240,20,8.3,,,0,0,0,18,0,0,0,0,1,0,0,1,127,1.0,1.0,1.0,1.0,7

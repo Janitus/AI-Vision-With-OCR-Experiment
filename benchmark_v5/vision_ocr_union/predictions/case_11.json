@@ -1,0 +1,718 @@
+{
+  "title": "Junaliikenteen ohjaus",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Matkustaja",
+      "type": "pill",
+      "center": [
+        250,
+        260
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Aikataulu",
+      "type": "pill",
+      "center": [
+        680,
+        260
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Laituri",
+      "type": "pill",
+      "center": [
+        1120,
+        260
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Juna",
+      "type": "pill",
+      "center": [
+        1550,
+        260
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Liikenteenohjaus",
+      "type": "pill",
+      "center": [
+        250,
+        830
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Vaihtoasema",
+      "type": "pill",
+      "center": [
+        680,
+        830
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Häiriöviesti",
+      "type": "pill",
+      "center": [
+        1120,
+        830
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Määränpää",
+      "type": "pill",
+      "center": [
+        1550,
+        830
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "osoittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "lähettää kyselyn",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n6",
+      "relationship": "reitittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n7",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n8",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "vahvistaa vaihdon",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n7",
+      "relationship": "tilanne",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n3",
+      "relationship": "muuttaa laiturin",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": [
+    "Juna–Häiriöviesti tilanne: no visible arrowhead; marked undirected."
+  ],
+  "union_method": "Vision graph retained; exact-text RapidOCR boxes assigned once as evidence",
+  "ocr_engine": "RapidOCR 3.10.0 PP-OCRv6 medium fi",
+  "ocr_evidence": [
+    {
+      "target_kind": "node",
+      "target_key": "n3",
+      "ocr_index": 6,
+      "text": "Laituri",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          1086.0,
+          246.0
+        ],
+        [
+          1154.0,
+          246.0
+        ],
+        [
+          1154.0,
+          275.0
+        ],
+        [
+          1086.0,
+          275.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n7",
+      "ocr_index": 16,
+      "text": "Häiriöviesti",
+      "confidence": 0.99982,
+      "polygon": [
+        [
+          1063.0,
+          817.0
+        ],
+        [
+          1177.0,
+          817.0
+        ],
+        [
+          1177.0,
+          844.0
+        ],
+        [
+          1063.0,
+          844.0
+        ]
+      ],
+      "center_distance": 0.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n2",
+      "ocr_index": 5,
+      "text": "Aikataulu",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          631.0,
+          244.0
+        ],
+        [
+          728.0,
+          247.0
+        ],
+        [
+          728.0,
+          275.0
+        ],
+        [
+          631.0,
+          273.0
+        ]
+      ],
+      "center_distance": 0.6
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n6",
+      "ocr_index": 15,
+      "text": "Vaihtoasema",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          613.0,
+          816.0
+        ],
+        [
+          746.0,
+          818.0
+        ],
+        [
+          746.0,
+          845.0
+        ],
+        [
+          613.0,
+          843.0
+        ]
+      ],
+      "center_distance": 0.7
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n4",
+      "ocr_index": 7,
+      "text": "Juna",
+      "confidence": 1.0,
+      "polygon": [
+        [
+          1523.0,
+          244.0
+        ],
+        [
+          1577.0,
+          247.0
+        ],
+        [
+          1576.0,
+          277.0
+        ],
+        [
+          1521.0,
+          275.0
+        ]
+      ],
+      "center_distance": 1.1
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n5",
+      "ocr_index": 14,
+      "text": "Liikenteenohjaus",
+      "confidence": 0.99998,
+      "polygon": [
+        [
+          166.0,
+          817.0
+        ],
+        [
+          335.0,
+          819.0
+        ],
+        [
+          334.0,
+          846.0
+        ],
+        [
+          166.0,
+          844.0
+        ]
+      ],
+      "center_distance": 1.5
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n1",
+      "ocr_index": 4,
+      "text": "Matkustaja",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          193.0,
+          247.0
+        ],
+        [
+          307.0,
+          247.0
+        ],
+        [
+          307.0,
+          277.0
+        ],
+        [
+          193.0,
+          277.0
+        ]
+      ],
+      "center_distance": 2.0
+    },
+    {
+      "target_kind": "node",
+      "target_key": "n8",
+      "ocr_index": 17,
+      "text": "Määränpää",
+      "confidence": 0.99498,
+      "polygon": [
+        [
+          1493.0,
+          819.0
+        ],
+        [
+          1607.0,
+          819.0
+        ],
+        [
+          1607.0,
+          846.0
+        ],
+        [
+          1493.0,
+          846.0
+        ]
+      ],
+      "center_distance": 2.5
+    },
+    {
+      "target_kind": "title",
+      "target_key": "title",
+      "ocr_index": 0,
+      "text": "Junaliikenteen ohjaus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          32.0,
+          30.0
+        ],
+        [
+          410.0,
+          32.0
+        ],
+        [
+          410.0,
+          77.0
+        ],
+        [
+          32.0,
+          75.0
+        ]
+      ],
+      "center_distance": 79.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 2,
+      "ocr_index": 3,
+      "text": "ohjaa",
+      "confidence": 0.99996,
+      "polygon": [
+        [
+          1307.0,
+          148.0
+        ],
+        [
+          1363.0,
+          148.0
+        ],
+        [
+          1363.0,
+          178.0
+        ],
+        [
+          1307.0,
+          178.0
+        ]
+      ],
+      "center_distance": 97.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 0,
+      "ocr_index": 1,
+      "text": "tarkistaa",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          422.0,
+          146.0
+        ],
+        [
+          507.0,
+          149.0
+        ],
+        [
+          506.0,
+          176.0
+        ],
+        [
+          422.0,
+          174.0
+        ]
+      ],
+      "center_distance": 98.8
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 1,
+      "ocr_index": 2,
+      "text": "osoittaa",
+      "confidence": 0.99996,
+      "polygon": [
+        [
+          862.0,
+          145.0
+        ],
+        [
+          938.0,
+          145.0
+        ],
+        [
+          938.0,
+          170.0
+        ],
+        [
+          862.0,
+          170.0
+        ]
+      ],
+      "center_distance": 102.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 10,
+      "ocr_index": 10,
+      "text": "tilanne",
+      "confidence": 0.99962,
+      "polygon": [
+        [
+          1401.0,
+          497.0
+        ],
+        [
+          1470.0,
+          497.0
+        ],
+        [
+          1470.0,
+          526.0
+        ],
+        [
+          1401.0,
+          526.0
+        ]
+      ],
+      "center_distance": 105.9
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 4,
+      "ocr_index": 8,
+      "text": "reitittää",
+      "confidence": 0.99937,
+      "polygon": [
+        [
+          749.0,
+          504.0
+        ],
+        [
+          828.0,
+          501.0
+        ],
+        [
+          829.0,
+          530.0
+        ],
+        [
+          750.0,
+          532.0
+        ]
+      ],
+      "center_distance": 112.6
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 5,
+      "ocr_index": 9,
+      "text": "varoitus",
+      "confidence": 0.99999,
+      "polygon": [
+        [
+          970.0,
+          503.0
+        ],
+        [
+          1051.0,
+          503.0
+        ],
+        [
+          1051.0,
+          531.0
+        ],
+        [
+          970.0,
+          531.0
+        ]
+      ],
+      "center_distance": 113.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 8,
+      "ocr_index": 19,
+      "text": "ilmoittaa",
+      "confidence": 0.99995,
+      "polygon": [
+        [
+          856.0,
+          944.0
+        ],
+        [
+          943.0,
+          947.0
+        ],
+        [
+          943.0,
+          974.0
+        ],
+        [
+          856.0,
+          971.0
+        ]
+      ],
+      "center_distance": 129.0
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 7,
+      "ocr_index": 18,
+      "text": "vahvistaa vaihdon",
+      "confidence": 0.99997,
+      "polygon": [
+        [
+          385.0,
+          947.0
+        ],
+        [
+          546.0,
+          947.0
+        ],
+        [
+          546.0,
+          972.0
+        ],
+        [
+          385.0,
+          972.0
+        ]
+      ],
+      "center_distance": 129.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 9,
+      "ocr_index": 20,
+      "text": "päivittää",
+      "confidence": 0.99855,
+      "polygon": [
+        [
+          1295.0,
+          946.0
+        ],
+        [
+          1377.0,
+          946.0
+        ],
+        [
+          1377.0,
+          975.0
+        ],
+        [
+          1295.0,
+          975.0
+        ]
+      ],
+      "center_distance": 130.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 6,
+      "ocr_index": 12,
+      "text": "saapuu",
+      "confidence": 0.99949,
+      "polygon": [
+        [
+          1663.0,
+          547.0
+        ],
+        [
+          1735.0,
+          547.0
+        ],
+        [
+          1735.0,
+          571.0
+        ],
+        [
+          1663.0,
+          571.0
+        ]
+      ],
+      "center_distance": 149.7
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 3,
+      "ocr_index": 11,
+      "text": "lähettää kyselyn",
+      "confidence": 0.99901,
+      "polygon": [
+        [
+          25.0,
+          533.0
+        ],
+        [
+          174.0,
+          533.0
+        ],
+        [
+          174.0,
+          563.0
+        ],
+        [
+          25.0,
+          563.0
+        ]
+      ],
+      "center_distance": 150.5
+    },
+    {
+      "target_kind": "edge",
+      "target_key": 11,
+      "ocr_index": 13,
+      "text": "muuttaa laiturin",
+      "confidence": 0.99975,
+      "polygon": [
+        [
+          427.0,
+          605.0
+        ],
+        [
+          573.0,
+          605.0
+        ],
+        [
+          573.0,
+          629.0
+        ],
+        [
+          427.0,
+          629.0
+        ]
+      ],
+      "center_distance": 198.5
+    }
+  ],
+  "ocr_unassigned": [],
+  "ocr_disagreements": []
+}

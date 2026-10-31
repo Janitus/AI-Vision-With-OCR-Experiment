@@ -226,6 +226,7 @@ def main():
                                    ("rail_elbow","orthogonal detours",ELBOW,LABEL_ELBOW)):
         case=copy.deepcopy(original)
         case["id"]=slug
+        case["shape"]="pill"  # rendered rounded stadium nodes
         case["route_style"]=kind
         paths=copy.deepcopy(paths)
         for edge,route in zip(case["edges"],paths):

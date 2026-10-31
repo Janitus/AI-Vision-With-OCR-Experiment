@@ -41,3 +41,8 @@ Thumbs.db
 benchmark_v4/blind_vision/images/
 benchmark_v4/blind_fusion/images/
 benchmark_v4/blind_fusion/ocr/
+
+# Duplicate v5 blind inputs
+benchmark_v5/blind_vision/images/
+benchmark_v5/blind_fusion/images/
+benchmark_v5/blind_fusion/ocr/

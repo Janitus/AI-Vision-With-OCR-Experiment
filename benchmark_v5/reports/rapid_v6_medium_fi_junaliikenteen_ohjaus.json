@@ -1,0 +1,428 @@
+{
+  "metrics": {
+    "title": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "node": {
+      "exact": 8,
+      "total": 8,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "edge": {
+      "exact": 12,
+      "total": 12,
+      "recall": 1.0,
+      "cer": 0.0
+    },
+    "rotated_edge": {
+      "exact": 1,
+      "total": 1,
+      "recall": 1.0
+    },
+    "all": {
+      "exact": 21,
+      "total": 21,
+      "recall": 1.0,
+      "cer": 0.0,
+      "observed_items": 22,
+      "extra_ocr_items": 1,
+      "precision": 0.9545
+    }
+  },
+  "details": [
+    {
+      "kind": "title",
+      "id": 0,
+      "expected": "Junaliikenteen ohjaus",
+      "observed": "Junaliikenteen ohjaus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        38,
+        38,
+        393,
+        70
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        0
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 0,
+      "expected": "Matkustaja",
+      "observed": "Matkustaja",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        194,
+        253.0,
+        305,
+        272.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        1
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 1,
+      "expected": "Aikataulu",
+      "observed": "Aikataulu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        632,
+        253.0,
+        728,
+        268.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        3
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 2,
+      "expected": "Laituri",
+      "observed": "Laituri",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1087,
+        253.0,
+        1152,
+        268.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        5
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 3,
+      "expected": "Juna",
+      "observed": "Juna",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1525,
+        253.0,
+        1575,
+        268.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        7
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 4,
+      "expected": "Liikenteenohjaus",
+      "observed": "Liikenteenohjaus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        176,
+        824.0,
+        323,
+        841.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        16
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 5,
+      "expected": "Vaihtoasema",
+      "observed": "Vaihtoasema",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        613,
+        823.0,
+        746,
+        838.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        17
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 6,
+      "expected": "Häiriöviesti",
+      "observed": "Häiriöviesti",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1062,
+        823.0,
+        1177,
+        838.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        19
+      ]
+    },
+    {
+      "kind": "node",
+      "id": 7,
+      "expected": "Määränpää",
+      "observed": "Määränpää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1494,
+        823.0,
+        1606,
+        842.0
+      ],
+      "rotation": 0,
+      "ocr_indices": [
+        21
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 0,
+      "expected": "tarkistaa",
+      "observed": "tarkistaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        410,
+        244,
+        520,
+        275
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        2
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 1,
+      "expected": "osoittaa",
+      "observed": "osoittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        848,
+        244,
+        952,
+        275
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        4
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 2,
+      "expected": "ohjaa",
+      "observed": "ohjaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1296,
+        242,
+        1374,
+        277
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        6
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 3,
+      "expected": "lähettää kyselyn",
+      "observed": "lähettää kyselyn",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        156,
+        528,
+        344,
+        563
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        10
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 4,
+      "expected": "vahvistaa vaihdon",
+      "observed": "vahvistaa vaihdon",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        361,
+        710,
+        569,
+        741
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        15
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 5,
+      "expected": "ilmoittaa",
+      "observed": "ilmoittaa",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        845,
+        814,
+        955,
+        845
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        18
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 6,
+      "expected": "päivittää",
+      "observed": "päivittää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1280,
+        812,
+        1389,
+        847
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        20
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 7,
+      "expected": "reitittää",
+      "observed": "reitittää",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        630,
+        530,
+        729,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        11
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 8,
+      "expected": "varoitus",
+      "observed": "varoitus",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1104,
+        492,
+        1135,
+        597
+      ],
+      "rotation": -90.0,
+      "ocr_indices": [
+        9
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 9,
+      "expected": "muuttaa laiturin",
+      "observed": "muuttaa laiturin",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        486,
+        600,
+        668,
+        631
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        14
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 10,
+      "expected": "saapuu",
+      "observed": "saapuu",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1502,
+        530,
+        1599,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        13
+      ]
+    },
+    {
+      "kind": "edge",
+      "id": 11,
+      "expected": "tilanne",
+      "observed": "tilanne",
+      "exact": true,
+      "character_edits": 0,
+      "bbox": [
+        1290,
+        530,
+        1381,
+        561
+      ],
+      "rotation": 0.0,
+      "ocr_indices": [
+        12
+      ]
+    }
+  ],
+  "unmatched_ocr": [
+    {
+      "index": 8,
+      "text": "z000de",
+      "bbox": [
+        891.0,
+        389.0,
+        920.0,
+        413.0
+      ]
+    }
+  ]
+}
