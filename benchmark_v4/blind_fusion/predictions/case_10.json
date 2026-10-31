@@ -1,0 +1,153 @@
+{
+  "title": "Verotuksen oikaisuprosessi",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Verovelvollinen",
+      "type": "text",
+      "center": [
+        250,
+        260
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Ilmoitus",
+      "type": "box",
+      "center": [
+        680,
+        260
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Tarkastus",
+      "type": "diamond",
+      "center": [
+        1120,
+        260
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Päätös",
+      "type": "diamond",
+      "center": [
+        1550,
+        260
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Lisäselvitys",
+      "type": "text",
+      "center": [
+        250,
+        830
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Oikaisupyyntö",
+      "type": "box",
+      "center": [
+        680,
+        830
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Käsittely",
+      "type": "diamond",
+      "center": [
+        1120,
+        830
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Lopputulos",
+      "type": "box",
+      "center": [
+        1550,
+        830
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "antaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "ratkaisee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "täydentää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n5",
+      "relationship": "liittyy",
+      "direction": "unknown",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n6",
+      "relationship": "voi johtaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n7",
+      "relationship": "tarkistaa uudelleen",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "liitetään",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "vahvistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Ilmoitus–Lisäselvitys-liittyy-yhteydessä ei näy nuolenkärkeä."
+  ],
+  "ocr_disagreements": []
+}

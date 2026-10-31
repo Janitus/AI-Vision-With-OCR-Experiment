@@ -1,10 +1,12 @@
 # Conservative graph extraction
 
+**Corrected rerun (v4):** [short findings](FINDINGS.md) · [six-approach matrix](benchmark_v4/approach_matrix.csv) · [side-by-side viewer](benchmark_v4/results_viewer.html). V4 fixes hidden/coincident source edges in v3; both fresh blind runs matched all 105 visible edge records. Earlier v3 graph rates are superseded.
+
 **Shareable report:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf) | [Read the web version](FINDINGS.md).
 
-**Current findings and visual-validity correction:** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
+**Historical v3 archive (superseded):** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
 
-**New complex benchmark:** [v3 validation report](benchmark_v3/REPORT.md) · [readable five-approach matrix](benchmark_v3/matrix_viewer.html) · [source / blind vision / deduplicated OCR evidence viewer](benchmark_v3/results_viewer.html). Ten new Finnish-context diagrams contain 83 nodes and 113 edges; source images, Mermaid, structured truth, OCR observations, and separately saved blind predictions are included.
+**Historical v3 benchmark:** [v3 validation report](benchmark_v3/REPORT.md) · [readable five-approach matrix](benchmark_v3/matrix_viewer.html) · [source / blind vision / deduplicated OCR evidence viewer](benchmark_v3/results_viewer.html). Ten new Finnish-context diagrams contain 83 nodes and 113 edges; source images, Mermaid, structured truth, OCR observations, and separately saved blind predictions are included.
 
 The ten-case original evaluation is in [benchmark/README.md](benchmark/README.md). The varied second set, its sources, rendered images, OCR observations, and validation are in [benchmark_v2/README.md](benchmark_v2/README.md). Two separate fresh Codex sessions produced historical v2 [image-only](blind_vision/BLIND_REPORT.md) and [OCR-assisted](blind_fusion/FUSION_REPORT.md) graph predictions before they were scored against source data.
 

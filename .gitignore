@@ -36,3 +36,8 @@ benchmark_v3/vision_ocr_union/rendered/
 .vscode/
 Thumbs.db
 .DS_Store
+
+# Duplicate v4 blind inputs
+benchmark_v4/blind_vision/images/
+benchmark_v4/blind_fusion/images/
+benchmark_v4/blind_fusion/ocr/

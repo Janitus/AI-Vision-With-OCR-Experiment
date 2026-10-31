@@ -1,0 +1,523 @@
+{
+  "approach": "blind_fusion",
+  "counts": {
+    "truth_nodes": 83,
+    "predicted_nodes": 83,
+    "matched_nodes": 83,
+    "exact_node_labels": 83,
+    "exact_node_shapes": 75,
+    "fully_correct_nodes": 75,
+    "truth_edges": 105,
+    "predicted_edges": 105,
+    "matched_topology": 105,
+    "correct_arrows": 105,
+    "correct_relationships": 105,
+    "correct_strokes": 105,
+    "fully_correct_edges": 105,
+    "unresolved_arrows": 0,
+    "wrong_arrows": 0,
+    "end_to_end_edges": 105,
+    "title_exact": 10
+  },
+  "error_rates": {
+    "title_error_rate": 0.0,
+    "node_detection_error_rate": 0.0,
+    "node_label_error_rate": 0.0,
+    "node_shape_error_rate": 0.0964,
+    "topology_error_rate": 0.0,
+    "arrow_error_rate": 0.0,
+    "wrong_arrow_rate": 0.0,
+    "unresolved_arrow_rate": 0.0,
+    "relationship_error_rate": 0.0,
+    "stroke_error_rate": 0.0,
+    "full_edge_error_rate": 0.0,
+    "end_to_end_edge_error_rate": 0.0
+  },
+  "cases": {
+    "case_01": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 10,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Erikoissairaanhoito–Jatkohoito-yhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_02": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 9,
+        "fully_correct_nodes": 9,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [],
+      "uncertainties": []
+    },
+    "case_03": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 9,
+        "predicted_edges": 9,
+        "matched_topology": 9,
+        "correct_arrows": 9,
+        "correct_relationships": 9,
+        "correct_strokes": 9,
+        "fully_correct_edges": 9,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 9,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 8,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Tuulianturi–Raakahavainnot-varatietoyhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_04": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 10,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Kuluttaja–Voimala-varasyöttöyhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_05": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 0,
+        "fully_correct_nodes": 0,
+        "truth_edges": 12,
+        "predicted_edges": 12,
+        "matched_topology": 12,
+        "correct_arrows": 12,
+        "correct_relationships": 12,
+        "correct_strokes": 12,
+        "fully_correct_edges": 12,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 12,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 1.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 0
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 1
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 2
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 3
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 4
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 5
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 6
+        },
+        {
+          "kind": "wrong_node_shape",
+          "expected": "circle",
+          "observed": "pill",
+          "node": 7
+        },
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 11,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Juna–Häiriöviesti-tilanneyhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_06": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 9,
+        "fully_correct_nodes": 9,
+        "truth_edges": 10,
+        "predicted_edges": 10,
+        "matched_topology": 10,
+        "correct_arrows": 10,
+        "correct_relationships": 10,
+        "correct_strokes": 10,
+        "fully_correct_edges": 10,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [],
+      "uncertainties": []
+    },
+    "case_07": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 8,
+        "predicted_edges": 8,
+        "matched_topology": 8,
+        "correct_arrows": 8,
+        "correct_relationships": 8,
+        "correct_strokes": 8,
+        "fully_correct_edges": 8,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 8,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 7,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Tallennus–Julkaisu-avoin aineisto -yhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_08": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 11,
+        "predicted_edges": 11,
+        "matched_topology": 11,
+        "correct_arrows": 11,
+        "correct_relationships": 11,
+        "correct_strokes": 11,
+        "fully_correct_edges": 11,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 11,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 10,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Keskuskirjasto–Palautus-varatietoyhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_09": {
+      "counts": {
+        "truth_nodes": 9,
+        "predicted_nodes": 9,
+        "matched_nodes": 9,
+        "exact_node_labels": 9,
+        "exact_node_shapes": 9,
+        "fully_correct_nodes": 9,
+        "truth_edges": 12,
+        "predicted_edges": 12,
+        "matched_topology": 12,
+        "correct_arrows": 12,
+        "correct_relationships": 12,
+        "correct_strokes": 12,
+        "fully_correct_edges": 12,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 12,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 11,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Hätäkeskus–Tilannekeskus-yhteydessä ei näy nuolenkärkeä."
+      ]
+    },
+    "case_10": {
+      "counts": {
+        "truth_nodes": 8,
+        "predicted_nodes": 8,
+        "matched_nodes": 8,
+        "exact_node_labels": 8,
+        "exact_node_shapes": 8,
+        "fully_correct_nodes": 8,
+        "truth_edges": 10,
+        "predicted_edges": 10,
+        "matched_topology": 10,
+        "correct_arrows": 10,
+        "correct_relationships": 10,
+        "correct_strokes": 10,
+        "fully_correct_edges": 10,
+        "unresolved_arrows": 0,
+        "wrong_arrows": 0,
+        "end_to_end_edges": 10,
+        "title_exact": 1
+      },
+      "metrics": {
+        "node_detection_recall": 1.0,
+        "node_detection_precision": 1.0,
+        "node_label_error_rate": 0.0,
+        "node_shape_error_rate": 0.0,
+        "topology_error_rate": 0.0,
+        "arrow_error_rate": 0.0,
+        "relationship_error_rate": 0.0,
+        "stroke_error_rate": 0.0,
+        "full_edge_error_rate": 0.0,
+        "end_to_end_edge_error_rate": 0.0
+      },
+      "errors": [
+        {
+          "kind": "arrowless_semantics_unknown",
+          "edge": 9,
+          "expected_visible_mark": "no arrowhead",
+          "observed": "no asserted direction",
+          "scored_as_visual_error": false
+        }
+      ],
+      "uncertainties": [
+        "Ilmoitus–Lisäselvitys-liittyy-yhteydessä ei näy nuolenkärkeä."
+      ]
+    }
+  },
+  "perfect_figures": 9,
+  "node_precision": 1.0,
+  "node_recall": 1.0,
+  "edge_precision": 1.0,
+  "edge_recall": 1.0,
+  "unknown_directions": 8,
+  "unknown_relationships": 0
+}

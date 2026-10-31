@@ -1,0 +1,32 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial", "primaryColor": "#f8fbff", "lineColor": "#2b6eaa", "textColor": "#173452"}}}%%
+flowchart LR
+  %% Synthetic Finnish-context graph: Liikenne
+  n1(("Matkustaja"))
+  style n1 fill:#dcecff,stroke:#173452,color:#173452,font-family:Arial
+  n2(("Aikataulu"))
+  style n2 fill:#e1f5eb,stroke:#173452,color:#173452,font-family:Arial
+  n3(("Laituri"))
+  style n3 fill:#fff0d8,stroke:#173452,color:#173452,font-family:Arial
+  n4(("Juna"))
+  style n4 fill:#eee4fb,stroke:#173452,color:#173452,font-family:Arial
+  n5(("Liikenteenohjaus"))
+  style n5 fill:#dcecff,stroke:#173452,color:#173452,font-family:Arial
+  n6(("Vaihtoasema"))
+  style n6 fill:#e1f5eb,stroke:#173452,color:#173452,font-family:Arial
+  n7(("Häiriöviesti"))
+  style n7 fill:#fff0d8,stroke:#173452,color:#173452,font-family:Arial
+  n8(("Määränpää"))
+  style n8 fill:#eee4fb,stroke:#173452,color:#173452,font-family:Arial
+  n1 -->|tarkistaa| n2
+  n2 -->|osoittaa| n3
+  n3 -->|ohjaa| n4
+  n1 -->|lähettää kyselyn| n5
+  n5 -->|vahvistaa vaihdon| n6
+  n6 -->|ilmoittaa| n7
+  n7 -->|päivittää| n8
+  n2 -->|reitittää| n6
+  n3 -->|varoitus| n7
+  n5 -->|muuttaa laiturin| n3
+  n4 -->|saapuu| n8
+  n7 ---|tilanne| n4
+  linkStyle 9 stroke-dasharray: 8 5

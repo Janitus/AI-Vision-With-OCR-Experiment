@@ -1,0 +1,138 @@
+{
+  "title": "Tutkimusjulkaisun työnkulku",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Tutkimuskysymys",
+      "type": "round",
+      "center": [
+        900,
+        185
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Aineiston keruu",
+      "type": "round",
+      "center": [
+        320,
+        390
+      ]
+    },
+    {
+      "id": "c",
+      "label": "Eettinen arvio",
+      "type": "round",
+      "center": [
+        900,
+        390
+      ]
+    },
+    {
+      "id": "d",
+      "label": "Mittaus",
+      "type": "round",
+      "center": [
+        1480,
+        390
+      ]
+    },
+    {
+      "id": "e",
+      "label": "Tallennus",
+      "type": "round",
+      "center": [
+        320,
+        720
+      ]
+    },
+    {
+      "id": "f",
+      "label": "Analyysi",
+      "type": "round",
+      "center": [
+        900,
+        720
+      ]
+    },
+    {
+      "id": "g",
+      "label": "Vertaisarvio",
+      "type": "round",
+      "center": [
+        1480,
+        720
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Julkaisu",
+      "type": "round",
+      "center": [
+        900,
+        955
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "a",
+      "target": "c",
+      "relationship": "edellyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "arkistoi",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "mahdollistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "g",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "suosittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "avoin aineisto",
+      "direction": "undirected",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Tallennus–Julkaisu-viivalla ei näy nuolenkärkeä."
+  ]
+}

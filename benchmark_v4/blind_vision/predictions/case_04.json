@@ -1,0 +1,159 @@
+{
+  "title": "Sähköhäiriön tilannekuva",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Kuluttaja",
+      "type": "hex",
+      "center": [
+        250,
+        550
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Mittari",
+      "type": "hex",
+      "center": [
+        440,
+        275
+      ]
+    },
+    {
+      "id": "c",
+      "label": "Valvomo",
+      "type": "hex",
+      "center": [
+        900,
+        160
+      ]
+    },
+    {
+      "id": "d",
+      "label": "Korjausryhmä",
+      "type": "hex",
+      "center": [
+        1360,
+        275
+      ]
+    },
+    {
+      "id": "e",
+      "label": "Voimala",
+      "type": "hex",
+      "center": [
+        1550,
+        550
+      ]
+    },
+    {
+      "id": "f",
+      "label": "Jakeluverkko",
+      "type": "hex",
+      "center": [
+        440,
+        827
+      ]
+    },
+    {
+      "id": "g",
+      "label": "Sähköasema",
+      "type": "hex",
+      "center": [
+        900,
+        940
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Kantaverkko",
+      "type": "hex",
+      "center": [
+        1360,
+        827
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "kuittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "d",
+      "target": "g",
+      "relationship": "korjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "g",
+      "target": "f",
+      "relationship": "muuntaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "a",
+      "relationship": "jakaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "c",
+      "relationship": "vikatieto",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "h",
+      "relationship": "valvoo",
+      "direction": "source_to_target",
+      "dashed": true
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "h",
+      "target": "g",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "a",
+      "target": "e",
+      "relationship": "varasyöttö",
+      "direction": "undirected",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Kuluttaja–Voimala-viivalla ei näy nuolenkärkeä."
+  ]
+}

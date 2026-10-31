@@ -1,0 +1,35 @@
+Input PNG paths (tools.view_image; tools.exec_command listing):
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_01.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_02.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_03.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_04.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_05.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_06.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_07.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_08.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_09.png
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\images\case_10.png
+Input OCR JSON paths (tools.exec_command):
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_01.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_02.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_03.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_04.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_05.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_06.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_07.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_08.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_09.rapid_v6_medium_fi.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\ocr\case_10.rapid_v6_medium_fi.json
+Output prediction JSON paths (tools.apply_patch; tools.exec_command validation):
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_01.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_02.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_03.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_04.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_05.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_06.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_07.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_08.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_09.json
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\predictions\case_10.json
+Output access log path (tools.apply_patch):
+C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\fusion\access_log.txt

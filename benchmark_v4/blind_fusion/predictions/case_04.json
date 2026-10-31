@@ -1,0 +1,162 @@
+{
+  "title": "Sähköhäiriön tilannekuva",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Valvomo",
+      "type": "hex",
+      "center": [
+        900,
+        160
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Mittari",
+      "type": "hex",
+      "center": [
+        440,
+        275
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Korjausryhmä",
+      "type": "hex",
+      "center": [
+        1360,
+        275
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Kuluttaja",
+      "type": "hex",
+      "center": [
+        250,
+        550
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Voimala",
+      "type": "hex",
+      "center": [
+        1550,
+        550
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Jakeluverkko",
+      "type": "hex",
+      "center": [
+        440,
+        825
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Kantaverkko",
+      "type": "hex",
+      "center": [
+        1360,
+        825
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Sähköasema",
+      "type": "hex",
+      "center": [
+        900,
+        940
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n2",
+      "target": "n1",
+      "relationship": "hälyttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n3",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n2",
+      "relationship": "kuittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n1",
+      "relationship": "vikatieto",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n7",
+      "relationship": "valvoo",
+      "direction": "source_to_target",
+      "dashed": true
+    },
+    {
+      "source": "n4",
+      "target": "n5",
+      "relationship": "varasyöttö",
+      "direction": "unknown",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n8",
+      "relationship": "korjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n4",
+      "relationship": "jakaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n7",
+      "relationship": "syöttää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "siirtää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n6",
+      "relationship": "muuntaa",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Kuluttaja–Voimala-varasyöttöyhteydessä ei näy nuolenkärkeä."
+  ],
+  "ocr_disagreements": [
+    "OCR:n 'wwwwwwww', 'SNARAAL', '1000s', 'MAGANAEX' ja 'SAPUNAKX' ovat kuvassa viivoista syntyneitä virhetulkintoja."
+  ]
+}

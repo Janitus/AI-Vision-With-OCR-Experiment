@@ -1,0 +1,169 @@
+{
+  "title": "Junaliikenteen ohjaus",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Matkustaja",
+      "type": "pill",
+      "center": [
+        250,
+        260
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Aikataulu",
+      "type": "pill",
+      "center": [
+        680,
+        260
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Laituri",
+      "type": "pill",
+      "center": [
+        1120,
+        260
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Juna",
+      "type": "pill",
+      "center": [
+        1550,
+        260
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Liikenteenohjaus",
+      "type": "pill",
+      "center": [
+        250,
+        830
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Vaihtoasema",
+      "type": "pill",
+      "center": [
+        680,
+        830
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Häiriöviesti",
+      "type": "pill",
+      "center": [
+        1120,
+        830
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Määränpää",
+      "type": "pill",
+      "center": [
+        1550,
+        830
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n1",
+      "target": "n2",
+      "relationship": "tarkistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n3",
+      "relationship": "osoittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n4",
+      "relationship": "ohjaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n5",
+      "relationship": "lähettää kyselyn",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n2",
+      "target": "n6",
+      "relationship": "reitittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n3",
+      "relationship": "muuttaa laiturin",
+      "direction": "source_to_target",
+      "dashed": true
+    },
+    {
+      "source": "n3",
+      "target": "n7",
+      "relationship": "varoitus",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n7",
+      "relationship": "tilanne",
+      "direction": "unknown",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n8",
+      "relationship": "saapuu",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n6",
+      "relationship": "vahvistaa vaihdon",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n7",
+      "relationship": "ilmoittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "päivittää",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Juna–Häiriöviesti-tilanneyhteydessä ei näy nuolenkärkeä."
+  ],
+  "ocr_disagreements": [
+    "OCR:n 'z000de' ei vastaa näkyvää tekstiä."
+  ]
+}

@@ -1,6 +1,10 @@
 # OCR + vision graph reconstruction: short report
 
-## Current v3 finding
+## Current corrected rerun (v4)
+
+[Short findings](FINDINGS.md) · [Full v4 report](benchmark_v4/REPORT.md). V4 removes eight visually ambiguous source edges from v3 and reruns all three OCR engines plus two fresh blind Codex approaches. Both blind runs matched 105/105 visible edge records under the corrected visual rubric. Strict graph scorer events are 16/198 for image-only vision and 8/198 for image + RapidOCR, all from rounded node-shape category disagreements. The earlier v3 graph error rates are superseded.
+
+## Historical v3 finding (superseded)
 
 **Correction after visual review:** The v3 graph scores compare predictions with generated source JSON, but several source edges overlap or pass behind nodes. Their distinct endpoints or relationships are not always recoverable from the pixels. The reported 105/113 connection matches, 101/113 fully matched edges, and 4/10 exactly matched figures are **source-file scores, not validated visible-error or reliability rates**. In case 07, a return arrowhead is visible in both source and reconstruction even though exact scoring logged a direction mismatch. The graph fixtures need visual adjudication before they can answer whether vision is reliable enough for review-free use. RapidOCR PP-OCRv6 separately read 203/206 printed text regions exactly; OCR-only did not reconstruct graph connections.
 

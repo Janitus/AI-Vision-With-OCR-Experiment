@@ -1,0 +1,338 @@
+{
+  "id": "sahkohaorio",
+  "title": "Sähköhäiriön tilannekuva",
+  "context": "Energia",
+  "layout": "LR",
+  "shape": "hex",
+  "font": "segoe",
+  "size": 22,
+  "background": "#17212b",
+  "ink": "#f3f8fa",
+  "edge": "#b4d6e5",
+  "palette": [
+    "#294252",
+    "#335063",
+    "#2a4555",
+    "#355468"
+  ],
+  "nodes": [
+    {
+      "label": "Voimala",
+      "x": 1550,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kantaverkko",
+      "x": 1360,
+      "y": 826,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Sähköasema",
+      "x": 900,
+      "y": 940,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Jakeluverkko",
+      "x": 440,
+      "y": 826,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Kuluttaja",
+      "x": 250,
+      "y": 550,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Mittari",
+      "x": 440,
+      "y": 274,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Valvomo",
+      "x": 900,
+      "y": 160,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    },
+    {
+      "label": "Korjausryhmä",
+      "x": 1360,
+      "y": 274,
+      "shape": null,
+      "color": null,
+      "w": 270,
+      "h": 100
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "label": "syöttää",
+      "label_xy": [
+        1455,
+        688
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1516,
+          600
+        ],
+        [
+          1394,
+          776
+        ]
+      ]
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "label": "siirtää",
+      "label_xy": [
+        1130,
+        883
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1225,
+          859
+        ],
+        [
+          1035,
+          907
+        ]
+      ]
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "label": "muuntaa",
+      "label_xy": [
+        670,
+        883
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          765,
+          907
+        ],
+        [
+          575,
+          859
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "label": "jakaa",
+      "label_xy": [
+        345,
+        688
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          406,
+          776
+        ],
+        [
+          284,
+          600
+        ]
+      ]
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "label": "kuittaa",
+      "label_xy": [
+        345,
+        412
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          284,
+          500
+        ],
+        [
+          406,
+          324
+        ]
+      ]
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "label": "hälyttää",
+      "label_xy": [
+        670,
+        217
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          575,
+          241
+        ],
+        [
+          765,
+          193
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "label": "lähettää",
+      "label_xy": [
+        1130,
+        217
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1035,
+          193
+        ],
+        [
+          1225,
+          241
+        ]
+      ]
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "label": "korjaa",
+      "label_xy": [
+        1130,
+        607
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          1325,
+          324
+        ],
+        [
+          935,
+          890
+        ]
+      ]
+    },
+    {
+      "source": 6,
+      "target": 1,
+      "label": "valvoo",
+      "label_xy": [
+        1130,
+        493
+      ],
+      "rotate": false,
+      "direction": "source_to_target",
+      "dashed": true,
+      "points": [
+        [
+          935,
+          210
+        ],
+        [
+          1325,
+          776
+        ]
+      ]
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "label": "vikatieto",
+      "label_xy": [
+        670,
+        493
+      ],
+      "rotate": true,
+      "direction": "source_to_target",
+      "dashed": false,
+      "points": [
+        [
+          475,
+          776
+        ],
+        [
+          865,
+          210
+        ]
+      ]
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "label": "varasyöttö",
+      "label_xy": [
+        900,
+        550
+      ],
+      "rotate": false,
+      "direction": "undirected",
+      "dashed": false,
+      "points": [
+        [
+          1415,
+          550
+        ],
+        [
+          385,
+          550
+        ]
+      ]
+    }
+  ],
+  "small_edge_labels": false,
+  "clear_text_background": true
+}

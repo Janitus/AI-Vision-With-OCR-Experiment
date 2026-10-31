@@ -1,0 +1,4 @@
+Inputs: case_01.png through case_10.png under C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\vision\images
+Outputs: case_01.json through case_10.json under C:\Users\janku\.codex\visualizations\2026\10\29\01a186fe-f58d-76a0-9d80-e94fc3032f66\blind_v4\vision\predictions
+Tools: view_image (visual inspection); exec_command/PowerShell Set-Content (JSON and log writing).
+No other input files or paths read.

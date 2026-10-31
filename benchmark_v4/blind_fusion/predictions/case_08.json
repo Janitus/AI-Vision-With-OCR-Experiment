@@ -1,0 +1,162 @@
+{
+  "title": "Kaukolainauksen palveluverkko",
+  "nodes": [
+    {
+      "id": "n1",
+      "label": "Laina",
+      "type": "text",
+      "center": [
+        900,
+        160
+      ]
+    },
+    {
+      "id": "n2",
+      "label": "Noutopiste",
+      "type": "text",
+      "center": [
+        440,
+        275
+      ]
+    },
+    {
+      "id": "n3",
+      "label": "Palautus",
+      "type": "text",
+      "center": [
+        1360,
+        275
+      ]
+    },
+    {
+      "id": "n4",
+      "label": "Kuljetus",
+      "type": "text",
+      "center": [
+        250,
+        550
+      ]
+    },
+    {
+      "id": "n5",
+      "label": "Lukija",
+      "type": "text",
+      "center": [
+        1550,
+        550
+      ]
+    },
+    {
+      "id": "n6",
+      "label": "Keskuskirjasto",
+      "type": "text",
+      "center": [
+        440,
+        825
+      ]
+    },
+    {
+      "id": "n7",
+      "label": "Varaus",
+      "type": "text",
+      "center": [
+        1360,
+        825
+      ]
+    },
+    {
+      "id": "n8",
+      "label": "Lähikirjasto",
+      "type": "text",
+      "center": [
+        900,
+        940
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "n2",
+      "target": "n1",
+      "relationship": "luovuttaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n1",
+      "target": "n3",
+      "relationship": "palautetaan",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n4",
+      "target": "n2",
+      "relationship": "toimittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n2",
+      "relationship": "noutoilmoitus",
+      "direction": "source_to_target",
+      "dashed": true
+    },
+    {
+      "source": "n6",
+      "target": "n3",
+      "relationship": "varatieto",
+      "direction": "unknown",
+      "dashed": false
+    },
+    {
+      "source": "n3",
+      "target": "n8",
+      "relationship": "vastaanottaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n6",
+      "target": "n4",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n5",
+      "target": "n7",
+      "relationship": "pyytää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n6",
+      "relationship": "saatavuus",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n8",
+      "target": "n6",
+      "relationship": "tiedustelee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "n7",
+      "target": "n8",
+      "relationship": "kohdistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    }
+  ],
+  "uncertainties": [
+    "Keskuskirjasto–Palautus-varatietoyhteydessä ei näy nuolenkärkeä."
+  ],
+  "ocr_disagreements": [
+    "OCR:n 'unatunun', 'ratmn', 'atstoe', 'atoose', 'atmnot', 'wonn', 'wputun', 'wat' ja 'mnman' eivät vastaa kuvassa näkyviä tekstejä."
+  ]
+}

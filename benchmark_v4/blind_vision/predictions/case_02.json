@@ -1,0 +1,166 @@
+{
+  "title": "Ministeriöiden hankekierto",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Aloite",
+      "type": "box",
+      "center": [
+        270,
+        220
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Valmisteluryhmä",
+      "type": "box",
+      "center": [
+        900,
+        220
+      ]
+    },
+    {
+      "id": "c",
+      "label": "Oikeudellinen arvio",
+      "type": "box",
+      "center": [
+        1530,
+        220
+      ]
+    },
+    {
+      "id": "d",
+      "label": "Lausuntopyyntö",
+      "type": "box",
+      "center": [
+        270,
+        550
+      ]
+    },
+    {
+      "id": "e",
+      "label": "Ministeriö",
+      "type": "box",
+      "center": [
+        900,
+        550
+      ]
+    },
+    {
+      "id": "f",
+      "label": "Budjettitarkistus",
+      "type": "box",
+      "center": [
+        1530,
+        550
+      ]
+    },
+    {
+      "id": "g",
+      "label": "Valtioneuvosto",
+      "type": "box",
+      "center": [
+        270,
+        880
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Eduskunta",
+      "type": "box",
+      "center": [
+        900,
+        880
+      ]
+    },
+    {
+      "id": "i",
+      "label": "Toimeenpano",
+      "type": "box",
+      "center": [
+        1530,
+        880
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "käynnistää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "selvittää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "b",
+      "target": "d",
+      "relationship": "laatii",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "f",
+      "relationship": "arvioi kulut",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "d",
+      "target": "e",
+      "relationship": "palautuu",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "f",
+      "relationship": "sovittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "g",
+      "relationship": "esittelee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "h",
+      "relationship": "raportoi",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "g",
+      "target": "h",
+      "relationship": "antaa esityksen",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "h",
+      "target": "i",
+      "relationship": "hyväksyy",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "i",
+      "target": "e",
+      "relationship": "seuranta",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": []
+}

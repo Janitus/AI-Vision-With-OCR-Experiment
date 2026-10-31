@@ -1,0 +1,159 @@
+{
+  "title": "Kaukolainauksen palveluverkko",
+  "nodes": [
+    {
+      "id": "a",
+      "label": "Kuljetus",
+      "type": "text",
+      "center": [
+        250,
+        550
+      ]
+    },
+    {
+      "id": "b",
+      "label": "Noutopiste",
+      "type": "text",
+      "center": [
+        440,
+        275
+      ]
+    },
+    {
+      "id": "c",
+      "label": "Laina",
+      "type": "text",
+      "center": [
+        900,
+        160
+      ]
+    },
+    {
+      "id": "d",
+      "label": "Palautus",
+      "type": "text",
+      "center": [
+        1360,
+        275
+      ]
+    },
+    {
+      "id": "e",
+      "label": "Lukija",
+      "type": "text",
+      "center": [
+        1550,
+        550
+      ]
+    },
+    {
+      "id": "f",
+      "label": "Keskuskirjasto",
+      "type": "text",
+      "center": [
+        440,
+        827
+      ]
+    },
+    {
+      "id": "g",
+      "label": "Lähikirjasto",
+      "type": "text",
+      "center": [
+        900,
+        940
+      ]
+    },
+    {
+      "id": "h",
+      "label": "Varaus",
+      "type": "text",
+      "center": [
+        1360,
+        827
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "f",
+      "target": "a",
+      "relationship": "lähettää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "a",
+      "target": "b",
+      "relationship": "toimittaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "b",
+      "target": "c",
+      "relationship": "luovuttaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "c",
+      "target": "d",
+      "relationship": "palautetaan",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "h",
+      "relationship": "pyytää",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "h",
+      "target": "f",
+      "relationship": "saatavuus",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "h",
+      "target": "g",
+      "relationship": "kohdistaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "g",
+      "target": "f",
+      "relationship": "tiedustelee",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "d",
+      "target": "g",
+      "relationship": "vastaanottaa",
+      "direction": "source_to_target",
+      "dashed": false
+    },
+    {
+      "source": "f",
+      "target": "d",
+      "relationship": "varatieto",
+      "direction": "undirected",
+      "dashed": false
+    },
+    {
+      "source": "e",
+      "target": "b",
+      "relationship": "noutoilmoitus",
+      "direction": "source_to_target",
+      "dashed": true
+    }
+  ],
+  "uncertainties": [
+    "Keskuskirjasto–Palautus-viivalla ei näy nuolenkärkeä."
+  ]
+}

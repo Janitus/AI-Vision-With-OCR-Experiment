@@ -1,0 +1,15 @@
+{
+  "case_count": 10,
+  "source_items": 198,
+  "clipped_text": 0,
+  "overlapping_text": 0,
+  "hidden_edges": 0,
+  "coincident_edge_pairs": 0,
+  "minimum_text_contrast": 7.49,
+  "blind_inputs_scored_after_predictions_saved": true,
+  "blind_access_logs": [
+    "blind_vision/access_log.txt",
+    "blind_fusion/access_log.txt"
+  ],
+  "blinding": "procedural; agent file access was self-reported, not independently enforced"
+}
