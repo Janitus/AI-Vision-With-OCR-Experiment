@@ -1,5 +1,7 @@
 # Conservative graph extraction
 
+**Start here:** [Short findings report, results matrix, and example figures](FINDINGS.md).
+
 **Current findings:** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
 
 **New complex benchmark:** [v3 validation report](benchmark_v3/REPORT.md) · [readable five-approach matrix](benchmark_v3/matrix_viewer.html) · [source / blind vision / deduplicated OCR evidence viewer](benchmark_v3/results_viewer.html). Ten new Finnish-context diagrams contain 83 nodes and 113 edges; source images, Mermaid, structured truth, OCR observations, and separately saved blind predictions are included.
