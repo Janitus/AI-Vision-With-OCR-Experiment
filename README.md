@@ -2,13 +2,13 @@
 
 **Shareable report:** [Download the self-contained PDF](finnish_diagram_extraction_findings.pdf) | [Read the web version](FINDINGS.md).
 
-**Current findings:** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
+**Current findings and visual-validity correction:** [short report](BENCHMARK_SUMMARY.md) · [v3 approach matrix](benchmark_v3/matrix_viewer.html) · [source / vision / deduplicated OCR union viewer](benchmark_v3/results_viewer.html).
 
 **New complex benchmark:** [v3 validation report](benchmark_v3/REPORT.md) · [readable five-approach matrix](benchmark_v3/matrix_viewer.html) · [source / blind vision / deduplicated OCR evidence viewer](benchmark_v3/results_viewer.html). Ten new Finnish-context diagrams contain 83 nodes and 113 edges; source images, Mermaid, structured truth, OCR observations, and separately saved blind predictions are included.
 
 The ten-case original evaluation is in [benchmark/README.md](benchmark/README.md). The varied second set, its sources, rendered images, OCR observations, and validation are in [benchmark_v2/README.md](benchmark_v2/README.md). Two separate fresh Codex sessions produced historical v2 [image-only](blind_vision/BLIND_REPORT.md) and [OCR-assisted](blind_fusion/FUSION_REPORT.md) graph predictions before they were scored against source data.
 
-In the earlier v2 set, RapidOCR PP-OCRv6 medium Finnish read all 100 expected text items with three unmatched OCR outputs. Blind Codex vision recovered 40/41 fully correct edges; a separate OCR-assisted session recovered 41/41. The harder v3 set is more informative for the review-free reliability question: only 4/10 figures were error-free under blind vision, and the deterministic OCR evidence union did not repair graph topology. See the reports for denominators, uncertainty handling, and test limits.
+In the earlier v2 set, RapidOCR PP-OCRv6 medium Finnish read all 100 expected text items with three unmatched OCR outputs. Blind Codex vision matched 40/41 source edges; a separate OCR-assisted session matched 41/41. In v3, only 4/10 figures matched the generated source JSON exactly, and the deterministic OCR evidence union left graph topology unchanged. **Several v3 source edges overlap or pass behind nodes, so this exact-match rate is not a validated estimate of visible diagram-reading reliability.** See the corrected reports before interpreting graph scores.
 
 The anonymous blind input folders are excluded from Git because they duplicate the tracked fixture images and OCR observations. Recreate them with `python prepare_blind_inputs.py` before rerunning the blind workflow. The saved predictions and score reports are tracked.
 
