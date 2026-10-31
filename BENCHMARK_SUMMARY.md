@@ -1,8 +1,8 @@
 # OCR + vision graph reconstruction: short report
 
-## Latest routed-arrow rerun (v5)
+## Current results
 
-[Short findings](FINDINGS.md) · [full report](benchmark_v5/REPORT.md) · [paired route results](benchmark_v5/paired_results.csv). This includes ten corrected v4 figures plus curved and right-angle versions of one rail graph. The rail trio is paired, not independent.
+[Short findings](FINDINGS.md) · [full report](benchmark_v5/REPORT.md) · [paired route results](benchmark_v5/paired_results.csv). The twelve images include three paired renderings of one rail graph, so those images are not independent examples.
 
 ## Current corrected rerun (v4)
 

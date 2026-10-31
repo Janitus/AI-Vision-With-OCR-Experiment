@@ -1,6 +1,6 @@
 # Conservative graph extraction
 
-**Latest routed-arrow rerun (v5):** [findings](FINDINGS.md) · [12-case viewer](benchmark_v5/results_viewer.html) · [paired route matrix](benchmark_v5/paired_results.csv). The ten corrected v4 diagrams plus curved and right-angle rail renderings were tested with three OCR engines and fresh blind vision/fusion runs.
+**Current findings:** [short report](FINDINGS.md) · [shareable PDF](finnish_diagram_extraction_findings.pdf) · [12-case viewer](benchmark_v5/results_viewer.html). Twelve Finnish-context images were tested with three OCR engines and blind vision approaches.
 
 **Routed-arrow test figures:** [straight / curved / right-angle comparison](route_fixtures/viewer.html) · [fixture method and QA](route_fixtures/README.md). These are paired source figures for future extraction tests; no new OCR or vision accuracy is claimed yet.
 

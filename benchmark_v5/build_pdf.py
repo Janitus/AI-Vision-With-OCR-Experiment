@@ -27,14 +27,14 @@ def txt(ax,x,y,value,size=9,weight="normal",color=navy):
 
 def foot(ax,n):
     ax.plot([.055,.945],[.06,.06],color="#d4dfe5",lw=.8,transform=ax.transAxes)
-    txt(ax,.055,.045,"Our small graph-reading test | corrected rerun | 31 October 2026",7.5,color=grey)
+    txt(ax,.055,.045,"Our small graph-reading test | 31 October 2026",7.5,color=grey)
     txt(ax,.925,.045,str(n),7.5,color=grey)
 
-with PdfPages(OUT,metadata={"Title":"Our graph-reading test - corrected rerun",
+with PdfPages(OUT,metadata={"Title":"Our graph-reading test",
                             "Author":"AI Vision With OCR Experiment"}) as pdf:
     fig,ax=page()
     txt(ax,.055,.958,"INFORMAL EXPERIMENT NOTES",9,"bold",blue)
-    txt(ax,.055,.922,"Our graph-reading test: corrected rerun",19,"bold")
+    txt(ax,.055,.922,"Our graph-reading test",19,"bold")
     txt(ax,.055,.870,"12 clean, synthetic Finnish-context images | 99 nodes | 129 edges | 240 printed text regions",9.3,color=grey)
     ax.add_patch(Rectangle((.055,.763),.89,.080,facecolor=pale,edgecolor="none",transform=ax.transAxes))
     txt(ax,.071,.827,"How to read the scores",11,"bold",blue)

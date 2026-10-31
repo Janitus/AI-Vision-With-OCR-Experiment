@@ -104,7 +104,7 @@ def main():
                blinding="procedural; agent file access was self-reported, not independently enforced")
     (ROOT/"validation.json").write_text(json.dumps(audit,indent=2),encoding="utf-8")
     lines=["# Twelve-diagram benchmark with routed arrows","",
-           f"Ten corrected v4 diagrams plus two route variants contain {sum(len(read(ROOT/f'{s}.source.json')['nodes']) for s in mapping.values())} nodes and {sum(len(read(ROOT/f'{s}.source.json')['edges']) for s in mapping.values())} edges. The rail straight, curved, and right-angle cases have the same graph labels and topology. Exact custom route coordinates live in source JSON; Mermaid encodes topology.","",
+           f"Twelve Finnish-context diagram images contain {sum(len(read(ROOT/f'{s}.source.json')['nodes']) for s in mapping.values())} node instances and {sum(len(read(ROOT/f'{s}.source.json')['edges']) for s in mapping.values())} edge instances. The straight, curved, and right-angle rail cases share graph labels and topology. Exact route coordinates live in source JSON; Mermaid encodes topology.","",
            f"Source QA: {audit['clipped_text']} clipped text regions; {audit['overlapping_text']} overlapping text regions; {audit['hidden_edges']} edges hidden by a non-endpoint node; {audit['coincident_edge_pairs']} coincident edge pairs. Minimum text contrast {audit['minimum_text_contrast']:.2f}:1. The two routed images were inspected visually and passed 24 sampled route-to-node checks.","",
            "## Approach matrix","",
            f"| Approach | Task | Total scorer events / {total} | Exact figures | Title | Node text | Edge text | Shape | Arrow | Extra text |",

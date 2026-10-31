@@ -1,6 +1,6 @@
 # Twelve-diagram benchmark with routed arrows
 
-Ten corrected v4 diagrams plus two route variants contain 99 nodes and 129 edges. The rail straight, curved, and right-angle cases have the same graph labels and topology. Exact custom route coordinates live in source JSON; Mermaid encodes topology.
+Twelve Finnish-context diagram images contain 99 node instances and 129 edge instances. The straight, curved, and right-angle rail cases share graph labels and topology. Exact route coordinates live in source JSON; Mermaid encodes topology.
 
 Source QA: 0 clipped text regions; 0 overlapping text regions; 0 edges hidden by a non-endpoint node; 0 coincident edge pairs. Minimum text contrast 7.49:1. The two routed images were inspected visually and passed 24 sampled route-to-node checks.
 
