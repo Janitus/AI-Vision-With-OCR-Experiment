@@ -60,7 +60,6 @@ with PdfPages(OUT,metadata={"Title":"Our graph-reading test",
         ("Old OCR", "9 title, 23 node-text, and 42 edge-text errors"),
         ("Blind vision", "18 node-shape errors; 1 wrong arrow; 1 wrong stroke"),
         ("Blind vision + OCR", "8 node-shape errors; 3 wrong arrows; 1 wrong stroke"),
-        ("Deterministic OCR union", "Vision graph unchanged: 18 shape, 1 arrow, 1 stroke"),
     ]
     for i,(label,detail) in enumerate(error_rows):
         y=.307-i*.040

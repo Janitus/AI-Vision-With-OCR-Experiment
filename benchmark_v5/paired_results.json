@@ -193,44 +193,5 @@
     "complete_edges": 11,
     "wrong_arrows": 1,
     "shape_mismatches": 0
-  },
-  {
-    "approach": "Vision + deterministic OCR evidence",
-    "route": "straight",
-    "mode": "Graph",
-    "source_items": 21,
-    "events": 8,
-    "exact_text": null,
-    "extra_text": null,
-    "topology": 12,
-    "complete_edges": 12,
-    "wrong_arrows": 0,
-    "shape_mismatches": 8
-  },
-  {
-    "approach": "Vision + deterministic OCR evidence",
-    "route": "curved",
-    "mode": "Graph",
-    "source_items": 21,
-    "events": 0,
-    "exact_text": null,
-    "extra_text": null,
-    "topology": 12,
-    "complete_edges": 12,
-    "wrong_arrows": 0,
-    "shape_mismatches": 0
-  },
-  {
-    "approach": "Vision + deterministic OCR evidence",
-    "route": "right_angle",
-    "mode": "Graph",
-    "source_items": 21,
-    "events": 0,
-    "exact_text": null,
-    "extra_text": null,
-    "topology": 12,
-    "complete_edges": 12,
-    "wrong_arrows": 0,
-    "shape_mismatches": 0
   }
 ]

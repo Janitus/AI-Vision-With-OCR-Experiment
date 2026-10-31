@@ -133,32 +133,5 @@
     "edge_precision": 1.0,
     "edge_recall": 1.0,
     "perfect_figures": 8
-  },
-  {
-    "approach": "Vision + deterministic OCR evidence",
-    "mode": "Graph",
-    "source_items": 240,
-    "errors": 20,
-    "error_rate": 8.3,
-    "exact_text": null,
-    "extra_text": null,
-    "title_errors": 0,
-    "node_label_errors": 0,
-    "edge_label_errors": 0,
-    "shape_mismatches": 18,
-    "missing_nodes": 0,
-    "extra_nodes": 0,
-    "missing_edges": 0,
-    "extra_edges": 0,
-    "wrong_arrows": 1,
-    "unresolved_directed_arrows": 0,
-    "arrowless_semantics_unknown": 0,
-    "wrong_strokes": 1,
-    "fully_correct_edges": 127,
-    "node_precision": 1.0,
-    "node_recall": 1.0,
-    "edge_precision": 1.0,
-    "edge_recall": 1.0,
-    "perfect_figures": 7
   }
 ]

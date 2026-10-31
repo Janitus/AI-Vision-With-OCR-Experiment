@@ -4,4 +4,3 @@ PaddleOCR PP-OCRv5 Finnish,OCR text,240,57,23.8,221,38,0,0,19,,,,,,,,,,,,,,,3
 Older RapidOCR baseline,OCR text,240,74,30.8,166,0,9,23,42,,,,,,,,,,,,,,,0
 Blind Codex vision,Graph,240,20,8.3,,,0,0,0,18,0,0,0,0,1,0,0,1,127,1.0,1.0,1.0,1.0,7
 Blind Codex + RapidOCR,Graph,240,12,5.0,,,0,0,0,8,0,0,0,0,3,0,0,1,125,1.0,1.0,1.0,1.0,8
-Vision + deterministic OCR evidence,Graph,240,20,8.3,,,0,0,0,18,0,0,0,0,1,0,0,1,127,1.0,1.0,1.0,1.0,7

@@ -14,6 +14,3 @@ Blind Codex vision,right_angle,Graph,21,0,,,12,12,0,0
 Blind Codex + RapidOCR,straight,Graph,21,9,,,12,11,1,8
 Blind Codex + RapidOCR,curved,Graph,21,1,,,12,11,1,0
 Blind Codex + RapidOCR,right_angle,Graph,21,1,,,12,11,1,0
-Vision + deterministic OCR evidence,straight,Graph,21,8,,,12,12,0,8
-Vision + deterministic OCR evidence,curved,Graph,21,0,,,12,12,0,0
-Vision + deterministic OCR evidence,right_angle,Graph,21,0,,,12,12,0,0

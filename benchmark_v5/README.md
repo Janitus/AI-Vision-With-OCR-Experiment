@@ -16,8 +16,6 @@ python benchmark_v5/run_legacy.py
 python benchmark_v5/score_ocr.py
 python benchmark_v5/evaluate_blind.py blind_vision
 python benchmark_v5/evaluate_blind.py blind_fusion
-python benchmark_v5/build_union.py
-python benchmark_v5/evaluate_blind.py vision_ocr_union
 python benchmark_v5/summarize.py
 python benchmark_v5/build_pdf.py
 ```
@@ -25,3 +23,5 @@ python benchmark_v5/build_pdf.py
 The blind predictions were saved before scoring. To repeat the blind stage, create anonymous inputs with `python benchmark_v5/prepare_blind_inputs.py`, give one fresh agent only the images and another the images plus raw RapidOCR observations, and freeze all predictions before invoking the scorer. Duplicate anonymous inputs are ignored by Git. Blinding is procedural, not enforced by filesystem isolation; see the access logs.
 
 The fixed source-item denominator is 240: twelve titles, 99 nodes, and 129 edges. OCR rows measure printed text; graph rows measure reconstructed graph elements. `paired_results.csv` isolates straight, curved, and right-angle rail results. `approach_matrix.csv`, `item_error_ledger.json`, `REPORT.md`, and `results_viewer.html` carry the detailed results. The aggregate 12-image rate should not be read as twelve independent graph topologies.
+
+The saved `vision_ocr_union/` files preserve a deterministic attachment of OCR text boxes to the blind-vision graph. They are excluded from comparison tables because they do not change the graph prediction.
